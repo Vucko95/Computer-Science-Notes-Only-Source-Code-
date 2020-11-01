@@ -1,0 +1,5 @@
+So, this is just a bunch of text that i've put togethr to check on
+this tokenisation crap and I am interested in how I.B.M. or the U.S.A. or the USA
+is handled, ok? This and whether it properly deals with websites like www.ucd.ie
+and email addresses like mark.keane@ucd.email.ie.  Also other weirdities like
+the great O'Neill and like M*A*S*H, which should be maybe 7 tokens?

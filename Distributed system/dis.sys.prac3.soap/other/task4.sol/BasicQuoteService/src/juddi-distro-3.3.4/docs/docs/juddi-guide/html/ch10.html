@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Chapter 10. Digital Signatures</title><link rel="stylesheet" type="text/css" href="css/jbossorg.css"/><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Apache jUDDI Guide"/><link rel="up" href="index.html" title="Apache jUDDI Guide"/><link rel="prev" href="ch09.html" title="Chapter 9. Extending UDDI"/><link rel="next" href="ch11.html" title="Chapter 11. Troubleshooting jUDDI"/><link rel="copyright" href="ln-d5e27.html" title="Legal Notice"/><meta xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p xmlns:d="http://docbook.org/ns/docbook" id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch09.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ch11.html"><strong>Next</strong></a></li></ul><div class="chapter" title="Chapter 10. Digital Signatures"><div class="titlepage"><div><div><h2 class="title"><a id="DigitalSignatures"/>Chapter 10. Digital Signatures</h2></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="section"><a href="ch10.html#_requirements">10.1. Requirements</a></span></dt><dt><span class="section"><a href="ch10.html#_using_digital_signatures_using_the_juddi_gui">10.2. Using Digital Signatures using the jUDDI GUI</a></span></dt><dt><span class="section"><a href="ch10.html#_frequently_asked_questions">10.3. Frequently Asked Questions</a></span></dt></dl></div>
+
+<p>Users of UDDI can use digital signatures to ensure that no unauthorized users alter the content of UDDI. We’re sure that one of the first questions one would ask is "can’t access control rules handle this problem for us?" The answer is yes, however it does not mitigate the risk of a number of opportunities for electronic attack.</p>
+<div class="section" title="10.1. Requirements"><div class="titlepage"><div><div><h2 class="title"><a id="_requirements"/>10.1. Requirements</h2></div></div></div>
+
+<p>UDDI supports both the XML Digital Signature specification, which effectively means that you can use PGP Keys and X509 certificates. jUDDI provides out of the box support for X509 certificates and the Public Key Infrastructure (PKI). If you require direct PGP signing support, please open a JIRA ticket.</p>
+</div>
+<div class="section" title="10.2. Using Digital Signatures using the jUDDI GUI"><div class="titlepage"><div><div><h2 class="title"><a id="_using_digital_signatures_using_the_juddi_gui"/>10.2. Using Digital Signatures using the jUDDI GUI</h2></div></div></div>
+
+<p>Please see <a class="xref" href="">???</a>.</p>
+</div>
+<div class="section" title="10.3. Frequently Asked Questions"><div class="titlepage"><div><div><h2 class="title"><a id="_frequently_asked_questions"/>10.3. Frequently Asked Questions</h2></div></div></div>
+
+<div class="variablelist"><dl><dt><span class="term">Doesn’t UDDI access control rules prevent alteration of the content?</span></dt><dd>
+Yes, however it does not mitigate the man in the middle attack vectors. Since UDDI is used to determine the location of the thing you want, it’s possible that falsified endpoints can be interjected in transport. The target service requires authentication, then the end user’s credentials could be compromised without their knowledge.
+</dd><dt><span class="term">How can I sign a business, service, tModel or binding?</span></dt><dd>
+Use the juddi-gui’s digital signature applet by first located the item in the juddi-gui interface, then click on the "Sign" button. You need write access to the entity.
+</dd><dt><span class="term">The digital signature applet doesn’t run. Now what?</span></dt><dd>
+The applet requires the Java browser plugin. Unfortunately, due to recent (2013) security vulnerabilities, many places of business have heeded Oracle’s advice and have disabled the browser plugin. There are other options, however.
+</dd><dt><span class="term">What other tools can I use to sign a UDDI entity?</span></dt><dd>
+TBD
+</dd><dt><span class="term">What is a signature?</span></dt><dd>
+It’s basically a cryptographic (a fancy math equation) using a set a keys (one is public and everyone can see/know it, the other only is held by the owner) that proves that the owner signed a piece of data.
+</dd><dt><span class="term">How is a signature verified?</span></dt><dd>
+There’s a few ways, we can prove mathematically that the signature is valid (the content hasn’t been modified). From there we can also verify that the signing key is valid.
+</dd><dt><span class="term">How do we know the signing key is valid?</span></dt><dd>
+Most certificates (key pairs) have some kind of mechanism in it to verify if the certificate has been revoked. If your certificate has it, it will be labeled with something like OCSP or CRL. Both of these are supported in both .NET and Java juddi-clients as well as via the juddi-gui.
+</dd></dl></div>
+
+</div>
+</div><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch09.html"><strong>Prev</strong>Chapter 9. Extending UDDI</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ch11.html"><strong>Next</strong>Chapter 11. Troubleshooting jUDDI</a></li></ul></body></html>

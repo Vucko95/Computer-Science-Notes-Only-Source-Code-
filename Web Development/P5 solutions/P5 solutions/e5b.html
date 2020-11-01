@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+    
+<script>
+    
+    var a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];  
+   
+    var text = "<table border='1' cellpadding='10'>";
+    
+    for (i=0; i<a.length; i++)   
+    {  
+         text += "<tr>";  
+        
+        var b = a[i];
+        
+        for (j=0; j<b.length; j++)   
+        {  
+            text += "<td> " + b[j] + "</td>";  
+        }
+        
+        text += "</tr>";
+    
+    }
+    
+    text += "</table>";
+
+    
+    document.getElementById('demo').innerHTML = text;
+       
+</script>
+
+</body>
+</html>

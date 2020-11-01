@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Chapter 4. Administration</title><link rel="stylesheet" type="text/css" href="css/jbossorg.css"/><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Apache jUDDI Guide"/><link rel="up" href="index.html" title="Apache jUDDI Guide"/><link rel="prev" href="ch03.html" title="Chapter 3. jUDDI Architecture"/><link rel="next" href="ch05.html" title="Chapter 5. jUDDI Server Configuration (juddiv3.xml)"/><link rel="copyright" href="ln-d5e27.html" title="Legal Notice"/><meta xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p xmlns:d="http://docbook.org/ns/docbook" id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch03.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ch05.html"><strong>Next</strong></a></li></ul><div class="chapter" title="Chapter 4. Administration"><div class="titlepage"><div><div><h2 class="title"><a id="chapter-Administration"/>Chapter 4. Administration</h2></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="section"><a href="ch04.html#_changing_the_web_server_listen_port">4.1. Changing the Web Server Listen Port</a></span></dt><dt><span class="section"><a href="ch04.html#_administering_users_and_access_control">4.2. Administering Users and Access Control</a></span></dt><dd><dl><dt><span class="section"><a href="ch04.html#_administrative_users">4.2.1. Administrative Users</a></span></dt><dt><span class="section"><a href="ch04.html#_end_users">4.2.2. End Users</a></span></dt></dl></dd><dt><span class="section"><a href="ch04.html#ConfiguringDatabaseConnections">4.3. Configuration Database Connections</a></span></dt><dd><dl><dt><span class="section"><a href="ch04.html#_derby_out_of_the_box">4.3.1. Derby Out-of-the-Box</a></span></dt><dt><span class="section"><a href="ch04.html#_switching_to_another_database">4.3.2. Switching to another Database</a></span></dt><dt><span class="section"><a href="ch04.html#_switch_to_mysql_on_tomcat_using_openjpa">4.3.3. Switch to MySQL on Tomcat using OpenJPA</a></span></dt><dt><span class="section"><a href="ch04.html#_switch_to_postgres_on_tomcat_using_openjpa">4.3.4. Switch to Postgres on Tomcat using OpenJPA</a></span></dt><dt><span class="section"><a href="ch04.html#_switch_to_postgres_on_jboss_using_hibernate">4.3.5. Switch to Postgres on JBoss using Hibernate</a></span></dt><dt><span class="section"><a href="ch04.html#_switch_to_oracle_on_tomcat_using_hibernate">4.3.6. Switch to Oracle on Tomcat using Hibernate</a></span></dt><dt><span class="section"><a href="ch04.html#_switch_to_hsql_on_tomcat_using_hibernate">4.3.7. Switch to HSQL on Tomcat using Hibernate</a></span></dt><dt><span class="section"><a href="ch04.html#_switch_to_other_db">4.3.8. Switch to other db</a></span></dt><dt><span class="section"><a href="ch04.html#_override_persistence_properties_in_the_juddiv3_xml">4.3.9. Override persistence properties in the juddiv3.xml</a></span></dt></dl></dd><dt><span class="section"><a href="ch04.html#_logging">4.4. Logging</a></span></dt><dt><span class="section"><a href="ch04.html#_administering_the_gui_juddi_gui_war">4.5. Administering the GUI (juddi-gui.war)</a></span></dt><dt><span class="section"><a href="ch04.html#_task_signing_the_digital_signature_applet_jar_file">4.6. Task: Signing the Digital Signature Applet jar file</a></span></dt><dt><span class="section"><a href="ch04.html#_administrating_your_juddi_instance_using_the_administrative_console">4.7. Administrating your jUDDI Instance using the Administrative Console</a></span></dt><dt><span class="section"><a href="ch04.html#_configure_juddi">4.8. Configure jUDDI</a></span></dt><dd><dl><dt><span class="section"><a href="ch04.html#_enabling_remote_access">4.8.1. Enabling Remote Access</a></span></dt></dl></dd><dt><span class="section"><a href="ch04.html#_monitoring_the_status_and_statistics">4.9. Monitoring the Status and Statistics</a></span></dt><dd><dl><dt><span class="section"><a href="ch04.html#_statistics">4.9.1. Statistics</a></span></dt><dt><span class="section"><a href="ch04.html#_status">4.9.2. Status</a></span></dt></dl></dd><dt><span class="section"><a href="ch04.html#_accessing_the_juddiv3_api">4.10. Accessing the jUDDIv3 API</a></span></dt><dt><span class="section"><a href="ch04.html#_security_guidance">4.11. Security Guidance</a></span></dt><dd><dl><dt><span class="section"><a href="ch04.html#_juddi_server_2">4.11.1. jUDDI Server</a></span></dt><dt><span class="section"><a href="ch04.html#_juddi_client_and_developers">4.11.2. jUDDI Client (and developers)</a></span></dt><dt><span class="section"><a href="ch04.html#_juddi_gui_web_user_interface">4.11.3. jUDDI GUI (Web user interface)</a></span></dt></dl></dd><dt><span class="section"><a href="ch04.html#_backups_upgrading_and_data_migration">4.12. Backups, Upgrading and Data Migration</a></span></dt><dd><dl><dt><span class="section"><a href="ch04.html#_database_backups">4.12.1. Database Backups</a></span></dt><dt><span class="section"><a href="ch04.html#_config_backup">4.12.2. Config Backup</a></span></dt></dl></dd><dt><span class="section"><a href="ch04.html#_upgrading_juddi">4.13. Upgrading jUDDI</a></span></dt><dt><span class="section"><a href="ch04.html#_scaling_juddi_and_federation">4.14. Scaling jUDDI and Federation</a></span></dt><dd><dl><dt><span class="section"><a href="ch04.html#_scaling_the_juddi_services_multiple_servers">4.14.1. Scaling the jUDDI Services (multiple servers)</a></span></dt><dt><span class="section"><a href="ch04.html#_limitations_of_juddi">4.14.2. Limitations of jUDDI</a></span></dt></dl></dd></dl></div>
+
+<div class="section" title="4.1. Changing the Web Server Listen Port"><div class="titlepage"><div><div><h2 class="title"><a id="_changing_the_web_server_listen_port"/>4.1. Changing the Web Server Listen Port</h2></div></div></div>
+
+<p>If you want to change the port Tomcat listens on to something non-standard (something other than 8080), use the following guidance.</p>
+<p>jUDDI Server (Tomcat) - This assumes you are using the jUDDI server bundled with Apache Tomcat. For other application servers, consult their documentation, however the juddiv3.xml must still be altered.</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+Edit <code class="literal">conf/server.xml</code> and change the port within the &lt;Connector&gt; element.
+</li><li class="listitem">
+Edit <code class="literal">webapps/juddiv3/WEB-INF/classes/juddiv3.xml</code> and change the port number jUDDI Server Baseurl.
+</li><li class="listitem">
+Edit <code class="literal">webapps/juddiv3/WEB-INF/config.properties</code> and change the port numbers for "securityurl" and "juddipapi".
+</li><li class="listitem">
+Edit <code class="literal">webapps/juddi-gui/META-INF/config.properties</code> and change the port numbers for all of the URLs listed.
+</li></ul></div>
+
+<p>If these changes are made before jUDDI has been started for the first time, then no further action is required. If jUDDI has been previously started, you’ll need to either A) update the URL information for the Node’s root business entity URLs or B) turn on "Seed Always" in the juddiv3.xml file to auto update the changes.</p>
+</div>
+<div class="section" title="4.2. Administering Users and Access Control"><div class="titlepage"><div><div><h2 class="title"><a id="_administering_users_and_access_control"/>4.2. Administering Users and Access Control</h2></div></div></div>
+
+<p>As of version 3.2, jUDDI Authentication is handled from two perspectives, administrator and end user access.</p>
+<div class="section" title="4.2.1. Administrative Users"><div class="titlepage"><div><div><h3 class="title"><a id="_administrative_users"/>4.2.1. Administrative Users</h3></div></div></div>
+
+<p>Administrative users have special access to juddi-gui’s remote configuration page at <a class="ulink" href="http://localhost:8080/juddi-gui/settings.jsp">http://localhost:8080/juddi-gui/settings.jsp</a> and to the Administrative Console at <a class="ulink" href="http://localhost:8080/juddiv3/admin">http://localhost:8080/juddiv3/admin</a>. Access to both of these is configured at the container level (i.e. Jboss, Tomcat, etc). By default, users that need to access these pages need to have the "uddiadmin" role (which is defined in the WEB-INF/web.xml of both web application archives). When you are running on tomcat this configuration can be found in the <code class="literal">&lt;tomcat&gt;/conf/tomcat-users.conf</code> file.</p>
+</div>
+<div class="section" title="4.2.2. End Users"><div class="titlepage"><div><div><h3 class="title"><a id="_end_users"/>4.2.2. End Users</h3></div></div></div>
+
+<p>End users typically will either access jUDDI’s services directly at <a class="ulink" href="http://localhost:8080/juddiv3/">http://localhost:8080/juddiv3/</a> or via the user interfaces <a class="ulink" href="http://localhost:8080/juddi-gui">http://localhost:8080/juddi-gui</a>. In both cases, authentication is handled via jUDDI’s Authentication providers which is configured in <code class="literal">juddiv3.war/WEB-INF/classes/juddiv3.xml</code>.</p>
+<div class="section" title="4.2.2.1. Under the Hood"><div class="titlepage"><div><div><h4 class="title"><a id="_under_the_hood"/>4.2.2.1. Under the Hood</h4></div></div></div>
+
+<p>In order to enforce proper write access to jUDDI, each request to jUDDI needs a valid authToken. Note that read access is not restricted (by default, but can be enabled) and therefore queries into the registries are not restricted.</p>
+<p>To obtain a valid authToken a getAuthToken() request must be made, where a GetAuthToken object is passed. On the GetAuthToken object a userid and credential (password) needs to be set.</p>
+<pre class="screen">org.uddi.api_v3.GetAuthToken ga = new org.uddi.api_v3.GetAuthToken();
+ga.setUserID("username");
+ga.setCred("password");
+org.uddi.api_v3.AuthToken token = securityService.getAuthToken(ga);</pre>
+
+<p>The property <code class="literal">juddi/auth/*</code> in the <code class="literal">juddiv3.xml</code> configuration file can be used to configure how jUDDI is going to check the credentials passed in on the GetAuthToken request. By default jUDDI uses the JUDDIAuthenticator implementation. You can provide your own authentication implementation or use any of the ones mention below. The implementation needs to implement the org.apache.juddi.auth.Authenticator interface, and <code class="literal">juddi/auth/authenticator/class</code> property should refer to the implementation class.</p>
+<p>There are two phases involved in Authentication. The authenticate phase and the identify phase. Both of these phases are represented by a method in the Authenticator interface.</p>
+<p>The authenticate phase occurs during the GetAuthToken request as described above. The goal of this phase is to turn a user id and credentials into a valid publisher id. The publisher id (referred to as the "authorized name" in UDDI terminology) is the value that assigns ownership within UDDI. Whenever a new entity is created, it must be tagged with ownership by the authorized name of the publisher. The value of the publisher id can be completely transparent to jUDDI - the only requirement is that one exists to assign to new entities. Thus, the authenticate phase must return a non-null publisher id. Upon completion of the GetAuthToken request, an authentication token is issued to the caller.</p>
+<p>In subsequent calls to the UDDI API that require authentication, the token issued from the GetAuthToken request must be provided. This leads to the next phase of jUDDI authentication - the identify phase.</p>
+<p>The identify phase is responsible for turning the authentication token (or the publisher id associated with that authentication token) into a valid UddiEntityPublisher object. The UddiEntityPublisher object contains all the properties necessary to handle ownership of UDDI entities. Thus, the token (or publisher id) is used to "identify" the publisher.</p>
+<p>The two phases provide compliance with the UDDI authentication structure and grant flexibility for users that wish to provide their own authentication mechanism. Handling of credentials and publisher properties can be done entirely outside of jUDDI. However, jUDDI provides the Publisher entity, which is a sub-class of UddiEntityPublisher, to persist publisher properties within jUDDI. This is used in the default authentication and is the subject of the next section.</p>
+</div>
+<div class="section" title="4.2.2.2. Choosing a Cryptographic Provider"><div class="titlepage"><div><div><h4 class="title"><a id="_choosing_a_cryptographic_provider"/>4.2.2.2. Choosing a Cryptographic Provider</h4></div></div></div>
+
+<p>jUDDI provides a number of cryptographic providers. Some of them may not be available in your region of the world due to export restrictions. All of these providers are provides that are included with the Oracle Java Runtime Environment.</p>
+<div class="section" title="4.2.2.2.1. jUDDI’s Cryptographic Providers"><div class="titlepage"><div><div><h5 class="title"><a id="_juddi_s_cryptographic_providers"/>4.2.2.2.1. jUDDI’s Cryptographic Providers</h5></div></div></div>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>The AES256Cryptor requires the Sun Java unlimited strength Crypograhpic Extensions to be installed. OpenJDK users are not affected by this.</p>
+</div>
+
+<p>In the following section, Authentication, a Cryptographic Provider must be selected using the following property in juddiv3.xml:</p>
+<pre class="screen">juddi/cryptor</pre>
+
+</div>
+<div class="section" title="4.2.2.2.2. jUDDI Server Providers"><div class="titlepage"><div><div><h5 class="title"><a id="_juddi_server_providers"/>4.2.2.2.2. jUDDI Server Providers</h5></div></div></div>
+
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+org.apache.juddi.cryptor.DefaultCryptor - Password Based Encryption With MD5 and DES
+</li><li class="listitem">
+org.apache.juddi.cryptor.TripleDESCrytor - Triple DES 168 bit
+</li><li class="listitem">
+org.apache.juddi.cryptor.AES128Cryptor - Advanced Encryption Standard 128 bit
+</li><li class="listitem">
+org.apache.juddi.cryptor.AES256Cryptor - Advanced Encryption Standard 256 bit
+</li></ul></div>
+
+</div>
+</div>
+<div class="section" title="4.2.2.3. jUDDI Client Providers (Java and .NET)"><div class="titlepage"><div><div><h4 class="title"><a id="_juddi_client_providers_java_and_net"/>4.2.2.3. jUDDI Client Providers (Java and .NET)</h4></div></div></div>
+
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+org.apache.juddi.v3.client.crypto.DefaultCryptor - Password Based Encryption With MD5 and DES
+</li><li class="listitem">
+org.apache.juddi.v3.client.crypto.TripleDESCrytor - Triple DES 168 bit
+</li><li class="listitem">
+org.apache.juddi.v3.client.crypto.AES128Cryptor - Advanced Encryption Standard 128 bit
+</li><li class="listitem">
+org.apache.juddi.v3.client.crypto.AES256Cryptor - Advanced Encryption Standard 256 bit
+</li></ul></div>
+
+<div class="section" title="4.2.2.3.1. Encrypting a Password"><div class="titlepage"><div><div><h5 class="title"><a id="_encrypting_a_password"/>4.2.2.3.1. Encrypting a Password</h5></div></div></div>
+
+<p>To encrypt a password, the jUDDI Tomcat server comes with a basic Windows Batch file and a Unix Bash script which will fire off the correct Java command. It is located at the following path:</p>
+<pre class="screen">{tomcat_home}/bin/juddi-cryptor.bat/sh</pre>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>The jUDDI-Client (Java only) uses the same encryption keys and the jUDDI Server, therefore encrypted passwords using this tool will work with the jUDDI-client’s configuration file.</p>
+</div>
+
+<p>In addition, an MD5 hashing program is included to assist with setting users passwords for the MD5XMLDocAuthenticator.</p>
+<pre class="screen">{tomcat_home}/bin/juddi-md5.bat/sh</pre>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>You can generate new encryption keys using this utility by specifying the System Property -Dgenerate=true option. You can then use them using the System Property -Djuddi.encryptionKeyFile.TripleDESCrytor=path/to/key</p>
+</div>
+
+</div>
+</div>
+<div class="section" title="4.2.2.4. jUDDI Authentication"><div class="titlepage"><div><div><h4 class="title"><a id="_juddi_authentication"/>4.2.2.4. jUDDI Authentication</h4></div></div></div>
+
+<p>The default authentication mechanism provided by jUDDI is the JUDDIAuthenticator. The authenticate phase of the JUDDIAuthenticator simply checks to see if the user id passed in has an associated record in the Publisher table. No credentials checks are made. If, during authentication, the publisher does not exist, it the publisher is added on the fly.</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="warning" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Warning</h2>
+<p>Do not use jUDDI Default Authenticator in production. It does not compare passwords to anything!</p>
+</div>
+
+<p>The identify phase uses the publisher id to retrieve the Publisher record and return it. All necessary publisher properties are populated as Publisher inherits from UddiEntityPublisher.</p>
+<pre class="screen">juddi/auth/authenticator/class = org.apache.juddi.auth.JUDDIAuthentication</pre>
+
+</div>
+<div class="section" title="4.2.2.5. XMLDocAuthentication"><div class="titlepage"><div><div><h4 class="title"><a id="_xmldocauthentication"/>4.2.2.5. XMLDocAuthentication</h4></div></div></div>
+
+<p>The XMLDocAuthentication implementation needs a XML file on the classpath. The juddiv3.xml file would need to look like</p>
+<pre class="screen">juddi/auth/authenticator/class = org.apache.juddi.auth.XMLDocAuthentication
+juddi/auth/usersfile = juddi-users.xml</pre>
+
+<p>where the name of the XML can be provided but it defaults to juddi-users.xml, and the content of the file would looks something like</p>
+<pre class="screen">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;juddi-users&gt;
+    &lt;user userid="anou_mana" password="password" /&gt;
+    &lt;user userid="bozo" password="clown" /&gt;
+    &lt;user userid="sviens" password="password" /&gt;
+&lt;/juddi-users&gt;</pre>
+
+<p>The authenticate phase checks that the user id and password match a value in the XML file. The identify phase simply uses the user id to populate a new UddiEntityPublisher.</p>
+</div>
+<div class="section" title="4.2.2.6. CryptedXMLDocAuthentication"><div class="titlepage"><div><div><h4 class="title"><a id="_cryptedxmldocauthentication"/>4.2.2.6. CryptedXMLDocAuthentication</h4></div></div></div>
+
+<p>The CryptedXMLDocAuthentication implementation is similar to the XMLDocAuthentication implementation, but the passwords are encrypted.</p>
+<pre class="screen">juddi/auth/authenticator/class = org.apache.juddi.auth.CryptedXMLDocAuthentication
+juddi/auth/usersfile = juddi-users-encrypted.xml
+juddi/cryptor = org.apache.juddi.cryptor.DefaultCryptor</pre>
+
+<p>where the name user credential file is juddi-users-encrypted.xml, and the content of the file would looks something like</p>
+<pre class="screen">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;juddi-users&gt;
+    &lt;user userid="anou_mana" password="+j/kXkZJftwTFTBH6Cf6IQ=="/&gt;
+    &lt;user userid="bozo" password="Na2Ait+2aW0="/&gt;
+    &lt;user userid="sviens" password="+j/kXkZJftwTFTBH6Cf6IQ=="/&gt;
+&lt;/juddi-users&gt;</pre>
+
+<p>The DefaultCryptor implementation uses BEWithMD5AndDES and Base64 to encrypt the passwords. Note that the code in the AuthenticatorTest can be used to learn more about how to use this Authenticator implementation. You can plugin your own encryption algorithm by implementing the org.apache.juddi.cryptor.Cryptor interface and referencing your implementation class in the juddi.cryptor property.
+The authenticate phase checks that the user id and password match a value in the XML file. The identify phase simply uses the user id to populate a new UddiEntityPublisher.</p>
+</div>
+<div class="section" title="4.2.2.7. MD5XMLDocAuthenticator"><div class="titlepage"><div><div><h4 class="title"><a id="_md5xmldocauthenticator"/>4.2.2.7. MD5XMLDocAuthenticator</h4></div></div></div>
+
+<p>The MD5XMLDocAuthenticator implementation is similar to the XMLDocAuthentication implementation, but the passwords are hashed using MD5.</p>
+<pre class="screen">juddi/auth/authenticator/class = org.apache.juddi.auth.MD5XMLDocAuthenticator
+juddi/auth/usersfile = juddi-users-hashed.xml
+juddi/cryptor = org.apache.juddi.cryptor.DefaultCryptor</pre>
+
+<p>where the name user credential file is juddi-users-encrypted.xml, and the content of the file would looks something like</p>
+<pre class="screen">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;juddi-users&gt;
+    &lt;user userid="anou_mana" password="+j/kXkZJftwTFTBH6Cf6IQ=="/&gt;
+    &lt;user userid="bozo" password="Na2Ait+2aW0="/&gt;
+    &lt;user userid="sviens" password="+j/kXkZJftwTFTBH6Cf6IQ=="/&gt;
+&lt;/juddi-users&gt;</pre>
+
+<p>The DefaultCryptor implementation uses BEWithMD5AndDES and Base64 to encrypt the passwords. Note that the code in the AuthenticatorTest can be used to learn more about how to use this Authenticator implementation. You can plugin your own encryption algorithm by implementing the org.apache.juddi.cryptor.Cryptor interface and referencing your implementation class in the juddi.cryptor property.
+The authenticate phase checks that the user id and password match a value in the XML file. The identify phase simply uses the user id to populate a new UddiEntityPublisher.</p>
+</div>
+<div class="section" title="4.2.2.8. LDAP Authentication"><div class="titlepage"><div><div><h4 class="title"><a id="_ldap_authentication"/>4.2.2.8. LDAP Authentication</h4></div></div></div>
+
+<p>LdapSimpleAuthenticator provides a way of authenticating users using LDAP simple authentication. It is fairly rudimentary and more LDAP integration is planned in the future, but this class allows you to authenticate a user based on an LDAP prinicipal, provided that the principal (usually the distinguished name) and the juddi publisher ID are the same.</p>
+<p>To use this class you must add the following properties to the juddi3v.xml file:</p>
+<pre class="screen">juddi/auth/authenticator/class=org.apache.juddi.auth.LdapSimpleAuthenticator
+juddi/auth/authenticator/url=ldap://localhost:389
+juddi/auth/authenticator/style=simple</pre>
+
+<p>The juddi/authenticator/url property configures the LdapSimpleAuthenticator class so that it knows where the LDAP server resides. Future work is planned in this area to use the LDAP uid rather than the LDAP principal as the default publisher id.</p>
+<p>LdapExpandedAuthenticator provides a slightly more flexible way to authenticate users via LDAP.</p>
+<pre class="screen">juddi/auth/authenticator/class=org.apache.juddi.v3.auth.LdapSimpleAuthenticator
+juddi/auth/authenticator/url=ldap://localhost:389
+juddi/auth/authenticator/style=simple
+juddi/auth/authenticator/ldapexp=CN=%s, OU=Users,DC=Domain, etc</pre>
+
+</div>
+<div class="section" title="4.2.2.9. JBoss Authentication"><div class="titlepage"><div><div><h4 class="title"><a id="_jboss_authentication"/>4.2.2.9. JBoss Authentication</h4></div></div></div>
+
+<p>Is it possible to hook up to third party credential stores. If for example jUDDI is deployed to the JBoss Application server it is possible to hook up to it’s authentication machinery. The JBossAuthenticator class is provided in the docs/examples/auth directory. This class enables jUDDI deployments on JBoss use a server security domain to authenticate users.</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>The JBoss authentication is not distributed with jUDDI. It can be found here: <a class="ulink" href="http://svn.apache.org/viewvc/juddi/extras/jbossauthenticator/src/org/apache/juddi/auth/JBossAuthenticator.java?view=markup">http://svn.apache.org/viewvc/juddi/extras/jbossauthenticator/src/org/apache/juddi/auth/JBossAuthenticator.java?view=markup</a></p>
+</div>
+
+<p>To use this class you must add the following properties to the juddiv3.xml file:</p>
+<pre class="screen">juddi/auth/authenticator/class=org.apache.juddi.auth.JBossAuthenticator
+juddi/auth/securityDomain=java:/jaas/other</pre>
+
+<p>The juddi/auth/authenticator/class property plugs the JbossAuthenticator class into the jUDDI the Authenticator framework. The juddi/sercuityDomain, configures the JBossAuthenticator class where it can lookup the application server’s security domain, which it will use to perform the authentication. Note that JBoss creates one security domain for each application policy element on the <code class="literal">$JBOSS_HOME/server/default/conf/login-config.xml</code> file, which gets bound to the server JNDI tree with name java:/jaas/&lt;application-policy-name&gt;&lt;/application-policy-name&gt;. If a lookup refers to a non existent application policy it defaults to a policy named other.</p>
+</div>
+<div class="section" title="4.2.2.10. Container Based Authentication"><div class="titlepage"><div><div><h4 class="title"><a id="_container_based_authentication"/>4.2.2.10. Container Based Authentication</h4></div></div></div>
+
+<p>Certain security configurations may use HTTP based authentication. In this scenario, jUDDI simply trust’s that the container will authenticate the user via some mechanism and uses that username for interactions with jUDDI.  To configure this setup, use the following configuration settings in juddiv3.xml:</p>
+<pre class="screen">juddi/auth/authenticator/class=org.apache.juddi.auth.HTTPContainerAuthenticator
+juddi/auth/authenticator@useAuthToken=false</pre>
+
+<p>In addition, you’ll have to make whatever changes necessary to the juddiv3.war/WEB-INF/web.xml file in order to use the chosen authentication mechanism. See your appliation server’s documentation for details on this.</p>
+</div>
+<div class="section" title="4.2.2.11. Authentication by Proxy (HTTP Header)"><div class="titlepage"><div><div><h4 class="title"><a id="_authentication_by_proxy_http_header"/>4.2.2.11. Authentication by Proxy (HTTP Header)</h4></div></div></div>
+
+<p>Certain security configurations that enforce authentication before requests come to the web application, such as via Apache HTTPD or a reverse SSL proxy. In these cases, the proxy provided authenticates the user, then passes along the user’s identity via a HTTP header. To configure this setup, use the following configuration settings in juddiv3.xml:</p>
+<pre class="screen">juddi/auth/authenticator/class=org.apache.juddi.auth.HTTPHeaderAuthenticator
+juddi/auth/authenticator/header=(Some HTTP Header)
+juddi/auth/authenticator@useAuthToken=false</pre>
+
+</div>
+</div>
+</div>
+<div class="section" title="4.3. Configuration Database Connections"><div class="titlepage"><div><div><h2 class="title"><a id="ConfiguringDatabaseConnections"/>4.3. Configuration Database Connections</h2></div></div></div>
+
+<div class="section" title="4.3.1. Derby Out-of-the-Box"><div class="titlepage"><div><div><h3 class="title"><a id="_derby_out_of_the_box"/>4.3.1. Derby Out-of-the-Box</h3></div></div></div>
+
+<p>By default jUDDI uses an embedded Derby database. This allows us to build a  downloadable distribution that works out-of-the-box, without having to do any database setup work. We recommend switching to an enterprise-level database  before going to production. JUDDI uses the Java Persistence API (JPA) in the back  end and we’ve tested with both OpenJPA and Hibernate. To configure which JPA  provider you want to use, you will need to edit the configuration in the <span class="emphasis"><em>juddiv3.war/WEB-INF/classes/META-INF/persistence.xml</em></span>. The content of this file is pretty standard between JPA implementations, however there can be slight differences.
+To make it easy we created different versions for different JPA implementations and target platforms. All JPA implementation have an enhancement phase, where the persistence <span class="emphasis"><em>model</em></span> classes are enhanced. Hibernate does this at runtime, OpenJPA prefers doing this at compile time. This is the reason we ship two versions of <span class="emphasis"><em>juddi-core</em></span>, where the <span class="emphasis"><em>juddi-core-openjpa.jar</em></span> contains classes (byte-code) enhanced by OpenJPA. This is the reason this jar is larger then the <span class="emphasis"><em>juddi-core.jar</em></span>.</p>
+<p>For Hibernate, for testing the content of this file looks like</p>
+
+<pre class="literallayout">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;persistence xmlns="http://java.sun.com/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+    http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+    version="1.0"&gt;
+    &lt;persistence-unit name="juddiDatabase" transaction-type="RESOURCE_LOCAL"&gt;
+        &lt;provider&gt;org.hibernate.ejb.HibernatePersistence&lt;/provider&gt;
+        &lt;jta-data-source&gt;java:comp/env/jdbc/JuddiDS&lt;/jta-data-source&gt;
+        &lt;!-- entity classes --&gt;
+        &lt;class&gt;org.apache.juddi.model.Address&lt;/class&gt;
+        &lt;class&gt;org.apache.juddi.model.AddressLine&lt;/class&gt;
+        ...
+        &lt;class&gt;org.apache.juddi.model.UddiEntity&lt;/class&gt;
+        &lt;class&gt;org.apache.juddi.model.UddiEntityPublisher&lt;/class&gt;
+
+        &lt;properties&gt;
+            &lt;property name="hibernate.archive.autodetection" value="class"/&gt;
+            &lt;property name="hibernate.hbm2ddl.auto" value="update"/&gt;
+            &lt;property name="hibernate.show_sql" value="false"/&gt;
+            &lt;property name="hibernate.dialect" value="org.hibernate.dialect.DerbyDialect"/&gt;
+        &lt;/properties&gt;
+    &lt;/persistence-unit&gt;
+&lt;/persistence&gt;</pre>
+
+
+<p>For OpenJPA the persistence.xml looks like</p>
+
+<pre class="literallayout">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+             version="1.0"&gt;
+  &lt;persistence-unit name="juddiDatabase" transaction-type="RESOURCE_LOCAL"&gt;
+    &lt;provider&gt;org.apache.openjpa.persistence.PersistenceProviderImpl&lt;/provider&gt;
+    &lt;non-jta-data-source&gt;java:comp/env/jdbc/JuddiDS&lt;/non-jta-data-source&gt;
+    &lt;!-- entity classes --&gt;
+    &lt;class&gt;org.apache.juddi.model.Address&lt;/class&gt;
+    &lt;class&gt;org.apache.juddi.model.AddressLine&lt;/class&gt;
+   ...
+    &lt;class&gt;org.apache.juddi.model.UddiEntity&lt;/class&gt;
+    &lt;class&gt;org.apache.juddi.model.UddiEntityPublisher&lt;/class&gt;
+    &lt;properties&gt;
+      &lt;property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema(SchemaAction='add')"/&gt;
+      &lt;property name="openjpa.Log" value="DefaultLevel=WARN, Tool=INFO"/&gt;
+      &lt;property name="openjpa.jdbc.UpdateManager" value="operation-order"/&gt;
+      &lt;property name="openjpa.jdbc.DBDictionary" value="derby"/&gt;
+      &lt;!-- dialects: derby, postgres, mysql, oracle, sybase, sqlserver
+           for a complete list check the OpenJPA documentation --&gt;
+      &lt;property name="openjpa.RuntimeUnenhancedClasses" value="warn"/&gt;
+      &lt;property name="openjpa.Compatibility" value="CheckDatabaseForCascadePersistToDetachedEntity=true"/&gt;
+    &lt;/properties&gt;
+  &lt;/persistence-unit&gt;
+&lt;/persistence&gt;</pre>
+
+
+<p>In this case we reference a <span class="emphasis"><em>jta-data-source</em></span> called <span class="emphasis"><em>java:comp/env/jdbc/JuddiDS</em></span>. Datasource deployment is Application Server specific. If you are using Tomcat, then the datasource is defined in <span class="emphasis"><em>juddi/META-INF/context.xml</em></span> which by default looks like</p>
+
+<pre class="literallayout">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;Context&gt;
+    &lt;WatchedResource&gt;WEB-INF/web.xml&lt;/WatchedResource&gt;
+    &lt;Resource name="jdbc/JuddiDS" auth="Container"
+        type="javax.sql.DataSource" username="" password=""
+        driverClassName="org.apache.derby.jdbc.EmbeddedDriver"
+        url="jdbc:derby:juddi-derby-test-db;create=true"
+        maxActive="8"
+        /&gt;
+&lt;/Context&gt;</pre>
+
+
+<p>By default the juddiv3.war is configured to be used on Tomcat using OpenJPA. However the download bundle lets you specify different target platforms resulting in a different setup. In all cases it will point to the embedded Derby database.</p>
+</div>
+<div class="section" title="4.3.2. Switching to another Database"><div class="titlepage"><div><div><h3 class="title"><a id="_switching_to_another_database"/>4.3.2. Switching to another Database</h3></div></div></div>
+
+<p>We recommend switching to an enterprise-level database before going to production. Most JPA providers support a large number of Databases and switching to another database is achieved by updating the configuration settings in both the persistence.xml and datasource files. The recipe is:</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+change the database dialect in the persistence.xml.
+</li><li class="listitem">
+change the database connection information in the datasource.
+</li><li class="listitem">
+add the database specific driver to your classpath.
+</li><li class="listitem">
+in some cases (Oracle is one such case) you will need to use sequences for the ID generation, in this case you will need an <span class="emphasis"><em>orm.xml</em></span> file. We ship a <span class="emphasis"><em>orm.xml.example</em></span> along side the <span class="emphasis"><em>persistence.xml</em></span>. Rename this file and update this to your liking.
+</li></ul></div>
+
+<p>Some examples for specific databases are given below.</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="warning" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Warning</h2>
+<p>Tomcat copies the <span class="emphasis"><em>context.xml</em></span> to <span class="emphasis"><em>&lt;tomcat&gt;/conf/CATALINA/localhost/juddiv3.xml</em></span>, and if you update the <span class="emphasis"><em>context.xml</em></span> it may not update this copy. You should simply delete the <span class="emphasis"><em>juddiv3.xml</em></span> file after updating the <span class="emphasis"><em>context.xml</em></span>.</p>
+</div>
+
+</div>
+<div class="section" title="4.3.3. Switch to MySQL on Tomcat using OpenJPA"><div class="titlepage"><div><div><h3 class="title"><a id="_switch_to_mysql_on_tomcat_using_openjpa"/>4.3.3. Switch to MySQL on Tomcat using OpenJPA</h3></div></div></div>
+
+<p>Check if you have are using Hibernate of OpenJPA, by looking at the jars in the <span class="emphasis"><em>juddiv3.war/WEB-INF/lib</em></span>.
+Edit the dialect in the <span class="emphasis"><em>persistence.xml</em></span>
+For OpenJPA:</p>
+
+<pre class="literallayout">&lt;property name="openjpa.jdbc.DBDictionary" value="mysql"/&gt;</pre>
+
+
+<p>Next edit the datasource. For tomcat you need to update the <span class="emphasis"><em>juddiv3/META-INF/context.xml</em></span> which should look something like</p>
+
+<pre class="literallayout">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;Context&gt;
+    &lt;WatchedResource&gt;WEB-INF/web.xml&lt;/WatchedResource&gt;
+    &lt;Resource name="jdbc/JuddiDS" auth="Container"
+        type="javax.sql.DataSource" username="root" password=""
+        driverClassName="com.mysql.jdbc.Driver"
+        url="jdbc:mysql://localhost:3306/juddiv3"
+        maxActive="8"/&gt;
+&lt;/Context&gt;</pre>
+
+
+<p>Finally you need to add the MySQL mysql driver (i.e. The <span class="emphasis"><em>mysql-connector-java-5.1.6.jar</em></span>) to the classpath. Note that this jar may already by in the tomcat/lib directory, in which case you can move on to the step and create the mysql juddiv3 database. To create a MySQL database name <code class="literal">juddiv3</code> use</p>
+<pre class="screen">mysql&gt; create database juddiv3</pre>
+
+<p>and finally you probably want to switch to a user which is a bit less potent then <span class="emphasis"><em>root</em></span>, and delete the <span class="emphasis"><em>&lt;tomcat&gt;/conf/CATALINA/localhost/juddiv3.xml</em></span> file.</p>
+</div>
+<div class="section" title="4.3.4. Switch to Postgres on Tomcat using OpenJPA"><div class="titlepage"><div><div><h3 class="title"><a id="_switch_to_postgres_on_tomcat_using_openjpa"/>4.3.4. Switch to Postgres on Tomcat using OpenJPA</h3></div></div></div>
+
+<p>Check if you have are using Hibernate of OpenJPA, by looking at the jars in the <span class="emphasis"><em>juddiv3.war/WEB-INF/lib</em></span>.
+Edit the dialect in the <span class="emphasis"><em>persistence.xml</em></span>
+For OpenJPA:</p>
+
+<pre class="literallayout">&lt;property name="openjpa.jdbc.DBDictionary" value="postgres"/&gt;</pre>
+
+
+<p>Next edit the datasource. For tomcat you need to update the <span class="emphasis"><em>juddiv3/META-INF/context.xml</em></span> which should look something like</p>
+
+<pre class="literallayout">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;Context&gt;
+    &lt;WatchedResource&gt;WEB-INF/web.xml&lt;/WatchedResource&gt;
+    &lt;Resource name="jdbc/JuddiDS" auth="Container"
+            type="javax.sql.DataSource" username="juddi" password="juddi"
+            driverClassName="org.postgresql.Driver"
+            url="jdbc:postgresql://localhost:5432/juddi"
+            maxActive="8"/&gt;
+&lt;/Context&gt;</pre>
+
+
+<p>To create a MySQL database name <span class="emphasis"><em>juddi</em></span> use</p>
+<pre class="screen">postgres= CREATE USER juddi with PASSWORD 'password';
+postgres= CREATE DATABASE juddi;
+postgres= GRANT ALL PRIVILEGES ON DATABASE juddi to juddi;</pre>
+
+<p>Be sure to have <span class="emphasis"><em>postgresql-8.3-604.jdbc4.jar</em></span> to the classpath. Note that this jar may already by in the tomcat/lib directory, in which case the final step is to delete the <span class="emphasis"><em>&lt;tomcat&gt;/conf/CATALINA/localhost/juddiv3.xml</em></span> file.</p>
+</div>
+<div class="section" title="4.3.5. Switch to Postgres on JBoss using Hibernate"><div class="titlepage"><div><div><h3 class="title"><a id="_switch_to_postgres_on_jboss_using_hibernate"/>4.3.5. Switch to Postgres on JBoss using Hibernate</h3></div></div></div>
+
+<p>This was written from a JBoss - jUDDI perspective. Non-JBoss-users may have to tweak this a little bit, but for the most part, the files and information needed is here. Logged in as postgres user, access psql:</p>
+<pre class="screen">postgres= CREATE USER juddi with PASSWORD 'password';
+postgres= CREATE DATABASE juddi;
+postgres= GRANT ALL PRIVILEGES ON DATABASE juddi to juddi;</pre>
+
+<p>Note, for this example, my database is called juddi, as is the user who has full privileges to the database. The user <span class="emphasis"><em>juddi</em></span> has a password set to <span class="emphasis"><em>password</em></span>. Next edit the juddi-ds.xml datasource file with the settings for the postgres connection info:</p>
+
+<pre class="literallayout">&lt;datasources&gt;
+    &lt;local-tx-datasource&gt;
+        &lt;jndi-name&gt;JuddiDS&lt;/jndi-name&gt;
+        &lt;connection-url&gt;jdbc:postgresql://localhost:5432/juddi&lt;/connection-url&gt;
+        &lt;driver-class&gt;org.postgresql.Driver&lt;/driver-class&gt;
+        &lt;user-name&gt;juddi&lt;/user-name&gt;
+        &lt;password&gt;password&lt;/password&gt;
+        &lt;!-- sql to call when connection is created.  Can be anything,
+        select 1 is valid for PostgreSQL
+        &lt;new-connection-sql&gt;select 1&lt;/new-connection-sql&gt;
+        --&gt;
+        &lt;!-- sql to call on an existing pooled connection when it is obtained
+        from pool.  Can be anything, select 1 is valid for PostgreSQL
+        &lt;check-valid-connection-sql&gt;select 1&lt;/check-valid-connection-sql&gt;
+        --&gt;
+        &lt;!-- corresponding type-mapping in the standardjbosscmp-jdbc.xml --&gt;
+        &lt;metadata&gt;
+            &lt;type-mapping&gt;PostgreSQL 8.0&lt;/type-mapping&gt;
+        &lt;/metadata&gt;
+    &lt;/local-tx-datasource&gt;
+&lt;/datasources&gt;</pre>
+
+
+<p>In <span class="emphasis"><em>persistence.xml</em></span>, reference the correct JNDI name of the datasource and remove the derby Dialect and add in the postgresql Dialect, for Hibernate on JBoss use:</p>
+
+<pre class="literallayout">&lt;jta-data-source&gt;java:comp/env/jdbc/JuddiDS&lt;/jta-data-source&gt;
+...
+&lt;property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/&gt;</pre>
+
+
+<p>Be sure to have <span class="emphasis"><em>postgresql-8.3-604.jdbc4.jar</em></span> in the <span class="emphasis"><em>lib</em></span> folder.</p>
+</div>
+<div class="section" title="4.3.6. Switch to Oracle on Tomcat using Hibernate"><div class="titlepage"><div><div><h3 class="title"><a id="_switch_to_oracle_on_tomcat_using_hibernate"/>4.3.6. Switch to Oracle on Tomcat using Hibernate</h3></div></div></div>
+
+<p>To switch over to Oracle you need to add the oracle driver (i.e. the_classes12.jar_) to the  classpath and you will need to edit the <span class="emphasis"><em>persistence.xml</em></span></p>
+
+<pre class="literallayout">&lt;property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/&gt;</pre>
+
+
+<p>To create a Oracle database name juddiv3 with the ultimate in minimalism use</p>
+<pre class="screen">sqlplus&gt; create database juddiv3;</pre>
+
+<p>then you probably want to switch to a user which is a bit less potent then <span class="emphasis"><em>root</em></span> and set the appropriate password, and delete the <span class="emphasis"><em>&lt;tomcat&gt;/conf/CATALINA/localhost/juddiv3.xml</em></span></p>
+<div class="section" title="4.3.6.1. Changing the Oracle Sequence name"><div class="titlepage"><div><div><h4 class="title"><a id="_changing_the_oracle_sequence_name"/>4.3.6.1. Changing the Oracle Sequence name</h4></div></div></div>
+
+<p>If you are using Hibernate as a persistence layer for jUDDI, then Oracle will generate a default sequence for you ("HIBERNATE_SEQUENCE"). If you are using hibernate elsewhere, you may wish to change the sequence name so that you do not share this sequence with any other applications. If other applications try to manually create the default hibernate sequence, you may even run into situations where you find conflicts or a race condition.</p>
+<p>The easiest way to handle this is to create an orm.xml file and place it within the classpath in a META-INF directory, which will override the jUDDI persistence annotations and will allow you to specify a specific sequence name for use with jUDDI. The orm.xml.example specifies a "juddi_sequence" sequence to be used with jUDDI. Rename this file and update it to your liking.</p>
+</div>
+</div>
+<div class="section" title="4.3.7. Switch to HSQL on Tomcat using Hibernate"><div class="titlepage"><div><div><h3 class="title"><a id="_switch_to_hsql_on_tomcat_using_hibernate"/>4.3.7. Switch to HSQL on Tomcat using Hibernate</h3></div></div></div>
+
+<p>First make sure you have a running hsqldb. For a standalone server startup use:</p>
+<pre class="screen">java -cp hsqldb.jar org.hsqldb.server.Server --port 1747 --database.0 file:juddi --dbname.0 juddi</pre>
+
+<p>Next, connect the client manager to this instance using:</p>
+<pre class="screen">java -classpath hsqldb.jar org.hsqldb.util.DatabaseManagerSwing --driver org.hsqldb.jdbcDriver --url jdbc:hsqldb:hsql://localhost:1747/juddi  -user sa</pre>
+
+<p>and create the juddi user:</p>
+<pre class="screen">CREATE USER JUDDI PASSWORD "password"  ADMIN;
+CREATE SCHEMA JUDDI AUTHORIZATION JUDDI;
+SET DATABASE DEFAULT INITIAL SCHEMA JUDDI;
+ALTER USER juddi set initial schema juddi;</pre>
+
+<p>From now on, one can connect as JUDDI user to that database and the database is now ready to go. To switch jUDDI over to HSQL you need to add the hsql driver (i.e. The <span class="emphasis"><em>hsqldb.jar</em></span>) to the classpath and you will need to edit the <span class="emphasis"><em>persistence.xml</em></span></p>
+
+<pre class="literallayout">&lt;property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/&gt;</pre>
+
+
+<p>and the datasource. For tomcat you the <span class="emphasis"><em>context.xml</em></span> should look something like</p>
+
+<pre class="literallayout">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;Context&gt;
+    &lt;WatchedResource&gt;WEB-INF/web.xml&lt;/WatchedResource&gt;
+    &lt;!-- HSQL data source --&gt;
+    &lt;Resource name="jdbc/JuddiDS" auth="Container"
+            type="javax.sql.DataSource" username="JUDDI" password="password"
+            driverClassName="org.hsqldb.jdbcDriver"
+            url="jdbc:hsqldb:hsql://localhost:1747/juddi"
+            maxActive="8"/&gt;
+&lt;/Context&gt;</pre>
+
+
+</div>
+<div class="section" title="4.3.8. Switch to other db"><div class="titlepage"><div><div><h3 class="title"><a id="_switch_to_other_db"/>4.3.8. Switch to other db</h3></div></div></div>
+
+<p>If you use another database, please document, and send us what you had to change to make it work and we will include it here.</p>
+</div>
+<div class="section" title="4.3.9. Override persistence properties in the juddiv3.xml"><div class="titlepage"><div><div><h3 class="title"><a id="_override_persistence_properties_in_the_juddiv3_xml"/>4.3.9. Override persistence properties in the juddiv3.xml</h3></div></div></div>
+
+<p>The juddiv3.xml file can be externalized; if you give the path of juddiv3.xml in the JVM args, the juddiv3.xml will not be picked up from the WAR. To use this set the  <span class="emphasis"><em>juddi.propertiesFile</em></span> to a location of your configuration file. This allows the user to change the jUDDI properties without having to open up the juddiv3.war file. For this use case it makes sense that also persistence properties can be overridden as well in the juddiv3.xml file. The following properties can be set:</p>
+<div class="table"><a id="d5e1062"/><p class="title"><strong>Table 4.1. Hibernate properties that can be referenced in the <span class="emphasis"><em>juddiv3.xml</em></span> file</strong></p><div class="table-contents">
+
+  
+  <table summary="Hibernate properties that can be referenced in the juddiv3.xml file" border="1"><colgroup><col width="33*" class="col_1"/><col width="33*" class="col_2"/><col width="33*" class="col_3"/></colgroup><thead><tr><th align="left" valign="top">property name</th><th align="left" valign="top">description</th><th align="left" valign="top">example value</th></tr></thead><tbody><tr><td align="left" valign="top"><p>persistenceProvider</p></td><td align="left" valign="top"><p>JPA Implementation</p></td><td align="left" valign="top"><p>Hibernate</p></td></tr><tr><td align="left" valign="top"><p>hibernate.connection.datasource</p></td><td align="left" valign="top"><p>datasource name</p></td><td align="left" valign="top"><p>java:/jdbc/JuddiDS</p></td></tr><tr><td align="left" valign="top"><p>hibernate.hbm2ddl.auto</p></td><td align="left" valign="top"><p>hibernate to ddl setting</p></td><td align="left" valign="top"><p>java:/jdbc/JuddiDS</p></td></tr><tr><td align="left" valign="top"><p>hibernate.default_schema</p></td><td align="left" valign="top"><p>Schema name</p></td><td align="left" valign="top"><p>JuddiSchema</p></td></tr><tr><td align="left" valign="top"><p>hibernate.dialect</p></td><td align="left" valign="top"><p>DataBase vendor name</p></td><td align="left" valign="top"><p>org.hibernate.dialect.DB2Dialect</p></td></tr></tbody></table>
+</div></div><br class="table-break"/>
+
+</div>
+</div>
+<div class="section" title="4.4. Logging"><div class="titlepage"><div><div><h2 class="title"><a id="_logging"/>4.4. Logging</h2></div></div></div>
+
+<p>The jUDDI codebase uses the <span class="emphasis"><em>commons-logging-api</em></span>, and <span class="emphasis"><em>log4j</em></span> as the default logging implementation. The <span class="emphasis"><em>juddiv3/WEB-INF/classes/commons-logging.properties</em></span> sets the logging to <span class="emphasis"><em>log4j</em></span>. The default <span class="emphasis"><em>log4j</em></span> configuration logs to a <span class="emphasis"><em>juddi.log</em></span> file in the <span class="emphasis"><em>tomcat/logs</em></span> directory. The <span class="emphasis"><em>log4j</em></span> configuration lives in the <span class="emphasis"><em>juddiv3/WEB-INF/classes/log4j.properties</em></span> file, which is referenced in the <span class="emphasis"><em>web.xml</em></span></p>
+
+<pre class="literallayout">&lt;context-param&gt;
+    &lt;param-name&gt;log4jConfigLocation&lt;/param-name&gt;
+    &lt;param-value&gt;/WEB-INF/classes/log4j.properties&lt;/param-value&gt;
+&lt;/context-param&gt;</pre>
+
+
+<p>The <span class="emphasis"><em>commons-logging</em></span> and <span class="emphasis"><em>log4j</em></span> jars are shipped in the <span class="emphasis"><em>juddiv3/WEB-INF/lib</em></span> directory.</p>
+<p>If you are using CXF for the webservice stack you can log the request/response xml by adding</p>
+
+<pre class="literallayout">log4j.category.org.apache.cxf=INFO</pre>
+
+
+<p>to your log4j.properties and the cxf.xml file should contains this:</p>
+
+<pre class="literallayout">&lt;cxf:bus&gt;
+    &lt;cxf:features&gt;
+        &lt;cxf:logging/&gt;
+    &lt;/cxf:features&gt;
+&lt;/cxf:bus&gt;</pre>
+
+
+<p>The jUDDI beans.xml specifies the location of this file at <span class="emphasis"><em>META-INF/cxf/cxf.xml</em></span>.</p>
+</div>
+<div class="section" title="4.5. Administering the GUI (juddi-gui.war)"><div class="titlepage"><div><div><h2 class="title"><a id="_administering_the_gui_juddi_gui_war"/>4.5. Administering the GUI (juddi-gui.war)</h2></div></div></div>
+
+<p>There are a few things worth mentioning for administering the jUDDI Graphical User Interface. The first is user authentication, which is covered in the authentication chapter. The other the the Digital Signature Applet. This applet enables users to digitally signed UDDI entities via the GUI. There are a number of requirements in order for this to work.</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+The applet must be digitally signed. It is recommended that this signed by the administrator using the SSL certificate of the jUDDI instance. If it is not signed, it may not be able to digital certificates.
+</li><li class="listitem">
+The Oracle Java browser plugin must be installed. For details on this, visit Oracle’s website.
+</li><li class="listitem">
+The end user must have a digital certificate installed that is accessible to the browser. On Windows computers, this is supported by Internet Explorer, Opera and Chrome which use the Windows Certificate Store (Start &gt; Run &gt; MMC, Add Certificates). Firefox uses its own certificate store. On MacOS, Safari uses the Mac Keychain.
+</li></ul></div>
+
+</div>
+<div class="section" title="4.6. Task: Signing the Digital Signature Applet jar file"><div class="titlepage"><div><div><h2 class="title"><a id="_task_signing_the_digital_signature_applet_jar_file"/>4.6. Task: Signing the Digital Signature Applet jar file</h2></div></div></div>
+
+
+<pre class="literallayout">jarsigner -keystore your.keystore -storepass yourpass -keypass keypass &lt;pathto&gt;/juddi-gui.war/applets/juddi-gui-dsig-all.jar</pre>
+
+
+<p>Note: Jarsigner comes with most JDKs and has many command line options.</p>
+</div>
+<div class="section" title="4.7. Administrating your jUDDI Instance using the Administrative Console"><div class="titlepage"><div><div><h2 class="title"><a id="_administrating_your_juddi_instance_using_the_administrative_console"/>4.7. Administrating your jUDDI Instance using the Administrative Console</h2></div></div></div>
+
+<p>Your instance of the jUDDI (juddiv3.war) can be managed via the administration console. It can be access url the following URL:</p>
+<pre class="screen">http://localhost:8080/juddiv3/admin</pre>
+
+<p>By default, only users with the role "uddiadmin" are allowed to access this page. In addition, it must be accessed from the same computer hosting juddiv3.war (this can be changed if needed). When accessing the URL, you should be prompted for login via username/password (this can also be changed to another mechanism).</p>
+<p>After authenticating, you will be prompted with a very similar interface to the juddi-gui.war. From here, you can perform a number of tasks.</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+Access Status and Statistics of jUDDI
+</li><li class="listitem">
+Configure jUDDI (juddiv3.war)
+</li><li class="listitem">
+Access the jUDDIv3 API, which provides a number of administrative tasks and functions (requires an additional login)*
+</li></ul></div>
+
+<p>*Why is there another login required for the jUDDIv3 API functions?</p>
+<p>The answer is because the admin console will be directly accesses a web service and it requires a user account with juddi admin rights. This may be the same username you use to access the admin console (juddiv3.war/admin) but unfortunately, this double login is unavoidable.</p>
+</div>
+<div class="section" title="4.8. Configure jUDDI"><div class="titlepage"><div><div><h2 class="title"><a id="_configure_juddi"/>4.8. Configure jUDDI</h2></div></div></div>
+
+<p>From the browser, it is possible to configure jUDDI’s web services via the web browser. All of the settings available from the chapter on configuring jUDDI can be set there.</p>
+<div class="section" title="4.8.1. Enabling Remote Access"><div class="titlepage"><div><div><h3 class="title"><a id="_enabling_remote_access"/>4.8.1. Enabling Remote Access</h3></div></div></div>
+
+<p>The jUDDI Configuration page by default is only accessible via the same host that is hosting the server. To enable remote access, change the setting</p>
+<pre class="screen">config/props/configLocalHostOnly=true</pre>
+
+<p>To false.</p>
+<div class="figure"><a id="figure-GuideAdministrator-Configure"/><p class="title"><strong>Figure 4.1. jUDDI Server Configuration Page.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-admin-configure.png" alt="jUDDI Server Configuration Page"/></div>
+</div></div><br class="figure-break"/>
+
+</div>
+</div>
+<div class="section" title="4.9. Monitoring the Status and Statistics"><div class="titlepage"><div><div><h2 class="title"><a id="_monitoring_the_status_and_statistics"/>4.9. Monitoring the Status and Statistics</h2></div></div></div>
+
+<p>The Statistics and Status page provides valuable information to administrators and developers looking to trouble shoot or debug problems with jUDDI.</p>
+<div class="section" title="4.9.1. Statistics"><div class="titlepage"><div><div><h3 class="title"><a id="_statistics"/>4.9.1. Statistics</h3></div></div></div>
+
+<p>The Statistics page provides you with access to usage counts and time spent processing on each method of each service that jUDDI provides.</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>This information can be pulled and is available in JSON encoded data from the following URL: <a class="ulink" href="http://localhost:8080/juddiv3/admin/mbeans.jsp">http://localhost:8080/juddiv3/admin/mbeans.jsp</a></p>
+</div>
+
+<div class="figure"><a id="figure-GuideAdministrator-Statistics"/><p class="title"><strong>Figure 4.2. jUDDI Server Statistics.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-admin-stats.png" alt="jUDDI Server Statistics"/></div>
+</div></div><br class="figure-break"/>
+
+<p>or you can hook up the jconsole to look at the jUDDI mbeans</p>
+<div class="figure"><a id="figure-GuideAdministrator-MBeans"/><p class="title"><strong>Figure 4.3. jUDDI MBeans.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-admin-mbeans.png" alt="jUDDI MBeans"/></div>
+</div></div><br class="figure-break"/>
+
+</div>
+<div class="section" title="4.9.2. Status"><div class="titlepage"><div><div><h3 class="title"><a id="_status"/>4.9.2. Status</h3></div></div></div>
+
+<p>The Status page gives you the former "Happy jUDDI" page from version 2 of jUDDI.</p>
+<div class="figure"><a id="figure-GuideAdministrator-Status"/><p class="title"><strong>Figure 4.4. jUDDI Server Status.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-admin-status.png" alt="jUDDI Server Status"/></div>
+</div></div><br class="figure-break"/>
+
+</div>
+</div>
+<div class="section" title="4.10. Accessing the jUDDIv3 API"><div class="titlepage"><div><div><h2 class="title"><a id="_accessing_the_juddiv3_api"/>4.10. Accessing the jUDDIv3 API</h2></div></div></div>
+
+<p>The jUDDI API is a web service that extends the UDDI specification. It provides various functions for both configuring the jUDDI server and for performing administrative functions, such as authorizing a new username as a publisher, user rights assignment and so on. This page will let you access the functions from the web browser.</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>You must authenticate using the top right hand side login/password box in order to use this.</p>
+</div>
+
+<div class="figure"><a id="figure-GuideAdministrator-API"/><p class="title"><strong>Figure 4.5. jUDDI API.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-admin-juddiapi.png" alt="jUDDI API"/></div>
+</div></div><br class="figure-break"/>
+
+</div>
+<div class="section" title="4.11. Security Guidance"><div class="titlepage"><div><div><h2 class="title"><a id="_security_guidance"/>4.11. Security Guidance</h2></div></div></div>
+
+<p>This guide contains general security guidelines to ensure that your jUDDI server and jUDDI Client based application are relatively safe and to prevent authorized users.</p>
+<p>This section is broken down into guidance for the jUDDI server and for the jUDDI Client</p>
+<div class="section" title="4.11.1. jUDDI Server"><div class="titlepage"><div><div><h3 class="title"><a id="_juddi_server_2"/>4.11.1. jUDDI Server</h3></div></div></div>
+
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+Always use SSL or TLS for connections to and from the jUDDI server, especially connections where authentication is used. Use encrypted connections to the database server when possible. client configs (uddi.xml), database (juddiv3/WEB-INF/classes/META-INF/persistence.xml)
+</li><li class="listitem">
+If the juddi-gui web app is not on the same server as the juddiv3 web services web app, use SSL or TLS. (juddi-gui/WEB-INF/classes/META-INF/uddi.xml)
+</li><li class="listitem">
+Use UDDI Digital Signatures where appropriate. Enable all validation options. Java/.NET Clients + juddi-gui, uddi.xml uddi/client/signatures, checkTimestamps,checkTrust,checkRevocationCRL
+</li><li class="listitem">
+Require authentication for Inquiry API. (config/juddi/auth/Inquiry=true)
+</li><li class="listitem">
+Use a LDAP user store and set passwords to expire regularly. Enforce the usage of strong passwords of sufficient length and SSL for LDAP connections. (config/juddi/auth/token/authenticator)
+</li><li class="listitem">
+Encrypt all stored credentials (database, key stores, email, etc) with the highest possible encryption available. (config/juddi/cryptor=org.apache.juddi.v3.client.cryptor.AES256Cryptor or AES128)
+</li><li class="listitem">
+Configure Auth Tokens to expire with relatively short intervals. This should meet all automatic logout requirements and help reduce the risk that an intercepted auth token can’t be reused by a 3rd party. (config/juddi/auth/token/Expiration) and (config/juddi/auth/token/Timeout)
+</li><li class="listitem">
+Configure Auth Tokens to require Same IP Enforcement. This is a mitigation factor for when a token is intercepted and attempted to be reused from another source. (config/juddi/auth/token/enforceSameIPRule=true)
+</li><li class="listitem">
+Configure Custody Transfer Tokens to expire with relatively short intervals. (config/juddi/transfer/expiration/days)
+</li><li class="listitem">
+Disable sending authentication tokens to subscription notifications (config/juddi/notification/sendAuthTokenWithResultList=false)
+</li><li class="listitem">
+If you’re using the replication services, configure your application server to use mutual certification authentication for that deployment (per the specification’s recommendation).
+</li></ul></div>
+
+</div>
+<div class="section" title="4.11.2. jUDDI Client (and developers)"><div class="titlepage"><div><div><h3 class="title"><a id="_juddi_client_and_developers"/>4.11.2. jUDDI Client (and developers)</h3></div></div></div>
+
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+Never log auth tokens. Protect it as if it was a password
+</li><li class="listitem">
+Encrypt all stored credentials (key stores, UDDI credentials, etc) with the highest possible encryption available (uddi.xml)
+</li><li class="listitem">
+Discard auth tokens when they are no longer needed.
+</li></ul></div>
+
+</div>
+<div class="section" title="4.11.3. jUDDI GUI (Web user interface)"><div class="titlepage"><div><div><h3 class="title"><a id="_juddi_gui_web_user_interface"/>4.11.3. jUDDI GUI (Web user interface)</h3></div></div></div>
+
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+Enable automatic logouts (WEB-ING/classes/META-INF/uddi.xml)
+</li><li class="listitem">
+All cached credentials are encrypted in the session tokens using an AES key that is generated at boot up time of the juddi-gui instance.
+</li><li class="listitem">
+Use SSL or TLS when connecting using your web browser to juddi-gui.
+</li><li class="listitem">
+The juddi-gui uses cookies to store user preferences, such as language and the current node.
+</li><li class="listitem">
+The juddi-gui makes heavy use of JavaScript using Jquery and JqueryUI. Without a JavaScript enabled browser that supports AJAX, the juddi-gui will not be functional. This usually implies Firefox 1.6 or higher, IE 6, Chrome/Chromium (nearly all versions), Opera v8 or higher, and Safari v2 or higher.
+</li><li class="listitem">
+The juddi-gui uses a Java applet that is used for Digital Signature support. This runs within your web browser. The Java plugin for your web browser must be enabled in order to use this functionality. In addition, the applet itself must be digitally signed (usually performed by the administrator, see article on this).
+</li><li class="listitem">
+The juddi-gui has built in validation for digital signatures. This requires a trusted key store. Ensure that the passwords are encrypted using the highest available crypto class and that the validation settings are enabled.
+</li><li class="listitem">
+The juddi-gui has a settings pages for altering the uddi.xml configuration file. By default, this is only accessible from the same machine running juddi-gui (i.e. localhost). This behavior can be changed by either using the setting page from localhost or by manually editing the uddi.xml page. Unless required, the recommended setting is to prevent remote configuration changes. If the settings page isn’t required, it can be removed.
+</li><li class="listitem">
+The juddi-gui has a settings page that is password protected to prevent unauthorized changes. Use the strongest available mechanism to protect credentials. The default configuration is for HTTP BASIC. It is recommended to use this with SSL/TLS and/or switch to DIGEST based authentication. If the settings page isn’t required, it can be removed.
+</li></ul></div>
+
+</div>
+</div>
+<div class="section" title="4.12. Backups, Upgrading and Data Migration"><div class="titlepage"><div><div><h2 class="title"><a id="_backups_upgrading_and_data_migration"/>4.12. Backups, Upgrading and Data Migration</h2></div></div></div>
+
+<p>There are several different strategies for managing your jUDDI backups.</p>
+<div class="section" title="4.12.1. Database Backups"><div class="titlepage"><div><div><h3 class="title"><a id="_database_backups"/>4.12.1. Database Backups</h3></div></div></div>
+
+<p>Database backups are vendor specific and are effective for backup/restore to a similar or exact jUDDI version reinstall.</p>
+</div>
+<div class="section" title="4.12.2. Config Backup"><div class="titlepage"><div><div><h3 class="title"><a id="_config_backup"/>4.12.2. Config Backup</h3></div></div></div>
+
+<p>Aside from database backups, you should also make backup copies of all jUDDI configuration files and any files that you have customized to meet your operational needs.</p>
+</div>
+</div>
+<div class="section" title="4.13. Upgrading jUDDI"><div class="titlepage"><div><div><h2 class="title"><a id="_upgrading_juddi"/>4.13. Upgrading jUDDI</h2></div></div></div>
+
+<p>Sometimes, the jUDDI development team has no choice but to alter the database schema. In many cases, OpenJPA or Hibernate (both Java Persistence API provides) will automatically alter database columns when a new version is installed. In some cases, there may actually be data loss.</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>Check the jUDDI distribution notes before attempting an upgrade.</p>
+</div>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Important</h2>
+<p>Always perform a database level backup of your instance before attempting the upgrade.</p>
+</div>
+
+</div>
+<div class="section" title="4.14. Scaling jUDDI and Federation"><div class="titlepage"><div><div><h2 class="title"><a id="_scaling_juddi_and_federation"/>4.14. Scaling jUDDI and Federation</h2></div></div></div>
+
+<p>The capabilities and components provided by jUDDI are designed to scale. The following will describe the options and known limitations of jUDDI.</p>
+<div class="section" title="4.14.1. Scaling the jUDDI Services (multiple servers)"><div class="titlepage"><div><div><h3 class="title"><a id="_scaling_the_juddi_services_multiple_servers"/>4.14.1. Scaling the jUDDI Services (multiple servers)</h3></div></div></div>
+
+<p>The jUDDI web services (juddiv3.war) is designed to be scaled to multiple servers in a number of ways. The following sub sections outline the available options.</p>
+<div class="section" title="4.14.1.1. Scaling using a common database"><div class="titlepage"><div><div><h4 class="title"><a id="_scaling_using_a_common_database"/>4.14.1.1. Scaling using a common database</h4></div></div></div>
+
+<p>The first and simplest mechanism is for the instances of juddiv3.war to share the same database. All of jUDDI’s database calls are transactional SQL, meaning that concurrent changes will function just fine from multiple concurrent users. Each instance of juddiv3.war must point to the same database and must use the same Node ID and configuration settings. See the Database Configuration Chapter for more information.</p>
+</div>
+<div class="section" title="4.14.1.2. Scaling using Subscriptions"><div class="titlepage"><div><div><h4 class="title"><a id="_scaling_using_subscriptions"/>4.14.1.2. Scaling using Subscriptions</h4></div></div></div>
+
+<p>The second mechanism is to use the Subscription API to import data and updates from a remote registry. Unfortunately, this scenario isn’t quite yet supported for jUDDI, but may be in a future release.</p>
+</div>
+<div class="section" title="4.14.1.3. Replication API"><div class="titlepage"><div><div><h4 class="title"><a id="_replication_api"/>4.14.1.3. Replication API</h4></div></div></div>
+
+<p>The third mechanism is the Replication API, which is part of the OASIS UDDIv3 specification. Since version 3.3, jUDDI provides support for synchronizating UDDI servers using the techniques described in the specification as Replication. See the Replication Services chapter for additional information,</p>
+</div>
+</div>
+<div class="section" title="4.14.2. Limitations of jUDDI"><div class="titlepage"><div><div><h3 class="title"><a id="_limitations_of_juddi"/>4.14.2. Limitations of jUDDI</h3></div></div></div>
+
+<p>jUDDI’s web services have no explicit upper bound on the volume of businesses and services registered. Load testing has shown that at least 10,000 are supported for each category. The upper limit is more of a function of both the underlying database implementation and hardware (free disk space). In either case, the likelihood of hitting the limit is low for most instances. If you happen to run into scaling issues, please file a bug report at JUDDI’s JIRA site at: <a class="ulink" href="https://issues.apache.org/jira/browse/JUDDI">https://issues.apache.org/jira/browse/JUDDI</a></p>
+</div>
+</div>
+</div><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch03.html"><strong>Prev</strong>Chapter 3. jUDDI Architecture</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ch05.html"><strong>Next</strong>Chapter 5. jUDDI Server Configuration (juddiv3.xm...</a></li></ul></body></html>

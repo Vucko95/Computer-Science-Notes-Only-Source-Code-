@@ -1,0 +1,63 @@
+<!-- This version used the parseInt() function to check if numbers have been entered and gives a message if that is not the case.-->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Enter two numbers and click the button to compare them.</h1>
+
+
+<input type=text id="number1">
+<br>
+<input type=text id="number2">
+<br>
+    
+    
+<button type="button" onclick="checkNumbers()">
+Start!</button>
+
+<p id="demo"></p>
+
+<p id="debug"></p>
+    
+<script>
+    
+    function checkNumbers(){
+        
+        document.getElementById('demo').innerHTML = ' ';
+        
+        document.getElementById('debug').innerHTML = '';
+        
+        var num1 = document.getElementById("number1").value;
+        var num2 = document.getElementById("number2").value;
+        
+        if(parseInt(num1) > parseInt(num2)) 
+        { 
+            document.getElementById('demo').innerHTML = 
+                "The larger of "+ num1+ " and "+ num2+ " is "+ num1+ ".";
+        }   
+        else if(parseInt(num2) > parseInt(num1)) 
+        {
+            document.getElementById('demo').innerHTML =
+                "The larger of "+ num1+" and "+ num2+ " is "+ num2+ ".";
+        }                  
+        else if (parseInt(num2) == parseInt(num1))
+        {
+            document.getElementById('demo').innerHTML =
+                "The values "+ num1+ " and "+num2+ " are equal.";
+        }                 
+        else
+        {
+            document.getElementById('demo').innerHTML =
+                "This comparison does not make sense!";
+             document.getElementById('debug').innerHTML = 'Number 1 = ' +  parseInt(num1) + '<br> Number 2 = ' + parseInt(num2)  ;
+        }
+        
+       
+    }    
+    
+</script>
+
+</body>
+</html>

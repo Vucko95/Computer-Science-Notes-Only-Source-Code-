@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Chapter 8. UDDI Migration and Backup Tool</title><link rel="stylesheet" type="text/css" href="css/jbossorg.css"/><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="up" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="prev" href="ch07.html" title="Chapter 7. Using the UDDI v2 Services and Adapters"/><link rel="next" href="ch09.html" title="Chapter 9. Using the jUDDI REST Services"/><link rel="copyright" href="ln-d5e27.html" title="Legal Notice"/><meta xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p xmlns:d="http://docbook.org/ns/docbook" id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch07.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ch09.html"><strong>Next</strong></a></li></ul><div class="chapter" title="Chapter 8. UDDI Migration and Backup Tool"><div class="titlepage"><div><div><h2 class="title"><a id="_uddi_migration_and_backup_tool"/>Chapter 8. UDDI Migration and Backup Tool</h2></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="section"><a href="ch08.html#_using_the_tool">8.1. Using the tool</a></span></dt><dd><dl><dt><span class="section"><a href="ch08.html#_get_help">8.1.1. Get help</a></span></dt><dt><span class="section"><a href="ch08.html#_use_case_basic_import_and_export">8.1.2. Use case: basic import and export</a></span></dt><dt><span class="section"><a href="ch08.html#_use_case_import_and_export_while_preserving_ownership_information">8.1.3. Use case: Import and Export while preserving ownership information</a></span></dt></dl></dd></dl></div>
+
+<p>The UDDI Migration and Backup Tool can be used to perform a number of administrative tasks such as</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+Backup the contents of a UDDI server (business, services, binding templates and tModels)
+</li><li class="listitem">
+Import contents into a UDDI server (business, services, binding templates and tModels)
+</li></ul></div>
+
+<p>In addition, the migration tool has a few features that serve as job aids.</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+Ability to remove digital signatures on Import or Export
+</li><li class="listitem">
+Ability to maintain ownership properties of UDDI entries
+</li><li class="listitem">
+Ability to export and import Publishers (jUDDI only)
+</li><li class="listitem">
+Automatically skip an item on import if the entity key already exists
+</li></ul></div>
+
+<p>The UDDI Migration and Backup Tool is Command Line Interface program and has a number of use cases such as:</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+Copying data from one registry to another
+</li><li class="listitem">
+Migrating from one vendor to another
+</li><li class="listitem">
+Periodic backups
+</li><li class="listitem">
+Upgrades to jUDDI
+</li></ul></div>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>The migration tool will not overwrite data when importing.</p>
+</div>
+
+<div class="section" title="8.1. Using the tool"><div class="titlepage"><div><div><h2 class="title"><a id="_using_the_tool"/>8.1. Using the tool</h2></div></div></div>
+
+<p>There are many configuration options and settings for the migration tool. This tool is distributed with the uddi client distribution package.</p>
+<div class="section" title="8.1.1. Get help"><div class="titlepage"><div><div><h3 class="title"><a id="_get_help"/>8.1.1. Get help</h3></div></div></div>
+
+<pre class="screen">&gt;java -jar juddi-migration-tool-3.2.0-SNAPSHOT-jar-with-dependencies.jar
+This tool is used to export and import UDDI data from a UDDI v3 registry
+Random TIP: Without the preserveOwnership flag, all imported data will be owned by the username that imported it.
+
+usage: java -jar juddi-migration-tool-(VERSION)-jar-with-dependencies.jar
+ -business &lt;arg&gt;      Im/Export option, file to store the business data,
+                      default is 'business-export.xml'
+ -config &lt;arg&gt;        Use an alternate config file default is 'uddi.xml'
+ -credFile &lt;arg&gt;      Import option with -preserveOwnership, this is a
+                      properties file mapping with user=pass
+ -export              Exports data into a UDDIv3 registry
+ -import              Imports data into a UDDIv3 registry
+ -isJuddi             Is this a jUDDI registry? If so we can in/export
+                      more stuff
+ -mappings &lt;arg&gt;      Im/Export option, file that maps keys to owners,
+                      default is 'entityusermappings.properties'
+ -myItemsOnly         Export option, Only export items owned by yourself
+ -node &lt;arg&gt;          The node 'name' in the config, default is 'default'
+ -pass &lt;arg&gt;          Password, if not defined, those is uddi.xml will be
+                      used
+ -preserveOwnership   Im/Export option, saves owership data to the
+                      'mappings' file
+ -publishers &lt;arg&gt;    jUDDI only - In/Export option, file to store
+                      publishers, default is 'publishers-export.xml'
+ -stripSignatures     Im/Export option, removes digital signatures from
+                      all signed items, default is false
+ -tmodel &lt;arg&gt;        Im/Export for tmodels, file to store tmodel data,
+                      default is 'tmodel-export.xml'
+ -user &lt;arg&gt;          Username, if not defined, those is uddi.xml will be
+                      used</pre>
+
+</div>
+<div class="section" title="8.1.2. Use case: basic import and export"><div class="titlepage"><div><div><h3 class="title"><a id="_use_case_basic_import_and_export"/>8.1.2. Use case: basic import and export</h3></div></div></div>
+
+<p>To export everything without preserving ownership information:</p>
+<pre class="screen">java -jar juddi-migration-tool-(VERSION)-jar-with-dependencies.jar -export</pre>
+
+<p>To import everything without preserving ownership information:</p>
+<pre class="screen">java -jar juddi-migration-tool-(VERSION)-jar-with-dependencies.jar -import</pre>
+
+</div>
+<div class="section" title="8.1.3. Use case: Import and Export while preserving ownership information"><div class="titlepage"><div><div><h3 class="title"><a id="_use_case_import_and_export_while_preserving_ownership_information"/>8.1.3. Use case: Import and Export while preserving ownership information</h3></div></div></div>
+
+<p>To export everything with preserving ownership information:</p>
+<pre class="screen">java -jar juddi-migration-tool-(VERSION)-jar-with-dependencies.jar -export -preserveOwnership</pre>
+
+<p>To import everything with preserving ownership information, first edit the mappings file which is entityusermappings.properties by default. Once every user has a password, run the following command</p>
+<pre class="screen">java -jar juddi-migration-tool-(VERSION)-jar-with-dependencies.jar -import -preserveOwnership</pre>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>When preserving ownership information, upon import, you’ll need every UDDI entity owner’s password. If you don’t have this and you’re using jUDDI, you can temporarily switch jUDDI to the <span class="emphasis"><em>DefaultAuthenticator</em></span> which doesn’t validate passwords (just put anything in the mappings file for each user). Once the import is complete, you can then switch back to whatever authenticator you were using before.</p>
+</div>
+
+</div>
+</div>
+</div><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch07.html"><strong>Prev</strong>Chapter 7. Using the UDDI v2 Services and Adapters</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ch09.html"><strong>Next</strong>Chapter 9. Using the jUDDI REST Services</a></li></ul></body></html>

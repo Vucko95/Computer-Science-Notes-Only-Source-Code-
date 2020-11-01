@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Chapter 10. jUDDI Client for NET</title><link rel="stylesheet" type="text/css" href="css/jbossorg.css"/><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="up" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="prev" href="ch09.html" title="Chapter 9. Using the jUDDI REST Services"/><link rel="next" href="ch11.html" title="Chapter 11. Using the UDDI Technology Compatibility Kit"/><link rel="copyright" href="ln-d5e27.html" title="Legal Notice"/><meta xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p xmlns:d="http://docbook.org/ns/docbook" id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch09.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ch11.html"><strong>Next</strong></a></li></ul><div class="chapter" title="Chapter 10. jUDDI Client for NET"><div class="titlepage"><div><div><h2 class="title"><a id="_juddi_client_for_net"/>Chapter 10. jUDDI Client for NET</h2></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="section"><a href="ch10.html#_procedure">10.1. Procedure</a></span></dt></dl></div>
+
+<p>Since 3.2, the majority of the functions in the jUDDI Client for Java have been ported to .NET. This guide will show you how to use it and integrate it with your own .NET based applications.</p>
+<div class="section" title="10.1. Procedure"><div class="titlepage"><div><div><h2 class="title"><a id="_procedure"/>10.1. Procedure</h2></div></div></div>
+
+<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+Add a reference to jUDDI-Client.NET.dll
+</li><li class="listitem">
+Add a reference to System.Web.Services
+</li><li class="listitem">
+Add a reference to System.ServiceModel
+</li><li class="listitem">
+Add a reference to System.Xml
+</li><li class="listitem">
+Add a reference to System.Runtime.Serialization
+</li><li class="listitem">
+Add a reference to System.Configuration
+</li><li class="listitem">
+Add a reference to System.Security
+</li><li class="listitem">
+Add a copy of the sample uddi.xml file. Modify it to meet your environment and operational needs.
+</li><li class="listitem">
+Note, many of the settings are identical to the Java jUDDI-client. The APIs are also nearly identical, so example code should be easily portable from one language to another.
+</li></ol></div>
+
+<p>Sample Code</p>
+<pre class="screen">
+/*
+ * Copyright 2001-2013 The Apache Software Foundation.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
+using org.apache.juddi.v3.client;
+using org.apache.juddi.v3.client.config;
+using org.apache.juddi.v3.client.transport;
+using org.uddi.apiv3;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+
+namespace juddi_client.net_sample
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            UDDIClient clerkManager = new UDDIClient("uddi.xml");
+            UDDIClientContainer.addClient(clerkManager);
+            Transport transport = clerkManager.getTransport("default");
+
+            org.uddi.apiv3.UDDI_Security_SoapBinding security = transport.getUDDISecurityService();
+            org.uddi.apiv3.UDDI_Inquiry_SoapBinding inquiry = transport.getUDDIInquiryService();
+
+            UDDIClerk clerk = clerkManager.getClerk("default");
+
+
+            find_business fb = new find_business();
+            fb.authInfo = clerk.getAuthToken(security.Url);
+            fb.findQualifiers = new string[] { UDDIConstants.APPROXIMATE_MATCH };
+            fb.name = new name[1];
+            fb.name[0] = new name(UDDIConstants.WILDCARD, "en");
+            businessList bl = inquiry.find_business(fb);
+            for (int i = 0; i &lt; bl.businessInfos.Length; i++)
+            {
+                Console.WriteLine(bl.businessInfos[i].name[0].Value);
+            }
+            Console.Read();
+
+        }
+    }
+}
+</pre>
+
+<p>The sample code above should print out a list of all businesses currently registered in the registry. If credentials are stored in the uddi.xml file and are encrypted, they will be decrypted automatically for you.</p>
+<p>Within the jUDDI Source Tree, there are many different examples of how to use the jUDDI Client for .NET. They are available here: <a class="ulink" href="http://svn.apache.org/repos/asf/juddi/trunk/juddi-client.net/juddi-client.net-sample/">http://svn.apache.org/repos/asf/juddi/trunk/juddi-client.net/juddi-client.net-sample/</a></p>
+</div>
+</div><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch09.html"><strong>Prev</strong>Chapter 9. Using the jUDDI REST Services</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ch11.html"><strong>Next</strong>Chapter 11. Using the UDDI Technology Compatibili...</a></li></ul></body></html>

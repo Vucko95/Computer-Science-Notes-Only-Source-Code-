@@ -1,0 +1,121 @@
+******************
+*  MyPiano.exe   *	
+******************
+Date of release:
+---------------
+01-01-2004
+
+Application Designer & Programmer
+-------------------------------------
+Renjith Joseph
+
+Licence:
+--------
+Please give the credit to author.
+Code transaction is strictly prohibited. This open source code is meant for
+studying puposes only.
+After installing this program into your PC. you must obtain registration
+code from me.for registration please read the topic registration in this
+file.
+
+	   "IT'S ABSOLUTLY FREE.....  "
+
+
+
+About MyPiano:
+----------------
+MyPiano 3.0 is a simple piano developed in C++ using graphics 
+functions.By using this piano,user can play,record music etc.
+This is the third version of GPiano1.1.exe
+
+Exciting New Features:
+-----------------------
+* Improved Graphics Quality
+* Mouse enabled window controls
+* Ease of use
+* Windows like interface provided.
+* Exciting controls
+* Mini Window Included (For Quick Viewing of whats happening in your piano)
+* Permanent skin control settings
+* System lock facility(Password)
+* Frequecy graph & 2D spectrum
+* Log file tracing,viewing and clearing facility from program.
+* One touch recording
+* Online assistance
+
+Version History:
+----------------
+Gpiano 1.0 :- Keyboard interface only and developed in text mode.
+GPiano 1.1 :- Keyboard and mouse interface included and developed in
+	      graphics mode.
+MyPiano 3.0:- Keyboard and mouse interface,improved graphics quality,
+	      skin control,password lock,ease of use facilities included.		
+	
+
+System Requirements:
+----------------------
+Pentium Processor,1 MB HDD,32 MB RAM,Serial Mouse
+EGAVGA supported card(16 colors)
+Graphics Driver Used:EGAVGA.BGI
+Resolution:640 X 480
+
+How to register
+---------------
+Just E-mail me.
+
+My E-mail:renjithmathewjoseph@hotmail.com
+-----------------------------------------------
+I will reply you with registration number within two days.
+I would like to know commments about my program from you. that's why i
+used registration system in my program.After registering your product 
+this program will run without prompting for registration.
+......................................................................
+Sample Request for registration:
+--------------------------------
+Hello,
+I would like to register my product. please send me registration code
+Thank You
+
+Sample Reply From Me:
+-------------------------
+Hello,
+Thanks for registering my software.
+Your registration number is XXXXXXXX.
+Thank You
+Renjith Joseph
+
+			"IT'S ABSOLUTLY FREE.....  "
+How To Use:
+------------------
+Installation:
+If the files are zipped, please unzip into a single folder and start playing
+if you are finding any problem please e-mail me.
+This program automatically checks for support files in the beginning. so
+you don't have to worry about support files.
+
+List of support files used:
+"Please don't alter or delete any support files."
+All files are requied for smooth running of this program.
+
+ 
+Introduction:
+This piano can play sounds using system buzzer. before you start working on your
+piano. you have to ensure system buzzer is working or not.
+
+
+Security:
+---------
+if you want to prevent users from unauthorized access please use 
+password from protection tab. 
+Default Password:piano
+
+
+Questions & comments
+Please e-mail me
+
+					Expecting an early reply from you
+							Thank You
+ 				 		             Renjith Joseph
+		  		      E-Mail: renjithmathewjoseph@hotmail.com
+		
+		

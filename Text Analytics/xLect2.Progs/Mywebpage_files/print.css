@@ -1,0 +1,55 @@
+/* $Id: print.css,v 1.1.2.10 2007/11/29 00:50:59 johnalbin Exp $ */
+
+/* underline all links */
+  a:link, a:visited
+  {
+    text-decoration: underline !important;
+    border: none !important;
+  }
+
+  /* Don't underline header */
+  #site-name a:link,
+  #site-name a:visited
+  {
+    text-decoration: none !important;
+  }
+
+/* CSS2 selector to add visible href after links */
+  #content a:link:after,
+  #content a:visited:after
+  {
+    font-size: 0.8em;
+    font-weight: normal;
+    border-bottom: none !important;
+  }
+
+/* Un-float the content */
+  #content,
+  #content-inner
+  {
+    float: none;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+/* Turn off any background colors or images */
+  body,
+  #page, #page-inner,
+  #main, #main-inner,
+  #content, #content-inner
+  {
+    color: #000;
+    background-color: transparent !important;
+    background-image: none !important;
+  }
+
+/* Hide sidebars and nav elements */
+  #skip-to-nav, #navbar, #sidebar-left, #sidebar-right, #footer,
+  .breadcrumb, div.tabs, .links, .taxonomy,
+  .book-navigation, .forum-topic-navigation, .pager, .feed-icons,
+  #bread-intro, #bread-outro
+  {
+    visibility: hidden;
+    display: none;
+  }

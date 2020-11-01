@@ -1,0 +1,43 @@
+60:69:44	Apple                  # Apple, Inc.
+60:69:9B	IseposGm               # isepos GmbH
+60:6B:BD	SamsungE               # Samsung Electronics Co., LTD
+60:6C:66	IntelCor               # Intel Corporate
+60:6D:C7	HonHaiPr               # Hon Hai Precision Ind. Co.,Ltd.
+60:73:5C	CiscoInc               # Cisco Systems, Inc
+60:74:8D	AtmacaEl               # Atmaca Elektronik
+60:76:88	Velodyne               # Velodyne
+60:77:E2	SamsungE               # Samsung Electronics Co.,Ltd
+60:7E:DD	Microsof               # Microsoft Mobile Oy
+60:81:2B	CustomCo               # Custom Control Concepts
+60:81:F9	HeliumIn               # Helium Systems, Inc
+60:83:34	HuaweiTe               # HUAWEI TECHNOLOGIES CO.,LTD
+60:83:B2	GkwareEK               # GkWare e.K.
+60:84:3B	Soladigm               # Soladigm, Inc.
+60:86:45	AveryWei               # Avery Weigh-Tronix, LLC
+60:89:3C	ThermoFi               # Thermo Fisher Scientific P.O.A.
+60:89:B1	KeyDigit               # Key Digital Systems
+60:89:B7	KaelMühe               # KAEL MÜHENDİSLİK ELEKTRONİK TİCARET SANAYİ LİMİTED ŞİRKETİ
+60:8C:2B	HansonTe               # Hanson Technology
+60:8D:17	SentrusG               # Sentrus Government Systems Division, Inc
+60:8F:5C	SamsungE               # Samsung Electronics Co.,Ltd
+60:90:84	DssdInc                # DSSD Inc
+60:92:17	Apple                  # Apple, Inc.
+60:96:20	Private                # Private
+60:99:D1	Vuzix/Le               # Vuzix / Lenovo
+60:9A:A4	GviSecur               # GVI SECURITY INC.
+60:9C:9F	BrocadeC               # Brocade Communications Systems, Inc.
+60:9E:64	VivonicG               # Vivonic GmbH
+60:9F:9D	Cloudswi               # CloudSwitch
+60:A1:0A	SamsungE               # Samsung Electronics Co.,Ltd
+60:A3:7D	Apple                  # Apple, Inc.
+60:A4:4C	AsustekC               # ASUSTek COMPUTER INC.
+60:A8:FE	Nokia                  # Nokia
+60:A9:B0	Merchand               # Merchandising Technologies, Inc
+60:AC:C8	Kunteng                # KunTeng Inc.
+60:AF:6D	SamsungE               # Samsung Electronics Co.,Ltd
+60:B1:85	AthSyste               # ATH system
+60:B3:87	Synergic               # Synergics Technologies GmbH
+60:B3:C4	ElberSrl               # Elber Srl
+60:B4:F7	PlumeDes               # Plume Design Inc
+60:B6:06	Phorus                 # Phorus
+60:B6:17	Fiberhom               # Fiberhome Telecommunication Technologies Co.,LTD

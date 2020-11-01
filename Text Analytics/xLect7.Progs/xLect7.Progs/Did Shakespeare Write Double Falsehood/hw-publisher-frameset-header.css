@@ -1,0 +1,29 @@
+/*****************************************************************************
+ *
+ * HW CSS stylesheet for journal-specific custom styling of sidebar elements.
+ *
+ *****************************************************************************/
+#col-2,#col-3 {
+visibility:hidden;
+}
+
+body {
+background:white none no-repeat fixed 0 50%;
+color:black;
+font-family:"Lucida Grande","Lucida Sans Unicode",Tahoma,Verdana,Arial,Helvetica,sans-serif;
+font-size:100%;
+line-height:1;
+margin-top:0;
+padding-top:0;
+width:auto;
+}
+div.hw-gen-page {
+background-image:none;
+padding-top:0;
+width:auto;
+margin-left:40px;
+margin-top:0px;
+overflow-y:hidden;
+overflow-x:hidden;
+height:60px;
+}

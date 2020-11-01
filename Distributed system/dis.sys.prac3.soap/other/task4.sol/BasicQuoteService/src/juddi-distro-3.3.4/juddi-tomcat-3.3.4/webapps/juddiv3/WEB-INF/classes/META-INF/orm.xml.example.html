@@ -1,0 +1,243 @@
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<entity-mappings
+  xmlns="http://java.sun.com/xml/ns/persistence/orm"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm classpath:schemas/orm_1_0.xsd"
+  version="1.0">
+  
+  <sequence-generator name="juddi_sequence" sequence-name="juddi_sequence"/>
+
+  <entity class="org.apache.juddi.model.Address">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.AddressLine">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.BindingDescr">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.BusinessDescr">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.BusinessIdentifier">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.BusinessName">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.CategoryBag">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.Contact">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.ContactDescr">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.DiscoveryUrl">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.Email">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.InstanceDetailsDescr">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.InstanceDetailsDocDescr">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+ <entity class="org.apache.juddi.model.KeyedReference">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.KeyedReferenceGroup">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.OverviewDoc">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.OverviewDocDescr">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.PersonName">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.Phone">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.ServiceDescr">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.ServiceName">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.SubscriptionMatch">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.TmodelDescr">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.TmodelIdentifier">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.TmodelInstanceInfo">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.TmodelInstanceInfoDescr">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+  <entity class="org.apache.juddi.model.TransferTokenKey">
+    <attributes>
+      <id name="id">
+        <generated-value generator="juddi_sequence" strategy="AUTO"/>
+      </id>
+    </attributes>
+  </entity>
+
+</entity-mappings>

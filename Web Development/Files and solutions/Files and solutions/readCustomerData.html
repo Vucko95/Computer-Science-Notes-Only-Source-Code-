@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<!-- The CSS styles defined here are not strictly necessary, but do make it easier to read the table -->    
+<style>
+
+table, th, td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+      
+table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+   
+</style>    
+</head>      
+    
+<body>
+
+<div id="id01">bob and mary</div>
+<div id="id02">jane and peter</div>
+<div id="id03"></div>
+   
+<script>
+
+var xmlhttp = new XMLHttpRequest();
+var url = "customerData.json";
+
+xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        
+        //Parse the JSON data to a JavaScript variable. 
+        var parsedObj = JSON.parse(xmlhttp.responseText);    
+        // This function is defined below and deals with the JSON data read from the file. 
+        myFunction(parsedObj); 
+    }
+};
+
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
+    
+function myFunction(obj) {
+     
+    // Extract the main properties in the root object.
+    var firstName = obj.firstName;  // This creates a string called firstName with the value John
+    var lastName = obj.lastName;    // This creates a string called lastName with the value Smith
+    var age = obj.age;              // This creates a string called age with the value 25
+    var address = obj.address;      // This creates an object called address.
+    
+    // We can then read the data inside the address object. 
+    var streedaddress = address.streetAddress;
+    var city = address.city;
+    var state = address.state;
+    var postcode = address.postalCode;
+    
+    // Next read the phoneNumber array. 
+    var phoneNumber = obj.phoneNumber;
+    
+    // This code write the basic personal details to the div with id = "id01".
+    var personal_details = "<h2>Personal details: </h2>"; 
+    personal_details += "First name: " + firstName + "<br>";
+    personal_details += "Last name: " + lastName + "<br>";
+    personal_details += "Age: " + age + "<br>";
+    document.getElementById("id01").innerHTML = personal_details;
+    
+    // This code write the address details to the div with id = "id02".
+    var address_details = "<h2>Address: </h2>"; 
+    address_details += "Street: " + streedaddress + "<br>";
+    address_details += "City: " + city + "<br>";
+    address_details += "State: " + state + "<br>";
+    address_details += "Postal code: " + postcode + "<br>";
+    document.getElementById("id02").innerHTML = address_details;
+
+
+    // This code writes the different contact info to a table and then adds the table to the div with id = "id03".
+    var contact_out = "<h2>Contact details:</h2><table>";
+    contact_out += "<tr><th>Type</th><th>Number</th></tr>";    
+    // Then iterate through the array and populate table rows and columns with the color names and hex values.
+    for (var i=0; i <phoneNumber.length; i++) 
+    {    
+        var type = phoneNumber[i].type;
+        var number = phoneNumber[i].number;               
+        contact_out += "<tr><td>" +
+        type +
+        "</td><td>" +
+        number +
+        "</td></tr>";
+    }
+     // Close the table element.
+    contact_out += "</table>";    
+    document.getElementById("id03").innerHTML = contact_out;
+    
+}
+</script>
+
+</body>
+</html>

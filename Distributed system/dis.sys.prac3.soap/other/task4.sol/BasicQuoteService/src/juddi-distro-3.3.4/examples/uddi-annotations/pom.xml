@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Copyright 2001-2009 The Apache Software Foundation.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */ -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.apache.juddi.example</groupId>
+		<artifactId>juddi-examples</artifactId>
+		<version>3.3.4</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	<artifactId>uddi-annotations</artifactId>
+	<name>jUDDI Example Service Registration</name>
+	<packaging>war</packaging>
+	
+	<dependencies>
+		<dependency>
+			<artifactId>juddi-core-openjpa</artifactId>
+			<groupId>org.apache.juddi</groupId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<artifactId>juddi-client</artifactId>
+			<groupId>org.apache.juddi</groupId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<artifactId>uddi-ws</artifactId>
+			<groupId>org.apache.juddi</groupId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-frontend-jaxws</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-http</artifactId>
+			<version>${cxf.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>cglib</groupId>
+					<artifactId>cglib</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib-nodep</artifactId>
+			<version>2.1_3</version>
+		</dependency>
+		<dependency>
+           <groupId>org.springframework</groupId>
+           <artifactId>spring-context</artifactId>
+           <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+           <groupId>org.springframework</groupId>
+           <artifactId>spring-web</artifactId>
+           <version>${springframework.version}</version>
+        </dependency>
+		<dependency>
+			<groupId>org.apache.juddi</groupId>
+			<artifactId>juddiv3-war</artifactId>
+			<version>${project.parent.version}</version>
+			<type>war</type>
+		</dependency>
+	</dependencies>
+	<build>
+	   <finalName>uddi-annotations</finalName>
+		<plugins>
+		    <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>*.xml</exclude>
+					</excludes>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<skip>false</skip>
+					<includes>
+						<include>**/*Test.java</include>
+					</includes>
+				</configuration>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>foo</id>
+						<phase>package</phase>
+						<configuration>
+							<tasks>
+								<echo>getting the war from:
+									${maven.dependency.org.apache.juddi.juddiv3-war.war.path}</echo>
+								<unzip src="${maven.dependency.org.apache.juddi.juddiv3-war.war.path}" dest="target/jv3">
+									<patternset>
+										<include name="**/persistence.xml" />
+									</patternset>
+								</unzip>
+								<copy todir="target/classes" overwrite="true">
+									<fileset dir="target/jv3/WEB-INF/classes" />
+								</copy>
+							</tasks>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<dependentWarExcludes>WEB-INF/classes/RENAME4SALES_juddi_custom_install_data/*,
+						WEB-INF/classes/RENAME4MARKETING_juddi_custom_install_data/*</dependentWarExcludes>
+				</configuration>
+			</plugin>
+			<!-- examples are not very useful from a maven repo, so don't put it there -->
+		    <plugin>
+		        <groupId>org.apache.maven.plugins</groupId>
+		        <artifactId>maven-deploy-plugin</artifactId>
+		        <configuration>
+		            <skip>true</skip>
+		        </configuration>
+		    </plugin>
+		</plugins>
+	</build>  
+	
+	
+    <profiles>
+        <profile>
+        <id>demo</id>
+        <build>
+            <plugins>
+                <plugin>
+	                <groupId>org.codehaus.cargo</groupId>
+	                <artifactId>cargo-maven2-plugin</artifactId>
+	                <version>1.3.3</version>
+	                <configuration>
+	                    <container>
+	                        <containerId>tomcat6x</containerId>
+	                    </container>
+	                    <configuration>
+	                        <type>existing</type>
+	                        <home>${basedir}/../../juddi-tomcat-${project.parent.version}</home>
+	                    </configuration>
+	                    <deployables>
+	                        <deployable>
+	                            <groupId>org.apache.juddi.example</groupId>
+	                            <artifactId>uddi-annotations</artifactId>
+	                            <type>war</type>
+	                            
+	                        </deployable>
+	                     </deployables>
+	                 </configuration>
+	            </plugin>
+	        </plugins>
+        </build>  
+        </profile>
+    </profiles>
+	
+</project>

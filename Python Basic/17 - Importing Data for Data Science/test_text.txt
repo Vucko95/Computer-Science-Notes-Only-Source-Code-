@@ -1,0 +1,3 @@
+This is a simple text file that we will use to demonstrate file hadnling in Python. We will also use it to show off how the NLTK tonkenisers can be used. We'll see that tokenisers are very useful. This is one last sentence for extra interest!! 
+This is another paragraph that really doesn't say anything. 
+This was written by Dr. Brian Mac Namee.

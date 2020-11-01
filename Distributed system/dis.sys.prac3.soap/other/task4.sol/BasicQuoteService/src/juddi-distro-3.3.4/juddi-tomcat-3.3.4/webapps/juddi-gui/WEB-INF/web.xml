@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright 2001-2008 The Apache Software Foundation.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+        <display-name>jUDDI Graphical User Interface (juddi-gui)</display-name>
+        <description>This is an end user web application for an implementation of OASIS's UDDI v3 specification</description>
+        <!--  This may cause issues in some containers, if it complains about a non serializable object, comment this out
+        <distributable /> -->
+        <filter>
+                <filter-name>noCacheFilter</filter-name>
+                <filter-class>org.apache.juddi.webconsole.NoCacheFilter</filter-class>
+        </filter>
+        <filter>
+                <filter-name>YesCacheFilter</filter-name>
+                <filter-class>org.apache.juddi.webconsole.YesCacheFilter</filter-class>
+        </filter>
+        <filter-mapping>
+                <filter-name>noCacheFilter</filter-name>
+                <url-pattern>*.jsp</url-pattern>
+        </filter-mapping>
+         <filter-mapping>
+                <filter-name>YesCacheFilter</filter-name>
+                <url-pattern>*.png</url-pattern>
+                <url-pattern>*.jpg</url-pattern>
+                <url-pattern>*.gif</url-pattern>
+                <url-pattern>*.js</url-pattern>
+                <url-pattern>*.css</url-pattern>
+                <url-pattern>*.otf</url-pattern>
+                <url-pattern>*.eot</url-pattern>
+                <url-pattern>*.sbg</url-pattern>
+                <url-pattern>*.ttf</url-pattern>
+                <url-pattern>*.woff</url-pattern>
+        </filter-mapping>
+
+
+        <listener>
+                <!-- this class setups the encryption key for the session-->
+                <listener-class>org.apache.juddi.webconsole.StartupServlet</listener-class>
+        </listener>
+        <session-config>
+                <session-timeout>
+                        30
+                </session-timeout>
+        </session-config>
+        <welcome-file-list>
+                <welcome-file>index.jsp</welcome-file>
+        </welcome-file-list>
+        <mime-mapping>
+                <!-- this is added for the Font Awesome extension for bootstrap (cooler, scalable icons)-->
+                <extension>woff</extension>
+                <mime-type>application/x-font-woff</mime-type>
+        </mime-mapping>    
+    
+        <!--<error-page>
+             <description>Missing login</description> 
+            <error-code>401</error-code>
+            <location>/error.jsp</location>
+        </error-page>-->
+        <error-page>
+                <!-- <description>Forbidden directory listing</description> -->
+                <error-code>403</error-code>
+                <location>/error.jsp</location>
+        </error-page>
+<!--        <error-page>
+                <error-code>500</error-code>
+                <location>/error.jsp</location>
+        </error-page>-->
+        <error-page>
+                <error-code>503</error-code>
+                <location>/error.jsp</location>
+        </error-page>
+
+    
+        
+        <security-constraint>
+                <display-name>jUDDI Admin content</display-name>
+                <web-resource-collection>
+                        <web-resource-name>admin</web-resource-name>
+                        <url-pattern>/settings.jsp</url-pattern>
+                        <url-pattern>/ajax/settings.jsp</url-pattern>
+                </web-resource-collection>
+                <auth-constraint>
+                        <role-name>uddiadmin</role-name>
+                </auth-constraint>
+                <!-- uncomment to require SSL <user-data-constraint>
+                  <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+                </user-data-constraint>
+                -->
+        </security-constraint>
+        <login-config>
+                <auth-method>BASIC</auth-method>
+                <!-- you should consider NOT using BASIC is favor of something more secure, see your web app servers documentation for details -->
+                <realm-name>Apache jUDDI - Make sure you're using HTTPS!</realm-name>
+        </login-config> 
+        <security-role>
+                <role-name>uddiadmin</role-name>
+        </security-role>
+</web-app>

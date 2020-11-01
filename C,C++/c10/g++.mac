@@ -1,0 +1,7 @@
+CPP = g++
+CPPFLAGS = 
+OFLAGS = -c
+EXEFLAG = -o
+OBJEXT = o
+.cpp.exe :
+	$(CPP) $(CPPFLAGS) $< $(EXEFLAG)$@

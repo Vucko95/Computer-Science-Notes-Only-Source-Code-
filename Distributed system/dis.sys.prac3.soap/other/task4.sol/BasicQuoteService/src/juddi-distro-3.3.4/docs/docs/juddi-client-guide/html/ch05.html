@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Chapter 5. Mapping WSDL and WSDL to UDDI</title><link rel="stylesheet" type="text/css" href="css/jbossorg.css"/><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="up" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="prev" href="ch04.html" title="Chapter 4. Using the jUDDI GUI"/><link rel="next" href="ch06.html" title="Chapter 6. Using UDDI Annotations"/><link rel="copyright" href="ln-d5e27.html" title="Legal Notice"/><meta xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p xmlns:d="http://docbook.org/ns/docbook" id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch04.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ch06.html"><strong>Next</strong></a></li></ul><div class="chapter" title="Chapter 5. Mapping WSDL and WSDL to UDDI"><div class="titlepage"><div><div><h2 class="title"><a id="_mapping_wsdl_and_wsdl_to_uddi"/>Chapter 5. Mapping WSDL and WSDL to UDDI</h2></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="section"><a href="ch05.html#_introduction_2">5.1. Introduction</a></span></dt><dt><span class="section"><a href="ch05.html#_use_case_wsdl">5.2. Use Case - WSDL</a></span></dt><dd><dl><dt><span class="section"><a href="ch05.html#_sample_code">5.2.1. Sample Code</a></span></dt><dt><span class="section"><a href="ch05.html#_links_to_sample_project">5.2.2. Links to sample project</a></span></dt></dl></dd><dt><span class="section"><a href="ch05.html#_use_case_wadl">5.3. Use Case - WADL</a></span></dt><dd><dl><dt><span class="section"><a href="ch05.html#_sample_code_2">5.3.1. Sample Code</a></span></dt><dt><span class="section"><a href="ch05.html#_links_to_sample_project_2">5.3.2. Links to sample project</a></span></dt></dl></dd></dl></div>
+
+<div class="section" title="5.1. Introduction"><div class="titlepage"><div><div><h2 class="title"><a id="_introduction_2"/>5.1. Introduction</h2></div></div></div>
+
+<p>OASIS published a technical article which describes the recommended way to map the entries from a WSDL (Web Service Description Language) document into UDDI (<a class="ulink" href="https://www.oasis-open.org/committees/uddi-spec/doc/tn/uddi-spec-tc-tn-wsdl-v202-20040631.htm">https://www.oasis-open.org/committees/uddi-spec/doc/tn/uddi-spec-tc-tn-wsdl-v202-20040631.htm</a>). The jUDDI-client provides a convenient mechanism for this mapping. In addition, the jUDDI team provides a similar API for mapping a WADL (Web Application Description Language) document to UDDI. This guide will help you use the APIs to register a WSDL or WADL document that describes a service within a UDDI registry.</p>
+</div>
+<div class="section" title="5.2. Use Case - WSDL"><div class="titlepage"><div><div><h2 class="title"><a id="_use_case_wsdl"/>5.2. Use Case - WSDL</h2></div></div></div>
+
+<p>The most basic use case is that we have one or more SOAP/WSDL based services from a 3rd party that was just stood up on our network and we wish to now advertise to our user base that this service exists. We could manually punch in the information, but what fun is that? Let’s import it using some code! This can be expanded to import services in bulk.</p>
+<div class="section" title="5.2.1. Sample Code"><div class="titlepage"><div><div><h3 class="title"><a id="_sample_code"/>5.2.1. Sample Code</h3></div></div></div>
+
+<pre class="screen">URL url = new URL("http://someURLtoYourWSDL");
+ReadWSDL rw = new ReadWSDL();
+Definition wsdlDefinition = rw.readWSDL(url);
+Properties properties = new Properties();
+properties.put("keyDomain", domain);
+properties.put("businessName", domain);
+properties.put("serverName", url.getHost());
+properties.put("serverPort", url.getPort());
+wsdlURL = wsdlDefinition.getDocumentBaseURI();
+WSDL2UDDI wsdl2UDDI = new WSDL2UDDI(null, new URLLocalizerDefaultImpl(), properties);
+//This creates a the services from WSDL
+BusinessServices businessServices = wsdl2UDDI.createBusinessServices(wsdlDefinition);
+//This creates the tModels from WSDL
+Map&lt;QName, PortType&gt; portTypes = (Map&lt;QName, PortType&gt;) wsdlDefinition.getAllPortTypes();
+//This creates more tModels from WSDL
+Set&lt;TModel&gt; portTypeTModels = wsdl2UDDI.createWSDLPortTypeTModels(wsdlURL, portTypes);
+Map allBindings = wsdlDefinition.getAllBindings();
+//This creates even more tModels from WSDL
+Set&lt;TModel&gt; createWSDLBindingTModels = wsdl2UDDI.createWSDLBindingTModels(wsdlURL, allBindin
+
+//Now just save the tModels, then add the services to a new or existing business</pre>
+
+</div>
+<div class="section" title="5.2.2. Links to sample project"><div class="titlepage"><div><div><h3 class="title"><a id="_links_to_sample_project"/>5.2.2. Links to sample project</h3></div></div></div>
+
+<div class="itemizedlist" title="SVN Links to sample projects"><p class="title"><strong>SVN Links to sample projects</strong></p><ul class="itemizedlist"><li class="listitem">
+<a class="ulink" href="http://svn.apache.org/repos/asf/juddi/trunk/juddi-examples/">http://svn.apache.org/repos/asf/juddi/trunk/juddi-examples/</a>
+</li><li class="listitem">
+<a class="ulink" href="http://svn.apache.org/repos/asf/juddi/trunk/juddi-examples/wsdl2uddi/">http://svn.apache.org/repos/asf/juddi/trunk/juddi-examples/wsdl2uddi/</a>
+</li><li class="listitem">
+<a class="ulink" href="http://svn.apache.org/repos/asf/juddi/trunk/juddi-examples/uddi-samples/">http://svn.apache.org/repos/asf/juddi/trunk/juddi-examples/uddi-samples/</a>
+</li></ul></div>
+
+<p>The examples are also available in both jUDDI distributions.</p>
+</div>
+</div>
+<div class="section" title="5.3. Use Case - WADL"><div class="titlepage"><div><div><h2 class="title"><a id="_use_case_wadl"/>5.3. Use Case - WADL</h2></div></div></div>
+
+<p>The most basic use case is that we have one or more REST/WADL based services from a 3rd party that was just stood up on our network and we wish to now advertise to our user base that this service exists. We could manually punch in the information, but what fun is that? Let’s import it using some code! This can be expanded to import services in bulk.</p>
+<div class="section" title="5.3.1. Sample Code"><div class="titlepage"><div><div><h3 class="title"><a id="_sample_code_2"/>5.3.1. Sample Code</h3></div></div></div>
+
+<pre class="screen">Application app = WADL2UDDI.ParseWadl(new URL("URL to WADL file"));
+List&lt;URL&gt; urls = WADL2UDDI.GetBaseAddresses(app);
+URL url = urls.get(0);
+String domain = url.getHost();
+Properties properties = new Properties();
+properties.put("keyDomain", domain);
+properties.put("businessName", domain);
+properties.put("serverName", url.getHost());
+properties.put("serverPort", url.getPort());
+WADL2UDDI wadl2UDDI = new WADL2UDDI(null, new URLLocalizerDefaultImpl(), properties);
+
+//creates the services
+BusinessService businessServices = wadl2UDDI.createBusinessService(new QName("MyWasdl.namespace", "Servicename"), app);
+//creates tModels (if any)
+Set&lt;TModel&gt; portTypeTModels = wadl2UDDI.createWADLPortTypeTModels(wsdlURL, app);
+//Now just save the tModels, then add the services to a new or existing business</pre>
+
+</div>
+<div class="section" title="5.3.2. Links to sample project"><div class="titlepage"><div><div><h3 class="title"><a id="_links_to_sample_project_2"/>5.3.2. Links to sample project</h3></div></div></div>
+
+<div class="itemizedlist" title="SVN Links to sample projects"><p class="title"><strong>SVN Links to sample projects</strong></p><ul class="itemizedlist"><li class="listitem">
+<a class="ulink" href="http://svn.apache.org/repos/asf/juddi/trunk/juddi-examples/">http://svn.apache.org/repos/asf/juddi/trunk/juddi-examples/</a>
+</li><li class="listitem">
+<a class="ulink" href="http://svn.apache.org/repos/asf/juddi/trunk/juddi-examples/uddi-samples/">http://svn.apache.org/repos/asf/juddi/trunk/juddi-examples/uddi-samples/</a>
+</li></ul></div>
+
+<p>The examples are also available in both jUDDI distributions.</p>
+</div>
+</div>
+</div><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch04.html"><strong>Prev</strong>Chapter 4. Using the jUDDI GUI</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ch06.html"><strong>Next</strong>Chapter 6. Using UDDI Annotations</a></li></ul></body></html>

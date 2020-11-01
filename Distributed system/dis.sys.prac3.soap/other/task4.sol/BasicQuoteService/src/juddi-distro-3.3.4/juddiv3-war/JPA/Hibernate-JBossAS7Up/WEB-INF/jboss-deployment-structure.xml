@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure>
+  <deployment>
+    <dependencies>
+      <module name="org.jboss.as.jpa" />
+      <module name="org.jboss.ws.cxf.jbossws-cxf-server" />
+    </dependencies>
+  </deployment>
+</jboss-deployment-structure>

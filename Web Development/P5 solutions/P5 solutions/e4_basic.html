@@ -1,0 +1,43 @@
+<!-- This version works fine, as long a you only enter numbers.-->
+    
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Enter two numbers and click the button to compare them.</h1>
+    
+<input type=text id="number1" value='0'>
+<br>
+<input type=text id="number2" value='0'>
+<br>   
+<button type="button" onclick="checkNumbers()">Start!</button>
+<p id="demo"></p>
+    
+<script>
+    
+    function checkNumbers(){
+        
+        var num1 = document.getElementById("number1").value;
+        var num2 = document.getElementById("number2").value;
+        
+        if(num1 > num2) 
+        { 
+            document.getElementById('demo').innerHTML = 
+                "The larger of " + num1 + " and "+ num2 + " is " + num1 + ".";
+        }   
+        else if(num2 > num1) 
+        {
+            document.getElementById('demo').innerHTML =
+                "The larger of " + num1 + " and " + num2 + " is " + num2 + ".";
+        }                  
+        else
+        {
+            document.getElementById('demo').innerHTML =
+                "The values " + num1 + " and " + num2 + " are equal.";
+        }
+    }    
+    
+</script>
+
+</body>
+</html>

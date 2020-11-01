@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    
+<body>
+
+<div id="id01">...</div>
+
+<script>
+
+var xmlhttp = new XMLHttpRequest();
+var url = "colorData.json";
+
+xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        
+        //Parse the JSON data to a JavaScript variable. 
+        var parsedObj = JSON.parse(xmlhttp.responseText);    
+        // This function is defined below and deals with the JSON data parsed from the file. 
+        displayJSON(parsedObj); 
+    }
+};
+
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+    
+function displayJSON(obj) {
+    
+    var colorArray = obj.colorsArray;
+    
+    // This code iterates through the colorArray and writes html code to put the color information in a table.
+    var colorInfo = "<table border = 1 >";
+    colorInfo += "<tr><th>Type</th><th>Number</th></tr>";    
+    for (var i=0; i <colorArray.length; i++) 
+    {    
+        var colorName = colorArray[i].colorName;
+        var colorValue = colorArray[i].hexValue;               
+        colorInfo += "<tr><td>" + colorName + "</td><td>" + colorValue + "</td></tr>";
+    }
+     // Close the table element.
+    colorInfo += "</table>"; 
+    
+    // Add the new html code to the div element with id = 'id01'.
+    document.getElementById("id01").innerHTML = colorInfo;
+    
+}
+</script>
+
+</body>
+</html>

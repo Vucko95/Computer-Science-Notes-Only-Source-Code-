@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<markers>
+	<marker>
+		<name>the gibson hotel</name>
+		<lat>53.34920000000001</lat>
+		<lng>-6.2291</lng>
+		<colour>red</colour>
+	</marker>
+	<marker>
+		<name>RIA_public</name>
+		<lat>53.3415547</lat>
+		<lng>-6.2564016</lng>
+		<colour>red</colour>
+	</marker>
+	<marker>
+		<name>platform3</name>
+		<lat>53.27358246</lat>
+		<lng>-9.04704857</lng>
+		<colour>red</colour>
+	</marker>
+	<marker>
+		<name>UPC1389307</name>
+		<lat>53.355757</lat>
+		<lng>-6.294149</lng>
+		<colour>green</colour>
+	</marker>
+	<marker>
+		<name>Internet@Sea</name>
+		<lat>53.34209187666667</lat>
+		<lng>-6.135466256666668</lng>
+		<colour>red</colour>
+	</marker>
+	<marker>
+		<name>mmcdonagh</name>
+		<lat>53.28092956999999</lat>
+		<lng>-8.99839878</lng>
+		<colour>red</colour>
+	</marker>
+	<marker>
+		<name>_The Vox Free Wi-Fi</name>
+		<lat>52.474427</lat>
+		<lng>-6.294149</lng>
+		<colour>red</colour>
+	</marker>
+	<marker>
+		<name>Kildare Village VIP Lounge</name>
+		<lat>53.154183702500006</lat>
+		<lng>-6.919087684166667</lng>
+		<colour>red</colour>
+	</marker>
+	<marker>
+		<name>Meyrick Free WiFi</name>
+		<lat>53.27353287</lat>
+		<lng>-9.04807377</lng>
+		<colour>red</colour>
+	</marker>
+	<marker>
+		<name>UCD Wireless</name>
+		<lat>53.306688</lat>
+		<lng>-6.220993</lng>
+		<colour>red</colour>
+	</marker>
+	<marker>
+		<name>Eurocycles</name>
+		<lat>53.17510605</lat>
+		<lng>-6.79991579</lng>
+		<colour>red</colour>
+	</marker>
+	<marker>
+		<name>Radisson_Guest</name>
+		<lat>53.27395751272726</lat>
+		<lng>-9.042621525909087</lng>
+		<colour>red</colour>
+	</marker>
+</markers>

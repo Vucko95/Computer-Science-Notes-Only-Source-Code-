@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Licensed to the Apache Software Foundation (ASF) under one
+	or more contributor license agreements. See the NOTICE file
+	distributed with this work for additional information
+	regarding copyright ownership. The ASF licenses this file
+	to you under the Apache License, Version 2.0 (the
+	"License"/> you may not use this file except in compliance
+	with the License. You may obtain a copy of the License at
+	
+	http://www.apache.org/licenses/LICENSE-2.0
+	
+	Unless required by applicable law or agreed to in writing,
+	software distributed under the License is distributed on an
+	"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+	KIND, either express or implied. See the License for the
+	specific language governing permissions and limitations
+	under the License.
+-->
+<beans xmlns="http://www.springframework.org/schema/beans" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xmlns:jaxws="http://cxf.apache.org/jaxws"
+	    xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+		xmlns:util="http://www.springframework.org/schema/util"
+  xsi:schemaLocation="
+  http://www.springframework.org/schema/beans classpath:schemas/spring-beans.xsd
+  http://cxf.apache.org/jaxws  classpath:schemas/jaxws.xsd
+  http://cxf.apache.org/jaxrs classpath:schemas/jaxrs.xsd
+  http://www.springframework.org/schema/util classpath:schemas/spring-util.xsd
+  ">
+ 
+  <import resource="classpath:META-INF/cxf/cxf.xml" />
+  <import resource="classpath:META-INF/cxf/cxf-extension-soap.xml" />
+  <import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+
+  <jaxws:endpoint id="inquiry" implementor="org.apache.juddi.api.impl.UDDIInquiryImpl" address="/inquiry">
+    <jaxws:properties>
+      <entry key="schema-validation-enabled" value="true"/>
+    </jaxws:properties>
+  </jaxws:endpoint>
+  
+  <jaxws:endpoint id="publish" implementor="org.apache.juddi.api.impl.UDDIPublicationImpl" address="/publish">
+    <jaxws:properties>
+      <entry key="schema-validation-enabled" value="true"/>
+    </jaxws:properties>
+  </jaxws:endpoint>
+
+  <jaxws:endpoint id="security" implementor="org.apache.juddi.api.impl.UDDISecurityImpl" address="/security">
+    <jaxws:properties>
+      <entry key="schema-validation-enabled" value="true"/>
+    </jaxws:properties>
+  </jaxws:endpoint>
+   
+  <jaxws:endpoint id="subscription" implementor="org.apache.juddi.api.impl.UDDISubscriptionImpl" address="/subscription">
+    <jaxws:properties>
+      <entry key="schema-validation-enabled" value="true"/>
+    </jaxws:properties>
+  </jaxws:endpoint>
+  
+  <jaxws:endpoint id="subscription-listener" implementor="org.apache.juddi.api.impl.UDDISubscriptionListenerImpl" address="/subscription-listener">
+    <jaxws:properties>
+      <entry key="schema-validation-enabled" value="true"/>
+    </jaxws:properties>
+  </jaxws:endpoint>
+
+  <jaxws:endpoint id="custody-transfer" implementor="org.apache.juddi.api.impl.UDDICustodyTransferImpl" address="/custody-transfer">
+    <jaxws:properties>
+      <entry key="schema-validation-enabled" value="true"/>
+    </jaxws:properties>
+  </jaxws:endpoint>
+
+<!--
+  This is covered under the juddiv3replication in order to ensure client-cert auth
+  <jaxws:endpoint id="replication" implementor="org.apache.juddi.api.impl.UDDIReplicationImpl" address="/replication">
+    <jaxws:properties>
+      <entry key="schema-validation-enabled" value="true"/>
+    </jaxws:properties>
+  </jaxws:endpoint>
+-->
+
+<!-- ClientSide APIs -->
+  <jaxws:endpoint id="valueset-validation" implementor="org.apache.juddi.api.impl.UDDIValueSetValidationImpl" address="/valueset-validation">
+    <jaxws:properties>
+      <entry key="schema-validation-enabled" value="true"/>
+    </jaxws:properties>
+  </jaxws:endpoint>
+
+  <jaxws:endpoint id="valueset-caching" implementor="org.apache.juddi.api.impl.UDDIValueSetCachingImpl" address="/valueset-caching">
+    <jaxws:properties>
+      <entry key="schema-validation-enabled" value="true"/>
+    </jaxws:properties>
+  </jaxws:endpoint>
+
+
+  <jaxws:endpoint id="inquiryv2" implementor="org.apache.juddi.api.impl.UDDIv2InquiryImpl" address="/inquiryv2">
+    <jaxws:properties>
+      <entry key="schema-validation-enabled" value="true"/>
+    </jaxws:properties>
+  </jaxws:endpoint>
+  
+  <jaxws:endpoint id="publishv2" implementor="org.apache.juddi.api.impl.UDDIv2PublishImpl" address="/publishv2">
+    <jaxws:properties>
+      <entry key="schema-validation-enabled" value="true"/>
+    </jaxws:properties>
+  </jaxws:endpoint>
+
+
+   <jaxws:endpoint id="juddi-api" implementor="org.apache.juddi.api.impl.JUDDIApiImpl" address="/juddi-api">
+    <jaxws:properties>
+      <entry key="schema-validation-enabled" value="false"/>
+    </jaxws:properties>
+  </jaxws:endpoint>
+
+   <util:map id="jsonNamespaceMap" map-class="java.util.Hashtable" >
+                <entry key="urn:uddi-org:api_v3" value="uddi-org-api_v3"/>
+				                <entry key="urn:uddi-org:api_v3" value="urn:uddi-org:api_v3"/>
+                <entry key="urn:uddi-org:sub_v3" value="urn:uddi-org:sub_v3"/>
+                <entry key="urn:uddi-org:custody_v3" value="urn:uddi-org:custody_v3"/>
+                <entry key="urn:uddi-org:repl_v3" value="urn:uddi-org:repl_v3"/>
+                <entry key="urn:uddi-org:subr_v3" value="urn:uddi-org:subr_v3"/>
+                <entry key="urn:uddi-org:repl_v3" value="urn:uddi-org:repl_v3"/>
+                <entry key="urn:uddi-org:vs_v3" value="urn:uddi-org:vs_v3"/>
+                <entry key="urn:uddi-org:vscache_v3" value="urn:uddi-org:vscache_v3"/>
+                <entry key="urn:uddi-org:policy_v3" value="urn:uddi-org:policy_v3"/>
+                <entry key="urn:uddi-org:policy_instanceParms_v3" value="urn:uddi-org:policy_instanceParms_v3"/>
+                <entry key="http://www.w3.org/2000/09/xmldsig#" value="http://www.w3.org/2000/09/xmldsig#"/>
+				
+  </util:map>
+ 
+
+  <jaxrs:server id="inquiryRestService" address="/inquiryRest">
+    <jaxrs:serviceBeans>
+      <ref bean="inquiryRest" />
+    </jaxrs:serviceBeans>
+	<jaxrs:providers>
+                           <ref bean="jaxbProvider"/>
+                           <ref bean="jsonProvider"/>
+    </jaxrs:providers>
+  </jaxrs:server>
+  <bean id="inquiryRest" class="org.apache.juddi.api.impl.rest.UDDIInquiryJAXRS" />
+	<bean id="jsonProvider" class="org.apache.cxf.jaxrs.provider.json.JSONProvider">
+		<property name="ignoreNamespaces" value="true"/><!-- this doesn't work -->
+		<property name="namespaceMap" ref="jsonNamespaceMap"/>
+  </bean>
+   <bean id="jaxbProvider"
+class="org.apache.cxf.jaxrs.provider.JAXBElementProvider"/>
+ 
+
+
+</beans>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+    
+<script>
+    
+    var text = '';
+
+    for (var x=0; x<=15; x++) {  
+        if (x === 0) {  
+                text += x +  " is even. <br>";  
+        }  
+        else if (x % 2 === 0) {  
+                text += x +  " is even. <br>";  
+        }  
+        else {  
+                text += x +  " is odd. <br>";  
+        }  
+    }
+    
+    document.getElementById('demo').innerHTML = text;
+   
+        
+    
+</script>
+
+</body>
+</html>

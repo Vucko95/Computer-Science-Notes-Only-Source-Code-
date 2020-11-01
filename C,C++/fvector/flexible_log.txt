@@ -1,0 +1,1980 @@
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#1] (testfile.c, #82)
+############################################################
+
+	-- Vector tc_v1_simple -> Before update :
+	Vector is Empty; MinIndex = -29
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration (Assing#1) : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation (Assing#1) : 
+		SourceFileName 		: testfile.c
+		SourceFileLineNo 	: 73
+		Compilation 		: Oct 30 2001  15:24:40
+		--------------
+
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#2] (testfile.c, #83)
+############################################################
+
+	-- Vector tc_v2_simple -> Before update :
+	Vector range is [9 : 11]; Total elements = 3
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: testfile.c
+		SourceFileLineNo 	: 68
+		Compilation 		: Oct 30 2001  15:24:40
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration (Assing#1) : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation (Assing#1) : 
+		SourceFileName 		: testfile.c
+		SourceFileLineNo 	: 74
+		Compilation 		: Oct 30 2001  15:24:40
+		--------------
+
+VectorElement [9] = 250
+VectorElement [10] = 250
+VectorElement [11] = 250
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#3] (testfile.c, #85)
+############################################################
+
+	-- Vector bbb.tc_v1_from_class -> Before update :
+	Vector is Empty; MinIndex = 100
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration (Assing#1) : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation (Assing#1) : 
+		SourceFileName 		: testfile.c
+		SourceFileLineNo 	: 76
+		Compilation 		: Oct 30 2001  15:24:40
+		--------------
+
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#4] (testfile.c, #86)
+############################################################
+
+	-- Vector bbb.tc_v2_from_class -> Before update :
+	Vector range is [-3 : 7]; Total elements = 11
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: testfile.c
+		SourceFileLineNo 	: 61
+		Compilation 		: Oct 30 2001  15:24:40
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration (Assing#1) : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation (Assing#1) : 
+		SourceFileName 		: testfile.c
+		SourceFileLineNo 	: 77
+		Compilation 		: Oct 30 2001  15:24:40
+		--------------
+
+VectorElement [-3] = 227
+VectorElement [-2] = 227
+VectorElement [-1] = 227
+VectorElement [0] = 227
+VectorElement [1] = 227
+VectorElement [2] = 227
+VectorElement [3] = 227
+VectorElement [4] = 227
+VectorElement [5] = 227
+VectorElement [6] = 227
+VectorElement [7] = 227
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#5] (testfile.c, #88)
+############################################################
+
+	-- Vector ccc.th_v1_from_class -> Before update :
+	Vector is Empty; MinIndex = 90
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration (Assing#1) : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation (Assing#1) : 
+		SourceFileName 		: testfile.c
+		SourceFileLineNo 	: 79
+		Compilation 		: Oct 30 2001  15:24:40
+		--------------
+
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#6] (testfile.c, #89)
+############################################################
+
+	-- Vector ccc.th_v2_from_class -> Before update :
+	Vector range is [11 : 19]; Total elements = 9
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: testfile.h
+		SourceFileLineNo 	: 71
+		Compilation 		: Oct 30 2001  15:24:40
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration (Assing#1) : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation (Assing#1) : 
+		SourceFileName 		: testfile.c
+		SourceFileLineNo 	: 80
+		Compilation 		: Oct 30 2001  15:24:40
+		--------------
+
+VectorElement [11] = 527
+VectorElement [12] = 527
+VectorElement [13] = 527
+VectorElement [14] = 527
+VectorElement [15] = 527
+VectorElement [16] = 527
+VectorElement [17] = 527
+VectorElement [18] = 527
+VectorElement [19] = 527
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#7] (main.c, #96)
+############################################################
+
+	-- Vector mc_v1_simple -> Before update :
+	Vector is Empty; MinIndex = 0
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 71
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#8] (main.c, #99)
+############################################################
+
+	-- Vector mc_v1_simple -> After update#1 :
+	Vector range is [0 : 0]; Total elements = 1
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 71
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+VectorElement [0] = 307
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#9] (main.c, #102)
+############################################################
+
+	-- Vector mc_v2_simple -> Before update :
+	Vector is Empty; MinIndex = 0
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#10] (main.c, #105)
+############################################################
+
+	-- Vector mc_v2_simple -> After update#1 :
+	Vector range is [0 : 0]; Total elements = 1
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+VectorElement [0] = 315
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#11] (main.c, #109)
+############################################################
+
+	-- Vector mc_v2_simple -> After update#2 :
+	Vector range is [0 : 2]; Total elements = 3
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+VectorElement [0] = 315
+VectorElement [1] = 316
+VectorElement [2] = 317
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#12] (main.c, #112)
+############################################################
+
+	-- Vector mc_v2_simple -> After update#3 :
+	Vector range is [0 : 2]; Total elements = 3
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+VectorElement [0] = 315
+VectorElement [1] = 310
+VectorElement [2] = 317
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#13] (main.c, #115)
+############################################################
+
+	-- Vector mc_v3_simple -> Before update :
+	Vector is Empty; MinIndex = 12
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 83
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#14] (main.c, #121)
+############################################################
+
+	-- Vector mc_v3_simple -> After update#1 :
+	Vector range is [12 : 15]; Total elements = 4
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 83
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+VectorElement [12] = 321
+VectorElement [13] = 323
+VectorElement [14] = 325
+VectorElement [15] = 327
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#15] (main.c, #125)
+############################################################
+
+	-- Vector mc_v3_simple -> After update#2 :
+	Vector range is [12 : 15]; Total elements = 4
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 83
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+VectorElement [12] = 322
+VectorElement [13] = 323
+VectorElement [14] = 325
+VectorElement [15] = 324
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#16] (main.c, #128)
+############################################################
+
+	-- Vector mc_v4_simple -> Before update :
+	Vector range is [-3 : 2]; Total elements = 6
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 84
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+VectorElement [-3] = 27
+VectorElement [-2] = 27
+VectorElement [-1] = 27
+VectorElement [0] = 27
+VectorElement [1] = 27
+VectorElement [2] = 27
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#17] (main.c, #136)
+############################################################
+
+	-- Vector mc_v4_simple -> After update#1 :
+	Vector range is [-3 : 2]; Total elements = 6
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 84
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+VectorElement [-3] = 331
+VectorElement [-2] = 332
+VectorElement [-1] = 333
+VectorElement [0] = 334
+VectorElement [1] = 335
+VectorElement [2] = 336
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#18] (main.c, #139)
+############################################################
+
+	-- Vector mc_v4_simple -> After update#2 :
+	Vector range is [-3 : 1]; Total elements = 5
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 84
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+VectorElement [-3] = 332
+VectorElement [-2] = 333
+VectorElement [-1] = 334
+VectorElement [0] = 335
+VectorElement [1] = 336
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#19] (main.c, #142)
+############################################################
+
+	-- Vector mc_v4_simple -> After update#3 :
+	Vector range is [-3 : 0]; Total elements = 4
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 84
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+VectorElement [-3] = 332
+VectorElement [-2] = 333
+VectorElement [-1] = 334
+VectorElement [0] = 335
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#20] (main.c, #145)
+############################################################
+
+	-- Vector mc_v5_simple -> Before update :
+	Vector is Empty; MinIndex = -75
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 85
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration (Assing#1) : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation (Assing#1) : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 89
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#21] (main.c, #148)
+############################################################
+
+	-- Vector mc_v6_simple -> Before update :
+	Vector range is [15 : 19]; Total elements = 5
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration (Assing#1) : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation (Assing#1) : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 90
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+VectorElement [15] = 350
+VectorElement [16] = 350
+VectorElement [17] = 350
+VectorElement [18] = 350
+VectorElement [19] = 350
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#22] (main.c, #152)
+############################################################
+
+	-- Vector aaa.mc_v1_from_class -> Before update :
+	Vector is Empty; MinIndex = 0
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#23] (main.c, #155)
+############################################################
+
+	-- Vector aaa.mc_v1_from_class -> After update#1 :
+	Vector range is [0 : 0]; Total elements = 1
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+VectorElement [0] = 905
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#24] (main.c, #159)
+############################################################
+
+	-- Vector aaa.mc_v2_from_class -> Before update :
+	Vector is Empty; MinIndex = 0
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 65
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#25] (main.c, #162)
+############################################################
+
+	-- Vector aaa.mc_v2_from_class -> After update#1 :
+	Vector range is [0 : 0]; Total elements = 1
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 65
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+VectorElement [0] = 915
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#26] (main.c, #166)
+############################################################
+
+	-- Vector aaa.mc_v2_from_class -> After update#1 :
+	Vector range is [0 : 2]; Total elements = 3
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 65
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+VectorElement [0] = 915
+VectorElement [1] = 916
+VectorElement [2] = 917
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#27] (main.c, #169)
+############################################################
+
+	-- Vector aaa.mc_v2_from_class -> After update#2 :
+	Vector range is [0 : 2]; Total elements = 3
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 65
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+VectorElement [0] = 915
+VectorElement [1] = 910
+VectorElement [2] = 917
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#28] (main.c, #172)
+############################################################
+
+	-- Vector aaa.mc_v3_from_class -> Before update :
+	Vector is Empty; MinIndex = 100
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 66
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration (Assing#1) : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation (Assing#1) : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 92
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#29] (main.c, #178)
+############################################################
+
+	-- Vector aaa.mc_v3_from_class -> After update#1 :
+	Vector range is [100 : 103]; Total elements = 4
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 66
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration (Assing#1) : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation (Assing#1) : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 92
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+VectorElement [100] = 921
+VectorElement [101] = 923
+VectorElement [102] = 925
+VectorElement [103] = 927
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#30] (main.c, #182)
+############################################################
+
+	-- Vector aaa.mc_v3_from_class -> After update#2 :
+	Vector range is [100 : 103]; Total elements = 4
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 66
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration (Assing#1) : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation (Assing#1) : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 92
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+VectorElement [100] = 921
+VectorElement [101] = 922
+VectorElement [102] = 924
+VectorElement [103] = 927
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#31] (main.c, #185)
+############################################################
+
+	-- Vector aaa.mc_v4_from_class -> Before update :
+	Vector range is [-203 : -200]; Total elements = 4
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 67
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration (Assing#1) : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation (Assing#1) : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 93
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+VectorElement [-203] = 927
+VectorElement [-202] = 927
+VectorElement [-201] = 927
+VectorElement [-200] = 927
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#32] (main.c, #191)
+############################################################
+
+	-- Vector aaa.mc_v4_from_class -> After update#1 :
+	Vector range is [-203 : -200]; Total elements = 4
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 67
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration (Assing#1) : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation (Assing#1) : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 93
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+VectorElement [-203] = 931
+VectorElement [-202] = 932
+VectorElement [-201] = 933
+VectorElement [-200] = 934
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#33] (main.c, #194)
+############################################################
+
+	-- Vector aaa.mc_v4_from_class -> After update#2 :
+	Vector range is [-203 : -201]; Total elements = 3
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 67
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration (Assing#1) : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation (Assing#1) : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 93
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+VectorElement [-203] = 932
+VectorElement [-202] = 933
+VectorElement [-201] = 934
+
+##################### ShowVector : End #####################
+
+
+
+############################################################
+#################### ShowVector : Begin ####################
+#################### [show#34] (main.c, #197)
+############################################################
+
+	-- Vector aaa.mc_v4_from_class -> After update#3 :
+	Vector range is [-203 : -202]; Total elements = 2
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 67
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration (Assing#1) : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation (Assing#1) : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 93
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+VectorElement [-203] = 932
+VectorElement [-202] = 933
+
+##################### ShowVector : End #####################
+
+
+	###################################
+	   [fx_vect2.h, #444] ---> BUG#1
+	###################################
+======================================================================= 
+### int & ClassFlexibleVector<int>::operator [](int)
+Vector Element index -10 out of range [0, 0]
+======================================================================= 
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 71
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+======================================================================= 
+
+
+
+	###################################
+	   [fx_vect2.h, #444] ---> BUG#2
+	###################################
+======================================================================= 
+### int & ClassFlexibleVector<int>::operator [](int)
+Vector Element index 20 out of range [0, 0]
+======================================================================= 
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 71
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+======================================================================= 
+
+
+
+	###################################
+	   [fx_vect2.h, #444] ---> BUG#3
+	###################################
+======================================================================= 
+### int & ClassFlexibleVector<int>::operator [](int)
+Vector Element index -11 out of range [0, 2]
+======================================================================= 
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+======================================================================= 
+
+
+
+	###################################
+	   [fx_vect2.h, #444] ---> BUG#4
+	###################################
+======================================================================= 
+### int & ClassFlexibleVector<int>::operator [](int)
+Vector Element index 21 out of range [0, 2]
+======================================================================= 
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+======================================================================= 
+
+
+
+	###################################
+	   [fx_vect2.h, #444] ---> BUG#5
+	###################################
+======================================================================= 
+### int & ClassFlexibleVector<int>::operator [](int)
+Vector Element index -12 out of range [0, 0]
+======================================================================= 
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+======================================================================= 
+
+
+
+	###################################
+	   [fx_vect2.h, #444] ---> BUG#6
+	###################################
+======================================================================= 
+### int & ClassFlexibleVector<int>::operator [](int)
+Vector Element index 22 out of range [0, 0]
+======================================================================= 
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: NotIndicated
+		SourceFileLineNo 	: -1
+		Compilation 		: NotIndicated  NotIndicated
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+======================================================================= 
+
+
+
+	###################################
+	   [fx_vect2.h, #444] ---> BUG#7
+	###################################
+======================================================================= 
+### int & ClassFlexibleVector<int>::operator [](int)
+Vector Element index -13 out of range [0, 2]
+======================================================================= 
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 65
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+======================================================================= 
+
+
+
+	###################################
+	   [fx_vect2.h, #444] ---> BUG#8
+	###################################
+======================================================================= 
+### int & ClassFlexibleVector<int>::operator [](int)
+Vector Element index 23 out of range [0, 2]
+======================================================================= 
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 65
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+======================================================================= 
+
+
+
+
+############################################################
+#################### ShowMatrix : Begin ####################
+#################### [show#35] (main.c, #226)
+############################################################
+
+	-- Matrix mc_m1_simple -> Before update :
+	Matrix is Rectangular
+	Matrix range is [10-14, -3-1]; Total elements = 25
+
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration (Assing#1) : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation (Assing#1) : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 223
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+MatrixElement [10] [-3] = -987
+MatrixElement [10] [-2] = -987
+MatrixElement [10] [-1] = -987
+MatrixElement [10] [0] = -987
+MatrixElement [10] [1] = -987
+
+MatrixElement [11] [-3] = -987
+MatrixElement [11] [-2] = -987
+MatrixElement [11] [-1] = -987
+MatrixElement [11] [0] = -987
+MatrixElement [11] [1] = -987
+
+MatrixElement [12] [-3] = -987
+MatrixElement [12] [-2] = -987
+MatrixElement [12] [-1] = -987
+MatrixElement [12] [0] = -987
+MatrixElement [12] [1] = -987
+
+MatrixElement [13] [-3] = -987
+MatrixElement [13] [-2] = -987
+MatrixElement [13] [-1] = -987
+MatrixElement [13] [0] = -987
+MatrixElement [13] [1] = -987
+
+MatrixElement [14] [-3] = -987
+MatrixElement [14] [-2] = -987
+MatrixElement [14] [-1] = -987
+MatrixElement [14] [0] = -987
+MatrixElement [14] [1] = -987
+
+
+############### ShowMatrix : End ##########################
+
+
+
+############################################################
+#################### ShowMatrix : Begin ####################
+#################### [show#36] (main.c, #227)
+############################################################
+
+	-- Matrix mc_m2_simple -> Before update :
+	Matrix is Rectangular
+	Matrix range is [-7--4, 12-13]; Total elements = 8
+
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 75
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration (Assing#1) : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation (Assing#1) : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 224
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+MatrixElement [-7] [12] = 531
+MatrixElement [-7] [13] = 531
+
+MatrixElement [-6] [12] = 531
+MatrixElement [-6] [13] = 531
+
+MatrixElement [-5] [12] = 531
+MatrixElement [-5] [13] = 531
+
+MatrixElement [-4] [12] = 531
+MatrixElement [-4] [13] = 531
+
+
+############### ShowMatrix : End ##########################
+
+
+
+############################################################
+#################### ShowMatrix : Begin ####################
+#################### [show#37] (main.c, #228)
+############################################################
+
+	-- Matrix mc_m3_simple -> Before update :
+	Matrix is Rectangular
+	Matrix range is [-17--11, -2-0]; Total elements = 21
+
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 76
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+MatrixElement [-17] [-2] = 567
+MatrixElement [-17] [-1] = 567
+MatrixElement [-17] [0] = 567
+
+MatrixElement [-16] [-2] = 567
+MatrixElement [-16] [-1] = 567
+MatrixElement [-16] [0] = 567
+
+MatrixElement [-15] [-2] = 567
+MatrixElement [-15] [-1] = 567
+MatrixElement [-15] [0] = 567
+
+MatrixElement [-14] [-2] = 567
+MatrixElement [-14] [-1] = 567
+MatrixElement [-14] [0] = 567
+
+MatrixElement [-13] [-2] = 567
+MatrixElement [-13] [-1] = 567
+MatrixElement [-13] [0] = 567
+
+MatrixElement [-12] [-2] = 567
+MatrixElement [-12] [-1] = 567
+MatrixElement [-12] [0] = 567
+
+MatrixElement [-11] [-2] = 567
+MatrixElement [-11] [-1] = 567
+MatrixElement [-11] [0] = 567
+
+
+############### ShowMatrix : End ##########################
+
+
+
+############################################################
+#################### ShowMatrix : Begin ####################
+#################### [show#38] (main.c, #237)
+############################################################
+
+	-- Matrix mc_m2_simple -> After update :
+	Matrix is Rectangular
+	Matrix range is [-7--4, 12-13]; Total elements = 8
+
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 75
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration (Assing#1) : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation (Assing#1) : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 224
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+MatrixElement [-7] [12] = 531
+MatrixElement [-7] [13] = 531
+
+MatrixElement [-6] [12] = 531
+MatrixElement [-6] [13] = 531
+
+MatrixElement [-5] [12] = 101
+MatrixElement [-5] [13] = 531
+
+MatrixElement [-4] [12] = 531
+MatrixElement [-4] [13] = 531
+
+
+############### ShowMatrix : End ##########################
+
+
+	###################################
+	   [fx_matr2.h, #628] ---> BUG#9
+	###################################
+
+======================================================================= 
+Operator= : Matrixes' Sizes are not idendical : 
+	First Matrix range is  [-17--11, -2-0]
+	Second Matrix range is  [-9--4, 12-13]
+======================================================================= 
+
+First matrix : 
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 76
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+
+Second matrix : 
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 243
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	###################################
+	   [fx_matr2.h, #749] ---> BUG#10
+	###################################
+======================================================================= 
+### class ClassFlexibleVector<int> & ClassFlexibleMatrix<int>::operator [](int)
+Matrix Row index 50 out of range [-7,-4]
+======================================================================= 
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 75
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration (Assing#1) : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation (Assing#1) : 
+		SourceFileName 		: main.c
+		SourceFileLineNo 	: 224
+		Compilation 		: Oct 30 2001  15:24:32
+		--------------
+
+	###################################
+	   [fx_vect2.h, #444] ---> BUG#11
+	###################################
+======================================================================= 
+### int & ClassFlexibleVector<int>::operator [](int)
+Vector Element index 345 out of range [0, -1]  (Range is Empty)
+======================================================================= 
+
+	==========================================
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Declaration          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+	=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+
+	Creation          : 
+		SourceFileName 		: None
+		SourceFileLineNo 	: 0
+		Compilation 		: None  None
+		--------------
+
+======================================================================= 
+
+
+

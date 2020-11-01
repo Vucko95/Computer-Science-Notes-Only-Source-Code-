@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Wed Oct 24 11:05:27 IST 2018
+0.baseType=DIRECTORY
+0.base=/Users/davidcoyle/Documents/AS/sensorsimple1/app/build/intermediates/transforms/dexMerger/debug/16
+0.path=classes.dex
+0.set=DEX
+count=1

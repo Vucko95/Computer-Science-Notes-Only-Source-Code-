@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Chapter 6. Using UDDI Annotations</title><link rel="stylesheet" type="text/css" href="css/jbossorg.css"/><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="up" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="prev" href="ch05.html" title="Chapter 5. Mapping WSDL and WSDL to UDDI"/><link rel="next" href="ch07.html" title="Chapter 7. Using the UDDI v2 Services and Adapters"/><link rel="copyright" href="ln-d5e27.html" title="Legal Notice"/><meta xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p xmlns:d="http://docbook.org/ns/docbook" id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch05.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ch07.html"><strong>Next</strong></a></li></ul><div class="chapter" title="Chapter 6. Using UDDI Annotations"><div class="titlepage"><div><div><h2 class="title"><a id="_using_uddi_annotations"/>Chapter 6. Using UDDI Annotations</h2></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="section"><a href="ch06.html#_uddi_service_annotation">6.1. UDDI Service Annotation</a></span></dt><dt><span class="section"><a href="ch06.html#_uddiservicebinding_annotation">6.2. UDDIServiceBinding Annotation</a></span></dt><dd><dl><dt><span class="section"><a href="ch06.html#_java_web_service_example">6.2.1. Java Web Service Example</a></span></dt><dt><span class="section"><a href="ch06.html#_wiring_it_all_together">6.2.2. Wiring it all together</a></span></dt></dl></dd><dt><span class="section"><a href="ch06.html#__net_web_service_example">6.3. .NET Web Service Example</a></span></dt><dd><dl><dt><span class="section"><a href="ch06.html#_wiring_it_all_together_2">6.3.1. Wiring it all together</a></span></dt></dl></dd><dt><span class="section"><a href="ch06.html#_categorybag_attribute">6.4. CategoryBag Attribute</a></span></dt><dt><span class="section"><a href="ch06.html#_considerations_for_clustered_or_load_balanced_web_servers_and_automated_registration">6.5. Considerations for clustered or load balanced web servers and automated registration</a></span></dt></dl></div>
+
+<p>Conventionally Services (BusinessService) and their EndPoints (BindingTemplates) are registered to a UDDI Registry using a GUI, where an admin user manually adds the necessary info. This process tends to make the data in the Registry rather static and the data can grow stale over time. To make the data in the UDDI more dynamic it makes sense to register and EndPoint (BindingTemplate) when it comes online, which is when it gets deployed. The UDDI annotations are designed to just that: register a Service when it get deployed to an Application Server. There are two annotations: UDDIService, and UDDIServiceBinding. You need to use both annotations to register an EndPoint. Upon undeployment of the Service, the EndPoint will be de-registered from the UDDI. The Service information stays in the UDDI. It makes sense to leave the Service level information in the Registry since this reflects that the Service is there, however there is no EndPoint at the moment ("Check back later"). It is a manual process to remove the Service information. The annotations use the juddi-client library which means that they can be used to register to any UDDIv3 registry.</p>
+<div class="section" title="6.1. UDDI Service Annotation"><div class="titlepage"><div><div><h2 class="title"><a id="_uddi_service_annotation"/>6.1. UDDI Service Annotation</h2></div></div></div>
+
+<p>The UDDIService annotation is used to register a service under an already existing business in the Registry. The annotation should be added at the class level of the java class.</p>
+<div class="table"><a id="d5e800"/><p class="title"><strong>Table 6.1. UDDIService attributes</strong></p><div class="table-contents">
+
+  
+  <table summary="UDDIService attributes" border="1"><colgroup><col width="33*" class="col_1"/><col width="33*" class="col_2"/><col width="33*" class="col_3"/></colgroup><thead><tr><th align="left" valign="top">attribute</th><th align="left" valign="top">description</th><th align="left" valign="top">required</th></tr></thead><tbody><tr><td align="left" valign="top"><p>serviceName</p></td><td align="left" valign="top"><p>The name of the service, by default the clerk will use the one name specified in the WebService annotation</p></td><td align="left" valign="top"><p>no</p></td></tr><tr><td align="left" valign="top"><p>description</p></td><td align="left" valign="top"><p>Human readable description of the service</p></td><td align="left" valign="top"><p>yes</p></td></tr><tr><td align="left" valign="top"><p>serviceKey</p></td><td align="left" valign="top"><p>UDDI v3 Key of the Service</p></td><td align="left" valign="top"><p>yes</p></td></tr><tr><td align="left" valign="top"><p>businessKey</p></td><td align="left" valign="top"><p>UDDI v3 Key of the Business that should own this Service. The business should exist in the registry at time of registration</p></td><td align="left" valign="top"><p>yes</p></td></tr><tr><td align="left" valign="top"><p>lang</p></td><td align="left" valign="top"><p>Language locale which will be used for the name and description, defaults to "en" if omitted</p></td><td align="left" valign="top"><p>no</p></td></tr><tr><td align="left" valign="top"><p>categoryBag</p></td><td align="left" valign="top"><p>Definition of a CategoryBag, see below for details</p></td><td align="left" valign="top"><p>no</p></td></tr></tbody></table>
+</div></div><br class="table-break"/>
+
+</div>
+<div class="section" title="6.2. UDDIServiceBinding Annotation"><div class="titlepage"><div><div><h2 class="title"><a id="_uddiservicebinding_annotation"/>6.2. UDDIServiceBinding Annotation</h2></div></div></div>
+
+<p>The UDDIServiceBinding annotation is used to register a BindingTemplate to the UDDI registry. This annotation cannot be used by itself. It needs to go along side a UDDIService annotation.</p>
+<div class="table"><a id="d5e857"/><p class="title"><strong>Table 6.2. UDDIServiceBinding attributes</strong></p><div class="table-contents">
+
+  
+  <table summary="UDDIServiceBinding attributes" border="1"><colgroup><col width="33*" class="col_1"/><col width="33*" class="col_2"/><col width="33*" class="col_3"/></colgroup><thead><tr><th align="left" valign="top">attribute</th><th align="left" valign="top">description</th><th align="left" valign="top">required</th></tr></thead><tbody><tr><td align="left" valign="top"><p>bindingKey</p></td><td align="left" valign="top"><p>UDDI v3 Key of the ServiceBinding</p></td><td align="left" valign="top"><p>yes</p></td></tr><tr><td align="left" valign="top"><p>description</p></td><td align="left" valign="top"><p>Human readable description of the service</p></td><td align="left" valign="top"><p>yes</p></td></tr><tr><td align="left" valign="top"> </td><td align="left" valign="top"><p>accessPointType	UDDI v3 AccessPointType, defaults to wsdlDeployment if omitted</p></td><td align="left" valign="top"><p>no</p></td></tr><tr><td align="left" valign="top"><p>accessPoint</p></td><td align="left" valign="top"><p>Endpoint reference</p></td><td align="left" valign="top"><p>yes</p></td></tr><tr><td align="left" valign="top"><p>lang</p></td><td align="left" valign="top"><p>Language locale which will be used for the name and description, defaults to "en" if omitted</p></td><td align="left" valign="top"><p>no</p></td></tr><tr><td align="left" valign="top"><p>tModelKeys</p></td><td align="left" valign="top"><p>Comma-separated list of tModelKeys key references</p></td><td align="left" valign="top"><p>no</p></td></tr><tr><td align="left" valign="top"><p>categoryBag</p></td><td align="left" valign="top"><p>Definition of a CategoryBag, see below for further details</p></td><td align="left" valign="top"><p>no</p></td></tr></tbody></table>
+</div></div><br class="table-break"/>
+
+<div class="section" title="6.2.1. Java Web Service Example"><div class="titlepage"><div><div><h3 class="title"><a id="_java_web_service_example"/>6.2.1. Java Web Service Example</h3></div></div></div>
+
+<p>The annotations can be used on any class that defines a service. Here they are added to a WebService, a POJO with a JAX-WS <span class="emphasis"><em>WebService</em></span> annotation.</p>
+<pre class="screen">package org.apache.juddi.samples;
+
+import javax.jws.WebService;
+import org.apache.juddi.v3.annotations.UDDIService;
+import org.apache.juddi.v3.annotations.UDDIServiceBinding;
+
+@UDDIService(
+  businessKey="uddi:myBusinessKey",
+  serviceKey="uddi:myServiceKey",
+  description = "Hello World test service")
+@UDDIServiceBinding(
+  bindingKey="uddi:myServiceBindingKey",
+  description="WSDL endpoint for the helloWorld Service. This service is used for "
+				  + "testing the jUDDI annotation functionality",
+  accessPointType="wsdlDeployment",
+  accessPoint="http://localhost:8080/juddiv3-samples/services/helloworld?wsdl")
+@WebService(
+  endpointInterface = "org.apache.juddi.samples.HelloWorld",
+  serviceName = "HelloWorld")
+
+public class HelloWorldImpl implements HelloWorld {
+    public String sayHi(String text) {
+        System.out.println("sayHi called");
+        return "Hello " + text;
+    }
+}</pre>
+
+<p>On deployment of this WebService, the juddi-client code will scan this class for UDDI annotations and take care of the registration process. The configuration file uddi.xml of the juddi-client is described in the chapter, Using the jUDDI-Client. In the clerk section you need to reference the Service class <span class="emphasis"><em>org.apache.juddi.samples.HelloWorldImpl</em></span>:</p>
+<pre class="screen">&lt;clerk name="BobCratchit" node="default" publisher="sales" password="sales"&gt;
+     &lt;class&gt;org.apache.juddi.samples.HelloWorldImpl&lt;/class&gt;
+&lt;/clerk&gt;</pre>
+
+<p>which means that Bob is using the node connection setting of the node with name "default", and that he will be using the "sales" publisher, for which the password it "sales". There is some analogy here as to how datasources are defined.</p>
+</div>
+<div class="section" title="6.2.2. Wiring it all together"><div class="titlepage"><div><div><h3 class="title"><a id="_wiring_it_all_together"/>6.2.2. Wiring it all together</h3></div></div></div>
+
+<p>The mechanism that triggers the automated registration is the UDDIClient. For each class you annotation, the class needs to be listed in the jUDDI Client Configuration file. When the client reads in the configuration, it will read the uddi.xml config file for the following location:</p>
+<pre class="screen">client/clerks/clerk[].class</pre>
+
+<p>In addition, the following flag must be set to true.</p>
+<pre class="screen">client/clerks@registerOnStartup="true"</pre>
+
+<p>Here’s a full example</p>
+<pre class="screen">&lt;clerks registerOnStartup="false" &gt;
+    &lt;clerk name="default" node="default" publisher="userjoe" password="******" cryptoProvider="" isPasswordEncrypted="false"&gt;
+        &lt;class&gt;com.mybiz.services.Service1&lt;/class&gt;
+    &lt;/clerk&gt;
+&lt;/clerks&gt;</pre>
+
+<p>The next step is to automate the "starting" and "stopping" of UDDIClient. In Java, anything that runs in a servlet container and use the following servlet class:</p>
+<pre class="screen">org.apache.juddi.v3.client.config.UDDIClerkServlet</pre>
+
+<p>It will automatically handle registration on start up and it will remove binding Templates on shutdown (this ensuring clients that discover the endpoint won’t find a dead link).</p>
+<p>Clients that run elsewhere simply need to "start" the UDDIClient.</p>
+<pre class="screen">//start up
+UDDIClient clerkManager = new UDDIClient("META-INF/uddi.xml");
+// register the clerkManager with the client side container
+UDDIClientContainer.addClient(clerkManager);
+clerkManager.start(); //will create business/services/bindings as necessary
+
+//shutdown down
+clerkManager.stop(); //will unregister binding templates</pre>
+
+</div>
+</div>
+<div class="section" title="6.3. .NET Web Service Example"><div class="titlepage"><div><div><h2 class="title"><a id="__net_web_service_example"/>6.3. .NET Web Service Example</h2></div></div></div>
+
+<p>In .NET, the procedure is almost identical to Java. Annotate your web service classes, append the classnames to your uddi.xml client config file. .NET annotations work with any WCF, ASP.NET or any other class.</p>
+<div class="section" title="6.3.1. Wiring it all together"><div class="titlepage"><div><div><h3 class="title"><a id="_wiring_it_all_together_2"/>6.3.1. Wiring it all together</h3></div></div></div>
+
+<p>In .NET, there’s a few options, each with pro’s and con’s for automating registration.</p>
+<div class="section" title="6.3.1.1. Use UDDIClient in your service’s constructor"><div class="titlepage"><div><div><h4 class="title"><a id="_use_uddiclient_in_your_service_s_constructor"/>6.3.1.1. Use UDDIClient in your service’s constructor</h4></div></div></div>
+
+<p>Pro: It’s simple
+Con: Services often get multiple instances depending on the number of worker threads in the server and thus can cause some concurrency issues.</p>
+</div>
+<div class="section" title="6.3.1.2. Use UDDIClient in Global.asa Application_Start"><div class="titlepage"><div><div><h4 class="title"><a id="_use_uddiclient_in_global_asa_application_start"/>6.3.1.2. Use UDDIClient in Global.asa Application_Start</h4></div></div></div>
+
+<p>Pro: It’s simple
+Con: You need .NET 4.0 and ASP.NET enabled in order to utilize this function</p>
+<p>More information about this can be found here: <a class="ulink" href="http://weblogs.asp.net/scottgu/archive/2009/09/15/auto-start-asp-net-applications-vs-2010-and-net-4-0-series.aspx">http://weblogs.asp.net/scottgu/archive/2009/09/15/auto-start-asp-net-applications-vs-2010-and-net-4-0-series.aspx</a></p>
+</div>
+</div>
+</div>
+<div class="section" title="6.4. CategoryBag Attribute"><div class="titlepage"><div><div><h2 class="title"><a id="_categorybag_attribute"/>6.4. CategoryBag Attribute</h2></div></div></div>
+
+<p>The CategoryBag attribute allows you to reference tModels. For example the following categoryBag</p>
+<pre class="screen">&lt;categoryBag&gt;
+    &lt;keyedReference tModelKey="uddi:uddi.org:categorization:types"
+     keyName="uddi-org:types:wsdl" keyValue="wsdlDeployment" /&gt;
+    &lt;keyedReference tModelKey="uddi:uddi.org:categorization:types"
+     keyName="uddi-org:types:wsdl2" keyValue="wsdlDeployment2" /&gt;
+&lt;/categoryBag&gt;</pre>
+
+<p>can be put in like</p>
+<pre class="screen">categoryBag="keyedReference=keyName=uddi-org:types:wsdl;keyValue=wsdlDeployment;" +
+            "tModelKey=uddi:uddi.org:categorization:types," +
+                     "keyedReference=keyName=uddi-org:types:wsdl2;keyValue=wsdlDeployment2;" +
+            "tModelKey=uddi:uddi.org:categorization:types2",</pre>
+
+</div>
+<div class="section" title="6.5. Considerations for clustered or load balanced web servers and automated registration"><div class="titlepage"><div><div><h2 class="title"><a id="_considerations_for_clustered_or_load_balanced_web_servers_and_automated_registration"/>6.5. Considerations for clustered or load balanced web servers and automated registration</h2></div></div></div>
+
+<p>Most production environments have primary and failover web servers and/or an intelligent load balancer that routers traffic to whichever server is online. When using automated registration with the jUDDI client, care must be taken when enabling automated registration.</p>
+</div>
+</div><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch05.html"><strong>Prev</strong>Chapter 5. Mapping WSDL and WSDL to UDDI</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ch07.html"><strong>Next</strong>Chapter 7. Using the UDDI v2 Services and Adapters</a></li></ul></body></html>

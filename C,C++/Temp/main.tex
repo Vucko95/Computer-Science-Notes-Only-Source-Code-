@@ -1,0 +1,393 @@
+\documentclass{article}
+\setlength{\oddsidemargin}{0.25 in}
+\setlength{\evensidemargin}{-0.25 in}
+\setlength{\topmargin}{-0.6 in}
+\setlength{\textwidth}{6.5 in}
+\setlength{\textheight}{8.5 in}
+\setlength{\headsep}{0.75 in}
+\setlength{\parindent}{0 in}
+\setlength{\parskip}{0.1 in}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+
+\title{Server-Side Framework Research - Version 2.1}
+\author{Robert Young}
+\date{21st June 2019}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+Modern database management systems are dependent on a programming language that is called structured query language. This language is then used to access, update and delete data that are present within its tables.  
+
+While selecting the database to be implemented for the project, there were a number of considerations that would influence the decision such as Ease of implementation such as Efficiency of Read / Write operations,what type of queries are most important to us and why,Ease of accessibility for deployment and development,Customer support and documentation etc.
+
+\section{Selecting a Database}
+
+\subsection{Effort to Learn}
+
+Learning curve serves as important role while selecting a database because if we explore new frontiers,they may have steep learning curve and we may spend a lot of time learning that,so familiarly has well as previous experience plays an important role. 
+
+We are in the third Semester of our MSc in Computer Science, so while we are not absolute beginners in this field we must be acutely aware of our own ability and limitations when selecting a Database.
+
+\subsection{Type of data}
+
+Before deciding upon database, we need to determine what kind of data we are dealing with.
+There are two types of data:
+
+\begin{itemize}
+    \item \textbf{Structured data} – Structured data usually resides in relational databases (RDBMS). Fields store length-delineated data phone numbers, Social Security numbers, or ZIP codes. Even text strings of variable length like names are contained in records, making it a simple matter to search.
+    \item \textbf{Unstructured data} – Unstructured data is essentially everything else. Unstructured data has internal structure but is not structured via pre-defined data models or schema. It may be textual or non-textual, and human- or machine-generated. It may also be stored within a non-relational database like NoSQL.
+\end{itemize}
+
+\subsection{Benchmark}
+
+In general, across the board, the NoSQL write latency is higher than SQL while in read operation the latency was lower than other. In one of the test cases, the machine was configured 4 nodes with 16 CPUs 2.34 GHZ 16 GB 900 GB Raid 5,2 nodes with 2TB hard drive and one node with 1 TB hard drive. The read benchmark result was 570.13(ops/sec) and 17.51(ms) latency for MySQL and 688.67(ops/sec) and 14.51(ms) latency for NoSQL. The write was:504.22(ops/sec) and 19.81(ms) for MySQL and 260.85(ops/sec) and 38.32(ms) latency for NoSQL.
+
+When benchmark with a bottleneck such as disk operation during the benchmark, the results of one bottleneck node shown here is same as the result
+discussed.
+
+\subsection{Framework Comparison}
+
+\begin{table}[htbp]
+\caption {Benchmark \cite{frameworkcomparison}} \label{tab:webframe} 
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\textbf{Product} & Latency(ms) & ReadSpeed(ops/sec) & Latency(ms)                       & WriteSpeed(ops/sec) \\                                                                                                      \hline
+MYSQL    & 17.51    & 570:13 & 19.81          & 504.22  \\                                                                                \hline
+NoSQL     & 14.51  & 688:67  & 38.32 & 260.85     \\                                                                 \hline
+\end{tabular}
+\end{table}
+ 
+
+\subsection{Real-Time Test Result}
+
+In real world test conducted by various organization, here were some of the results:
+\item \textbf{1.}While performance analysis using Hadoop SQL and NoSQL for log data, it was found that SQL was much higher than NoSQL.
+\item \textbf{2.}From IoT perspective, MySQL performed higher than Mongo DB(NoSQL) in writing bulk records to database.
+\item \textbf{3.}In the third experiment it was found that MySQL was faster in reading the data than Cassandra.
+
+Since for machine learning most of the operations will be read operations, we should go with SQL. 
+
+
+\subsection{Selection among different types of SQL}
+
+In SQL, there are top main software were MySQL, PostgreSQL. According to thesis by KEMI-TORNIO UNIVERSITY OF APPLIED SCIENCES TECHNOLOGY, 75 percent of participators acknowledge that MySQL is easier to handle for new learners than PostgreSQL. MySQL is much more popular than PostgreSQL. A commercial product cannot survive without popularity as a fundamental indicator. More popular has meant more users, then means more withstood the test and better business support as well as more comprehensive and detailed documentation. MySQL can run in embedded devices and similar low memory condition. This is a useful feature as the VM will not have same resources as our own personal computers.
+
+\subsection{ACID Compliance}
+
+ACID (Atomicity, Consistency, Isolation, Durability) is a set of properties of database transactions. The ACID compliance ensures that no data is lost or miscommunicated across the system in case of failure, even when there are multiple changes made during a single transaction. Both PostgreSQL and MySQL are Acid compliance.
+
+
+\subsection{Community Support}
+
+Since PostgreSQL is relatively new compared to MySQL, so it’s community support is not as large as compared to MySQL, which has become a universal language for database.
+
+\subsection{Programming Languages Support}
+
+Both PostgreSQL and MySQL have support for python which is our primary programming language.
+
+\subsection{Security}
+
+MySQL implements security based on Access Control Lists (ACLs) for all connections, queries, and other operations that a user may attempt to perform. There is also some support for SSL-encrypted connections between MySQL clients and servers.
+
+\subsection{SQL compliancy}
+
+MySQL is partially SQL compliant as it does not implement the full SQL standard. However, for our project need, we would only require some basic and intermediates commands so that’s not an issue.
+
+
+\subsection{Supported Platforms}
+
+Both PostgreSQL and MySQL systems can run on the Solaris, Windows Operating Systems, Linux and OS X. 
+
+\subsection{Data type}
+Both PostgreSQL and MySQL support many data types (as required for our project).but the rules for default values is strict in MySQL than PostgreSQL. This is a helpful feature for our project as we can define distinctive default values according to application needs.
+
+\subsection{Overhead}PostgreSQL requires a storage garbage collector process (VACUUM) that must be run occasionally or frequently - particularly if you do a lot of UPDATEs or DELETEs - and this process causes pretty significant hits to performance while it's running. This causes and overhead which will slow the performance. MySQL moves old data to a separate area called rollback segments.
+
+\text{So, my choice for SQL software is: MySQL}
+
+Rating System:
+
+\begin{itemize}
+    \item 3 - Best
+    \item 2 - Middle
+    \item 1 - Worst
+\end{itemize}
+
+\begin{table}[htbp]
+\caption {Weighted ranks for SQL products}
+\begin{tabular}{lc|c|c|c|l|}
+\cline{3-6}
+                                    &        & \multicolumn{2}{c|}{MySQL} & \multicolumn{2}{c|}{PostGreSQL}  \\ \hline
+\multicolumn{1}{|l|}{Category}      & Weight & Rating        & Score       & Rating       & Score   \\ \hline
+\multicolumn{1}{|l|}{ACID Compliance} & 15\%   & 3             & 0.15        & 3            & 0.15  \\ \hline
+\multicolumn{1}{|l|}{Community Support} & 10\%   & 3             & 0.23        & 3            & 0.18 \\ \hline
+\multicolumn{1}{|l|}{Programming Languages Support}     & 10\%   & 3             & 0.10         & 2            & 0.10  \\ \hline
+\multicolumn{1}{|l|}{Data type}  & 20\%   & 3             & 0.18        & 1            & 0.15     \\ \hline
+\multicolumn{1}{|l|}{Overhead}       & 15\%   & 3             & 0.15         & 1            & 0.10        \\ \hline
+\multicolumn{1}{|l|}{Security}   & 15\%    & 3             & 0.10        & 3            & 0.15      \\ \hline
+\multicolumn{2}{|l|}{Total Score}            & \multicolumn{2}{c|}{2.85}   & \multicolumn{2}{c|}{1.8}     \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+
+
+
+
+\section{Selecting a Cloud VM}
+
+For our project our first criteria are to find out which cloud provider provides free account for educational purposes. There were few: AWS educate, server, Local VM, Azure for Students, google cloud platform. Out of this, AZURE for students is difficult to sign up using our college email id and google cloud platform offered very less resources as compared to others. Also, our csserver which was assigned to us in 1st semester is also weak to handle such a big task so we are left with options AWS and Local VM.
+
+\subsection{Scalability} In our csserver we have the option to vertically scale up acceding to the need. This has been confirmed by our project supervisor. Amazon ec2 instance offers scalability but it comes with a certain cost. In the initial stage, the cloud is provided with Linux and Windows t2. micro instances. The micro instance typically consists of 1 vcpu and 1 gb of RAM. Whereas with the server provided by our college we have is 4gb of ram and 1 cpu the trade-off being that the local server uses an old class of processor but with higher ram the execution of the application will be faster.
+
+\subsection{Availability}Available everywhere. The amazon ec2 instance is available everywhere and there is no region or country locking in csserver either. There may be some latency from host to the server bit this may be due to variety of factors such as internet connection, load on server or maintained time.
+
+\subsection{Multiple user requests}Both os the server supports multi users’ access from anywhere.
+
+\subsection{Customer support and documentation}The amazon EC2 comes with a well detailed documentation along with a 24x7 customer support. From our previous experience this has proven to be useful. The local VM does not comes with support but with such a simple setup we won’t be needing any help but there is a server administrator which would help us in if needed. 
+
+\subsection{IaaS vs PaaS}In my opinion IaaS is better as we have the options to switch configuration and scale accordingly according the need of the application whereas worth PaaS we do not have the option to scale.
+
+\subsection{Support for development frameworks and software installation}
+Both of the VM support software installation of various kinds although there is any extra layer of security in Local VM as installation of any third parties software needs to be approved by server administrator which would inspect the software and then the decision would be given by the administrator thus making the server secure.
+
+
+
+Rating System:
+
+\begin{itemize}
+    \item 3 - Best
+    \item 2 - Middle
+    \item 1 - Worst
+\end{itemize}
+
+\begin{table}[htbp]
+\caption {Weighted ranks for CLOUD VM}
+\begin{tabular}{lc|c|c|c|l|}
+\cline{3-6}
+                                    &        & \multicolumn{2}{c|}{CSserver} & \multicolumn{2}{c|}{AmazonEC2}  \\ \hline
+\multicolumn{1}{|l|}{Category}      & Weight & Rating        & Score       & Rating       & Score   \\ \hline
+\multicolumn{1}{|l|}{Scalability} & 15\%   & 3             & 0.15        & 3            & 0.15  \\ \hline
+\multicolumn{1}{|l|}{Community Support} & 10\%   & 3             & 0.23        & 3            & 0.18 \\ \hline
+\multicolumn{1}{|l|}{Availability}     & 10\%   & 3             & 0.10         & 2            & 0.10  \\ \hline
+\multicolumn{1}{|l|}{Customer support and documentation(}  & 20\%   & 3             & 0.18        & 1            & 0.15     \\ \hline
+\multicolumn{1}{|l|}{Multiple user requests}       & 15\%   & 3             & 0.15         & 1            & 0.10        \\ \hline
+\multicolumn{2}{|l|}{Total Score}            & \multicolumn{2}{c|}{2.85}   & \multicolumn{2}{c|}{1.8}     \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+
+
+\section{Bootstrap vs Foundation}
+
+\subsection{Introduction}
+
+Bootstrap is described as 
+\textit{``is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation and other interface components."}
+
+Bootstrap is the third-most-starred project on GitHub, with more than 131,000 stars, behind only freeCodeCamp (almost 300,000 stars) and marginally behind Vue.js framework.[2] According to Alexa Rank, Bootstrap getbootstrap.com is in the top-2000 in US while vuejs.org is in top-7000 in US.[3].
+
+Foundation is described as 
+\textit{``  responsive front-end framework. Foundation provides a responsive grid and HTML and CSS UI components, templates, and code snippets, including typography, forms, buttons, navigation and other interface elements, as well as optional functionality provided by JavaScript extensions. Foundation is maintained by ZURB and is an open source project."} \cite{djangohome}
+
+\subsection{Effort to Learn}
+
+\textbf{Documentation}
+
+One of the biggest benefits of the Bootstrap Framework is the extensive official documentation that is provided with it. \cite{djangodoc} The documentation is broken down at a high-level as follows: 
+
+\begin{itemize}
+    \item \textbf{Tutorials} – step by step guide to creating a web application.
+    \item \textbf{Topic guides} – discusses the key topics and concepts contained in Django at a high level.
+    \item \textbf{How-to-guides} – These are described as ``recipes” that guide the user through the steps to address key problems and also use-cases.
+\end{itemize}
+
+
+All the documentation for Bootstrap and Foundation is clear, easy to follow, and provides numerous code snippet examples as well as numerous references to further reading should the user be uncertain about a certain aspect of the topic. 
+
+
+\textbf{Community}
+
+Bootstrap Community statistics for May of 2019 \cite{djangocommunity}:
+
+\begin{itemize}
+    \item 112k + (stars on Github)
+    \item Total questions with responses - 31.
+\end{itemize}
+
+
+On Stackoverflow there are a total of 200,235 questions with the tag ``Django" \cite{stackdjango}.
+
+On GitHub, the following statistics can be seen for Django (correct as of June 18th 2019) \cite{githubdjango}:
+
+\begin{itemize}
+    \item GitHub Stars - 42,163.
+    \item GitHub Forks - 18,138.
+    \item Used by - 261,839.
+\end{itemize}
+
+Some of the features offered by Bootstrap are:
+
+\subsection{Preprocessors}Bootstrap ships with vanilla CSS, but its source code utilizes the two most popular CSS preprocessors, Less and Sass. Quickly get started with precompiled CSS or build on the source.
+\subsection{One framework, every device}Bootstrap easily and efficiently scales your websites and applications with a single code base, from phones to tablets to desktops with CSS media queries.
+\subsection{Full of features}With Bootstrap, you get extensive and beautiful documentation for common HTML elements, dozens of custom HTML and CSS components, and awesome jQuery plugins.
+
+\section{Foundation}
+On the other hand, Foundation provides the following key features:
+
+\subsection{Semantic}Everything is semantic. You can have the cleanest markup without sacrificing the utility and speed of Foundation.
+\subsection{Mobile First}: You can build for small devices first. Then, as devices get larger and larger, layer in more complexity for a complete responsive design.
+\subsection{Customizable}You can customize your build to include or remove certain elements, as well as define the size of columns, colors, font size and more
+
+\section{Google maps vs leaflet vs mapbox}
+\section{Community Support}
+\subsection{gmaps}Community very high(Stack overflow - 60.5K)
+\subsection{leaflet}community stack overflow(8.5k)
+\subsection{mapbox}community(3.7k)
+
+\section{Features Comparison}
+\subsection{google maps}free,google earth,has unique features
+\subsection{leaflet}Lightweight,free,open street maps
+\subsection{mapbox}Highly customizable features,free,open
+
+\section{Comparison}
+-google maps mostly use
+-mapbox:steep learning curve,Documentation examples are sometimes inadequate for understanding.
+-leaflet:has a similar learning curve,Documentation examples are sometimes inadequate for understanding.
+
+https://www.codementor.io/victorgerardtemprano/pros-and-cons-of-using-mapbox-for-your-project-dx04pfgxw
+
+Leaflet,Mapbox:it is good for laarge data set but reformatting needs to be done.mapbox is useful when we have to design the map,you need coding skills with javascript and geojson to implement the maps on a website.
+better to use google maps as every things comes preloaded.
+
+https://www.trustradius.com/reviews/mapbox-2018-07-02-15-02-17
+
+https://maproom.net/using-mapbox-google-maps-interactive-online-mapping/
+
+
+
+Google providies geolocation, autocomplete boxes, traffic, transit, and more which is not present in leaflet and has to provine rely on third part services.
+if you are doing a complex project outside of the West, traffic and transit information can be quite hard to find. Google will be your best option
+
+leaftt has prove documentaion than google but community is better of google that leaft.leaflet is highly customizaible as compared to google
+
+
+
+https://www.creativebloq.com/web-design/leaflet-google-maps-121413738
+
+\section{Difference between  google-maps-react and react-google-maps}
+react-google-maps, a package that essentially provides a React component wrapper for the Google Maps API. react-google-maps allows users to use the full functionality of Google Maps Javascript API.
+\section{Interaction between google maps api and react}
+\item Most of the functionalities resided in preact
+\item In order to achieve that, we need to install preact and dependencies
+\item Write function map with default zoom and center. Otherwise the app will crash.
+\item Wrapping map (react-google-map + with google map) with Script JS(library) is then done. These are HOC components (High order components)
+\item Since map does not directly interact with DOM so we export (command is export default map) so that we can use other components.
+\item We have to assign container elements (loading element) and google element (Center elements) under a separate container. Alone with this we need to provide API key.This is a norm set by preact and google.
+\item Provide data about markers, set action when clicked etc.
+\item Also set value if marker is not selected
+\item There is a BIG thing to note that function can be used but FUNCTION keywork or any other similar keywork need not to be mentioned. Also we can use normal JavaScript.
+\section{Directions API}
+the Directions API is a service that calculates directions between locations. You can search for directions for several modes of transportation, including transit, driving, walking, or cycling.
+access the Directions API through an HTTP interface, with requests constructed as a URL string, using text strings or latitude/longitude coordinates to identify the locations, along with your API key.
+Basically this code means:
+Determines what type of place is it.for universal studios,it is amusement_park", "establishment", "point_of_interest", "political" and for Disney land it is amusement_park", "establishment", "point_of_interest"
+
+Then it give out the distances in miles,and the duration it will take.Then it has the start and end location with complete address in theory own database with the latitude and longititude,.
+
+In general the fastest route is displayed first.
+Suppose if the person has to walk the distance along woth the time is give Also the coordinated at which the type of transit will change is also given.
+
+The coordinates for next type of transit is given with the travel mode.
+
+For each checkpoint determined by dot distance in miles ,duration in minutes and starting and ending gps coordinates is given.Also direction is given as “keep-right”.The html rection may vary due to road restriction and traffic condition.
+
+For summary we can use distance matrix api.This is the response for washigtonDC to new York city.
+
+
+   "destination addresses" : [ "New York, NY, 
+   
+\item origin an address, the Directions service geocodes the string and converts it to a latitude/longitude coordinate to calculate directions.
+\item If you pass coordinates, they are used unchanged to calculate directions. \item Ensure that no space exists between the latitude and longitude values.
+destination — The address, textual latitude/longitude value, or place ID to which you wish to calculate directions
+\item mode (defaults to driving)
+\item waypoints — Specifies an array of intermediate locations to include along \item the route between the origin and destination points as pass through or stopover locations. 
+\item alternatives — If set to true, specifies that the Directions service may provide more than one route alternative in the response. 
+\item avoid — Indicates that the calculated route(s) should avoid the indicated features. This parameter supports the following arguments:
+\item \item tolls indicates that the calculated route should avoid toll roads/bridges.
+\item \item highways indicates that the calculated route should avoid highways.
+\item \item ferries indicates that the calculated route should avoid ferries.
+\item \item indoor indicates that the calculated route should avoid indoor steps for walking and transit directions
+\item arrival_time — Specifies the desired time of arrival for transit directions, in seconds since midnight, departure_time — Specifies the desired time of departure
+\item transit_mode — Specifies one or more preferred modes of transit. This parameter may only be specified for transit directions, and only if the request includes an API key or a Google Maps APIs Premium Plan client ID. The parameter supports the following arguments:
+\item bus indicates that the calculated route should prefer travel by bus.
+\item subway indicates that the calculated route should prefer travel by subway.
+\item train indicates that the calculated route should prefer travel by train.
+\item tram indicates that the calculated route should prefer travel by tram and light rail.
+\item rail indicates that the calculated route should prefer travel by train, tram, light rail, and subway. This is equivalent to transit_mode=train|tram|subway.
+https://developers.google.com/maps/documentation/directions/intro?refresh=1#GeocodedWaypoints
+values-value in seconds
+https://www.wpgmaps.com/documentation/enabling-directions-with-the-google-maps-api/
+
+\item Few points: This API does not respond in real time 
+\item 	it is possible to add way points into it but should not be included as complication increases.
+\item In our project,there is no scope of way points as the route of the bus is fixed.
+\item 	Also for our projects we won’t be needing to avoid anything such as feeries,highways or tolls as they come in our route.
+\item 	Unit system by default is miles but we need to set it to km for our preferences.
+\item Better to use json response rather than xml response
+\item The input from the user must be text based rather than click based
+\item By default driving is selected but we need to change to transit.
+\section{NGINX vs Apache}
+\item Nginx because it's light-weight and extremely fast out of the box
+\item Apache is thread per request and nginx is event driven.
+https://djangodeployment.com/2016/11/15/why-nginx-is-faster-than-apache-and-why-you-neednt-necessarily-care/
+\item The django documentation recommendation is Apache
+\item Apache has a lot of functionality
+\item Nginx is an open source web server written to address some of the performance and scalability issues associated with Apache.
+\item Apache slows down under heavy load, because of the need to spawn new processes, thus consuming more computer memory.
+
+https://anturis.com/blog/nginx-vs-apache/   
+\item Nginx starts everthing up front whereas Apache starts when the demand rises.
+\item Configuration is much easier in nginx
+https://www.digitalocean.com/community/tutorials/django-server-comparison-the-development-server-mod_wsgi-uwsgi-and-gunicorn
+https://serverfault.com/questions/590819/why-do-i-need-nginx-when-i-have-uwsgi
+uwsgi is also a great option as for low websites traffic wont be a bigger problem.
+\item But suppose if we have a slower connection then uwsgi itself wont be enough ngix + usgi will be needed has it can handle a lot of slow connwctions.
+https://www.sysadmin.md/deploy-django-in-production-using-apache-nginx-and-mod-wsgi.html
+https://medium.com/@MicroPyramid/django-hosting-on-nginx-with-uwsgi-for-high-performance-f6e731a2cdfc
+
+
+\item Most people apache because it is Most widely-used web server because 
+\item Virtual hosting
+\item Fast
+\item Ssl support
+\item Asynchronous
+\item Proven over many years
+\item Robust
+\item Many available modules
+\item Nginx:
+\item High performance,
+\item easy to configure
+\item open source
+\item load balancer
+\item easy setup
+\item content caching
+https://www.fullstackpython.com/nginx.html
+\item huge scale serving thousands of static requests per second then the performance differences between apache and ngnix aren’t noticeable. 
+\item Apache with nginx reverse proxy is my go-to setup 
+https://www.reddit.com/r/webdev/comments/bkm4sj/apache_vs_django_differences/
+https://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html  
+\section{Research about Data analysis}
+
+\end{document}

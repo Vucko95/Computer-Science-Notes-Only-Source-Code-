@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Chapter 11. Using the UDDI Technology Compatibility Kit</title><link rel="stylesheet" type="text/css" href="css/jbossorg.css"/><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="up" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="prev" href="ch10.html" title="Chapter 10. jUDDI Client for NET"/><link rel="next" href="ix01.html" title="Index"/><link rel="copyright" href="ln-d5e27.html" title="Legal Notice"/><meta xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p xmlns:d="http://docbook.org/ns/docbook" id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch10.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ix01.html"><strong>Next</strong></a></li></ul><div class="chapter" title="Chapter 11. Using the UDDI Technology Compatibility Kit"><div class="titlepage"><div><div><h2 class="title"><a id="_using_the_uddi_technology_compatibility_kit"/>Chapter 11. Using the UDDI Technology Compatibility Kit</h2></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="section"><a href="ch11.html#_using_the_tck_runner">11.1. Using the TCK Runner</a></span></dt><dd><dl><dt><span class="section"><a href="ch11.html#_configuration_2">11.1.1. Configuration</a></span></dt><dt><span class="section"><a href="ch11.html#_running_the_tck_runner">11.1.2. Running the TCK Runner</a></span></dt></dl></dd><dt><span class="section"><a href="ch11.html#_analyzing_the_results">11.2. Analyzing the Results</a></span></dt></dl></div>
+
+<p>Since UDDI is a specification with many complex rules in it, we (the jUDDI team) have had to write test cases to exercise each of the rules and restrictions in UDDI. Knowing that there are a number of open source and commercial UDDI v3 implementations, the jUDDI team took this as an opportunity to create a reusable benchmark for testing the compatibility of UDDI v3 implementations.</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Important</h2>
+<p>Although the TCK covers a large number of test cases, the UDDI specification is long and complex. It’s more than possible that we missed a few scenarios or test cases. If you run across any, please let us know.</p>
+</div>
+
+<div class="section" title="11.1. Using the TCK Runner"><div class="titlepage"><div><div><h2 class="title"><a id="_using_the_tck_runner"/>11.1. Using the TCK Runner</h2></div></div></div>
+
+<p>The TCK Runner requires a few files to operate:</p>
+<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+juddi-tck-runner-version.jar - This is the executable
+</li><li class="listitem">
+uddi.xml - This file sets the location of the UDDI services
+</li><li class="listitem">
+tck.properties - This file controls what tests are ran.
+</li><li class="listitem">
+truststore and keystore.jks - These files are for digital signature tests
+</li></ol></div>
+
+<div class="section" title="11.1.1. Configuration"><div class="titlepage"><div><div><h3 class="title"><a id="_configuration_2"/>11.1.1. Configuration</h3></div></div></div>
+
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+Edit the uddi.xml file and update all of the UDDI endpoint locations for all supported endpoints of UDDI server being tested. Ignore all credentials and other settings
+</li><li class="listitem">
+Edit tck.properties and update the usernames and passwords of the test users. Enable or disable tests based on the whether or not the UDDI server supports the optional listed capabilities.
+</li></ul></div>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>Do not use usernames and passwords that already have data associated with it.</p>
+</div>
+
+<p>A few of the test cases, such as RMI transport, are not identified by the UDDI specification, therefore the results may be skewed if unsupported tests are attempted. In addition, the UDDI specification identifies a number of APIs and features that are considered optional.</p>
+<p>Although it is possible to run the TCK against a UDDIv2 registry using the UDDIv2 transport adapters, this is not supported. The TCK’s test cases and rules apply to the business rules defined in UDDIv3. Unsupported and unmapped functions defined in UDDIv3 that are not supported in UDDIv2 fail ultimately fail.</p>
+<div class="section" title="11.1.1.1. tck.properties"><div class="titlepage"><div><div><h4 class="title"><a id="_tck_properties"/>11.1.1.1. tck.properties</h4></div></div></div>
+
+<p>The TCK properties file contains settings for all of the TCK tests.</p>
+<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+Credentials - You’ll need credentials for a number of user accounts
+</li><li class="listitem">
+jUDDI optional tests - If you’re running the tests against jUDDI, there’s a number of additional tests ran to exercise things like user accounts.
+</li><li class="listitem">
+Load testing - These settings enable you to tweak or disable the load testing.
+</li><li class="listitem">
+Key stores - These are needed to run the digital signature tests
+</li><li class="listitem">
+Supported transports - jUDDI supports a number of transports, such as RMI and HTTP (for UDDI service interaction) and SMTP and HTTP for subscription callbacks. RMI is actually not in the spec and SMTP is considered optional, so you’ll want to adjusted these based on the available documentation from the vendor.
+</li></ol></div>
+
+</div>
+<div class="section" title="11.1.1.2. uddi.xml"><div class="titlepage"><div><div><h4 class="title"><a id="_uddi_xml"/>11.1.1.2. uddi.xml</h4></div></div></div>
+
+<p>The only parts used from uddi.xml are the following</p>
+<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+The endpoints of the UDDI services
+</li><li class="listitem">
+The client subscription callback settings
+</li></ol></div>
+
+</div>
+</div>
+<div class="section" title="11.1.2. Running the TCK Runner"><div class="titlepage"><div><div><h3 class="title"><a id="_running_the_tck_runner"/>11.1.2. Running the TCK Runner</h3></div></div></div>
+
+<p>Executing the TCK runner is simple.</p>
+<pre class="screen">java (options) -Duddi.client.xml=uddi.xml -jar juddi-tck-runner-{VERSION}-SNAPSHOT-jar-with-dependencies.jar</pre>
+
+<p>Optional parameters</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+-Ddebug=true - this turns up the logging output, typically including the XML payloads of each message.
+</li><li class="listitem">
+-Duddi.client.xml=uddi.xml -  Use this file as the jUDDI Client config file. This specifies where all of the UDDI endpoints are.
+</li><li class="listitem">
+-Dtck.properties=file.properties - Use this to use an alternate tck properties file.
+</li></ul></div>
+
+</div>
+</div>
+<div class="section" title="11.2. Analyzing the Results"><div class="titlepage"><div><div><h2 class="title"><a id="_analyzing_the_results"/>11.2. Analyzing the Results</h2></div></div></div>
+
+<p>There are two ways to identify the result of the tests.</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+Analyze the console output
+</li><li class="listitem">
+Review the test results in uddi-tck-results-[DateTime].txt
+</li></ul></div>
+
+<p>The results are summarized in the uddi-tck-results file along with the specific error conditions and stack traces that will enable you to find out the root cause of the failure. It may be necessary to obtain UDDI server logs to help with root cause identification.</p>
+</div>
+</div><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch10.html"><strong>Prev</strong>Chapter 10. jUDDI Client for NET</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ix01.html"><strong>Next</strong>Index</a></li></ul></body></html>

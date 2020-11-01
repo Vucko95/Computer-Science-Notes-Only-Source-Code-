@@ -1,0 +1,787 @@
+<!--
+ ! Licensed to the Apache Software Foundation (ASF) under one
+ ! or more contributor license agreements.  See the NOTICE file
+ ! distributed with this work for additional information
+ ! regarding copyright ownership. The ASF licenses this file
+ ! to you under the Apache License, Version 2.0 (the
+ ! "License"); you may not use this file except in compliance
+ ! with the License. You may obtain a copy of the License at
+ !
+ !      http://www.apache.org/licenses/LICENSE-2.0
+ !
+ ! Unless required by applicable law or agreed to in writing, software
+ ! distributed under the License is distributed on an "AS IS" BASIS,
+ ! WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ ! See the License for the specific language governing permissions and
+ ! limitations under the License.
+ !-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+        "http://www.w3.org/TR/1998/REC-html40-19980424/strict.dtd">
+<html>
+<head>
+<title>Service Browser</title>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#9b37cc"
+      vlink="#cc1877" alink="#ffffff">
+A visualization tool for exploring Jini Network Technology
+communities (<i>djinns</i>) with support for ServiceUI. The Service Browser
+lets you discover lookup services and inspect the various
+services registered within those lookup services. This tool
+is provided as an example program within the Apache River release
+but many who use it think
+of it more as a utility than an example.
+<p>
+This document provides the following information about the Service Browser:
+<ul>
+<li><a href="#running">Running the Service Browser</a>
+<li><a href="#discovering">Discovering and Selecting a Lookup Service</a>
+<li><a href="#inspecting">Inspecting Services</a>
+<li><a href="#filtering">Filtering Services</a>
+<li><a href="#miscops">Other Operations</a>
+<li><a href="#configuring">Configuring the Service Browser</a>
+<li><a href="#logging">Loggers and Logging Levels</a>
+<li><a href="#examples">Examples for Running the Service Browser</a>
+</ul>
+
+<a name="running"></a>
+<h2>Running the Service Browser</h2>
+The Service Browser is started with the following command line 
+structure:
+<blockquote><pre>
+% java <var><b>java_options</b></var>
+       -jar <var><b>install_dir</b></var>/lib/browser.jar
+       <var><b>config_options</b></var>
+</pre></blockquote>
+where <var><b>java_options</b></var> includes such things as the security
+policy file and the RMI codebase annotation, <var><b>install_dir</b></var>
+is the directory where the Apache River release is installed, and
+<var><b>config_options</b></var> includes any
+{@link net.jini.config.Configuration} provider options. The
+Service Browser can be run with no <var><b>config_options</b></var>.
+For the RMI codebase annotation,
+the system property <code>java.rmi.server.codebase</code> should be set to
+two URLs that provide HTTP-based access to the Service Browser's download
+JAR files,
+<code><var><b>install_dir</b></var>/lib-dl/browser-dl.jar</code> and
+<code><var><b>install_dir</b></var>/lib-dl/jsk-dl.jar</code>, in that order.
+<p>
+The Service Browser also can be run as a nonactivatable entity under the
+{@linkplain com.sun.jini.start Service Starter}, using
+<code>com.sun.jini.example.browser.Browser</code> for the implementation
+class, <code><var><b>install_dir</b></var>/lib/browser.jar</code> for the
+implementation class path, and a codebase containing URLs for
+<code><var><b>install_dir</b></var>/lib-dl/browser-dl.jar</code> and
+<code><var><b>install_dir</b></var>/lib-dl/jsk-dl.jar</code> (in that order).
+
+<a name="discovering"></a>
+<h2>Discovering and Selecting a Lookup Service</h2>
+The lookup services that will be discovered are initially controlled
+by configuration entries, with the default being to perform multicast
+discovery for all lookup services. If you specify one or more groups or
+addresses in a configuration file (as described in
+<a href="#configuring">Configuring the Service Browser</a>),
+the browser only discovers lookup services that are members of those groups
+or that are at those addresses.
+<p>
+The Service Browser presents a single window when it is started. The
+window has the menu items <b>File</b>, <b>Registrar</b>, <b>Options</b>,
+<b>Services</b>, and <b>Attributes</b>. The upper text area changes to
+show which groups and/or addresses are being used for discovery and
+how many lookup services have been discovered.
+The picture below shows a typical Service Browser main window, in which
+nine lookup services have been discovered, but none have yet been selected.
+<p>
+<img src="doc-files/browser1.gif" 
+Alt="Picture of the lookup browser as it looks when it first starts.">
+<p>
+As lookup services are discovered,
+they appear under the <b>Registrar</b> menu, listed by unicast address.
+A specific lookup service can then be selected from this menu for browsing.
+When a lookup service is selected, the upper text area will be revised to
+show the number of services registered in that lookup service, and the lower
+folder area will show the registered services. Administrable services
+are shown with a blue icon, and non-administrable services are shown with
+a gray icon. As new services register or existing services unregister,
+the contents of the window will change automatically to reflect them.
+<p>
+After initial start up, different lookup services can be discovered
+using several items available from the <b>File</b> menu:
+<ul>
+    <li><b>Find All</b> will perform multicast discovery for all lookup
+	services. This is the default behavior of the
+	browser when it first starts.</li>
+    <li><b>Find Public</b> will perform multicast discovery for all lookup
+	services that are members of the <code>public</code> group.</li>
+    <li><b>Find By Group...</b> will present a dialog box allowing you to
+         specify one or more group names (separated by commas or whitespace).
+	 Multicast discovery will then be performed to find all lookup
+	 services that are members of those groups.</li>
+    <li><b>Find By Address...</b> will present a dialog box allowing you to
+	 specify one or more unicast addresses (separated by commas or
+	 whitespace). Unicast discovery will then be performed to find the
+	 lookup services at those adddresses.</li>
+</ul>
+<p>
+For example, the picture below shows the dialog box presented when the
+<b>Find By Group...</b> menu item is selected. 
+<p>
+<img src="doc-files/browser2.gif"
+Alt="Picture of the lookup browser with File menu pulled down.">
+<p>
+In this next picture, the group name <code>examples.jini.sun.com</code>
+will be entered.
+<p>
+<img src="doc-files/browser3.gif"
+Alt="Picture of the lookup browser with group dialog box visible.">
+<p>
+After the group <code>examples.jini.sun.com</code> has been entered, a list of
+discovered lookup services will appear in the <b>Registrar</b> menu.
+In this example, only the host
+<code>kahlua</code> has a lookup service running that is a member of
+<code>examples.jini.sun.com</code>, so <code>kahlua</code> is the only 
+address in the drop-down list from the <b>Registrar</b> menu.
+<p>
+<img src="doc-files/browser4.gif"
+Alt="Picture of the lookup browser with drop-down registrar list visible.">
+<p>
+When <code>kahlua</code> is selected from the <b>Registrar</b>
+menu, the window contents change as shown in the next picture.
+In this example, six services are registered:
+<p>
+<img src="doc-files/browser5.gif"
+Alt="Picture of the lookup browser with six services visible.">
+
+<a name="inspecting"></a>
+<h2>Inspecting Services</h2>
+Double clicking on a service listed in the lower area of the main window
+will open a new window, which can be used to inspect and optionally edit
+attributes of the selected service. The window is titled <b>ServiceItem
+Editor</b> if the service's administrative proxy implements any of the
+administrative interfaces supported by the Service Browser, otherwise it is
+titled <b>ServiceItem Browser</b>. In our running example,
+double clicking on the <b>net.jini.core.lookup.ServiceRegistrar</b>
+item opens this window:
+<p>
+<img src="doc-files/browser6.gif"
+Alt="Picture of the ServiceItem editor when first opened.">
+<p>
+The window shows all of the attribute sets
+that can be inspected and, in some cases, altered. Attribute sets and
+attributes with blue icons can be edited, those with gray icons cannot.
+An attribute set can be edited if it is not
+{@link net.jini.lookup.entry.ServiceControlled} and the service's
+administrative proxy implements the {@link net.jini.admin.JoinAdmin} interface.
+Within an editable attribute set, an attribute can be edited if it is of
+type <code>String</code> or one of the primitive wrapper classes.
+The two attribute sets shown in the example above are <b>ServiceInfo</b>
+and <b>BasicServiceType</b>.
+Each of these entries can be expanded by double-clicking on them
+as illustrated in the next two pictures.
+<p>
+Expanding the <b>BasicServiceType</b> entry:
+<p>
+<img src="doc-files/browser7.gif"
+Alt="Picture of the ServiceItem editor with BasicServiceType expanded.">
+<p>
+Expanding the <b>ServiceInfo</b> entry:
+<p>
+<img src="doc-files/browser8.gif"
+Alt="Picture of the ServiceItem editor with all items expanded.">
+<p>
+Double clicking again on an entry collapses the view. In an expanded entry,
+double clicking on an editable attribute brings up a dialog box that
+allows you to input a new value for the attribute. You can also use
+the <b>Edit</b> menu in the <b>ServiceItem Editor</b> window to
+add and remove attribute sets, if the service's administrative proxy
+implements the {@link net.jini.admin.JoinAdmin} interface.
+Select <b>Add attribute...</b> from the <b>Edit</b> menu to add an 
+attribute set. (Note that for this to work, you will have to run the
+Service Browser in such a way that the desired attribute set classes
+are in both its class path and its codebase.)
+Click on an attribute set and then select <b>Remove attribute</b> from
+the <b>Edit</b> menu to delete an attribute set.
+
+<a name="filtering"></a>
+<h2>Filtering Services</h2>
+Back in the main window, the <b>Services</b> menu shows various types that
+the registered services are instances of. You can select one or more of
+these types to add them your current template to refine the set of
+services displayed in the lower area of the window. When you select a
+type, it appears in the upper text area to show you what your new
+template contains, the revised number of matching services is shown,
+and only the services that are instances of all of the selected types are
+displayed in the lower area.
+<p>
+Similarly, the <b>Attributes</b> menu shows attribute set classes (with
+package prefixes removed) that can be added to your current template to
+refine the set of services.
+When you select a class, it appears in the upper text area to 
+show you what your new template contains, the revised number of 
+matching services is shown, and only the services with such an attribute
+set are displayed in the lower area. In addition, the selected menu item
+changes to a  pull-aside menu.
+You can go back to the <b>Attributes</b> menu to select 
+additional attribute set classes, or traverse a pull-aside menu to
+see the names of attributes, each of which is itself a pull-aside 
+menu. You can traverse these to see the possible values for the 
+attributes, and select one to further refine your search. You
+can deselect existing attribute choices, and you can deselect 
+the <code>(match)</code> menu item to deselect an entire class. 
+<p>
+By default, the <b>Services</b> menu only shows service interface types. You 
+can select <b>Service classes</b> from the <b>Options</b> menu to see service
+implementation classes instead. By default, only the most-derived interfaces
+or classes are shown, but you can select <b>Service supertypes</b> from the
+<b>Options</b> menu to see supertypes as well. Similarly, by default only the 
+most-derived attribute set classes are shown in the <b>Attributes</b> 
+menu, but you can select <b>Attribute supertypes</b> from the 
+<b>Options</b> menu to see superclasses as well. 
+<p>
+Select <b>Reset</b> from the <b>File</b> menu of the main window
+to reset the template to the initial (empty) state.
+
+<a name="miscops"></a>
+<h2>Other Operations</h2>
+In the lower area of the main window, you can right click on a service
+to obtain a popup menu. Select <b>Show Info</b> from this menu to see
+details about service ID and service types. If the service's administrative
+proxy implements any of the administrative interfaces supported by the Service
+Browser, selecting <b>Admin Service</b> from this menu brings up the
+<b>ServiceItem Editor</b> window. Selecting <b>Browse Service</b> from
+this menu brings up the <b>ServiceItem Browser</b> window. If the service
+is a JavaSpaces service and either its proxy implements the
+{@link net.jini.space.JavaSpace05} interface or its administrative proxy
+implements the {@link com.sun.jini.outrigger.JavaSpaceAdmin}
+interface, selecting <b>Browse Entries</b> from this menu brings up a
+window that displays all of the current entries.
+<p>
+In a <b>ServiceItem Editor</b> window, the <b>Admin</b> menu allows
+various administrative operations to be performed on the service.
+If the service's administrative proxy implements the
+{@link net.jini.admin.JoinAdmin} interface,
+you can use the <b>Joining groups...</b> and <b>Joining locators...</b>
+menu items to control which lookup groups and lookup locators the
+service uses for lookup discovery and join. 
+If the service is itself a lookup service and its administrative proxy
+implements the {@link net.jini.lookup.DiscoveryAdmin} interface, you can use
+the <b>Member groups...</b> menu item to control 
+which groups the lookup service is a member of, and you can 
+use the <b>Unicast port...</b> menu item to control 
+which unicast port the lookup service uses for its lookup locator. 
+If the service's administrative proxy implements the
+{@link com.sun.jini.admin.DestroyAdmin}
+interface, you can use the <b>Destroy</b> menu item to destroy the
+service. This last menu selection is illustrated in the picture below.
+<p>
+<img src="doc-files/browser9.gif"
+Alt="Picture of the ServiceItem editor with Destroy selected from the Admin menu.">
+
+<a name="configuring"></a>
+<h2>Configuring the Service Browser</h2>
+
+The Service Browser obtains its configuration by calling
+{@link net.jini.config.ConfigurationProvider#getInstance(String[],ClassLoader)
+ConfigurationProvider.getInstance} with the <var><b>config_options</b></var>
+specified on the command line and the class loader for the main
+implementation class.
+<p>
+The Service Browser supports the following configuration
+entries, with component <code>com.sun.jini.example.browser</code>:
+<p>
+
+<a name="adminPreparer"></a>
+<table summary="Describes the adminPreparer configuration entry"
+       border="0" cellpadding="2">
+  <tr valign="top">
+    <th scope="col" summary="layout"> <font size="+1">&#X2022;</font>
+    <th scope="col" align="left" colspan="2"> <font size="+1"><code>
+    adminPreparer</code></font>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Type: <td> {@link net.jini.security.ProxyPreparer}
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Default: <td> <code>
+      new {@link net.jini.security.BasicProxyPreparer}()
+      </code>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Description: <td> Prepares administrative proxies obtained by calling
+    the {@link net.jini.admin.Administrable#getAdmin Administrable.getAdmin}
+    method on service proxies. The value should not be <code>null</code>.
+    The Service Browser only calls methods on an administrative proxy if
+    administrative operations are performed using menu items. Methods of
+    the {@link net.jini.admin.JoinAdmin},
+    {@link net.jini.lookup.DiscoveryAdmin},
+    {@link com.sun.jini.admin.DestroyAdmin}, and
+    {@link com.sun.jini.outrigger.JavaSpaceAdmin} interfaces can be invoked.
+</table>
+
+<a name="discoveryManager"></a>
+<table summary="Describes the discoveryManager configuration entry"
+       border="0" cellpadding="2">
+  <tr valign="top">
+    <th scope="col" summary="layout"> <font size="+1">&#X2022;</font>
+    <th scope="col" align="left" colspan="2"> <font size="+1"><code>
+    discoveryManager</code></font>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Type: <td> {@link net.jini.discovery.DiscoveryManagement}
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Default: <td>
+<pre>
+new {@link net.jini.discovery.LookupDiscoveryManager}(
+    {@link net.jini.discovery.DiscoveryGroupManagement#NO_GROUPS},
+    null,  // locators
+    null,  // listener
+    this)  // config
+</pre>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Description: <td> Supplies the object used to discover lookup services.
+    The value should not be <code>null</code>. The object returned must
+    also implement {@link net.jini.discovery.DiscoveryGroupManagement} and
+    {@link net.jini.discovery.DiscoveryLocatorManagement}, and should be
+    configured initially to discover no groups and no specific lookup
+    services.
+</table>
+
+<a name="exitActionListener"></a>
+<table summary="Describes the exitActionListener configuration entry"
+       border="0" cellpadding="2">
+  <tr valign="top">
+    <th scope="col" summary="layout"> <font size="+1">&#X2022;</font>
+    <th scope="col" align="left" colspan="2"> <font size="+1"><code>
+    exitActionListener</code></font>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Type: <td> {@link java.awt.event.ActionListener}
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Default: <td> see the {@link com.sun.jini.example.browser.Browser}
+    constructors for details
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Description: <td> The action listener for the <b>Exit</b> item of
+    the <b>File</b> menu.
+</table>
+
+<a name="folderView"></a>
+<table summary="Describes the folderView configuration entry"
+       border="0" cellpadding="2">
+  <tr valign="top">
+    <th scope="col" summary="layout"> <font size="+1">&#X2022;</font>
+    <th scope="col" align="left" colspan="2"> <font size="+1"><code>
+    folderView</code></font>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Type: <td> <code>boolean</code>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Default: <td> <code>true</code>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Description: <td> Controls the format of the main window.
+    If <code>true</code>, the main window is split into two areas
+    as described in the rest of this documentation. If <code>false</code>,
+    the main window a single text area, and many of the browsing and
+    administrative operations are not available; the <b>Show Matches</b>
+    item of the <b>File</b> menu must be used to display services
+    registered in the selected lookup service.
+</table>
+
+<a name="initialLookupGroups"></a>
+<table summary="Describes the initialLookupGroups configuration entry"
+       border="0" cellpadding="2">
+  <tr valign="top">
+    <th scope="col" summary="layout"> <font size="+1">&#X2022;</font>
+    <th scope="col" align="left" colspan="2"> <font size="+1"><code>
+    initialLookupGroups</code></font>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Type: <td> <code>String[]</code>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Default: <td> <code>null</code>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Description: <td> The names of the lookup groups that the Service
+    Browser should initially discover. An empty array specifies that no groups
+    should be discovered. A <code>null</code> value specifies that all
+    lookup services should be discovered. Otherwise, the value specifies the
+    names of the groups to discover. The array must not contain
+    <code>null</code> elements. This entry used when the Service Browser is
+    first started; after initial startup, lookup service discovery is
+    controlled through the <b>File</b> menu.
+</table>
+
+<a name="initialLookupLocators"></a>
+<table summary="Describes the initialLookupLocators configuration entry"
+       border="0" cellpadding="2">
+  <tr valign="top">
+    <th scope="col" summary="layout"> <font size="+1">&#X2022;</font>
+    <th scope="col" align="left" colspan="2"> <font size="+1"><code>
+    initialLookupLocators</code></font>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Type: <td> <code>{@link net.jini.core.discovery.LookupLocator}[]</code>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Default: <td> <code>null</code>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Description: <td> The locators for specific lookup services that
+    the Service Browser should initially discover. An empty array or
+    <code>null</code> specifies that no specific lookup services
+    should be discovered. The array must not contain <code>null</code>
+    elements. This entry is used when the Service Browser is first started;
+    after initial startup, lookup service discovery is controlled through
+    the <b>File</b> menu.
+  <p>
+    Note that the constraints specified in the <code>locatorConstraints</code>
+    configuration entry will not be used for these initial locators; any
+    desired constraints should be attached directly to the initial locators.
+</table>
+
+<a name="leaseManager"></a>
+<table summary="Describes the leaseManager configuration entry"
+       border="0" cellpadding="2">
+  <tr valign="top">
+    <th scope="col" summary="layout"> <font size="+1">&#X2022;</font>
+    <th scope="col" align="left" colspan="2"> <font size="+1"><code>
+    leaseManager</code></font>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Type: <td> {@link net.jini.lease.LeaseRenewalManager}
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Default: <td> <code>new LeaseRenewalManager(this /* config */)</code>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Description: <td> Supplies the lease renewal manager used to
+    renew leases for remote event registrations and when obtaining the
+    entries of a JavaSpaces service. The value should not be
+    <code>null</code>.
+</table>
+
+<a name="leasePreparer"></a>
+<table summary="Describes the leasePreparer configuration entry"
+       border="0" cellpadding="2">
+  <tr valign="top">
+    <th scope="col" summary="layout"> <font size="+1">&#X2022;</font>
+    <th scope="col" align="left" colspan="2"> <font size="+1"><code>
+    leasePreparer</code></font>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Type: <td> {@link net.jini.security.ProxyPreparer}
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Default: <td> <code>
+      new {@link net.jini.security.BasicProxyPreparer}()
+      </code>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Description: <td> Prepares leases obtained from registering
+    for event notifications with lookup services and from requesting
+    the entries of a JavaSpaces service. The value should not be
+    <code>null</code>.
+   <p>
+    The Service Browser calls the {@link net.jini.core.lease.Lease#renew
+    renew} and {@link net.jini.core.lease.Lease#cancel cancel} methods on
+    leases, and the {@link net.jini.core.lease.LeaseMap#renewAll renewAll}
+    method on lease maps created (via the {@link
+    net.jini.lease.LeaseRenewalManager}) from leases.
+</table>
+
+<a name="listenerExporter"></a>
+<table summary="Describes the listenerExporter configuration entry"
+       border="0" cellpadding="2">
+  <tr valign="top">
+    <th scope="col" summary="layout"> <font size="+1">&#X2022;</font>
+    <th scope="col" align="left" colspan="2"> <font size="+1"><code>
+    listenerExporter</code></font>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Type: <td> {@link net.jini.export.Exporter}
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Default: <td>
+<pre>
+new {@link net.jini.jeri.BasicJeriExporter}(
+    {@link net.jini.jeri.tcp.TcpServerEndpoint#getInstance TcpServerEndpoint.getInstance}(0),
+    new {@link net.jini.jeri.BasicILFactory}(), false, false)
+</pre>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Description: <td> The object to use for exporting all
+    {@link net.jini.core.event.RemoteEventListener} instances used
+    by the Service Browser when registering for event notifications from
+    lookup services. The value should not be <code>null</code>.
+</table>
+
+<a name="locatorConstraints"></a>
+<table summary="Describes the locatorConstraints configuration entry"
+       border="0" cellpadding="2">
+  <tr valign="top">
+    <th scope="col" summary="layout"> <font size="+1">&#X2022;</font>
+    <th scope="col" align="left" colspan="2"> <font size="+1"><code>
+    locatorConstraints</code></font>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Type: <td> {@link net.jini.core.constraint.MethodConstraints}
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Default: <td> <code>null</code>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Description: <td> Constraints to attach to any
+    {@link net.jini.core.discovery.LookupLocator} instances constructed
+    from the addresses entered using the <b>Find By Address...</b> menu item.
+   <p>
+    These constraints are not attached to the locators obtained from the
+    <code>initialLookupLocators</code> configuration entry.
+</table>
+
+<a name="loginContext"></a>
+<table summary="Describes the loginContext configuration entry"
+       border="0" cellpadding="2">
+  <tr valign="top">
+    <th scope="col" summary="layout"> <font size="+1">&#X2022;</font>
+    <th scope="col" align="left" colspan="2"> <font size="+1"><code>
+    loginContext</code></font>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Type: <td> {@link javax.security.auth.login.LoginContext}
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Default: <td> <code>null</code>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Description: <td> Specifies the JAAS login context to use for
+    performing a JAAS login and supplying the
+    {@link javax.security.auth.Subject} to use when running the
+    Service Browser. If <code>null</code>, no JAAS login is performed
+    and no subject is used.
+</table>
+
+<a name="servicePreparer"></a>
+<table summary="Describes the servicePreparer configuration entry"
+       border="0" cellpadding="2">
+  <tr valign="top">
+    <th scope="col" summary="layout"> <font size="+1">&#X2022;</font>
+    <th scope="col" align="left" colspan="2"> <font size="+1"><code>
+    servicePreparer</code></font>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Type: <td> {@link net.jini.security.ProxyPreparer}
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Default: <td> <code>
+      new {@link net.jini.security.BasicProxyPreparer}()
+      </code>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Description: <td> Prepares service proxies obtained from lookup servics.
+    The value should not be <code>null</code>. The Service Browser
+    calls the {@link net.jini.admin.Administrable#getAdmin
+    Administrable.getAdmin} method on a service proxy for most
+    administrative operations, and calls the
+    {@link net.jini.space.JavaSpace05#contents JavaSpace05.contents}
+    method on a JavaSpaces service proxy to browse entries.
+</table>
+
+<a name="uninterestingInterfaces"></a>
+<table summary="Describes the uninterestingInterfaces configuration entry"
+       border="0" cellpadding="2">
+  <tr valign="top">
+    <th scope="col" summary="layout"> <font size="+1">&#X2022;</font>
+    <th scope="col" align="left" colspan="2"> <font size="+1"><code>
+    uninterestingInterfaces</code></font>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Type: <td> <code>String[]</code>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Default: <td>
+<pre>
+new String[]{
+    "java.io.Serializable",
+    "java.rmi.Remote",
+    "net.jini.admin.Administrable",
+    "net.jini.core.constraint.RemoteMethodControl",
+    "net.jini.id.ReferentUuid"
+    "net.jini.security.proxytrust.TrustEquivalence"}
+</pre>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Description: <td> Supplies the set of interface names that are not
+    interesting to choose when displaying service instances the lower
+    area of the main window. If the service proxy implements exactly
+    one interface that is not in this list, the name of that interface
+    is used to name the service, otherwise the concrete class of the
+    service proxy is used appended with all the names of the 'interesting'
+    interfaces implemented by that proxy. The value should not be
+    <code>null</code>.
+</table>
+
+<a name="autoConfirm"></a>
+<table summary="Describes the autoConfirm configuration entry"
+       border="0" cellpadding="2">
+  <tr valign="top">
+    <th scope="col" summary="layout"> <font size="+1">&#X2022;</font>
+    <th scope="col" align="left" colspan="2"> <font size="+1"><code>
+    autoConfirm</code></font>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Type: <td> <code>boolean</code>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Default: <td> <code>false</code>
+  <tr valign="top"> <td> &nbsp <th scope="row" align="right">
+    Description: <td> Controls whether a confirmation window must popup that
+    requires a confirmation for the update or removal of the service editor
+    window. In case set to <code>true</code> closing of the service editor
+    window will occur automatically in case a service is removed, in case of
+    modifications to the lookup attributes of a service the service editor
+    window will be updated.
+</table>
+<p>
+Note that additional entries can also be specified to configure the
+{@link net.jini.lease.LeaseRenewalManager},
+{@link net.jini.discovery.LookupDiscovery}, and
+{@link net.jini.discovery.LookupLocatorDiscovery} components. For
+example, the Service Browser assumes you have configured the discovery
+manager (obtained from the <code>discoveryManager</code> configuration
+entry) to enforce any desired constraints for multicast discovery
+and to perform any desired proxy preparation for all discovered lookup
+services.
+<p>
+The most commonly used configuration entries are likely to be:
+<ul>
+<li><a href="#initialLookupGroups"><code>initialLookupGroups</code></a>
+<li><a href="#initialLookupLocators"><code>initialLookupLocators</code></a>
+</ul>
+<p>
+Secure deployments typically will provide values for most of the following
+configuration entries:
+<ul>
+<li><a href="#loginContext"><code>loginContext</code></a>
+<li><a href="#leasePreparer"><code>leasePreparer</code></a>
+<li><a href="#servicePreparer"><code>servicePreparer</code></a>
+<li><a href="#adminPreparer"><code>adminPreparer</code></a>
+<li><a href="#listenerExporter"><code>listenerExporter</code></a>
+<li><a href="#locatorConstraints"><code>locatorConstraints</code></a>
+</ul>
+plus the following configuration entries for <code>LookupDiscovery</code>
+(if groups are used for discovery):
+<ul>
+<li><code>registrarPreparer</code></li>
+<li><code>discoveryConstraints</code></li>
+</ul>
+and the following configuration entry for <code>LookupLocatorDiscovery</code>
+(if locators are used for discovery):
+<ul>
+<li><code>registrarPreparer</code></li>
+</ul>
+
+<a name="logging"></a>
+<h2>Loggers and Logging Levels</h2>
+
+The Service Browser uses the {@link java.util.logging.Logger} named
+<code>com.sun.jini.example.browser</code> to log
+information at the following logging levels:
+<p>
+<table border="1" cellpadding="5"
+       summary="Describes logging performed by Service Browser at different
+       logging levels">
+
+<caption halign="center" valign="top"><b><code>
+	com.sun.jini.example.browser</code></b></caption>
+
+<tr> <th scope="col"> Level <th scope="col"> Description
+
+<tr> <td> {@link java.util.logging.Level#SEVERE SEVERE} <td>
+Problems that prevent Service Browser startup
+
+<tr> <td> {@link java.util.logging.Level#INFO INFO} <td> Potentially
+interesting exceptions that occur when performing operations
+
+<tr> <td> {@link com.sun.jini.logging.Levels#HANDLED HANDLED} <td>
+Less interesting exceptions that occur when performing operations
+
+</table>
+<p>
+See the {@link com.sun.jini.logging.LogManager} class for one way to use the
+<code>HANDLED</code> logging level in standard logging configuration files.
+
+<a name="examples"></a>
+<h2>Examples for Running the Service Browser</h2>
+
+An example command line for starting the Service Browser is:
+<blockquote><pre>
+% java -Djava.security.policy=<a href="#policy">browser.policy</a>
+       -Djava.rmi.server.codebase="http://<var><b>your_host</b></var>:<var><b>http_port</b></var>/browser-dl.jar http://<var><b>your_host</b></var>:<var><b>http_port</b></var>/jsk-dl.jar"
+       -Djava.protocol.handler.pkgs=net.jini.url
+       -jar <var><b>install_dir</b></var>/lib/browser.jar
+</pre></blockquote>
+In this example, the local host is assumed to have the name
+<var><b>your_host</b></var>, running an HTTP server on port
+<var><b>http_port</b></var>, serving files in the <code>lib</code>
+subdirectory of <var><b>install_dir</b></var>, the directory where the
+Apache River release is installed.
+When the Service Browser is run this way, without a configuration file, it
+will perform multicast discovery to find all available lookup
+services, and will use Jini extensible remote invocation (Jini ERI)
+over TCP/IP for its remote event listeners.
+<p>
+An example command line for starting the Service Browser with a
+configuration file is:
+<blockquote><pre>
+% java -Djava.security.policy=<a href="#policy">browser.policy</a>
+       -Djava.rmi.server.codebase="http://<var><b>your_host</b></var>:<var><b>http_port</b></var>/browser-dl.jar http://<var><b>your_host</b></var>:<var><b>http_port</b></var>/jsk-dl.jar"
+       -Djava.protocol.handler.pkgs=net.jini.url
+       -jar <var><b>install_dir</b></var>/lib/browser.jar
+       <a href="#public">public.config</a>
+</pre></blockquote>
+The example configuration file <code>public.config</code> only discovers
+lookup services in the public group:
+<a name="public"></a>
+<blockquote><pre>
+com.sun.jini.example.browser {
+    initialLookupGroups = new String[]{""};
+}
+</pre></blockquote>
+<p>
+The following example configuration file initially discovers no
+lookup services and uses JRMP for its remote event listeners:
+<blockquote><pre>
+com.sun.jini.example.browser {
+    initialLookupGroups = new String[]{};
+    listenerExporter = new net.jini.jrmp.JrmpExporter();
+}
+</pre></blockquote>
+<p>
+In all the above command lines, the policy file <code>browser.policy</code>
+was specified for the <code>java.security.policy</code> system property.
+An example policy file is:
+<a name="policy"></a>
+<blockquote><pre>
+grant codebase "file:<var><b>install_dir</b></var>/lib/browser.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:<var><b>install_dir</b></var>/lib/jsk-platform.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:<var><b>install_dir</b></var>/lib/jsk-lib.jar" {
+    permission java.security.AllPermission;
+};
+
+grant {
+    permission java.net.SocketPermission "*:1024-", "connect";
+};
+</pre></blockquote>
+<p>
+<b>Note:</b> Of course, a more restrictive policy file could be used;
+the one shown here is for illustrative purposes only.
+<p>
+An example of running under the Service Starter is:
+<blockquote><pre>
+% java -Djava.security.policy=<a href="#start_policy">start.policy</a>
+       -Djava.protocol.handler.pkgs=net.jini.url
+       -jar <var><b>install_dir</b></var>/lib/start.jar
+       <a href="#start_config">start.config</a>
+</pre></blockquote>
+<p>
+where <code>start.config</code> is the following configuration file:
+<a name="start_config"></a>
+<blockquote><pre>
+import com.sun.jini.start.NonActivatableServiceDescriptor;
+import com.sun.jini.start.ServiceDescriptor;
+
+com.sun.jini.start {
+
+  serviceDescriptors = new ServiceDescriptor[]{
+    new NonActivatableServiceDescriptor(
+      "http://<var><b>your_host</b></var>:<var><b>http_port</b></var>/browser-dl.jar http://<var><b>your_host</b></var>:<var><b>http_port</b></var>/jsk-dl.jar",
+      "<a href="#policy">browser.policy</a>",
+      "<var><b>install_dir</b></var>/lib/browser.jar",
+      "com.sun.jini.example.browser.Browser",
+      new String[]{"<a href="#public">public.config</a>"})
+    };
+}
+</pre></blockquote>
+An example policy file for <code>start.policy</code> is:
+<a name="start_policy"></a>
+<blockquote><pre>
+grant codebase "file:<var><b>install_dir</b></var>/lib/start.jar" {
+    permission java.security.AllPermission;
+};
+
+grant codebase "file:<var><b>install_dir</b></var>/lib/jsk-platform.jar" {
+    permission java.security.AllPermission;
+};
+</pre></blockquote>
+</body>
+</html>

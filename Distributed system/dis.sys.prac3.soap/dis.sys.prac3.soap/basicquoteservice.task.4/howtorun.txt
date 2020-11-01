@@ -1,0 +1,13 @@
+
+
+to make the file work, 
+
+
+first you need to attach the jar files to the eclipse ide so it can read your juddi server
+
+--  download juddi-distro-3.3.5 3
+
+1. you need to create the server and run the create service. 
+2. you need to run the service and last you need to start the client. 
+3. this will then popullate the juddi interface with your buisnesses created on the code. 
+

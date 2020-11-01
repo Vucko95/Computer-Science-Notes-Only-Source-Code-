@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Chapter 12. Contributing to jUDDI</title><link rel="stylesheet" type="text/css" href="css/jbossorg.css"/><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Apache jUDDI Guide"/><link rel="up" href="index.html" title="Apache jUDDI Guide"/><link rel="prev" href="ch11.html" title="Chapter 11. Troubleshooting jUDDI"/><link rel="next" href="bi01.html" title="Bibliography"/><link rel="copyright" href="ln-d5e27.html" title="Legal Notice"/><meta xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p xmlns:d="http://docbook.org/ns/docbook" id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch11.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="bi01.html"><strong>Next</strong></a></li></ul><div class="chapter" title="Chapter 12. Contributing to jUDDI"><div class="titlepage"><div><div><h2 class="title"><a id="_contributing_to_juddi"/>Chapter 12. Contributing to jUDDI</h2></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="section"><a href="ch12.html#_license_guidance">12.1. License guidance</a></span></dt><dt><span class="section"><a href="ch12.html#_svn_access">12.2. SVN access</a></span></dt><dt><span class="section"><a href="ch12.html#_project_structure">12.3. Project structure</a></span></dt><dt><span class="section"><a href="ch12.html#_building_and_testing_juddi">12.4. Building and testing jUDDI</a></span></dt><dd><dl><dt><span class="section"><a href="ch12.html#_all_java_components">12.4.1. All Java Components</a></span></dt><dt><span class="section"><a href="ch12.html#__net">12.4.2. .NET</a></span></dt></dl></dd><dt><span class="section"><a href="ch12.html#_other_ways_to_contribute_to_juddi">12.5. Other ways to Contribute to jUDDI</a></span></dt><dd><dl><dt><span class="section"><a href="ch12.html#_bug_reports">12.5.1. Bug Reports</a></span></dt><dt><span class="section"><a href="ch12.html#_internationalization">12.5.2. Internationalization</a></span></dt><dt><span class="section"><a href="ch12.html#_contributing_source_code">12.5.3. Contributing Source code</a></span></dt><dt><span class="section"><a href="ch12.html#_releases">12.5.4. Releases</a></span></dt></dl></dd><dt><span class="section"><a href="ch12.html#_what_the">12.6. What the?</a></span></dt></dl></div>
+
+<p>We welcome contributions to jUDDI. Visit the jUDDI web set at <a class="ulink" href="http://juddi.apache.org">http://juddi.apache.org</a> for more information.</p>
+<div class="section" title="12.1. License guidance"><div class="titlepage"><div><div><h2 class="title"><a id="_license_guidance"/>12.1. License guidance</h2></div></div></div>
+
+<p>Apache jUDDI is released under the Apache Software Foundation v2.0 License. Details on the license is located at the following link: <a class="ulink" href="http://apache.org/licenses/LICENSE-2.0">http://apache.org/licenses/LICENSE-2.0</a>.</p>
+<p>If you wish to bring in 3rd libraries, please keep in mind that certain libraries cannot be used due to license restrictions. See <a class="ulink" href="http://www.apache.org/legal/3party.html">http://www.apache.org/legal/3party.html</a> for details.</p>
+</div>
+<div class="section" title="12.2. SVN access"><div class="titlepage"><div><div><h2 class="title"><a id="_svn_access"/>12.2. SVN access</h2></div></div></div>
+
+<p>Source code is accessible at the following link: <a class="ulink" href="https://svn.apache.org/viewvc/juddi/trunk/">https://svn.apache.org/viewvc/juddi/trunk/</a>.</p>
+</div>
+<div class="section" title="12.3. Project structure"><div class="titlepage"><div><div><h2 class="title"><a id="_project_structure"/>12.3. Project structure</h2></div></div></div>
+
+<p>jUDDI, from a developer’s perspective, is divided into a number of smaller, more manageable modules. In general, each module contains all of the necessary unit tests in order to ensure functionality.</p>
+</div>
+<div class="section" title="12.4. Building and testing jUDDI"><div class="titlepage"><div><div><h2 class="title"><a id="_building_and_testing_juddi"/>12.4. Building and testing jUDDI</h2></div></div></div>
+
+<p>jUDDI has a number of components, however it is mostly Java based. The following sections describe the particulars for each language.</p>
+<div class="section" title="12.4.1. All Java Components"><div class="titlepage"><div><div><h3 class="title"><a id="_all_java_components"/>12.4.1. All Java Components</h3></div></div></div>
+
+<p>Procedure</p>
+<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+Acquire a Subversion client.
+</li><li class="listitem">
+Execute svn co <a class="ulink" href="https://svn.apache.org/viewvc/juddi/trunk/">https://svn.apache.org/viewvc/juddi/trunk/</a>
+</li><li class="listitem">
+Acquire a JDK5 or higher and setup the JAVA_HOME environment variable.
+</li><li class="listitem">
+Acquire Apache Maven. Known working version: 3.0.4
+</li><li class="listitem">
+Setup an environment variable, MAVEN_OPTS=-Xmx768m -XX:MaxPermSize=512m
+</li><li class="listitem">
+Make sure the Maven/bin folder and the JDK/bin folders are in the current path
+</li><li class="listitem">
+Execute "mvn clean install"
+</li></ol></div>
+
+<p>This will build, test and package all of the Java components of jUDDI. This includes the Technical Conformance Kit (TCK), a live Tomcat server, the user interfaces, and more.</p>
+<p>For additional build output, add -Ddebug-true for Java.</p>
+<p>To prepare a deployable jUDDI war for an alternate deployment scenario (other than Tomcat with CXF and OpenJPA), use the following procedure:</p>
+<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+Execute "mvn clean package -P&lt;packageName&gt;"
+</li></ol></div>
+
+<p>Where &lt;packageName&gt; is one of the following</p>
+<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+openjpa-jboss7up for EAP 6 and up, GA 7 and up
+</li><li class="listitem">
+hibernate-jbossws-native for EAP 5, Jboss GA 6 and down with the JbossWS Native soap stack
+</li><li class="listitem">
+hibernate-jbossws-cxf for EAP 5, Jboss GA 6 and down with the JbossWS Native soap stack
+</li><li class="listitem">
+hibernate (includes CXF in the war, used for Tomcat)
+</li><li class="listitem">
+openjpa (includes CXF in the war, used for Tomcat)
+</li><li class="listitem">
+axis2 (includes Axis2 in the war)
+</li></ol></div>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>When altering the TCK based modules, make sure you clean install in the root check out location. Due to the build order, you may end up with strange results when just executing the tests, even with clean install.</p>
+</div>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>To attach the debugger to the build process try "mvn -Dmaven.surefire.debug clean install". It listens on port 5005 by default. More info on debugging maven projects is here <a class="ulink" href="http://maven.apache.org/surefire/maven-surefire-plugin/examples/debugging.html">http://maven.apache.org/surefire/maven-surefire-plugin/examples/debugging.html</a></p>
+</div>
+
+</div>
+<div class="section" title="12.4.2. .NET"><div class="titlepage"><div><div><h3 class="title"><a id="__net"/>12.4.2. .NET</h3></div></div></div>
+
+<p>jUDDI also has a .NET based jUDDI Client. To build this, only the .NET Framework needs to be installed, version 3.5 or higher. A Visual Studio solution file is included, but it is not required for building.</p>
+<p>Procedure - Windows
+* Add MSBuild.exe to your system path. It’s usually in %SYSTEMROOT%\Microsoft.NET\Framework(64)\v4.x.x. If you haven’t installed .NET 4 yet, replace v4.x.x with v2.x.x
+* Build the solution. This will build the juddi-client.net.dll, the same application(s) and the test project(s).</p>
+<pre class="screen">MSBuild.exe juddi-client.net.sln /p:Configuration=Debug /p:Platform="Any CPU"</pre>
+
+<p>For additional debug output set the environment variable <span class="emphasis"><em>debug=true</em></span></p>
+<pre class="screen">set debug=true</pre>
+
+<p>Procedure - *nix using Mono</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>Support on Mono is very experimental. There are still many APIs that have no yet been implements on Mono that may cause compilation failure.</p>
+</div>
+
+<p>To build the .NET assemblies on a Linux or Unix based computer:
+* Install Mono (apt-get install mono-complete mono-develop
+* Build it</p>
+<pre class="screen">cd juddi-client.net
+xbuild judddi-client.net-mono.sln
+cd juddi-client.net-sample/bin/Debug/
+mono juddi-client.net-sample.exe</pre>
+
+</div>
+</div>
+<div class="section" title="12.5. Other ways to Contribute to jUDDI"><div class="titlepage"><div><div><h2 class="title"><a id="_other_ways_to_contribute_to_juddi"/>12.5. Other ways to Contribute to jUDDI</h2></div></div></div>
+
+<p>There are many ways you can contribute to jUDDI. We welcome all kinds and types contributions.</p>
+<div class="section" title="12.5.1. Bug Reports"><div class="titlepage"><div><div><h3 class="title"><a id="_bug_reports"/>12.5.1. Bug Reports</h3></div></div></div>
+
+<p>Bug reports and feature requests are low effort tasks that do not require a high level of technical proficiency.</p>
+</div>
+<div class="section" title="12.5.2. Internationalization"><div class="titlepage"><div><div><h3 class="title"><a id="_internationalization"/>12.5.2. Internationalization</h3></div></div></div>
+
+<p>The jUDDI GUI user interface is designed to be multi-lingual. For the 3.2 release, English and Spanish are provided for the user interface. The jUDDI server administration user interface is also available in English and Spanish.</p>
+</div>
+<div class="section" title="12.5.3. Contributing Source code"><div class="titlepage"><div><div><h3 class="title"><a id="_contributing_source_code"/>12.5.3. Contributing Source code</h3></div></div></div>
+
+<p>When contributing source code, you must own the code and be will to donate the code to the Apache Software Foundation. For those without SVN access, the process is as follows:
+. Open a JIRA on the jUDDI Issue Tracker
+. Write your code and test it (mvn clean install)
+. Use Subversion to create a patch (svn patch)
+. Upload the patch as an attachment for the JIRA</p>
+<p>Once accepted, your code will be added to the baseline. Code submissions may be modified for style, content, documentation and any other reason that we see fit.</p>
+<div class="section" title="12.5.3.1. Coding Standards"><div class="titlepage"><div><div><h4 class="title"><a id="_coding_standards"/>12.5.3.1. Coding Standards</h4></div></div></div>
+
+<p>The majority of jUDDI’s source code is formatted using 8 space tabs and using Javadoc style documentation. In general, test cases are often more useful and more valuable that the code being tested.</p>
+</div>
+</div>
+<div class="section" title="12.5.4. Releases"><div class="titlepage"><div><div><h3 class="title"><a id="_releases"/>12.5.4. Releases</h3></div></div></div>
+
+<p>For the latest information on jUDDI’s release process, visit <a class="ulink" href="http://juddi.apache.org/committers.html">http://juddi.apache.org/committers.html</a></p>
+</div>
+</div>
+<div class="section" title="12.6. What the?"><div class="titlepage"><div><div><h2 class="title"><a id="_what_the"/>12.6. What the?</h2></div></div></div>
+
+<p>Having ran into a number of strange issues when developing with jUDDI, we decided to write a few of them down.</p>
+<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+I added a new class to juddi-core but it doesn’t end up in the packaged tomcat instance? A: Modify the pom and make sure the package name is added to juddi-core-openjpa
+</li><li class="listitem">
+Some unit tests fail, but only under windows. A: This is specifically for the SubscriptionListerner Tests and most likely has something to do with ports getting locked up by the Java process.
+</li></ol></div>
+
+</div>
+</div><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch11.html"><strong>Prev</strong>Chapter 11. Troubleshooting jUDDI</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="bi01.html"><strong>Next</strong>Bibliography</a></li></ul></body></html>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Chapter 2. jUDDI Client Configuration Guide</title><link rel="stylesheet" type="text/css" href="css/jbossorg.css"/><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="up" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="prev" href="ch01.html" title="Chapter 1. Simple Publishing Using the jUDDI API"/><link rel="next" href="ch03.html" title="Chapter 3. Key Format Templates"/><link rel="copyright" href="ln-d5e27.html" title="Legal Notice"/><meta xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p xmlns:d="http://docbook.org/ns/docbook" id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch01.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ch03.html"><strong>Next</strong></a></li></ul><div class="chapter" title="Chapter 2. jUDDI Client Configuration Guide"><div class="titlepage"><div><div><h2 class="title"><a id="_juddi_client_configuration_guide"/>Chapter 2. jUDDI Client Configuration Guide</h2></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="section"><a href="ch02.html#_introduction">2.1. Introduction</a></span></dt><dt><span class="section"><a href="ch02.html#_client_settings">2.2. Client Settings</a></span></dt><dt><span class="section"><a href="ch02.html#_nodes">2.3. Nodes</a></span></dt><dd><dl><dt><span class="section"><a href="ch02.html#_transport_options">2.3.1. Transport Options</a></span></dt></dl></dd><dt><span class="section"><a href="ch02.html#_clerks">2.4. Clerks</a></span></dt><dt><span class="section"><a href="ch02.html#_clerk">2.5. Clerk</a></span></dt><dt><span class="section"><a href="ch02.html#_digital_signatures">2.6. Digital Signatures</a></span></dt><dt><span class="section"><a href="ch02.html#_subscription_callbacks">2.7. Subscription Callbacks</a></span></dt><dt><span class="section"><a href="ch02.html#_xtowsdl">2.8. XtoWsdl</a></span></dt><dt><span class="section"><a href="ch02.html#_embedded_juddi_server">2.9. Embedded jUDDI server</a></span></dt><dd><dl><dt><span class="section"><a href="ch02.html#_requirements">2.9.1. Requirements</a></span></dt><dt><span class="section"><a href="ch02.html#_changes_in_configuration_compared_to_non_embedded">2.9.2. Changes in configuration compared to non-embedded</a></span></dt></dl></dd></dl></div>
+
+<div class="section" title="2.1. Introduction"><div class="titlepage"><div><div><h2 class="title"><a id="_introduction"/>2.1. Introduction</h2></div></div></div>
+
+<p>The jUDDI Java and .NET clients use an XML configuration file that dictates settings and behaviors.
+This guide provides an overview of the settings. Both .NET and jUDDI use the same configuration file schema. This schema is located within the source tree and with the client distribution packages of jUDDI.</p>
+</div>
+<div class="section" title="2.2. Client Settings"><div class="titlepage"><div><div><h2 class="title"><a id="_client_settings"/>2.2. Client Settings</h2></div></div></div>
+
+<p>The root XML node for the jUDDI client configuration file is always "uddi".</p>
+<pre class="screen">&lt;!-- applies to Java clients only --&gt;
+uddi/reloadDelay</pre>
+
+<p>Multiple clients can be defined in each configuration file.</p>
+<pre class="screen">uddi/client@name="someName"</pre>
+
+</div>
+<div class="section" title="2.3. Nodes"><div class="titlepage"><div><div><h2 class="title"><a id="_nodes"/>2.3. Nodes</h2></div></div></div>
+
+<p>At least one node is required per client. A node represents a one logical UDDI server (or cluster of servers). Each UDDI node should host at least the inquiry service. A client using the jUDDI client package can be configured to access multiple nodes at the same time.</p>
+<pre class="screen">&lt;!-- if isHomeJUDDI is true, then this node is loaded by default, when no node is specified in client code --&gt;
+uddi/client/nodes[]/node@isHomeJUDDI=true/false
+&lt;!-- the name of the node is referenced in client code --&gt;
+uddi/client/nodes[]/node/name
+&lt;!-- the description of the node --&gt;
+uddi/client/nodes[]/node/description
+&lt;!-- the properties section defines HTTP style credentials and a runtime tokenizer for URLs --&gt;
+uddi/client/nodes[]/node/properties
+&lt;!-- The transport represents the class name of the transport mechanism that the client will use to connect
+to the UDDI node. The most commonly used is org.apache.juddi.v3.client.transport.JAXWSTransport, however
+RMITransport, InVMTransport and JAXWSv2TranslationTransport are also defined --&gt;
+uddi/client/nodes[]/node/proxyTransport
+
+&lt;!-- endpoint URLs --&gt;
+uddi/client/nodes[]/node/custodyTransferUrl
+uddi/client/nodes[]/node/inquiryUrl
+uddi/client/nodes[]/node/publishUrl
+uddi/client/nodes[]/node/securityUrl
+uddi/client/nodes[]/node/subscriptionUrl
+uddi/client/nodes[]/node/subscriptionListenerUrl
+&lt;!-- note: this is for jUDDI v3.x servers only and is not part of the UDDI standard --&gt;
+uddi/client/nodes[]/node/juddiApiUrl</pre>
+
+<div class="section" title="2.3.1. Transport Options"><div class="titlepage"><div><div><h3 class="title"><a id="_transport_options"/>2.3.1. Transport Options</h3></div></div></div>
+
+<p>The Proxy Transport defines which mechanism is used for <span class="emphasis"><em>on the wire</em></span> transport of the UDDI XML messages. JAXWS Transport is the most commonly used and assumes SOAP messaging protocol over HTTP transport layer.</p>
+<p>RMI Transport using the Java Remote Method Invocation for transport. It’s more commonly used for communicating within a J2EE container, but could be used in other cases. It’s not required by the UDDI specification and is considered a jUDDI add on.</p>
+<p>InVM Transport is for hosting jUDDI services without a J2EE container.</p>
+<p>JAXWSv2TranslationTransport is a bridge for accessing UDDIv2 web services using the UDDIv3 data structures and APIs. Only the Inquiry and Publish services are required and they must point to SOAP/HTTP endpoints for a UDDI v2 node.</p>
+</div>
+</div>
+<div class="section" title="2.4. Clerks"><div class="titlepage"><div><div><h2 class="title"><a id="_clerks"/>2.4. Clerks</h2></div></div></div>
+
+<p>Clerks are responsible for mapping stored user credentials to a Node and for automated registration.</p>
+<pre class="screen">&lt;!-- if true, the contents of the child node xregister are registered when the UDDIClient object is created, using the credential and node reference.--&gt;
+uddi/client/clerks/registerOnStartup=true/false</pre>
+
+</div>
+<div class="section" title="2.5. Clerk"><div class="titlepage"><div><div><h2 class="title"><a id="_clerk"/>2.5. Clerk</h2></div></div></div>
+
+<p>Clerks store credentials and map to a specific node.</p>
+<pre class="screen">&lt;!-- the name is a reference to the Node that these credentials apply to--&gt;
+uddi/client/clerks[]/clerk@node - This is reference to uddi/client/node/name, it must exist
+uddi/client/clerks[]/clerk@name - This is a unique identifier of the clerk
+uddi/client/clerks[]/clerk@publisher  - This is the username
+uddi/client/clerks[]/clerk@password
+uddi/client/clerks[]/clerk@isPasswordEncrypted=true/false
+uddi/client/clerks[]/clerk@cryptoProvider=(see Crypto providers)</pre>
+
+<p>Credentials can be encrypted using the included batch/bash scripts and then appended to the configuration. Example with encryption:</p>
+<pre class="screen">&lt;clerk name="default" node="default" publisher="root" password="(cipher text removed)"
+                          isPasswordEncrypted="true" cryptoProvider="org.apache.juddi.v3.client.cryptor.AES128Cryptor" /&gt;</pre>
+
+<p>Clerks also have settings for the automated cross registration of Businesses and Services on start up.</p>
+<pre class="screen">uddi/client/clerks[]/xregister/service@bindingKey
+uddi/client/clerks[]/xregister/service@fromClerk
+uddi/client/clerks[]/xregister/service@toClerk</pre>
+
+</div>
+<div class="section" title="2.6. Digital Signatures"><div class="titlepage"><div><div><h2 class="title"><a id="_digital_signatures"/>2.6. Digital Signatures</h2></div></div></div>
+
+<p>The Signature section contains settings that map to the Digital Signature Utility that makes working with UDDI digital signatures simple. The section contains all of the settings for both signing and validating signatures.</p>
+<pre class="screen">uddi/client/signature/signingKeyStorePath
+uddi/client/signature/signingKeyStoreFilePassword
+uddi/client/signature/signingKeyStoreFilePassword@isPasswordEncrypted
+uddi/client/signature/signingKeyStoreFilePassword@cryptoProvider
+uddi/client/signature/signingKeyPassword
+uddi/client/signature/signingKeyPassword@isPasswordEncrypted
+uddi/client/signature/signingKeyPassword@cryptoProvider
+uddi/client/signature/signingKeyAlias
+uddi/client/signature/canonicalizationMethod
+uddi/client/signature/signatureMethod=(default RSA_SHA1)
+uddi/client/signature/XML_DIGSIG_NS=(default http://www.w3.org/2000/09/xmldsig#)
+uddi/client/signature/trustStorePath
+uddi/client/signature/trustStoreType
+uddi/client/signature/trustStorePassword
+uddi/client/signature/trustStorePassword@isPasswordEncrypted
+uddi/client/signature/trustStorePassword@cryptoProvider
+&lt;!-- checks signing certificates for timestamp validity --&gt;
+uddi/client/signature/checkTimestamps
+&lt;!-- checks signing certificates for trust worthiness --&gt;
+uddi/client/signature/checkTrust
+&lt;!-- checks signing certificates for revocation --&gt;
+uddi/client/signature/checkRevocationCRL
+uddi/client/signature/keyInfoInclusionSubjectDN
+uddi/client/signature/keyInfoInclusionSerial
+uddi/client/signature/keyInfoInclusionBase64PublicKey
+&lt;!-- default is http://www.w3.org/2000/09/xmldsig#sha1 --&gt;
+uddi/client/signature/digestMethod</pre>
+
+</div>
+<div class="section" title="2.7. Subscription Callbacks"><div class="titlepage"><div><div><h2 class="title"><a id="_subscription_callbacks"/>2.7. Subscription Callbacks</h2></div></div></div>
+
+<p>The subscriptionCallbacks section defines settings uses by the subscription callback API. This enables developers to create capabilities that need to be notified immediately when something in UDDI changes through the use of subscriptions.</p>
+<pre class="screen">uddi/client/subscriptionCallbacks/keyDomain
+uddi/client/subscriptionCallbacks/listenUrl this is the URL that is used for callbacks, should be externally resolvable
+uddi/client/subscriptionCallbacks/autoRegisterBindingTemplate=true/false
+uddi/client/subscriptionCallbacks/autoRegisterBusinessServiceKey=(key) append callback endpoint to this service
+uddi/client/subscriptionCallbacks/signatureBehavior=(AbortIfSigned,Sign,DoNothing,SignOnlyIfParentIsntSigned), default DoNothing. Applies when auto registering the endpoint to a business or service that is already signed.</pre>
+
+</div>
+<div class="section" title="2.8. XtoWsdl"><div class="titlepage"><div><div><h2 class="title"><a id="_xtowsdl"/>2.8. XtoWsdl</h2></div></div></div>
+
+<p>XtoWsdl represents configuration parameters for importing WSDL or WADL files. Currently, the only setting is for ignoring SSL errors when fetching remote WSDL or WADL files.</p>
+<pre class="screen">uddi/client/XtoWsdl/IgnoreSSLErrors=true or false</pre>
+
+</div>
+<div class="section" title="2.9. Embedded jUDDI server"><div class="titlepage"><div><div><h2 class="title"><a id="_embedded_juddi_server"/>2.9. Embedded jUDDI server</h2></div></div></div>
+
+<p>jUDDI has the ability to run in embedded mode. This means that the jUDDI services can operate without a web servlet container, such as Tomcat or JBoss. Typically, this is something that application developers would use for more advanced scenarios and for operation without network connectivity.</p>
+<div class="section" title="2.9.1. Requirements"><div class="titlepage"><div><div><h3 class="title"><a id="_requirements"/>2.9.1. Requirements</h3></div></div></div>
+
+<p>A database server, if one is not available, the embedded Derby engine can be used.</p>
+</div>
+<div class="section" title="2.9.2. Changes in configuration compared to non-embedded"><div class="titlepage"><div><div><h3 class="title"><a id="_changes_in_configuration_compared_to_non_embedded"/>2.9.2. Changes in configuration compared to non-embedded</h3></div></div></div>
+
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+META-INF/embedded-uddi.xml needs to contain the connection settings for InVmTransport.
+</li></ul></div>
+
+
+<pre class="literallayout">   &lt;!-- In VM Transport Settings --&gt;
+   &lt;proxyTransport&gt;org.apache.juddi.v3.client.transport.InVMTransport&lt;/proxyTransport&gt;
+   &lt;custodyTransferUrl&gt;org.apache.juddi.api.impl.UDDICustodyTransferImpl&lt;/custodyTransferUrl&gt;
+   &lt;inquiryUrl&gt;org.apache.juddi.api.impl.UDDIInquiryImpl&lt;/inquiryUrl&gt;
+   &lt;publishUrl&gt;org.apache.juddi.api.impl.UDDIPublicationImpl&lt;/publishUrl&gt;
+   &lt;securityUrl&gt;org.apache.juddi.api.impl.UDDISecurityImpl&lt;/securityUrl&gt;
+   &lt;subscriptionUrl&gt;org.apache.juddi.api.impl.UDDISubscriptionImpl&lt;/subscriptionUrl&gt;
+   &lt;subscriptionListenerUrl&gt;org.apache.juddi.api.impl.UDDISubscriptionListenerImpl&lt;/subscriptionListenerUrl&gt;
+   &lt;juddiApiUrl&gt;org.apache.juddi.api.impl.JUDDIApiImpl&lt;/juddiApiUrl&gt;</pre>
+
+
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+The serverside config file juddiv3.xml needs to be added to the classpath.
+</li><li class="listitem">
+A META-INF/persistence.xml needs to be added.
+</li><li class="listitem">
+Add the juddi-core (UDDI server) and derby (Embedded Database) dependencies to the pom. Use the juddi-core-openjpa jar for OpenJPA.
+</li></ul></div>
+
+<p>See also the hello-world-embedded example.</p>
+</div>
+</div>
+</div><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch01.html"><strong>Prev</strong>Chapter 1. Simple Publishing Using the jUDDI API</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ch03.html"><strong>Next</strong>Chapter 3. Key Format Templates</a></li></ul></body></html>

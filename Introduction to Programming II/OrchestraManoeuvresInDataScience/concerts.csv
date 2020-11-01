@@ -1,0 +1,1013 @@
+ID,Event_Type,Location,Country,Venue,Date,Start_Time,End_Time,Duration
+1,Non-Subscription,Manhattan,USA,Avery Fisher Hall,07/09/2011,19:30,23:05,215
+2,Non-Subscription,Manhattan,USA,Avery Fisher Hall,08/09/2011,19:30,22:50,200
+3,Insight Series,Manhattan,USA,The Stanley H. Kaplan Penthouse,09/09/2011,18:30,21:00,150
+4,Special,Manhattan,USA,Avery Fisher Hall,10/09/2011,19:30,22:44,194
+5,Parks,Manhattan,USA,Great Lawn,15/09/2011,20:00,23:47,227
+6,Special,Manhattan,USA,Avery Fisher Hall,17/09/2011,20:00,23:22,202
+7,Subscription Season,Manhattan,USA,Avery Fisher Hall,21/09/2011,19:30,22:28,178
+8,Subscription Season,Manhattan,USA,Avery Fisher Hall,22/09/2011,19:30,22:21,171
+9,Subscription Season,Manhattan,USA,Avery Fisher Hall,24/09/2011,20:00,22:32,152
+10,Subscription Season,Manhattan,USA,Avery Fisher Hall,27/09/2011,19:30,22:54,204
+11,Runout,Katonah,USA,Caramoor Venetian Theater,23/09/2011,19:30,21:48,138
+12,Subscription Season,Manhattan,USA,Avery Fisher Hall,30/09/2011,20:00,23:10,190
+13,Subscription Season,Manhattan,USA,Avery Fisher Hall,01/10/2011,20:00,23:33,213
+14,Subscription Season,Manhattan,USA,Avery Fisher Hall,04/10/2011,19:30,21:52,142
+15,Saturday Matinee,Manhattan,USA,Avery Fisher Hall,01/10/2011,14:00,16:08,128
+16,Subscription Season,Manhattan,USA,Avery Fisher Hall,05/10/2011,19:30,23:00,210
+17,Subscription Season,Manhattan,USA,Avery Fisher Hall,06/10/2011,19:30,21:58,148
+18,Subscription Season,Manhattan,USA,Avery Fisher Hall,07/10/2011,11:00,14:12,192
+19,Chamber,Manhattan,USA,Merkin Concert Hall,09/10/2011,15:00,18:08,188
+20,Special,Manhattan,USA,Alice Tully Hall,10/10/2011,14:00,17:45,225
+21,Chamber,Manhattan,USA,Avery Fisher Hall,11/10/2011,19:30,22:18,168
+22,Chamber Concert (Private),Manhattan,USA,St. Thomas More Church,12/10/2011,19:00,21:45,165
+23,Subscription Season,Manhattan,USA,Avery Fisher Hall,13/10/2011,19:30,22:02,152
+24,Subscription Season,Manhattan,USA,Avery Fisher Hall,14/10/2011,14:00,17:11,191
+25,Subscription Season,Manhattan,USA,Avery Fisher Hall,15/10/2011,20:00,23:10,190
+26,Subscription Season,Manhattan,USA,Avery Fisher Hall,18/10/2011,19:30,22:20,170
+27,Young People's Concert,Manhattan,USA,Avery Fisher Hall,15/10/2011,14:00,17:23,203
+28,Chamber Concert (Private),Manhattan,USA,The Stanley H. Kaplan Penthouse,17/10/2011,19:00,22:18,198
+29,Subscription Season,Manhattan,USA,Avery Fisher Hall,20/10/2011,19:30,22:01,151
+30,Subscription Season,Manhattan,USA,Avery Fisher Hall,21/10/2011,11:00,13:20,140
+31,Subscription Season,Manhattan,USA,Avery Fisher Hall,22/10/2011,20:00,22:35,155
+32,Non-Subscription,Manhattan,USA,Avery Fisher Hall,25/10/2011,19:30,22:54,204
+33,Subscription Season,Manhattan,USA,Avery Fisher Hall,27/10/2011,19:30,22:29,179
+34,Subscription Season,Manhattan,USA,Avery Fisher Hall,28/10/2011,20:00,22:53,173
+35,Subscription Season,Manhattan,USA,Avery Fisher Hall,29/10/2011,20:00,22:30,150
+36,Non-Subscription,Manhattan,USA,Avery Fisher Hall,02/11/2011,19:30,22:14,164
+37,Non-Subscription,Manhattan,USA,Avery Fisher Hall,03/11/2011,19:30,21:57,147
+38,Tour,Montreal,CANADA,L'Addresse Symphonique,04/11/2011,20:00,22:52,172
+39,Tour,Montreal,CANADA,L'Addresse Symphonique,05/11/2011,14:30,17:07,157
+40,Subscription Season,Manhattan,USA,Avery Fisher Hall,10/11/2011,19:30,22:55,205
+41,Subscription Season,Manhattan,USA,Avery Fisher Hall,11/11/2011,20:00,23:31,211
+42,Subscription Season,Manhattan,USA,Avery Fisher Hall,12/11/2011,20:00,22:47,167
+43,Subscription Season,Manhattan,USA,Avery Fisher Hall,15/11/2011,19:30,22:34,184
+44,Young People's Concert,Manhattan,USA,Avery Fisher Hall,12/11/2011,14:00,17:34,214
+45,Chamber,Staten Island,USA,"Center for the Arts, College of Staten Island / CUNY",14/11/2011,19:30,22:04,154
+46,Subscription Season,Manhattan,USA,Avery Fisher Hall,17/11/2011,19:30,22:45,195
+47,Subscription Season,Manhattan,USA,Avery Fisher Hall,18/11/2011,20:00,22:50,170
+48,Subscription Season,Manhattan,USA,Avery Fisher Hall,19/11/2011,20:00,21:59,119
+49,Chamber,Manhattan,USA,Merkin Concert Hall,20/11/2011,15:00,18:38,218
+50,Subscription Season,Manhattan,USA,Avery Fisher Hall,22/11/2011,19:30,22:13,163
+51,Subscription Season,Manhattan,USA,Avery Fisher Hall,25/11/2011,20:00,22:12,132
+52,Subscription Season,Manhattan,USA,Avery Fisher Hall,26/11/2011,20:00,23:29,209
+53,Subscription Season,Manhattan,USA,Avery Fisher Hall,29/11/2011,19:30,21:57,147
+54,Saturday Matinee,Manhattan,USA,Avery Fisher Hall,26/11/2011,14:00,18:11,251
+55,Subscription Season,Manhattan,USA,Avery Fisher Hall,01/12/2011,19:30,22:49,199
+56,Subscription Season,Manhattan,USA,Avery Fisher Hall,02/12/2011,11:00,12:41,101
+57,Subscription Season,Manhattan,USA,Avery Fisher Hall,03/12/2011,20:00,23:04,184
+58,Chamber,Manhattan,USA,The Stanley H. Kaplan Penthouse,03/12/2011,15:00,18:17,197
+59,Chamber,Manhattan,USA,Merkin Concert Hall,04/12/2011,15:00,17:26,146
+60,Private Concert,Manhattan,USA,Doubles Club at the Sherry Netherland Hotel,06/12/2011,20:30,23:02,152
+61,Subscription Season,Manhattan,USA,Avery Fisher Hall,07/12/2011,19:30,21:48,138
+62,Subscription Season,Manhattan,USA,Avery Fisher Hall,08/12/2011,19:30,21:47,137
+63,Subscription Season,Manhattan,USA,Avery Fisher Hall,09/12/2011,20:00,22:25,145
+64,Subscription Season,Manhattan,USA,Avery Fisher Hall,10/12/2011,20:00,23:03,183
+65,Chamber,Manhattan,USA,Avery Fisher Hall,11/12/2011,15:00,17:59,179
+66,Subscription Season,Manhattan,USA,Avery Fisher Hall,13/12/2011,19:30,21:28,118
+67,Subscription Season,Manhattan,USA,Avery Fisher Hall,14/12/2011,19:30,22:03,153
+68,Subscription Season,Manhattan,USA,Avery Fisher Hall,15/12/2011,19:30,22:20,170
+69,Subscription Season,Manhattan,USA,Avery Fisher Hall,16/12/2011,14:00,17:03,183
+70,Contact!,Manhattan,USA,Metropolitan Museum of Art,16/12/2011,19:00,21:53,173
+71,Contact!,Manhattan,USA,Symphony Space,17/12/2011,20:00,22:35,155
+72,Subscription Season,Manhattan,USA,Avery Fisher Hall,17/12/2011,19:30,22:19,169
+73,Subscription Season,Manhattan,USA,Avery Fisher Hall,28/12/2011,19:30,23:07,217
+74,Subscription Season,Manhattan,USA,Avery Fisher Hall,29/12/2011,19:30,21:30,120
+75,Subscription Season,Manhattan,USA,Avery Fisher Hall,30/12/2011,20:00,23:23,203
+76,New Year's Eve,Manhattan,USA,Avery Fisher Hall,31/12/2011,20:00,23:23,203
+77,Rush Hour,Manhattan,USA,Avery Fisher Hall,04/01/2012,18:45,21:33,168
+78,Subscription Season,Manhattan,USA,Avery Fisher Hall,05/01/2012,19:30,23:19,229
+79,Subscription Season,Manhattan,USA,Avery Fisher Hall,07/01/2012,20:00,23:05,185
+80,Subscription Season,Manhattan,USA,Avery Fisher Hall,10/01/2012,19:30,23:10,220
+81,Runout,Greenvale,USA,Tilles Center for the Performing Arts (Main),06/01/2012,20:00,22:50,170
+82,Subscription Season,Manhattan,USA,Avery Fisher Hall,12/01/2012,19:30,21:56,146
+83,Subscription Season,Manhattan,USA,Avery Fisher Hall,13/01/2012,20:00,22:47,167
+84,Subscription Season,Manhattan,USA,Avery Fisher Hall,14/01/2012,20:00,23:50,230
+85,Chamber,Manhattan,USA,Merkin Concert Hall,15/01/2012,15:00,18:36,216
+86,Subscription Season,Manhattan,USA,Avery Fisher Hall,18/01/2012,19:30,22:03,153
+87,Subscription Season,Manhattan,USA,Avery Fisher Hall,20/01/2012,20:00,22:56,176
+88,Subscription Season,Manhattan,USA,Avery Fisher Hall,21/01/2012,20:00,22:43,163
+89,Subscription Season,Manhattan,USA,Avery Fisher Hall,19/01/2012,19:30,23:06,216
+90,Chamber,Manhattan,USA,Avery Fisher Hall,22/01/2012,15:00,19:14,254
+91,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,22/01/2012,00:30,03:55,205
+92,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,22/01/2012,15:00,18:37,217
+93,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,23/01/2012,10:30,12:24,114
+94,Non-Subscription,Manhattan,USA,Avery Fisher Hall,24/01/2012,19:30,22:53,203
+95,Subscription Season,Manhattan,USA,Avery Fisher Hall,26/01/2012,19:30,23:00,210
+96,Subscription Season,Manhattan,USA,Avery Fisher Hall,27/01/2012,20:00,22:53,173
+97,Subscription Season,Manhattan,USA,Avery Fisher Hall,28/01/2012,20:00,22:34,154
+98,Tour,Cologne,GERMANY,K_lner Philharmonie,02/02/2012,20:00,23:32,212
+99,Tour,Luxembourg,LUXEMBOURG,Philharmonie Luxembourg (Jos¸phine-Charlotte),03/02/2012,20:00,22:51,171
+100,Tour,Luxembourg,LUXEMBOURG,Philharmonie Luxembourg (Jos¸phine-Charlotte),04/02/2012,20:00,23:00,180
+101,Tour,Paris,FRANCE,Salle Pleyel,06/02/2012,20:00,23:19,199
+102,Tour,Paris,FRANCE,Salle Pleyel,07/02/2012,20:00,22:41,161
+103,Tour,Frankfurt,GERMANY,Alte Oper,08/02/2012,20:00,23:36,216
+104,Tour,Frankfurt,GERMANY,Alte Oper,09/02/2012,20:00,22:36,156
+105,Tour,Dusseldorf,GERMANY,Tonhalle,11/02/2012,20:00,22:03,123
+106,Tour,Amsterdam,NETHERLANDS,Concertgebouw,13/02/2012,20:15,23:27,192
+107,Tour,Amsterdam,NETHERLANDS,Concertgebouw,14/02/2012,20:15,23:23,188
+108,Tour - Chamber,London,ENGLAND,Winfield House,15/02/2012,19:30,23:40,250
+109,Tour,London,ENGLAND,Barbican Centre,16/02/2012,19:30,22:44,194
+110,Tour,London,ENGLAND,Barbican Centre,17/02/2012,19:30,22:30,180
+111,Young People's Concert,London,ENGLAND,Barbican Centre,18/02/2012,16:00,19:11,191
+112,Tour,London,ENGLAND,Barbican Centre,18/02/2012,19:30,22:14,164
+113,Subscription Season,Manhattan,USA,Avery Fisher Hall,23/02/2012,19:30,22:56,206
+114,Subscription Season,Manhattan,USA,Avery Fisher Hall,25/02/2012,20:00,22:38,158
+115,Subscription Season,Manhattan,USA,Avery Fisher Hall,28/02/2012,19:30,22:10,160
+116,Runout,Philadelphia,USA,Verizon Hall at Kimmel Center,24/02/2012,20:00,23:03,183
+117,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,26/02/2012,00:30,03:48,198
+118,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,26/02/2012,15:00,17:19,139
+119,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,27/02/2012,10:30,12:21,111
+120,Subscription Season,Manhattan,USA,Avery Fisher Hall,01/03/2012,19:30,21:52,142
+121,Subscription Season,Manhattan,USA,Avery Fisher Hall,02/03/2012,14:00,17:06,186
+122,Subscription Season,Manhattan,USA,Avery Fisher Hall,03/03/2012,20:00,22:50,170
+123,Subscription Season,Manhattan,USA,Avery Fisher Hall,06/03/2012,19:30,23:03,213
+124,Subscription Season,Manhattan,USA,Avery Fisher Hall,08/03/2012,19:30,21:52,142
+125,Subscription Season,Manhattan,USA,Avery Fisher Hall,10/03/2012,20:00,23:16,196
+126,Subscription Season,Manhattan,USA,Avery Fisher Hall,13/03/2012,19:30,22:15,165
+127,Runout,Newark,USA,Prudential Hall,09/03/2012,20:00,22:55,175
+128,Subscription Season,Manhattan,USA,Avery Fisher Hall,15/03/2012,19:30,22:07,157
+129,Subscription Season,Manhattan,USA,Avery Fisher Hall,16/03/2012,11:00,12:21,81
+130,Subscription Season,Manhattan,USA,Avery Fisher Hall,17/03/2012,20:00,23:08,188
+131,Subscription Season,Manhattan,USA,Avery Fisher Hall,20/03/2012,19:30,22:54,204
+132,Young People's Concert,Manhattan,USA,Avery Fisher Hall,17/03/2012,14:00,16:59,179
+133,Subscription Season,Manhattan,USA,Avery Fisher Hall,22/03/2012,19:30,21:48,138
+134,Subscription Season,Manhattan,USA,Avery Fisher Hall,23/03/2012,14:00,17:18,198
+135,Subscription Season,Manhattan,USA,Avery Fisher Hall,24/03/2012,20:00,23:19,199
+136,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,25/03/2012,00:30,02:39,129
+137,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,25/03/2012,15:00,18:34,214
+138,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,26/03/2012,10:30,12:41,131
+139,Pension Fund Benefit Concert,Manhattan,USA,Avery Fisher Hall,26/03/2012,19:30,21:34,124
+140,Insight Series,Manhattan,USA,New York Institute of Technology Broadway Auditorium,27/03/2012,18:30,21:53,203
+141,Rush Hour,Manhattan,USA,Avery Fisher Hall,28/03/2012,18:45,21:51,186
+142,Subscription Season,Manhattan,USA,Avery Fisher Hall,29/03/2012,19:30,22:36,186
+143,Subscription Season,Manhattan,USA,Avery Fisher Hall,30/03/2012,20:00,23:00,180
+144,Subscription Season,Manhattan,USA,Avery Fisher Hall,31/03/2012,20:00,23:32,212
+145,Chamber Concert (Private),Manhattan,USA,The Stanley H. Kaplan Penthouse,10/04/2012,19:00,21:56,176
+146,Subscription Season,Manhattan,USA,Avery Fisher Hall,12/04/2012,19:30,22:41,191
+147,Subscription Season,Manhattan,USA,Avery Fisher Hall,13/04/2012,20:00,22:44,164
+148,Subscription Season,Manhattan,USA,Avery Fisher Hall,14/04/2012,20:00,23:07,187
+149,Young People's Concert,Manhattan,USA,Avery Fisher Hall,14/04/2012,14:00,16:50,170
+150,Chamber,Manhattan,USA,Merkin Concert Hall,15/04/2012,15:00,19:09,249
+151,Subscription Season,Manhattan,USA,Avery Fisher Hall,17/04/2012,19:30,22:42,192
+152,Special,Manhattan,USA,Alice Tully Hall,18/04/2012,19:30,23:59,269
+153,Chamber Concert (Private),Manhattan,USA,The Stanley H. Kaplan Penthouse,18/04/2012,19:00,21:55,175
+154,Subscription Season,Manhattan,USA,Avery Fisher Hall,19/04/2012,19:30,23:16,226
+155,Subscription Season,Manhattan,USA,Avery Fisher Hall,20/04/2012,20:00,23:10,190
+156,Subscription Season,Manhattan,USA,Avery Fisher Hall,21/04/2012,20:00,23:16,196
+157,Chamber Concert (Private),Manhattan,USA,Brick Church,23/04/2012,19:00,21:29,149
+158,Rush Hour,Manhattan,USA,Avery Fisher Hall,25/04/2012,18:45,21:12,147
+159,Subscription Season,Manhattan,USA,Avery Fisher Hall,26/04/2012,19:30,22:51,201
+160,Subscription Season,Manhattan,USA,Avery Fisher Hall,27/04/2012,14:00,17:57,237
+161,Subscription Season,Manhattan,USA,Avery Fisher Hall,28/04/2012,20:00,23:07,187
+162,Chamber Concert (Private),Manhattan,USA,The Stanley H. Kaplan Penthouse,30/04/2012,19:00,21:57,177
+163,Special,Manhattan,USA,Carnegie Hall,02/05/2012,20:00,22:47,167
+164,Subscription Season,Manhattan,USA,Avery Fisher Hall,03/05/2012,19:30,22:38,188
+165,Subscription Season,Manhattan,USA,Avery Fisher Hall,04/05/2012,11:00,12:46,106
+166,Subscription Season,Manhattan,USA,Avery Fisher Hall,05/05/2012,20:00,22:38,158
+167,Tour,Costa Mesa,USA,Segerstrom Concert Hall (Ren¸e and Henry),08/05/2012,20:00,22:06,126
+168,Tour,Los Angeles,USA,Walt Disney Concert Hall,09/05/2012,20:00,23:26,206
+169,Tour,Santa Barbara,USA,Granada Theater,10/05/2012,20:00,23:33,213
+170,Tour,Davis,USA,Jackson Hall,12/05/2012,20:00,22:21,141
+171,Tour,San Francisco,USA,Davies Symphony Hall,13/05/2012,19:00,21:29,149
+172,Tour,San Francisco,USA,Davies Symphony Hall,14/05/2012,20:00,23:10,190
+173,Tour,San Diego,USA,Copley Symphony Hall,15/05/2012,20:00,22:56,176
+174,Saturday Matinee,Manhattan,USA,Avery Fisher Hall,19/05/2012,14:00,17:17,197
+175,Subscription Season,Manhattan,USA,Avery Fisher Hall,19/05/2012,20:00,22:47,167
+176,Subscription Season,Manhattan,USA,Avery Fisher Hall,22/05/2012,19:30,22:38,188
+177,Subscription Season,Manhattan,USA,Avery Fisher Hall,26/05/2012,20:00,23:09,189
+178,Pension Fund Benefit Concert,Manhattan,USA,Avery Fisher Hall,23/05/2012,19:30,21:33,123
+179,Chamber Concert (Private),Manhattan,USA,Neue Galerie,24/05/2012,19:30,23:07,217
+180,Young People's Concerts for Schools,Manhattan,USA,Avery Fisher Hall,24/05/2012,00:00,02:53,173
+181,Young People's Concerts for Schools,Manhattan,USA,Avery Fisher Hall,24/05/2012,10:30,12:10,100
+182,Young People's Concerts for Schools,Manhattan,USA,Avery Fisher Hall,25/05/2012,10:30,12:06,96
+183,Young People's Concerts for Schools,Manhattan,USA,Avery Fisher Hall,25/05/2012,00:00,03:19,199
+184,St. John the Divine,Manhattan,USA,The Cathedral Church of Saint John the Divine,28/05/2012,20:00,22:49,169
+185,Subscription Season,Manhattan,USA,Avery Fisher Hall,31/05/2012,19:30,23:08,218
+186,Subscription Season,Manhattan,USA,Avery Fisher Hall,01/06/2012,20:00,23:33,213
+187,Subscription Season,Manhattan,USA,Avery Fisher Hall,02/06/2012,20:00,21:59,119
+188,Chamber Concert (Private),Manhattan,USA,St. Regis Hotel,05/06/2012,19:45,22:35,170
+189,Subscription Season,Manhattan,USA,Avery Fisher Hall,06/06/2012,19:30,22:44,194
+190,Subscription Season,Manhattan,USA,Avery Fisher Hall,07/06/2012,19:30,22:13,163
+191,Subscription Season,Manhattan,USA,Avery Fisher Hall,08/06/2012,11:00,12:50,110
+192,Subscription Season,Manhattan,USA,Avery Fisher Hall,09/06/2012,20:00,23:26,206
+193,Contact!,Manhattan,USA,Metropolitan Museum of Art,08/06/2012,19:00,22:06,186
+194,Contact!,Manhattan,USA,Symphony Space,09/06/2012,20:00,22:46,166
+195,Master Class,Manhattan,USA,The Stanley H. Kaplan Penthouse,12/06/2012,19:30,23:30,240
+196,Subscription Season,Manhattan,USA,Avery Fisher Hall,14/06/2012,19:30,22:14,164
+197,Subscription Season,Manhattan,USA,Avery Fisher Hall,15/06/2012,14:00,16:11,131
+198,Subscription Season,Manhattan,USA,Avery Fisher Hall,16/06/2012,20:00,22:41,161
+199,Saturday Matinee,Manhattan,USA,Avery Fisher Hall,16/06/2012,14:00,17:55,235
+200,Chamber,Manhattan,USA,Merkin Concert Hall,17/06/2012,15:00,18:42,222
+201,Subscription Season,Manhattan,USA,Avery Fisher Hall,20/06/2012,19:30,22:54,204
+202,Subscription Season,Manhattan,USA,Avery Fisher Hall,21/06/2012,19:30,22:27,177
+203,Subscription Season,Manhattan,USA,Avery Fisher Hall,22/06/2012,20:00,23:27,207
+204,Subscription Season,Manhattan,USA,Avery Fisher Hall,23/06/2012,20:00,23:02,182
+205,Subscription Season,Manhattan,USA,Avery Fisher Hall,26/06/2012,19:30,22:23,173
+206,Chamber Concert (Private),Manhattan,USA,Racquet and Tennis Club,27/06/2012,20:30,23:59,209
+207,Non-Subscription,Manhattan,USA,Park Avenue Armory,29/06/2012,20:00,22:18,138
+208,Non-Subscription,Manhattan,USA,Park Avenue Armory,30/06/2012,20:00,23:09,189
+209,Summertime Classics,Manhattan,USA,Avery Fisher Hall,03/07/2012,19:30,22:19,169
+210,Summertime Classics,Manhattan,USA,Avery Fisher Hall,05/07/2012,19:30,22:26,176
+211,Summertime Classics,Manhattan,USA,Avery Fisher Hall,04/07/2012,15:00,18:32,212
+212,Summertime Classics,Manhattan,USA,Avery Fisher Hall,06/07/2012,20:00,23:26,206
+213,Summertime Classics,Manhattan,USA,Avery Fisher Hall,10/07/2012,19:30,22:35,185
+214,Runout,Bethel,USA,Bethel Woods Center for the Arts,07/07/2012,20:00,22:42,162
+215,Summertime Classics,Manhattan,USA,Avery Fisher Hall,09/07/2012,19:30,22:27,177
+216,Parks,Brooklyn,USA,Prospect Park,11/07/2012,20:00,23:20,200
+217,Parks,Manhattan,USA,Great Lawn,13/07/2012,20:00,22:40,160
+218,Parks,Queens,USA,Cunningham Park,12/07/2012,20:00,23:12,192
+219,Parks,Manhattan,USA,Great Lawn,16/07/2012,20:00,22:29,149
+220,Parks,Bronx,USA,Van Cortlandt Park,17/07/2012,20:00,22:24,144
+221,None,Staten Island,USA,City University of New York,15/07/2012,15:00,18:05,185
+222,Tour,Vail,USA,Gerald R. Ford Amphitheater,20/07/2012,18:00,20:56,176
+223,Tour,Vail,USA,Gerald R. Ford Amphitheater,21/07/2012,18:00,21:21,201
+224,Tour,Vail,USA,Gerald R. Ford Amphitheater,22/07/2012,18:00,20:32,152
+225,Tour,Vail,USA,Gerald R. Ford Amphitheater,25/07/2012,18:00,21:53,233
+226,Tour,Vail,USA,Gerald R. Ford Amphitheater,26/07/2012,18:00,21:32,212
+227,Tour,Vail,USA,Gerald R. Ford Amphitheater,27/07/2012,18:00,20:45,165
+228,Subscription Season,Manhattan,USA,Avery Fisher Hall,19/09/2012,19:30,22:50,200
+229,Subscription Season,Manhattan,USA,Avery Fisher Hall,20/09/2012,19:30,22:22,172
+230,Subscription Season,Manhattan,USA,Avery Fisher Hall,21/09/2012,20:00,23:32,212
+231,Subscription Season,Manhattan,USA,Avery Fisher Hall,22/09/2012,20:00,23:10,190
+232,Special,Manhattan,USA,Avery Fisher Hall,27/09/2012,19:30,21:59,149
+233,Subscription Season,Manhattan,USA,Avery Fisher Hall,28/09/2012,14:00,16:48,168
+234,Subscription Season,Manhattan,USA,Avery Fisher Hall,29/09/2012,20:00,22:02,122
+235,Saturday Matinee,Manhattan,USA,Avery Fisher Hall,29/09/2012,14:00,17:05,185
+236,Subscription Season,Manhattan,USA,Avery Fisher Hall,02/10/2012,19:30,22:01,151
+237,Subscription Season,Manhattan,USA,Avery Fisher Hall,04/10/2012,19:30,22:33,183
+238,Subscription Season,Manhattan,USA,Avery Fisher Hall,05/10/2012,20:00,22:55,175
+239,Subscription Season,Manhattan,USA,Avery Fisher Hall,06/10/2012,20:00,23:16,196
+240,Recording Session Only,Manhattan,USA,Avery Fisher Hall,05/10/2012,10:00,12:08,128
+241,Recording Session Only,Manhattan,USA,Avery Fisher Hall,06/10/2012,10:00,12:05,125
+242,Insight Series,Manhattan,USA,New York Institute of Technology Broadway Auditorium,09/10/2012,18:30,22:39,249
+243,Subscription Season,Manhattan,USA,Avery Fisher Hall,10/10/2012,19:30,22:32,182
+244,Subscription Season,Manhattan,USA,Avery Fisher Hall,11/10/2012,19:30,22:02,152
+245,Subscription Season,Manhattan,USA,Avery Fisher Hall,12/10/2012,20:00,23:05,185
+246,Subscription Season,Manhattan,USA,Avery Fisher Hall,13/10/2012,20:00,23:03,183
+247,Chamber,Manhattan,USA,Merkin Concert Hall,14/10/2012,15:00,17:58,178
+248,Chamber Concert (Private),Manhattan,USA,The Stanley H. Kaplan Penthouse,15/10/2012,19:00,21:34,154
+249,Sponsor Chamber Music,Peapack,USA,The Mansion at Natirar,22/10/2012,19:30,23:08,218
+250,Special,Manhattan,USA,Avery Fisher Hall,16/10/2012,19:30,22:35,185
+251,Subscription Season,Manhattan,USA,Avery Fisher Hall,18/10/2012,19:30,23:45,255
+252,Subscription Season,Manhattan,USA,Avery Fisher Hall,19/10/2012,11:00,12:36,96
+253,Subscription Season,Manhattan,USA,Avery Fisher Hall,23/10/2012,19:30,22:04,154
+254,Subscription Season,Manhattan,USA,Avery Fisher Hall,20/10/2012,20:00,23:18,198
+255,Subscription Season,Manhattan,USA,Avery Fisher Hall,25/10/2012,19:30,23:31,241
+256,Subscription Season,Manhattan,USA,Avery Fisher Hall,26/10/2012,14:00,17:18,198
+257,Subscription Season,Manhattan,USA,Avery Fisher Hall,27/10/2012,20:00,22:35,155
+258,Subscription Season,Manhattan,USA,Avery Fisher Hall,01/11/2012,19:30,21:25,115
+259,Subscription Season,Manhattan,USA,Avery Fisher Hall,02/11/2012,11:00,12:26,86
+260,Subscription Season,Manhattan,USA,Avery Fisher Hall,03/11/2012,20:00,23:03,183
+261,Chamber,Manhattan,USA,Rose Theater,04/11/2012,17:00,20:39,219
+262,Subscription Season,Manhattan,USA,Avery Fisher Hall,08/11/2012,19:30,22:19,169
+263,Subscription Season,Manhattan,USA,Avery Fisher Hall,10/11/2012,20:00,22:53,173
+264,Subscription Season,Manhattan,USA,Avery Fisher Hall,13/11/2012,19:30,22:43,193
+265,Subscription Season,Manhattan,USA,Avery Fisher Hall,09/11/2012,20:00,22:19,139
+266,Young People's Concert,Manhattan,USA,Avery Fisher Hall,10/11/2012,14:00,16:41,161
+267,Subscription Season,Manhattan,USA,Avery Fisher Hall,15/11/2012,19:30,22:34,184
+268,Subscription Season,Manhattan,USA,Avery Fisher Hall,16/11/2012,20:00,23:01,181
+269,Subscription Season,Manhattan,USA,Avery Fisher Hall,17/11/2012,20:00,22:54,174
+270,Chamber,Manhattan,USA,Merkin Concert Hall,18/11/2012,15:00,17:59,179
+271,Subscription Season,Manhattan,USA,Avery Fisher Hall,20/11/2012,19:30,20:06,36
+272,Subscription Season,Manhattan,USA,Avery Fisher Hall,23/11/2012,20:00,22:28,148
+273,Subscription Season,Manhattan,USA,Avery Fisher Hall,24/11/2012,20:00,22:39,159
+274,Subscription Season,Manhattan,USA,Avery Fisher Hall,27/11/2012,19:30,22:52,202
+275,Saturday Matinee,Manhattan,USA,Avery Fisher Hall,24/11/2012,14:00,17:51,231
+276,Subscription Season,Manhattan,USA,Avery Fisher Hall,29/11/2012,19:30,22:05,155
+277,Subscription Season,Manhattan,USA,Avery Fisher Hall,30/11/2012,14:00,16:14,134
+278,Subscription Season,Manhattan,USA,Avery Fisher Hall,01/12/2012,20:00,22:51,171
+279,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,02/12/2012,00:30,03:41,191
+280,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,02/12/2012,15:00,18:45,225
+281,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,10/12/2012,10:30,14:59,269
+282,Chamber Concert (Private),Manhattan,USA,Doubles Club at the Sherry Netherland Hotel,04/12/2012,20:30,23:12,162
+283,Subscription Season,Manhattan,USA,Avery Fisher Hall,05/12/2012,19:30,22:50,200
+284,Subscription Season,Manhattan,USA,Avery Fisher Hall,06/12/2012,19:30,22:15,165
+285,Subscription Season,Manhattan,USA,Avery Fisher Hall,08/12/2012,20:00,23:34,214
+286,Subscription Season,Manhattan,USA,Avery Fisher Hall,11/12/2012,19:30,22:27,177
+287,Runout,Newark,USA,Prudential Hall,07/12/2012,20:00,23:30,210
+288,Subscription Season,Manhattan,USA,Avery Fisher Hall,13/12/2012,19:30,22:21,171
+289,Subscription Season,Manhattan,USA,Avery Fisher Hall,14/12/2012,11:00,12:15,75
+290,Subscription Season,Manhattan,USA,Avery Fisher Hall,15/12/2012,20:00,23:33,213
+291,Chamber,Manhattan,USA,Avery Fisher Hall,16/12/2012,15:00,16:56,116
+292,Subscription Season,Manhattan,USA,Avery Fisher Hall,18/12/2012,19:30,22:32,182
+293,Subscription Season,Manhattan,USA,Avery Fisher Hall,19/12/2012,19:30,22:23,173
+294,Subscription Season,Manhattan,USA,Avery Fisher Hall,20/12/2012,19:30,22:52,202
+295,Subscription Season,Manhattan,USA,Avery Fisher Hall,21/12/2012,19:30,22:12,162
+296,Subscription Season,Manhattan,USA,Avery Fisher Hall,22/12/2012,19:30,22:06,156
+297,Contact!,Manhattan,USA,Metropolitan Museum of Art,21/12/2012,19:00,22:29,209
+298,Contact!,Manhattan,USA,Symphony Space,22/12/2012,20:00,23:07,187
+299,New Year's Eve,Manhattan,USA,Avery Fisher Hall,31/12/2012,19:30,22:04,154
+300,Subscription Season,Manhattan,USA,Avery Fisher Hall,03/01/2013,19:30,22:43,193
+301,Subscription Season,Manhattan,USA,Avery Fisher Hall,04/01/2013,20:00,23:01,181
+302,Subscription Season,Manhattan,USA,Avery Fisher Hall,05/01/2013,20:00,23:29,209
+303,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,06/01/2013,00:30,03:02,152
+304,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,06/01/2013,15:00,18:49,229
+305,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,07/01/2013,10:30,12:36,126
+306,Subscription Season,Manhattan,USA,Avery Fisher Hall,09/01/2013,19:30,22:24,174
+307,Subscription Season,Manhattan,USA,Avery Fisher Hall,10/01/2013,19:30,22:47,197
+308,Subscription Season,Manhattan,USA,Avery Fisher Hall,11/01/2013,20:00,22:14,134
+309,Subscription Season,Manhattan,USA,Avery Fisher Hall,12/01/2013,20:00,23:14,194
+310,Subscription Season,Manhattan,USA,Avery Fisher Hall,16/01/2013,19:30,23:04,214
+311,Subscription Season,Manhattan,USA,Avery Fisher Hall,17/01/2013,19:30,22:57,207
+312,Subscription Season,Manhattan,USA,Avery Fisher Hall,18/01/2013,14:00,16:04,124
+313,Subscription Season,Manhattan,USA,Avery Fisher Hall,19/01/2013,20:00,22:42,162
+314,Chamber,Manhattan,USA,Merkin Concert Hall,20/01/2013,15:00,17:45,165
+315,Chamber,Manhattan,USA,The Stanley H. Kaplan Penthouse,22/01/2013,19:00,21:12,132
+316,Subscription Season,Manhattan,USA,Avery Fisher Hall,24/01/2013,19:30,22:51,201
+317,Subscription Season,Manhattan,USA,Avery Fisher Hall,25/01/2013,20:00,23:51,231
+318,Subscription Season,Manhattan,USA,Avery Fisher Hall,26/01/2013,20:00,23:29,209
+319,Young People's Concert,Manhattan,USA,Avery Fisher Hall,26/01/2013,14:00,16:46,166
+320,Pension Fund Benefit Concert,Manhattan,USA,Avery Fisher Hall,29/01/2013,19:30,22:41,191
+321,Subscription Season,Manhattan,USA,Avery Fisher Hall,31/01/2013,19:30,22:22,172
+322,Subscription Season,Manhattan,USA,Avery Fisher Hall,01/02/2013,20:00,23:24,204
+323,Subscription Season,Manhattan,USA,Avery Fisher Hall,02/02/2013,20:00,23:19,199
+324,Saturday Matinee,Manhattan,USA,Avery Fisher Hall,02/02/2013,14:00,16:41,161
+325,Subscription Season,Manhattan,USA,Avery Fisher Hall,06/02/2013,19:30,22:36,186
+326,Subscription Season,Manhattan,USA,Avery Fisher Hall,07/02/2013,19:30,21:28,118
+327,Subscription Season,Manhattan,USA,Avery Fisher Hall,08/02/2013,20:00,22:43,163
+328,Subscription Season,Manhattan,USA,Avery Fisher Hall,09/02/2013,20:00,22:55,175
+329,Non-Subscription,Manhattan,USA,Avery Fisher Hall,12/02/2013,19:30,21:59,149
+330,Subscription Season,Manhattan,USA,Avery Fisher Hall,14/02/2013,19:30,22:07,157
+331,Subscription Season,Manhattan,USA,Avery Fisher Hall,15/02/2013,20:00,23:17,197
+332,Subscription Season,Manhattan,USA,Avery Fisher Hall,16/02/2013,20:00,23:20,200
+333,Chamber,Manhattan,USA,Merkin Concert Hall,17/02/2013,15:00,17:41,161
+334,Insight Series,Manhattan,USA,The Stanley H. Kaplan Penthouse,20/02/2013,18:30,21:55,205
+335,Subscription Season,Manhattan,USA,Avery Fisher Hall,21/02/2013,19:30,22:41,191
+336,Subscription Season,Manhattan,USA,Avery Fisher Hall,22/02/2013,11:00,12:01,61
+337,Tour,Ann Arbor,USA,Hill Auditorium,23/02/2013,20:00,23:44,224
+338,Tour,Ann Arbor,USA,Hill Auditorium,24/02/2013,14:00,17:24,204
+339,Non-Subscription,Manhattan,USA,Avery Fisher Hall,27/02/2013,19:30,21:49,139
+340,Non-Subscription,Manhattan,USA,Avery Fisher Hall,28/02/2013,19:30,22:01,151
+341,Non-Subscription,Manhattan,USA,Avery Fisher Hall,01/03/2013,20:00,22:59,179
+342,Non-Subscription,Manhattan,USA,Avery Fisher Hall,02/03/2013,14:00,16:49,169
+343,Non-Subscription,Manhattan,USA,Avery Fisher Hall,02/03/2013,20:00,23:01,181
+344,Subscription Season,Manhattan,USA,Avery Fisher Hall,06/03/2013,19:30,23:05,215
+345,Subscription Season,Manhattan,USA,Avery Fisher Hall,07/03/2013,19:30,22:20,170
+346,Subscription Season,Manhattan,USA,Avery Fisher Hall,08/03/2013,20:00,22:28,148
+347,Subscription Season,Manhattan,USA,Avery Fisher Hall,09/03/2013,20:00,23:02,182
+348,Insight Series,Manhattan,USA,New York Institute of Technology Broadway Auditorium,11/03/2013,18:30,21:11,161
+349,Chamber Concert (Private),Manhattan,USA,Haseltine residence,12/03/2013,19:00,22:22,202
+350,Subscription Season,Manhattan,USA,Avery Fisher Hall,13/03/2013,19:30,21:38,128
+351,Subscription Season,Manhattan,USA,Avery Fisher Hall,14/03/2013,19:30,22:18,168
+352,Subscription Season,Manhattan,USA,Avery Fisher Hall,15/03/2013,20:00,22:24,144
+353,Subscription Season,Manhattan,USA,Avery Fisher Hall,16/03/2013,20:00,22:34,154
+354,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,17/03/2013,00:30,03:31,181
+355,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,17/03/2013,15:00,17:42,162
+356,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,18/03/2013,22:30,23:19,49
+357,Rush Hour,Manhattan,USA,Avery Fisher Hall,20/03/2013,18:45,21:04,139
+358,Subscription Season,Manhattan,USA,Avery Fisher Hall,21/03/2013,19:30,21:27,117
+359,Subscription Season,Manhattan,USA,Avery Fisher Hall,22/03/2013,14:00,16:02,122
+360,Subscription Season,Manhattan,USA,Avery Fisher Hall,23/03/2013,20:00,22:53,173
+361,Chamber Concert (Private),Manhattan,USA,Bruno Walter Auditorium,24/03/2013,17:30,21:06,216
+362,Soloist Recital,Manhattan,USA,Holy Trinity Lutheran Church,27/03/2013,19:30,22:09,159
+363,Soloist Recital,Manhattan,USA,Holy Trinity Lutheran Church,01/04/2013,19:30,22:23,173
+364,Subscription Season,Manhattan,USA,Avery Fisher Hall,03/04/2013,19:30,22:05,155
+365,Subscription Season,Manhattan,USA,Avery Fisher Hall,04/04/2013,19:30,22:21,171
+366,Subscription Season,Manhattan,USA,Avery Fisher Hall,05/04/2013,11:00,12:12,72
+367,Subscription Season,Manhattan,USA,Avery Fisher Hall,06/04/2013,20:00,22:59,179
+368,Contact!,Manhattan,USA,Metropolitan Museum of Art,05/04/2013,19:00,22:03,183
+369,Contact!,Manhattan,USA,Symphony Space,06/04/2013,20:00,22:09,129
+370,Chamber Concert (Private),Manhattan,USA,The Stanley H. Kaplan Penthouse,09/04/2013,19:00,21:43,163
+371,Subscription Season,Manhattan,USA,Avery Fisher Hall,11/04/2013,19:30,22:46,196
+372,Subscription Season,Manhattan,USA,Avery Fisher Hall,12/04/2013,20:00,23:58,238
+373,Subscription Season,Manhattan,USA,Avery Fisher Hall,13/04/2013,20:00,23:06,186
+374,Young People's Concert,Manhattan,USA,Avery Fisher Hall,13/04/2013,14:00,16:56,176
+375,Chamber,Manhattan,USA,Kurtz Residence (Home of Honey M. Kurtz),15/04/2013,19:00,22:37,217
+376,Insight Series,Manhattan,USA,New York Institute of Technology Broadway Auditorium,16/04/2013,18:30,20:21,111
+377,Subscription Season,Manhattan,USA,Avery Fisher Hall,17/04/2013,19:30,22:10,160
+378,Subscription Season,Manhattan,USA,Avery Fisher Hall,18/04/2013,19:30,22:10,160
+379,Subscription Season,Manhattan,USA,Avery Fisher Hall,19/04/2013,20:00,22:59,179
+380,Subscription Season,Manhattan,USA,Avery Fisher Hall,20/04/2013,20:00,23:28,208
+381,Chamber,Manhattan,USA,Merkin Concert Hall,21/04/2013,15:00,18:16,196
+382,Chamber Concert (Private),Manhattan,USA,The Stanley H. Kaplan Penthouse,23/04/2013,19:00,21:08,128
+383,Subscription Season,Manhattan,USA,Avery Fisher Hall,24/04/2013,19:30,22:00,150
+384,Subscription Season,Manhattan,USA,Avery Fisher Hall,25/04/2013,19:30,22:23,173
+385,Subscription Season,Manhattan,USA,Avery Fisher Hall,27/04/2013,20:00,23:14,194
+386,Non-Subscription,Manhattan,USA,Carnegie Hall,26/04/2013,20:00,22:37,157
+387,Tour,Izmir,TURKEY,Ahmed Adnan Saygun Arts Centre,02/05/2013,20:30,23:22,172
+388,Tour,Istanbul,TURKEY,Halic Auditorium,03/05/2013,20:00,22:29,149
+389,Tour,Istanbul,TURKEY,Halic Auditorium,04/05/2013,20:00,23:16,196
+390,Tour,Zurich,SWITZERLAND,Tonhalle,06/05/2013,19:30,22:42,192
+391,Tour,Munich,GERMANY,Gasteig Philharmonie,07/05/2013,20:00,23:21,201
+392,Tour,Essen,GERMANY,Philharmonie (Alfried-Krupp Hall),08/05/2013,20:30,23:53,203
+393,Tour,Dortmund,GERMANY,Konzerthaus,09/05/2013,18:00,21:03,183
+394,Tour,Berlin,GERMANY,Konzerthaus Berlin,11/05/2013,20:00,22:01,121
+395,Tour - Chamber,Berlin,GERMANY,US Ambassador Residence,12/05/2013,16:00,19:42,222
+396,Tour,Dresden,GERMANY,Semperopera,13/05/2013,20:00,21:44,104
+397,Tour,Dresden,GERMANY,Transparent Factory,14/05/2013,20:00,23:17,197
+398,Tour,Vienna,AUSTRIA,Wiener Konzerthaus (Grosser Saal),15/05/2013,19:30,21:50,140
+399,Tour,Vienna,AUSTRIA,Wiener Konzerthaus (Grosser Saal),16/05/2013,19:30,22:09,159
+400,Tour,Vienna,AUSTRIA,Wiener Konzerthaus (Grosser Saal),17/05/2013,19:30,22:41,191
+401,Young People's Concerts for Schools,Manhattan,USA,Avery Fisher Hall,23/05/2013,00:00,03:16,196
+402,Chamber Concert (Private),Manhattan,USA,"Hite Residence, Central Park S.",23/05/2013,15:00,23:31,511
+403,Young People's Concerts for Schools,Manhattan,USA,Avery Fisher Hall,23/05/2013,10:30,12:51,141
+404,Young People's Concerts for Schools,Manhattan,USA,Avery Fisher Hall,24/05/2013,10:00,11:43,103
+405,Young People's Concerts for Schools,Manhattan,USA,Avery Fisher Hall,24/05/2013,00:00,03:28,208
+406,Young People's Concert,Manhattan,USA,Avery Fisher Hall,25/05/2013,14:00,17:05,185
+407,St. John the Divine,Manhattan,USA,The Cathedral Church of Saint John the Divine,27/05/2013,20:00,23:25,205
+408,Rush Hour,Manhattan,USA,Avery Fisher Hall,30/05/2013,18:45,21:22,157
+409,Subscription Season,Manhattan,USA,Avery Fisher Hall,31/05/2013,11:00,12:15,75
+410,Subscription Season,Manhattan,USA,Avery Fisher Hall,01/06/2013,20:00,22:28,148
+411,Special,Manhattan,USA,Avery Fisher Hall,04/06/2013,19:30,22:23,173
+412,Insight Series,Manhattan,USA,Amphitheater at the Elinor Bunin Munroe Film Center,05/06/2013,18:30,22:23,233
+413,Subscription Season,Manhattan,USA,Avery Fisher Hall,06/06/2013,19:30,22:03,153
+414,Subscription Season,Manhattan,USA,Avery Fisher Hall,08/06/2013,20:00,23:15,195
+415,Subscription Season,Manhattan,USA,Avery Fisher Hall,11/06/2013,19:30,22:16,166
+416,Runout,Greenvale,USA,Tilles Center for the Performing Arts (Main),07/06/2013,20:00,22:24,144
+417,Saturday Matinee,Manhattan,USA,Avery Fisher Hall,08/06/2013,14:00,16:29,149
+418,Chamber Concert (Private),Manhattan,USA,Hull Room,12/06/2013,19:30,22:30,180
+419,Subscription Season,Manhattan,USA,Avery Fisher Hall,13/06/2013,19:30,22:21,171
+420,Subscription Season,Manhattan,USA,Avery Fisher Hall,14/06/2013,14:00,17:33,213
+421,Subscription Season,Manhattan,USA,Avery Fisher Hall,15/06/2013,20:00,23:28,208
+422,Subscription Season,Manhattan,USA,Avery Fisher Hall,18/06/2013,19:30,23:15,225
+423,Chamber,Manhattan,USA,Merkin Concert Hall,16/06/2013,15:00,18:32,212
+424,Chamber Concert (Private),Manhattan,USA,St. Regis Hotel,17/06/2013,19:00,21:39,159
+425,Subscription Season,Manhattan,USA,Avery Fisher Hall,20/06/2013,19:30,21:56,146
+426,Subscription Season,Manhattan,USA,Avery Fisher Hall,21/06/2013,20:00,23:59,239
+427,Subscription Season,Manhattan,USA,Avery Fisher Hall,22/06/2013,20:00,22:29,149
+428,Chamber Concert (Private),Manhattan,USA,Racquet and Tennis Club,25/06/2013,18:30,23:33,303
+429,Subscription Season,Manhattan,USA,Avery Fisher Hall,27/06/2013,19:30,22:24,174
+430,Subscription Season,Manhattan,USA,Avery Fisher Hall,28/06/2013,20:00,22:51,171
+431,Subscription Season,Manhattan,USA,Avery Fisher Hall,29/06/2013,20:00,23:35,215
+432,Summertime Classics,Manhattan,USA,Avery Fisher Hall,03/07/2013,19:30,22:42,192
+433,Subscription Season,Manhattan,USA,Avery Fisher Hall,04/07/2013,15:00,17:40,160
+434,Summertime Classics,Manhattan,USA,Avery Fisher Hall,05/07/2013,20:00,22:35,155
+435,Summertime Classics,Manhattan,USA,Avery Fisher Hall,06/07/2013,20:00,23:50,230
+436,Summertime Classics,Manhattan,USA,Avery Fisher Hall,07/07/2013,15:00,17:56,176
+437,Parks,Brooklyn,USA,Prospect Park,10/07/2013,20:00,22:50,170
+438,Parks,Queens,USA,Cunningham Park,11/07/2013,20:00,22:54,174
+439,Parks,Manhattan,USA,Great Lawn,13/07/2013,19:30,22:52,202
+440,Parks - Free Indoor Concert,Staten Island,USA,"Center for the Arts, College of Staten Island / CUNY",14/07/2013,15:00,18:55,235
+441,Parks,Manhattan,USA,Great Lawn,15/07/2013,20:00,23:15,195
+442,Parks,Bronx,USA,Van Cortlandt Park,16/07/2013,20:00,23:58,238
+443,Tour,Vail,USA,Gerald R. Ford Amphitheater,19/07/2013,18:00,20:42,162
+444,Tour,Vail,USA,Gerald R. Ford Amphitheater,20/07/2013,18:00,20:19,139
+445,Tour,Vail,USA,Gerald R. Ford Amphitheater,21/07/2013,18:00,20:52,172
+446,Tour,Vail,USA,Gerald R. Ford Amphitheater,24/07/2013,18:00,21:00,180
+447,Tour,Vail,USA,Gerald R. Ford Amphitheater,25/07/2013,18:00,20:53,173
+448,Tour,Vail,USA,Gerald R. Ford Amphitheater,26/07/2013,18:00,20:43,163
+449,Tour - Chamber,Mexico City,MEXICO,Museo Rufino Tamayo,02/09/2013,14:00,16:56,176
+450,Tour - Chamber,Sao Paulo,BRAZIL,Teatro Cultura Artistica,04/09/2013,21:10,23:24,134
+451,Tour - Chamber,Sao Paulo,BRAZIL,Teatro Cultura Artistica,05/09/2013,21:10,23:27,137
+452,Special,Seoul,KOREA,Myungsung Presbyterian Church,04/09/2013,14:00,23:38,578
+453,Tour - Chamber,Santiago,CHILE,Universidad Catolica,06/09/2013,20:00,23:28,208
+454,Non-Subscription,Manhattan,USA,Avery Fisher Hall,17/09/2013,19:30,21:46,136
+455,Non-Subscription,Manhattan,USA,Avery Fisher Hall,18/09/2013,19:30,22:22,172
+456,Non-Subscription,Manhattan,USA,Avery Fisher Hall,20/09/2013,20:00,23:24,204
+457,Non-Subscription,Manhattan,USA,Avery Fisher Hall,21/09/2013,20:00,22:54,174
+458,Pension Fund Benefit Concert,Manhattan,USA,Avery Fisher Hall,25/09/2013,19:30,23:09,219
+459,Subscription Season,Manhattan,USA,Avery Fisher Hall,26/09/2013,19:30,21:47,137
+460,Subscription Season,Manhattan,USA,Avery Fisher Hall,27/09/2013,11:00,12:30,90
+461,Subscription Season,Manhattan,USA,Avery Fisher Hall,28/09/2013,20:00,22:19,139
+462,Subscription Season,Manhattan,USA,Avery Fisher Hall,01/10/2013,19:30,22:54,204
+463,Subscription Season,Manhattan,USA,Avery Fisher Hall,03/10/2013,19:30,21:49,139
+464,Subscription Season,Manhattan,USA,Avery Fisher Hall,04/10/2013,20:00,22:12,132
+465,Subscription Season,Manhattan,USA,Avery Fisher Hall,05/10/2013,20:00,22:30,150
+466,Subscription Season,Manhattan,USA,Avery Fisher Hall,08/10/2013,19:30,22:11,161
+467,Subscription Season,Manhattan,USA,Avery Fisher Hall,09/10/2013,19:30,22:24,174
+468,Chamber,Manhattan,USA,The Empire Hotel,07/10/2013,15:00,17:58,178
+469,Private Concert,Manhattan,USA,Morgan Library,07/10/2013,18:00,19:09,69
+470,Subscription Season,Manhattan,USA,Avery Fisher Hall,12/10/2013,20:00,23:08,188
+471,Subscription Season,Manhattan,USA,Avery Fisher Hall,15/10/2013,19:30,22:23,173
+472,Young People's Concert,Manhattan,USA,Avery Fisher Hall,12/10/2013,14:00,16:34,154
+473,Subscription Season,Manhattan,USA,Avery Fisher Hall,17/10/2013,19:30,22:08,158
+474,Subscription Season,Manhattan,USA,Avery Fisher Hall,18/10/2013,14:00,16:39,159
+475,Subscription Season,Manhattan,USA,Avery Fisher Hall,19/10/2013,20:00,22:47,167
+476,Chamber,Manhattan,USA,Merkin Concert Hall,20/10/2013,15:00,18:06,186
+477,Subscription Season,Manhattan,USA,Avery Fisher Hall,24/10/2013,19:30,22:33,183
+478,Subscription Season,Manhattan,USA,Avery Fisher Hall,25/10/2013,20:00,22:43,163
+479,Subscription Season,Manhattan,USA,Avery Fisher Hall,26/10/2013,20:00,23:06,186
+480,Saturday Matinee,Manhattan,USA,Avery Fisher Hall,26/10/2013,14:00,17:50,230
+481,Master Class,Manhattan,USA,venue to be announced,29/10/2013,15:00,23:59,539
+482,Subscription Season,Manhattan,USA,Avery Fisher Hall,30/10/2013,19:30,22:47,197
+483,Subscription Season,Manhattan,USA,Avery Fisher Hall,31/10/2013,19:30,22:04,154
+484,Subscription Season,Manhattan,USA,Avery Fisher Hall,01/11/2013,11:00,12:35,95
+485,Subscription Season,Manhattan,USA,Avery Fisher Hall,02/11/2013,20:00,22:57,177
+486,Subscription Season,Manhattan,USA,Avery Fisher Hall,05/11/2013,19:30,22:32,182
+487,Contact!,Manhattan,USA,SubCulture,04/11/2013,19:30,22:02,152
+488,Subscription Season,Manhattan,USA,Avery Fisher Hall,07/11/2013,19:30,23:30,240
+489,Subscription Season,Manhattan,USA,Avery Fisher Hall,08/11/2013,20:00,23:15,195
+490,Subscription Season,Manhattan,USA,Avery Fisher Hall,09/11/2013,20:00,22:34,154
+491,Chamber,Manhattan,USA,None,11/11/2013,15:00,23:30,510
+492,Special,Manhattan,USA,4 World Trade Center,12/11/2013,18:30,21:15,165
+493,Subscription Season,Manhattan,USA,Avery Fisher Hall,14/11/2013,19:30,22:52,202
+494,Subscription Season,Manhattan,USA,Avery Fisher Hall,15/11/2013,14:00,16:41,161
+495,Subscription Season,Manhattan,USA,Avery Fisher Hall,16/11/2013,20:00,22:53,173
+496,Subscription Season,Manhattan,USA,Avery Fisher Hall,19/11/2013,19:30,21:45,135
+497,Chamber,Manhattan,USA,Merkin Concert Hall,17/11/2013,15:00,17:18,138
+498,Chamber,Manhattan,USA,The Stanley H. Kaplan Penthouse,18/11/2013,18:30,23:31,301
+499,Private Concert,Manhattan,USA,The Stanley H. Kaplan Penthouse,18/11/2013,19:00,21:30,150
+500,Subscription Season,Manhattan,USA,Avery Fisher Hall,21/11/2013,19:30,22:22,172
+501,Subscription Season,Manhattan,USA,Avery Fisher Hall,22/11/2013,20:00,22:52,172
+502,Subscription Season,Manhattan,USA,Avery Fisher Hall,23/11/2013,20:00,23:32,212
+503,Subscription Season,Manhattan,USA,Avery Fisher Hall,26/11/2013,19:30,22:59,209
+504,Subscription Season,Manhattan,USA,Avery Fisher Hall,29/11/2013,20:00,23:34,214
+505,Subscription Season,Manhattan,USA,Avery Fisher Hall,30/11/2013,20:00,22:52,172
+506,Saturday Matinee,Manhattan,USA,Avery Fisher Hall,30/11/2013,14:00,16:16,136
+507,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,01/12/2013,00:30,03:36,186
+508,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,01/12/2013,15:00,17:07,127
+509,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,02/12/2013,10:30,12:25,115
+510,Subscription Season,Manhattan,USA,Avery Fisher Hall,05/12/2013,19:30,23:06,216
+511,Subscription Season,Manhattan,USA,Avery Fisher Hall,06/12/2013,20:00,23:13,193
+512,Subscription Season,Manhattan,USA,Avery Fisher Hall,07/12/2013,20:00,22:52,172
+513,Young People's Concert,Manhattan,USA,Avery Fisher Hall,07/12/2013,14:00,17:25,205
+514,Pension Fund Benefit Concert,Manhattan,USA,Avery Fisher Hall,10/12/2013,19:30,21:55,145
+515,Subscription Season,Manhattan,USA,Avery Fisher Hall,12/12/2013,19:30,22:57,207
+516,Subscription Season,Manhattan,USA,Avery Fisher Hall,13/12/2013,14:00,16:36,156
+517,Subscription Season,Manhattan,USA,Avery Fisher Hall,14/12/2013,20:00,22:59,179
+518,Chamber,Manhattan,USA,Avery Fisher Hall,15/12/2013,15:00,17:59,179
+519,Subscription Season,Manhattan,USA,Avery Fisher Hall,17/12/2013,19:30,22:57,207
+520,Subscription Season,Manhattan,USA,Avery Fisher Hall,18/12/2013,19:30,23:13,223
+521,Subscription Season,Manhattan,USA,Avery Fisher Hall,19/12/2013,19:30,23:10,220
+522,Subscription Season,Manhattan,USA,Avery Fisher Hall,20/12/2013,11:00,12:40,100
+523,Subscription Season,Manhattan,USA,Avery Fisher Hall,21/12/2013,19:30,22:24,174
+524,Non-Subscription,Manhattan,USA,Avery Fisher Hall,20/12/2013,19:30,22:28,178
+525,Non-Subscription,Manhattan,USA,Avery Fisher Hall,21/12/2013,14:00,16:31,151
+526,New Year's Eve,Manhattan,USA,Avery Fisher Hall,31/12/2013,19:30,23:05,215
+527,Subscription Season,Manhattan,USA,Avery Fisher Hall,02/01/2014,19:30,22:12,162
+528,Subscription Season,Manhattan,USA,Avery Fisher Hall,03/01/2014,20:00,23:43,223
+529,Subscription Season,Manhattan,USA,Avery Fisher Hall,07/01/2014,19:30,22:28,178
+530,Runout,Greenvale,USA,Tilles Center for the Performing Arts (Main),04/01/2014,20:00,23:27,207
+531,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,05/01/2014,00:30,04:13,223
+532,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,05/01/2014,15:00,18:18,198
+533,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,06/01/2014,10:30,12:10,100
+534,Subscription Season,Manhattan,USA,Avery Fisher Hall,09/01/2014,19:30,23:13,223
+535,Subscription Season,Manhattan,USA,Avery Fisher Hall,10/01/2014,20:00,23:21,201
+536,Subscription Season,Manhattan,USA,Avery Fisher Hall,11/01/2014,20:00,23:06,186
+537,Subscription Season,Manhattan,USA,Avery Fisher Hall,14/01/2014,19:30,21:44,134
+538,Contact!,Manhattan,USA,SubCulture,13/01/2014,19:30,21:32,122
+539,Chamber,Manhattan,USA,The Stanley H. Kaplan Penthouse,15/01/2014,19:00,22:14,194
+540,Subscription Season,Manhattan,USA,Avery Fisher Hall,16/01/2014,19:30,22:14,164
+541,Subscription Season,Manhattan,USA,Avery Fisher Hall,17/01/2014,11:00,12:55,115
+542,Subscription Season,Manhattan,USA,Avery Fisher Hall,18/01/2014,20:00,23:38,218
+543,Chamber,Manhattan,USA,Alice Tully Hall,19/01/2014,17:00,20:29,209
+544,Subscription Season,Manhattan,USA,Avery Fisher Hall,22/01/2014,19:30,23:19,229
+545,Subscription Season,Manhattan,USA,Avery Fisher Hall,23/01/2014,19:30,23:14,224
+546,Subscription Season,Manhattan,USA,Avery Fisher Hall,24/01/2014,14:00,17:03,183
+547,Subscription Season,Manhattan,USA,Avery Fisher Hall,25/01/2014,20:00,23:02,182
+548,Chamber,Manhattan,USA,Merkin Concert Hall,26/01/2014,15:00,18:14,194
+549,Young People's Concerts for Schools,Manhattan,USA,Avery Fisher Hall,28/01/2014,10:30,12:01,91
+550,Young People's Concerts for Schools,Manhattan,USA,Avery Fisher Hall,28/01/2014,00:00,02:40,160
+551,Young People's Concerts for Schools,Manhattan,USA,Avery Fisher Hall,29/01/2014,10:30,23:55,805
+552,Young People's Concerts for Schools,Manhattan,USA,Avery Fisher Hall,29/01/2014,00:00,02:46,166
+553,Insight Series,Manhattan,USA,David Rubenstein Atrium at Lincoln Center,30/01/2014,19:30,23:06,216
+554,Young People's Concerts for Schools,Manhattan,USA,Avery Fisher Hall,30/01/2014,11:00,12:28,88
+555,Young People's Concert,Manhattan,USA,Avery Fisher Hall,01/02/2014,14:00,17:17,197
+556,Pension Fund Benefit Concert,Manhattan,USA,Avery Fisher Hall,01/02/2014,20:00,23:16,196
+557,Tour,Seoul,KOREA,Seoul Arts Center (Concert Hall),06/02/2014,20:00,23:09,189
+558,Tour,Seoul,KOREA,Seoul Arts Center (Concert Hall),07/02/2014,20:00,23:04,184
+559,Tour,Nagoya,JAPAN,Concert Hall (Aichi),09/02/2014,14:00,16:33,153
+560,Tour,Osaka,JAPAN,Symphony Hall,10/02/2014,19:00,21:21,141
+561,Tour,Tokyo,JAPAN,Suntory Hall,11/02/2014,18:00,21:05,185
+562,Tour,Tokyo,JAPAN,Suntory Hall,12/02/2014,19:00,21:00,120
+563,Tour,Tokyo,JAPAN,Suntory Hall,13/02/2014,19:00,21:38,158
+564,Tour,Yokohama,JAPAN,Minato Mirai Hall,15/02/2014,15:00,18:34,214
+565,Tour,Taipei,TAIWAN,National Concert Hall,18/02/2014,19:30,22:24,174
+566,Tour,Taipei,TAIWAN,National Concert Hall,19/02/2014,19:30,22:49,199
+567,Non-Subscription,Manhattan,USA,Avery Fisher Hall,28/02/2014,20:00,22:47,167
+568,Non-Subscription,Manhattan,USA,Avery Fisher Hall,01/03/2014,20:00,23:19,199
+569,Non-Subscription,Manhattan,USA,Avery Fisher Hall,05/03/2014,19:00,22:06,186
+570,Non-Subscription,Manhattan,USA,Avery Fisher Hall,06/03/2014,19:30,22:06,156
+571,Non-Subscription,Manhattan,USA,Avery Fisher Hall,07/03/2014,20:00,22:42,162
+572,Non-Subscription,Manhattan,USA,Avery Fisher Hall,08/03/2014,14:00,17:14,194
+573,Non-Subscription,Manhattan,USA,Avery Fisher Hall,08/03/2014,20:00,23:22,202
+574,Subscription Season,Manhattan,USA,Avery Fisher Hall,12/03/2014,19:30,22:58,208
+575,Subscription Season,Manhattan,USA,Avery Fisher Hall,13/03/2014,19:30,22:35,185
+576,Subscription Season,Manhattan,USA,Avery Fisher Hall,14/03/2014,14:00,17:43,223
+577,Subscription Season,Manhattan,USA,Avery Fisher Hall,15/03/2014,20:00,22:51,171
+578,Special,Manhattan,USA,Avery Fisher Hall,18/03/2014,19:00,21:35,155
+579,Subscription Season,Manhattan,USA,Avery Fisher Hall,20/03/2014,19:30,21:55,145
+580,Subscription Season,Manhattan,USA,Avery Fisher Hall,21/03/2014,20:00,22:48,168
+581,Subscription Season,Manhattan,USA,Avery Fisher Hall,22/03/2014,20:00,23:23,203
+582,Saturday Matinee,Manhattan,USA,Avery Fisher Hall,22/03/2014,14:00,17:12,192
+583,Chamber,Manhattan,USA,Merkin Concert Hall,23/03/2014,15:00,16:55,115
+584,Subscription Season,Manhattan,USA,Avery Fisher Hall,25/03/2014,19:30,22:36,186
+585,Subscription Season,Manhattan,USA,Avery Fisher Hall,27/03/2014,19:30,22:44,194
+586,Subscription Season,Manhattan,USA,Avery Fisher Hall,28/03/2014,20:00,22:47,167
+587,Subscription Season,Manhattan,USA,Avery Fisher Hall,29/03/2014,20:00,23:22,202
+588,Subscription Season,Manhattan,USA,Avery Fisher Hall,02/04/2014,19:30,21:40,130
+589,Subscription Season,Manhattan,USA,Avery Fisher Hall,03/04/2014,19:30,21:52,142
+590,Subscription Season,Manhattan,USA,Avery Fisher Hall,04/04/2014,11:00,12:27,87
+591,Subscription Season,Manhattan,USA,Avery Fisher Hall,05/04/2014,20:00,22:18,138
+592,Subscription Season,Manhattan,USA,Avery Fisher Hall,10/04/2014,19:30,23:10,220
+593,Subscription Season,Manhattan,USA,Avery Fisher Hall,11/04/2014,20:00,22:00,120
+594,Subscription Season,Manhattan,USA,Avery Fisher Hall,12/04/2014,20:00,23:16,196
+595,Young People's Concert,Manhattan,USA,Avery Fisher Hall,12/04/2014,14:00,16:34,154
+596,Chamber,Manhattan,USA,Merkin Concert Hall,13/04/2014,15:00,17:56,176
+597,Non-Subscription,Manhattan,USA,Avery Fisher Hall,22/04/2014,19:30,23:38,248
+598,Subscription Season,Manhattan,USA,Avery Fisher Hall,24/04/2014,19:30,22:26,176
+599,Subscription Season,Manhattan,USA,Avery Fisher Hall,25/04/2014,11:00,12:22,82
+600,Subscription Season,Manhattan,USA,Avery Fisher Hall,26/04/2014,20:00,23:14,194
+601,Saturday Matinee,Manhattan,USA,Avery Fisher Hall,26/04/2014,14:00,17:50,230
+602,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,27/04/2014,00:30,03:57,207
+603,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,27/04/2014,15:00,17:50,170
+604,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,28/04/2014,10:30,12:19,109
+605,Non-Subscription,Manhattan,USA,Avery Fisher Hall,01/05/2014,19:30,20:57,87
+606,Non-Subscription,Manhattan,USA,Avery Fisher Hall,02/05/2014,20:00,23:04,184
+607,Non-Subscription,Manhattan,USA,Avery Fisher Hall,03/05/2014,19:30,22:24,174
+608,Non-Subscription,Manhattan,USA,Carnegie Hall,05/05/2014,19:30,22:59,209
+609,Subscription Season,Manhattan,USA,Avery Fisher Hall,08/05/2014,19:30,22:30,180
+610,Subscription Season,Manhattan,USA,Avery Fisher Hall,09/05/2014,20:00,21:57,117
+611,Subscription Season,Manhattan,USA,Avery Fisher Hall,10/05/2014,20:00,22:10,130
+612,Special,Manhattan,USA,9/11 Memorial Museum,15/05/2014,19:30,23:40,250
+613,Subscription Season,Manhattan,USA,Avery Fisher Hall,15/05/2014,19:30,22:00,150
+614,Subscription Season,Manhattan,USA,Avery Fisher Hall,16/05/2014,20:00,23:28,208
+615,Subscription Season,Manhattan,USA,Avery Fisher Hall,17/05/2014,20:00,22:58,178
+616,Subscription Season,Manhattan,USA,Avery Fisher Hall,21/05/2014,19:30,22:43,193
+617,Subscription Season,Manhattan,USA,Avery Fisher Hall,22/05/2014,19:30,21:57,147
+618,Subscription Season,Manhattan,USA,Avery Fisher Hall,23/05/2014,14:00,16:13,133
+619,Subscription Season,Manhattan,USA,Avery Fisher Hall,24/05/2014,20:00,23:15,195
+620,Chamber,Manhattan,USA,"Theresa L. Kaufmann Concert Hall, 92nd St. YMHA",23/05/2014,20:00,22:59,179
+621,Chamber,Manhattan,USA,Merkin Concert Hall,25/05/2014,15:00,17:58,178
+622,St. John the Divine,Manhattan,USA,The Cathedral Church of Saint John the Divine,26/05/2014,20:00,22:43,163
+623,NY Phil Biennial,Manhattan,USA,Gerald W. Lynch Theater,28/05/2014,19:30,22:18,168
+624,NY Phil Biennial,Manhattan,USA,Gerald W. Lynch Theater,30/05/2014,20:00,23:47,227
+625,NY Phil Biennial,Manhattan,USA,Gerald W. Lynch Theater,31/05/2014,20:00,22:48,168
+626,NY Phil Biennial,Manhattan,USA,"Museum of Modern Art, The",29/05/2014,22:00,23:50,110
+627,NY Phil Biennial,Manhattan,USA,"Museum of Modern Art, The",31/05/2014,22:00,23:10,70
+628,NY Phil Biennial,Manhattan,USA,Metropolitan Museum of Art,29/05/2014,19:00,22:20,200
+629,NY Phil Biennial,Manhattan,USA,Metropolitan Museum of Art,30/05/2014,19:00,22:18,198
+630,NY Phil Biennial,Manhattan,USA,Metropolitan Museum of Art,01/06/2014,14:00,16:05,125
+631,NY Phil Biennial,Manhattan,USA,Avery Fisher Hall,30/05/2014,20:00,22:34,154
+632,NY Phil Biennial,Manhattan,USA,Avery Fisher Hall,31/05/2014,19:00,22:13,193
+633,NY Phil Biennial,Manhattan,USA,Rose Theater,31/05/2014,14:00,17:14,194
+634,NY Phil Biennial,Manhattan,USA,Merkin Concert Hall,31/05/2014,11:00,12:14,74
+635,NY Phil Biennial,Manhattan,USA,David Rubenstein Atrium at Lincoln Center,01/06/2014,11:30,12:19,49
+636,NY Phil Biennial,Manhattan,USA,Rose Theater,01/06/2014,17:00,19:49,169
+637,Insight Series,Manhattan,USA,David Rubenstein Atrium at Lincoln Center,02/06/2014,19:30,22:57,207
+638,Contact!,Manhattan,USA,SubCulture,03/06/2014,19:30,22:30,180
+639,Reading Rehearsal,Manhattan,USA,Avery Fisher Hall,03/06/2014,10:00,12:30,150
+640,Insight Series,Manhattan,USA,David Rubenstein Atrium at Lincoln Center,04/06/2014,19:30,21:26,116
+641,NY Phil Biennial,Manhattan,USA,The Stanley H. Kaplan Penthouse,04/06/2014,21:30,22:31,61
+642,NY Phil Biennial,Manhattan,USA,Avery Fisher Hall,05/06/2014,19:30,23:18,228
+643,NY Phil Biennial,Manhattan,USA,Avery Fisher Hall,06/06/2014,20:00,22:44,164
+644,NY Phil Biennial,Manhattan,USA,DiMenna Center,07/06/2014,19:30,22:35,185
+645,NY Phil Biennial,Manhattan,USA,Avery Fisher Hall,07/06/2014,20:00,22:42,162
+646,Chamber Concert (Private),Manhattan,USA,St. Regis Hotel,10/06/2014,14:00,23:33,573
+647,Festival,Manhattan,USA,Avery Fisher Hall,11/06/2014,19:30,22:11,161
+648,Festival,Manhattan,USA,Avery Fisher Hall,12/06/2014,19:30,22:34,184
+649,Festival,Manhattan,USA,Avery Fisher Hall,13/06/2014,20:00,22:27,147
+650,Festival,Manhattan,USA,Avery Fisher Hall,14/06/2014,20:00,22:53,173
+651,Festival,Manhattan,USA,Avery Fisher Hall,18/06/2014,19:30,22:51,201
+652,Festival,Manhattan,USA,Avery Fisher Hall,19/06/2014,19:30,22:41,191
+653,Festival,Manhattan,USA,Avery Fisher Hall,20/06/2014,20:00,23:18,198
+654,Festival,Manhattan,USA,Avery Fisher Hall,21/06/2014,20:00,23:31,211
+655,Festival,Manhattan,USA,Avery Fisher Hall,24/06/2014,19:30,22:04,154
+656,Festival,Manhattan,USA,Avery Fisher Hall,25/06/2014,19:30,21:25,115
+657,Festival,Manhattan,USA,Avery Fisher Hall,26/06/2014,19:30,22:10,160
+658,Festival,Manhattan,USA,Avery Fisher Hall,27/06/2014,20:00,22:17,137
+659,Festival,Manhattan,USA,Avery Fisher Hall,28/06/2014,20:00,23:36,216
+660,Summertime Classics,Manhattan,USA,Avery Fisher Hall,02/07/2014,19:30,22:23,173
+661,Summertime Classics,Manhattan,USA,Avery Fisher Hall,03/07/2014,19:30,22:51,201
+662,Summertime Classics,Manhattan,USA,Avery Fisher Hall,04/07/2014,15:00,18:11,191
+663,Summertime Classics,Manhattan,USA,Avery Fisher Hall,05/07/2014,20:00,22:47,167
+664,Summertime Classics,Manhattan,USA,Avery Fisher Hall,06/07/2014,15:00,17:41,161
+665,Special,Manhattan,USA,Avery Fisher Hall,05/07/2014,14:00,17:18,198
+666,Parks,Brooklyn,USA,Prospect Park,09/07/2014,20:00,22:52,172
+667,Parks,Queens,USA,Cunningham Park,10/07/2014,20:00,23:12,192
+668,Parks,Manhattan,USA,Great Lawn,11/07/2014,20:00,22:50,170
+669,Parks - Free Indoor Concert,Staten Island,USA,"Center for the Arts, College of Staten Island / CUNY",13/07/2014,15:00,17:21,141
+670,Tour,Vail,USA,Gerald R. Ford Amphitheater,18/07/2014,18:00,21:49,229
+671,Tour,Vail,USA,Gerald R. Ford Amphitheater,19/07/2014,18:00,22:11,251
+672,Tour,Vail,USA,Gerald R. Ford Amphitheater,20/07/2014,18:00,21:00,180
+673,Tour,Vail,USA,Gerald R. Ford Amphitheater,23/07/2014,18:00,19:45,105
+674,Tour,Vail,USA,Gerald R. Ford Amphitheater,24/07/2014,18:00,21:05,185
+675,Tour,Vail,USA,Gerald R. Ford Amphitheater,25/07/2014,18:00,20:47,167
+676,Tour - Concert for Patrons,Shanghai,CHINA,None,04/09/2014,15:00,23:38,518
+677,Residency - Chamber,Shanghai,CHINA,U.S. Consulate Shanghai,10/09/2014,20:00,22:42,162
+678,Residency,Shanghai,CHINA,Shanghai Symphony Hall--Chamber Hall,12/09/2014,19:45,22:57,192
+679,Non-Subscription,Manhattan,USA,Avery Fisher Hall,16/09/2014,19:30,22:49,199
+680,Non-Subscription,Manhattan,USA,Avery Fisher Hall,17/09/2014,19:30,22:10,160
+681,Non-Subscription,Manhattan,USA,Avery Fisher Hall,19/09/2014,20:00,23:08,188
+682,Non-Subscription,Manhattan,USA,Avery Fisher Hall,20/09/2014,20:00,22:54,174
+683,Subscription Season,Manhattan,USA,Avery Fisher Hall,23/09/2014,19:30,22:52,202
+684,Subscription Season,Manhattan,USA,Avery Fisher Hall,26/09/2014,11:00,12:22,82
+685,Subscription Season,Manhattan,USA,Avery Fisher Hall,27/09/2014,20:00,23:03,183
+686,Subscription Season,Manhattan,USA,Avery Fisher Hall,30/09/2014,19:30,22:10,160
+687,Subscription Season,Manhattan,USA,Avery Fisher Hall,01/10/2014,19:30,22:10,160
+688,Subscription Season,Manhattan,USA,Avery Fisher Hall,02/10/2014,19:30,22:19,169
+689,Subscription Season,Manhattan,USA,Avery Fisher Hall,03/10/2014,14:00,16:45,165
+690,Subscription Season,Manhattan,USA,Avery Fisher Hall,09/10/2014,19:30,22:36,186
+691,Subscription Season,Manhattan,USA,Avery Fisher Hall,10/10/2014,20:00,23:15,195
+692,Subscription Season,Manhattan,USA,Avery Fisher Hall,11/10/2014,20:00,23:43,223
+693,Subscription Season,Manhattan,USA,Avery Fisher Hall,14/10/2014,19:30,23:08,218
+694,Saturday Matinee,Manhattan,USA,Avery Fisher Hall,11/10/2014,14:00,16:44,164
+695,Subscription Season,Manhattan,USA,Avery Fisher Hall,16/10/2014,19:30,22:20,170
+696,Subscription Season,Manhattan,USA,Avery Fisher Hall,17/10/2014,20:00,23:25,205
+697,Subscription Season,Manhattan,USA,Avery Fisher Hall,18/10/2014,20:00,22:35,155
+698,Chamber,Manhattan,USA,Merkin Concert Hall,19/10/2014,15:00,18:18,198
+699,Pension Fund Benefit Concert,Manhattan,USA,Avery Fisher Hall,21/10/2014,19:30,23:26,236
+700,Subscription Season,Manhattan,USA,Avery Fisher Hall,23/10/2014,19:30,22:34,184
+701,Subscription Season,Manhattan,USA,Avery Fisher Hall,24/10/2014,20:00,23:14,194
+702,Subscription Season,Manhattan,USA,Avery Fisher Hall,25/10/2014,20:00,22:56,176
+703,Subscription Season,Manhattan,USA,Avery Fisher Hall,28/10/2014,19:30,22:41,191
+704,Chamber Concert (Private),Manhattan,USA,Hon. Frank and Mrs. Newman Residence,27/10/2014,19:30,21:46,136
+705,Subscription Season,Manhattan,USA,Avery Fisher Hall,30/10/2014,19:30,22:15,165
+706,Subscription Season,Manhattan,USA,Avery Fisher Hall,31/10/2014,19:30,21:50,140
+707,Subscription Season,Manhattan,USA,Avery Fisher Hall,01/11/2014,20:00,22:37,157
+708,Chamber Concert (Private),Manhattan,USA,The Stanley H. Kaplan Penthouse,03/11/2014,19:00,22:01,181
+709,Non-Subscription,Manhattan,USA,Avery Fisher Hall,05/11/2014,19:30,21:48,138
+710,Non-Subscription,Manhattan,USA,Avery Fisher Hall,06/11/2014,19:30,22:14,164
+711,Non-Subscription,Manhattan,USA,Avery Fisher Hall,07/11/2014,20:00,23:34,214
+712,Non-Subscription,Manhattan,USA,Avery Fisher Hall,08/11/2014,14:00,16:51,171
+713,Non-Subscription,Manhattan,USA,Avery Fisher Hall,08/11/2014,20:00,22:48,168
+714,Private Concert,Manhattan,USA,Avery Fisher Hall,07/11/2014,00:00,03:28,208
+715,Subscription Season,Manhattan,USA,Avery Fisher Hall,12/11/2014,19:30,22:38,188
+716,Subscription Season,Manhattan,USA,Avery Fisher Hall,13/11/2014,19:30,22:28,178
+717,Subscription Season,Manhattan,USA,Avery Fisher Hall,14/11/2014,20:00,23:50,230
+718,Subscription Season,Manhattan,USA,Avery Fisher Hall,15/11/2014,20:00,22:34,154
+719,Subscription Season,Manhattan,USA,Avery Fisher Hall,18/11/2014,19:30,22:18,168
+720,Young People's Concert,Manhattan,USA,Avery Fisher Hall,15/11/2014,14:00,17:19,199
+721,Contact!,Manhattan,USA,SubCulture,17/11/2014,19:30,22:53,203
+722,Subscription Season,Manhattan,USA,Avery Fisher Hall,20/11/2014,19:30,22:42,192
+723,Subscription Season,Manhattan,USA,Avery Fisher Hall,21/11/2014,14:00,17:25,205
+724,Subscription Season,Manhattan,USA,Avery Fisher Hall,22/11/2014,20:00,22:55,175
+725,Chamber,Manhattan,USA,Merkin Concert Hall,23/11/2014,15:00,17:40,160
+726,Subscription Season,Manhattan,USA,Avery Fisher Hall,26/11/2014,19:30,22:11,161
+727,Subscription Season,Manhattan,USA,Avery Fisher Hall,29/11/2014,20:00,23:49,229
+728,Subscription Season,Manhattan,USA,Avery Fisher Hall,28/11/2014,20:00,23:05,185
+729,Saturday Matinee,Manhattan,USA,Avery Fisher Hall,29/11/2014,14:00,16:34,154
+730,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,30/11/2014,00:30,03:42,192
+731,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,30/11/2014,15:00,17:54,174
+732,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,01/12/2014,10:30,12:13,103
+733,Subscription Season,Manhattan,USA,Avery Fisher Hall,04/12/2014,19:30,21:36,126
+734,Subscription Season,Manhattan,USA,Avery Fisher Hall,05/12/2014,14:00,17:04,184
+735,Subscription Season,Manhattan,USA,Avery Fisher Hall,06/12/2014,20:00,23:07,187
+736,Subscription Season,Manhattan,USA,Avery Fisher Hall,09/12/2014,19:30,21:42,132
+737,Chamber,Manhattan,USA,"Theresa L. Kaufmann Concert Hall, 92nd St. YMHA",07/12/2014,15:00,17:57,177
+738,Subscription Season,Manhattan,USA,Avery Fisher Hall,11/12/2014,19:30,22:41,191
+739,Subscription Season,Manhattan,USA,Avery Fisher Hall,12/12/2014,20:00,22:55,175
+740,Subscription Season,Manhattan,USA,Avery Fisher Hall,13/12/2014,20:00,22:05,125
+741,Special,Manhattan,USA,Avery Fisher Hall,14/12/2014,15:00,17:50,170
+742,Subscription Season,Manhattan,USA,Avery Fisher Hall,16/12/2014,19:30,22:15,165
+743,Subscription Season,Manhattan,USA,Avery Fisher Hall,17/12/2014,19:30,22:13,163
+744,Subscription Season,Manhattan,USA,Avery Fisher Hall,18/12/2014,19:30,21:32,122
+745,Subscription Season,Manhattan,USA,Avery Fisher Hall,19/12/2014,14:00,16:28,148
+746,Subscription Season,Manhattan,USA,Avery Fisher Hall,20/12/2014,19:30,22:29,179
+747,Non-Subscription,Manhattan,USA,Avery Fisher Hall,19/12/2014,20:00,22:42,162
+748,Non-Subscription,Manhattan,USA,Avery Fisher Hall,20/12/2014,14:00,16:53,173
+749,Subscription Season,Manhattan,USA,Avery Fisher Hall,30/12/2014,19:30,22:52,202
+750,Subscription Season,Manhattan,USA,Avery Fisher Hall,03/01/2015,20:00,23:07,187
+751,Subscription Season,Manhattan,USA,Avery Fisher Hall,06/01/2015,19:30,23:00,210
+752,New Year's Eve,Manhattan,USA,Avery Fisher Hall,31/12/2014,19:30,21:56,146
+753,Subscription Season,Manhattan,USA,Avery Fisher Hall,02/01/2015,20:00,23:24,204
+754,Subscription Season,Manhattan,USA,Avery Fisher Hall,08/01/2015,19:30,22:13,163
+755,Subscription Season,Manhattan,USA,Avery Fisher Hall,09/01/2015,20:00,23:22,202
+756,Subscription Season,Manhattan,USA,Avery Fisher Hall,10/01/2015,20:00,23:38,218
+757,Subscription Season,Manhattan,USA,Avery Fisher Hall,13/01/2015,19:30,22:31,181
+758,Subscription Season,Manhattan,USA,Avery Fisher Hall,15/01/2015,19:30,23:02,212
+759,Subscription Season,Manhattan,USA,Avery Fisher Hall,16/01/2015,19:30,23:25,235
+760,Subscription Season,Manhattan,USA,Avery Fisher Hall,17/01/2015,20:00,22:24,144
+761,Chamber,Manhattan,USA,Merkin Concert Hall,18/01/2015,15:00,18:19,199
+762,Chamber Concert (Private),Manhattan,USA,The Stanley H. Kaplan Penthouse,20/01/2015,19:00,21:42,162
+763,Subscription Season,Manhattan,USA,Avery Fisher Hall,22/01/2015,19:30,22:56,206
+764,Subscription Season,Manhattan,USA,Avery Fisher Hall,24/01/2015,20:00,22:26,146
+765,Subscription Season,Manhattan,USA,Avery Fisher Hall,23/01/2015,20:00,21:54,114
+766,Young People's Concert,Manhattan,USA,Avery Fisher Hall,24/01/2015,14:00,16:17,137
+767,Subscription Season,Manhattan,USA,Avery Fisher Hall,28/01/2015,19:30,21:44,134
+768,Subscription Season,Manhattan,USA,Avery Fisher Hall,29/01/2015,19:30,22:03,153
+769,Subscription Season,Manhattan,USA,Avery Fisher Hall,30/01/2015,11:00,12:12,72
+770,Subscription Season,Manhattan,USA,Avery Fisher Hall,31/01/2015,20:00,23:15,195
+771,Chamber Concert (Private),Manhattan,USA,Racquet and Tennis Club,03/02/2015,19:30,21:52,142
+772,Subscription Season,Manhattan,USA,Avery Fisher Hall,05/02/2015,19:30,22:24,174
+773,Subscription Season,Manhattan,USA,Avery Fisher Hall,06/02/2015,20:00,23:16,196
+774,Subscription Season,Manhattan,USA,Avery Fisher Hall,07/02/2015,20:00,22:57,177
+775,Saturday Matinee,Manhattan,USA,Avery Fisher Hall,07/02/2015,14:00,17:11,191
+776,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,08/02/2015,00:30,03:23,173
+777,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,08/02/2015,15:00,18:13,193
+778,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,09/02/2015,10:30,12:18,108
+779,Contact!,Manhattan,USA,SubCulture,09/02/2015,19:30,22:30,180
+780,Subscription Season,Manhattan,USA,Avery Fisher Hall,11/02/2015,19:30,22:24,174
+781,Subscription Season,Manhattan,USA,Avery Fisher Hall,12/02/2015,19:30,22:48,198
+782,Subscription Season,Manhattan,USA,Avery Fisher Hall,13/02/2015,14:00,16:33,153
+783,Non-Subscription,Manhattan,USA,Avery Fisher Hall,14/02/2015,20:00,23:32,212
+784,Chamber Concert (Private),Manhattan,USA,Johnson Residence (Home of Ann and Charles Johnson),15/02/2015,19:30,22:15,165
+785,Chamber,Manhattan,USA,Merkin Concert Hall,15/02/2015,15:00,17:59,179
+786,Subscription Season,Manhattan,USA,Avery Fisher Hall,19/02/2015,19:30,21:56,146
+787,Subscription Season,Manhattan,USA,Avery Fisher Hall,20/02/2015,20:00,22:57,177
+788,Subscription Season,Manhattan,USA,Avery Fisher Hall,21/02/2015,20:00,22:06,126
+789,Young People's Concert,Manhattan,USA,Avery Fisher Hall,21/02/2015,14:00,16:34,154
+790,Pension Fund Benefit Concert,Manhattan,USA,Avery Fisher Hall,24/02/2015,19:30,22:30,180
+791,Subscription Season,Manhattan,USA,Avery Fisher Hall,26/02/2015,19:30,22:04,154
+792,Subscription Season,Manhattan,USA,Avery Fisher Hall,27/02/2015,11:00,12:16,76
+793,Subscription Season,Manhattan,USA,Avery Fisher Hall,28/02/2015,20:00,23:22,202
+794,Young People's Concerts for Schools,Manhattan,USA,Avery Fisher Hall,04/03/2015,10:30,12:33,123
+795,Young People's Concerts for Schools,Manhattan,USA,Avery Fisher Hall,04/03/2015,00:00,02:56,176
+796,Young People's Concerts for Schools,Manhattan,USA,Avery Fisher Hall,05/03/2015,10:30,13:02,152
+797,Young People's Concerts for Schools,Manhattan,USA,Avery Fisher Hall,05/03/2015,00:00,03:15,195
+798,Young People's Concerts for Schools,Manhattan,USA,Avery Fisher Hall,06/03/2015,00:00,03:06,186
+799,Young People's Concerts for Schools,Manhattan,USA,Avery Fisher Hall,06/03/2015,10:30,12:31,121
+800,Contact!,Manhattan,USA,Metropolitan Museum of Art,07/03/2015,19:00,21:35,155
+801,Chamber Concert (Private),Manhattan,USA,Takahashi Residence (Home of Motomu and Megumi Takahashi),10/03/2015,19:30,22:32,182
+802,Subscription Season,Manhattan,USA,Avery Fisher Hall,12/03/2015,19:30,22:33,183
+803,Subscription Season,Manhattan,USA,Avery Fisher Hall,13/03/2015,19:30,22:18,168
+804,Subscription Season,Manhattan,USA,Avery Fisher Hall,14/03/2015,20:00,23:12,192
+805,Chamber,Manhattan,USA,Merkin Concert Hall,15/03/2015,15:00,18:01,181
+806,Chamber Concert (Private),Manhattan,USA,The Stanley H. Kaplan Penthouse,16/03/2015,19:00,21:18,138
+807,Subscription Season,Manhattan,USA,Avery Fisher Hall,19/03/2015,19:30,22:35,185
+808,Subscription Season,Manhattan,USA,Avery Fisher Hall,20/03/2015,11:00,12:11,71
+809,Subscription Season,Manhattan,USA,Avery Fisher Hall,24/03/2015,19:30,23:11,221
+810,Runout,Greenvale,USA,Tilles Center for the Performing Arts (Main),21/03/2015,20:00,21:11,71
+811,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,22/03/2015,00:30,03:30,180
+812,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,22/03/2015,15:00,17:51,171
+813,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,23/03/2015,10:30,23:45,795
+814,Subscription Season,Manhattan,USA,Avery Fisher Hall,26/03/2015,19:30,22:21,171
+815,Subscription Season,Manhattan,USA,Avery Fisher Hall,27/03/2015,20:00,23:35,215
+816,Subscription Season,Manhattan,USA,Avery Fisher Hall,28/03/2015,20:00,22:36,156
+817,Chamber,Manhattan,USA,Alice Tully Hall,30/03/2015,19:30,22:30,180
+818,Subscription Season,Manhattan,USA,Avery Fisher Hall,08/04/2015,19:30,22:37,187
+819,Subscription Season,Manhattan,USA,Avery Fisher Hall,09/04/2015,19:30,21:53,143
+820,Subscription Season,Manhattan,USA,Avery Fisher Hall,10/04/2015,20:00,23:06,186
+821,Subscription Season,Manhattan,USA,Avery Fisher Hall,11/04/2015,20:00,22:51,171
+822,Tour,Dublin,IRELAND,National Concert Hall,16/04/2015,20:00,22:35,155
+823,Tour,London,ENGLAND,Barbican Centre,17/04/2015,19:30,22:20,170
+824,Contact!,London,ENGLAND,"Milton Court at Guild Hall, Barbican Centre",18/04/2015,20:00,23:37,217
+825,Tour,London,ENGLAND,Barbican Centre,19/04/2015,19:30,22:13,163
+826,Tour - Young People's Concert,London,ENGLAND,Barbican Centre,19/04/2015,16:00,18:43,163
+827,Tour,Amsterdam,NETHERLANDS,Concertgebouw,21/04/2015,20:15,23:53,218
+828,Tour,Amsterdam,NETHERLANDS,Concertgebouw,22/04/2015,20:15,21:09,54
+829,Tour,Luxembourg,LUXEMBOURG,Philharmonie Luxembourg (Jos¸phine-Charlotte),23/04/2015,20:00,22:19,139
+830,Tour - Chamber,Paris,FRANCE,Official Residence of the United States Ambassador,24/04/2015,18:30,19:09,39
+831,Tour,Paris,FRANCE,"Philharmonie de Paris, La",25/04/2015,20:30,23:11,161
+832,Tour,Paris,FRANCE,"Philharmonie de Paris, La",26/04/2015,16:30,20:25,235
+833,Tour,Frankfurt,GERMANY,Alte Oper,28/04/2015,20:00,22:50,170
+834,Tour - Chamber,Cologne,GERMANY,Wallraf-Richartz Museum,29/04/2015,14:00,23:40,580
+835,Tour,Cologne,GERMANY,K_lner Philharmonie,30/04/2015,20:00,22:44,164
+836,Tour,Cologne,GERMANY,K_lner Philharmonie,01/05/2015,20:00,23:14,194
+837,Subscription Season,Manhattan,USA,Avery Fisher Hall,06/05/2015,19:30,22:38,188
+838,Subscription Season,Manhattan,USA,Avery Fisher Hall,08/05/2015,20:00,22:43,163
+839,Subscription Season,Manhattan,USA,Avery Fisher Hall,09/05/2015,20:00,22:19,139
+840,Young People's Concert,Manhattan,USA,Avery Fisher Hall,09/05/2015,14:00,17:23,203
+841,Contact!,Manhattan,USA,SubCulture,11/05/2015,19:30,23:06,216
+842,Non-Subscription,Manhattan,USA,Avery Fisher Hall,14/05/2015,19:30,23:19,229
+843,Non-Subscription,Manhattan,USA,Avery Fisher Hall,15/05/2015,19:30,21:59,149
+844,Non-Subscription,Manhattan,USA,Avery Fisher Hall,16/05/2015,14:00,17:19,199
+845,Non-Subscription,Manhattan,USA,Avery Fisher Hall,16/05/2015,19:30,22:51,201
+846,Non-Subscription,Manhattan,USA,Avery Fisher Hall,19/05/2015,19:30,22:02,152
+847,Subscription Season,Manhattan,USA,Avery Fisher Hall,21/05/2015,19:30,22:46,196
+848,Subscription Season,Manhattan,USA,Avery Fisher Hall,22/05/2015,11:00,12:25,85
+849,Subscription Season,Manhattan,USA,Avery Fisher Hall,23/05/2015,20:00,22:55,175
+850,Saturday Matinee,Manhattan,USA,Avery Fisher Hall,23/05/2015,14:00,17:53,233
+851,Special,Manhattan,USA,The Cathedral Church of Saint John the Divine,25/05/2015,20:00,22:35,155
+852,Subscription Season,Manhattan,USA,Avery Fisher Hall,28/05/2015,19:30,22:28,178
+853,Subscription Season,Manhattan,USA,Avery Fisher Hall,29/05/2015,14:00,17:12,192
+854,Subscription Season,Manhattan,USA,Avery Fisher Hall,30/05/2015,20:00,23:15,195
+855,Chamber Concert (Private),Manhattan,USA,St. Regis Hotel,02/06/2015,19:00,22:02,182
+856,Subscription Season,Manhattan,USA,Avery Fisher Hall,03/06/2015,19:30,22:54,204
+857,Subscription Season,Manhattan,USA,Avery Fisher Hall,04/06/2015,19:30,21:35,125
+858,Subscription Season,Manhattan,USA,Avery Fisher Hall,05/06/2015,11:00,12:09,69
+859,Subscription Season,Manhattan,USA,Avery Fisher Hall,06/06/2015,20:00,22:54,174
+860,Contact!,Manhattan,USA,Metropolitan Museum of Art,05/06/2015,19:00,21:49,169
+861,Chamber,Manhattan,USA,Merkin Concert Hall,07/06/2015,15:00,17:26,146
+862,Subscription Season,Manhattan,USA,Avery Fisher Hall,10/06/2015,19:30,21:36,126
+863,Subscription Season,Manhattan,USA,Avery Fisher Hall,11/06/2015,19:30,22:43,193
+864,Subscription Season,Manhattan,USA,Avery Fisher Hall,12/06/2015,19:30,23:11,221
+865,Subscription Season,Manhattan,USA,Avery Fisher Hall,13/06/2015,20:00,22:11,131
+866,Chamber Concert (Private),Manhattan,USA,Upper Story,16/06/2015,19:30,22:18,168
+867,Parks,Manhattan,USA,Great Lawn,17/06/2015,20:00,22:53,173
+868,Parks,Manhattan,USA,Great Lawn,18/06/2015,20:00,22:17,137
+869,Parks,Brooklyn,USA,Prospect Park,19/06/2015,20:00,23:31,211
+870,Parks,Queens,USA,Cunningham Park,22/06/2015,20:00,23:17,197
+871,Parks - Free Indoor Concert,Staten Island,USA,Snug Harbor,24/06/2015,20:00,22:25,145
+872,Tour,Shanghai,CHINA,Shanghai Symphony Hall,04/07/2015,19:30,22:47,197
+873,Tour,Shanghai,CHINA,Shanghai Symphony Hall,05/07/2015,19:30,21:59,149
+874,Tour,Shanghai,CHINA,Shanghai Poly Grand Theatre,06/07/2015,19:30,22:01,151
+875,Tour - Young People's Concert,Shanghai,CHINA,Shanghai Symphony Hall,09/07/2015,19:30,22:06,156
+876,Tour,Shanghai,CHINA,Shanghai Symphony Hall,10/07/2015,19:30,22:23,173
+877,Tour,Vail,USA,Gerald R. Ford Amphitheater,24/07/2015,18:00,21:11,191
+878,Tour,Vail,USA,Gerald R. Ford Amphitheater,25/07/2015,18:00,21:44,224
+879,Tour,Vail,USA,Gerald R. Ford Amphitheater,26/07/2015,18:00,21:16,196
+880,Tour - Chamber,Vail,USA,De Vink Residence,27/07/2015,18:00,21:23,203
+881,Tour - Chamber,Vail,USA,Donovan Pavilion,28/07/2015,18:00,20:40,160
+882,Tour,Vail,USA,Gerald R. Ford Amphitheater,29/07/2015,18:00,20:44,164
+883,Tour,Vail,USA,Gerald R. Ford Amphitheater,30/07/2015,18:00,21:19,199
+884,Tour,Vail,USA,Gerald R. Ford Amphitheater,31/07/2015,18:00,21:15,195
+885,Reading Rehearsal,Santa Barbara,USA,Santa Barbara Bowl,02/08/2015,19:00,21:50,170
+886,Tour,Santa Barbara,USA,Santa Barbara Bowl,03/08/2015,19:00,21:02,122
+887,Subscription Season,Manhattan,USA,Avery Fisher Hall,18/09/2015,19:30,22:21,171
+888,Subscription Season,Manhattan,USA,Avery Fisher Hall,19/09/2015,20:00,23:14,194
+889,Subscription Season,Manhattan,USA,Avery Fisher Hall,21/09/2015,19:30,22:40,190
+890,Non-Subscription,Manhattan,USA,David Geffen Hall,24/09/2015,19:30,22:16,166
+891,Subscription Season,Manhattan,USA,David Geffen Hall,25/09/2015,20:00,23:45,225
+892,Subscription Season,Manhattan,USA,David Geffen Hall,26/09/2015,20:00,22:37,157
+893,Subscription Season,Manhattan,USA,David Geffen Hall,30/09/2015,19:30,23:02,212
+894,Subscription Season,Manhattan,USA,David Geffen Hall,01/10/2015,19:30,22:52,202
+895,Subscription Season,Manhattan,USA,David Geffen Hall,03/10/2015,20:00,23:09,189
+896,Runout,Greenvale,USA,Tilles Center for the Performing Arts (Main),02/10/2015,20:00,23:23,203
+897,Special,Manhattan,USA,Carnegie Hall,07/10/2015,19:00,21:51,171
+898,Tour,Ann Arbor,USA,Hill Auditorium,09/10/2015,20:00,22:40,160
+899,Tour,Ann Arbor,USA,Hill Auditorium,10/10/2015,20:30,23:07,157
+900,Tour,Ann Arbor,USA,Hill Auditorium,11/10/2015,15:00,18:21,201
+901,Subscription Season,Manhattan,USA,David Geffen Hall,14/10/2015,19:30,22:15,165
+902,Subscription Season,Manhattan,USA,David Geffen Hall,15/10/2015,19:30,21:51,141
+903,Non-Subscription,Manhattan,USA,David Geffen Hall,16/10/2015,20:00,22:53,173
+904,Subscription Season,Manhattan,USA,David Geffen Hall,21/10/2015,19:30,22:50,200
+905,Subscription Season,Manhattan,USA,David Geffen Hall,22/10/2015,19:30,22:32,182
+906,Subscription Season,Manhattan,USA,David Geffen Hall,23/10/2015,11:00,12:55,115
+907,Subscription Season,Manhattan,USA,David Geffen Hall,24/10/2015,20:00,22:27,147
+908,Chamber,Manhattan,USA,Merkin Concert Hall,25/10/2015,15:00,18:23,203
+909,Subscription Season,Manhattan,USA,David Geffen Hall,29/10/2015,19:30,22:35,185
+910,Subscription Season,Manhattan,USA,David Geffen Hall,30/10/2015,14:00,17:43,223
+911,Subscription Season,Manhattan,USA,David Geffen Hall,31/10/2015,20:00,23:10,190
+912,Saturday Matinee,Manhattan,USA,David Geffen Hall,31/10/2015,14:00,17:03,183
+913,Subscription Season,Manhattan,USA,David Geffen Hall,04/11/2015,19:30,22:48,198
+914,Subscription Season,Manhattan,USA,David Geffen Hall,05/11/2015,19:30,21:54,144
+915,Subscription Season,Manhattan,USA,David Geffen Hall,06/11/2015,20:00,22:24,144
+916,Subscription Season,Manhattan,USA,David Geffen Hall,07/11/2015,20:00,22:46,166
+917,Contact!,Manhattan,USA,Metropolitan Museum of Art,06/11/2015,19:00,21:21,141
+918,Contact!,Manhattan,USA,Metropolitan Museum of Art,07/11/2015,19:00,21:49,169
+919,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,08/11/2015,00:30,04:04,214
+920,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,08/11/2015,15:00,17:45,165
+921,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,09/11/2015,10:30,23:30,780
+922,Subscription Season,Manhattan,USA,David Geffen Hall,11/11/2015,19:30,23:03,213
+923,Subscription Season,Manhattan,USA,David Geffen Hall,12/11/2015,19:30,23:19,229
+924,Subscription Season,Manhattan,USA,David Geffen Hall,14/11/2015,20:00,23:18,198
+925,Subscription Season,Manhattan,USA,David Geffen Hall,13/11/2015,20:00,22:55,175
+926,Very Young People's Concert,Queens,USA,Jamaica Performing Arts Center,14/11/2015,15:00,17:15,135
+927,Contact!,Brooklyn,USA,National Sawdust,16/11/2015,19:30,22:51,201
+928,Subscription Season,Manhattan,USA,David Geffen Hall,17/11/2015,19:30,22:52,202
+929,Subscription Season,Manhattan,USA,David Geffen Hall,19/11/2015,19:30,21:56,146
+930,Subscription Season,Manhattan,USA,David Geffen Hall,20/11/2015,14:00,16:30,150
+931,Subscription Season,Manhattan,USA,David Geffen Hall,21/11/2015,20:00,22:16,136
+932,Chamber,Manhattan,USA,"Theresa L. Kaufmann Concert Hall, 92nd St. YMHA",22/11/2015,15:00,18:19,199
+933,Subscription Season,Manhattan,USA,David Geffen Hall,24/11/2015,19:30,22:17,167
+934,Subscription Season,Manhattan,USA,David Geffen Hall,27/11/2015,20:00,23:03,183
+935,Saturday Matinee,Manhattan,USA,David Geffen Hall,28/11/2015,14:00,17:06,186
+936,Subscription Season,Manhattan,USA,David Geffen Hall,28/11/2015,20:00,23:05,185
+937,Non-Subscription,Manhattan,USA,David Geffen Hall,03/12/2015,19:30,21:55,145
+938,Chamber,Manhattan,USA,Merkin Concert Hall,06/12/2015,15:00,18:23,203
+939,Subscription Season,Manhattan,USA,David Geffen Hall,10/12/2015,19:30,22:32,182
+940,Subscription Season,Manhattan,USA,David Geffen Hall,11/12/2015,20:00,22:30,150
+941,Subscription Season,Manhattan,USA,David Geffen Hall,12/12/2015,20:00,23:06,186
+942,Young People's Concert,Manhattan,USA,David Geffen Hall,12/12/2015,14:00,16:26,146
+943,Subscription Season,Manhattan,USA,David Geffen Hall,15/12/2015,19:30,23:33,243
+944,Subscription Season,Manhattan,USA,David Geffen Hall,16/12/2015,19:30,22:08,158
+945,Subscription Season,Manhattan,USA,David Geffen Hall,17/12/2015,19:30,22:28,178
+946,Subscription Season,Manhattan,USA,David Geffen Hall,18/12/2015,11:00,12:52,112
+947,Subscription Season,Manhattan,USA,David Geffen Hall,19/12/2015,20:00,22:36,156
+948,Non-Subscription,Manhattan,USA,David Geffen Hall,18/12/2015,20:00,23:01,181
+949,Non-Subscription,Manhattan,USA,David Geffen Hall,19/12/2015,14:00,17:34,214
+950,Subscription Season,Manhattan,USA,David Geffen Hall,29/12/2015,19:30,22:41,191
+951,Subscription Season,Manhattan,USA,David Geffen Hall,30/12/2015,19:30,22:25,175
+952,Subscription Season,Manhattan,USA,David Geffen Hall,02/01/2016,20:00,22:32,152
+953,New Year's Eve,Manhattan,USA,David Geffen Hall,31/12/2015,19:30,22:28,178
+954,Subscription Season,Manhattan,USA,David Geffen Hall,07/01/2016,19:30,22:30,180
+955,Subscription Season,Manhattan,USA,David Geffen Hall,08/01/2016,20:00,23:32,212
+956,Subscription Season,Manhattan,USA,David Geffen Hall,09/01/2016,20:00,23:08,188
+957,Subscription Season,Manhattan,USA,David Geffen Hall,12/01/2016,19:30,22:26,176
+958,Saturday Matinee,Manhattan,USA,David Geffen Hall,09/01/2016,14:00,17:56,236
+959,Chamber Concert (Private),Manhattan,USA,Morgan Library,10/01/2016,15:00,17:27,147
+960,Subscription Season,Manhattan,USA,David Geffen Hall,14/01/2016,19:30,23:23,233
+961,Subscription Season,Manhattan,USA,David Geffen Hall,15/01/2016,11:00,12:12,72
+962,Subscription Season,Manhattan,USA,David Geffen Hall,16/01/2016,20:00,23:00,180
+963,Chamber,Manhattan,USA,Merkin Concert Hall,17/01/2016,15:00,18:41,221
+964,Young People's Concerts for Schools,Manhattan,USA,David Geffen Hall,20/01/2016,10:30,12:53,143
+965,Young People's Concerts for Schools,Manhattan,USA,David Geffen Hall,20/01/2016,00:00,02:31,151
+966,Young People's Concerts for Schools,Manhattan,USA,David Geffen Hall,21/01/2016,10:30,12:03,93
+967,Young People's Concerts for Schools,Manhattan,USA,David Geffen Hall,21/01/2016,00:00,02:45,165
+968,Young People's Concerts for Schools,Manhattan,USA,David Geffen Hall,22/01/2016,00:30,03:46,196
+969,Young People's Concerts for Schools,Manhattan,USA,David Geffen Hall,22/01/2016,11:00,12:38,98
+970,Off the Grid,Manhattan,USA,Baita at Eataly,26/01/2016,20:00,22:59,179
+971,Subscription Season,Manhattan,USA,David Geffen Hall,27/01/2016,19:30,23:00,210
+972,Subscription Season,Manhattan,USA,David Geffen Hall,30/01/2016,20:00,23:27,207
+973,Subscription Season,Manhattan,USA,David Geffen Hall,28/01/2016,19:30,22:41,191
+974,Subscription Season,Manhattan,USA,David Geffen Hall,29/01/2016,20:00,22:44,164
+975,Subscription Season,Manhattan,USA,David Geffen Hall,30/01/2016,20:00,22:55,175
+976,Contact!,Brooklyn,USA,National Sawdust,01/02/2016,19:30,22:32,182
+977,Subscription Season,Manhattan,USA,David Geffen Hall,03/02/2016,19:30,23:09,219
+978,None,Manhattan,USA,David Geffen Hall,04/02/2016,10:00,12:50,170
+979,Subscription Season,Manhattan,USA,David Geffen Hall,04/02/2016,19:30,22:56,206
+980,Subscription Season,Manhattan,USA,David Geffen Hall,05/02/2016,20:00,23:00,180
+981,Subscription Season,Manhattan,USA,David Geffen Hall,06/02/2016,20:00,22:13,133
+982,Pension Fund Benefit Concert,Manhattan,USA,David Geffen Hall,09/02/2016,19:30,23:01,211
+983,Subscription Season,Manhattan,USA,David Geffen Hall,11/02/2016,19:30,22:50,200
+984,Subscription Season,Manhattan,USA,David Geffen Hall,12/02/2016,20:00,23:20,200
+985,Subscription Season,Manhattan,USA,David Geffen Hall,13/02/2016,20:00,23:21,201
+986,Subscription Season,Manhattan,USA,David Geffen Hall,16/02/2016,19:30,22:59,209
+987,Chamber,Manhattan,USA,Merkin Concert Hall,14/02/2016,15:00,17:38,158
+988,Subscription Season,Manhattan,USA,David Geffen Hall,18/02/2016,19:30,22:29,179
+989,Subscription Season,Manhattan,USA,David Geffen Hall,19/02/2016,11:00,12:47,107
+990,Subscription Season,Manhattan,USA,David Geffen Hall,20/02/2016,20:00,22:48,168
+991,Subscription Season,Manhattan,USA,David Geffen Hall,23/02/2016,19:30,22:51,201
+992,Subscription Season,Manhattan,USA,David Geffen Hall,25/02/2016,19:30,22:53,203
+993,Subscription Season,Manhattan,USA,David Geffen Hall,26/02/2016,14:00,16:39,159
+994,Subscription Season,Manhattan,USA,David Geffen Hall,27/02/2016,20:00,21:48,108
+995,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,28/02/2016,00:15,03:14,179
+996,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,28/02/2016,14:45,18:21,216
+997,Very Young People's Concert,Manhattan,USA,Merkin Concert Hall,29/02/2016,10:15,11:45,90
+998,Subscription Season,Manhattan,USA,David Geffen Hall,01/03/2016,19:30,22:38,188
+999,Subscription Season,Manhattan,USA,David Geffen Hall,03/03/2016,19:30,21:48,138
+1000,Subscription Season,Manhattan,USA,David Geffen Hall,04/03/2016,20:00,22:44,164
+1001,Subscription Season,Manhattan,USA,David Geffen Hall,05/03/2016,20:00,22:49,169
+1002,Subscription Season,Manhattan,USA,David Geffen Hall,08/03/2016,19:30,22:46,196
+1003,Contact!,Brooklyn,USA,National Sawdust,07/03/2016,19:30,22:15,165
+1004,Subscription Season,Manhattan,USA,David Geffen Hall,10/03/2016,19:30,22:46,196
+1005,Subscription Season,Manhattan,USA,David Geffen Hall,11/03/2016,20:00,22:45,165
+1006,Subscription Season,Manhattan,USA,David Geffen Hall,12/03/2016,20:00,23:04,184
+1007,Chamber,Manhattan,USA,Temple of Dendur at the Metropolitan Museum of Art,13/03/2016,14:00,17:03,183
+1008,Off the Grid,Manhattan,USA,Angel Orensanz Foundation,15/03/2016,20:00,23:18,198
+1009,Subscription Season,Manhattan,USA,David Geffen Hall,17/03/2016,19:30,21:52,142
+1010,Subscription Season,Manhattan,USA,David Geffen Hall,18/03/2016,20:00,21:47,107
+1011,Subscription Season,Manhattan,USA,David Geffen Hall,19/03/2016,20:00,22:36,156
+1012,Young People's Concert,Manhattan,USA,David Geffen Hall,19/03/2016,14:00,16:49,169

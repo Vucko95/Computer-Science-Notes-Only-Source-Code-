@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Chapter 7. Using the UDDI v2 Services and Adapters</title><link rel="stylesheet" type="text/css" href="css/jbossorg.css"/><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="up" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="prev" href="ch06.html" title="Chapter 6. Using UDDI Annotations"/><link rel="next" href="ch08.html" title="Chapter 8. UDDI Migration and Backup Tool"/><link rel="copyright" href="ln-d5e27.html" title="Legal Notice"/><meta xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p xmlns:d="http://docbook.org/ns/docbook" id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch06.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ch08.html"><strong>Next</strong></a></li></ul><div class="chapter" title="Chapter 7. Using the UDDI v2 Services and Adapters"><div class="titlepage"><div><div><h2 class="title"><a id="_using_the_uddi_v2_services_and_adapters"/>Chapter 7. Using the UDDI v2 Services and Adapters</h2></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="section"><a href="ch07.html#_introduction_3">7.1. Introduction</a></span></dt><dt><span class="section"><a href="ch07.html#_accessing_uddi_v2_services_using_the_juddi_v3_client">7.2. Accessing UDDI v2 services using the jUDDI v3 Client</a></span></dt><dt><span class="section"><a href="ch07.html#_accessing_uddi_v2_services_using_uddi_v2_apis">7.3. Accessing UDDI v2 services using UDDI v2 APIs</a></span></dt><dt><span class="section"><a href="ch07.html#_accessing_juddi_v3_services_from_an_existing_uddi_v2_based_client_plugin_or_tool">7.4. Accessing jUDDI v3 services from an existing UDDI v2 based client, plugin or tool</a></span></dt><dt><span class="section"><a href="ch07.html#_additional_information">7.5. Additional Information</a></span></dt></dl></div>
+
+<div class="section" title="7.1. Introduction"><div class="titlepage"><div><div><h2 class="title"><a id="_introduction_3"/>7.1. Introduction</h2></div></div></div>
+
+<p>Starting with jUDDI version 3.2, a number of adapters are provided to help you use or access UDDI version 2 based services. There are a multitude of options and will be discussed in the following sections.</p>
+</div>
+<div class="section" title="7.2. Accessing UDDI v2 services using the jUDDI v3 Client"><div class="titlepage"><div><div><h2 class="title"><a id="_accessing_uddi_v2_services_using_the_juddi_v3_client"/>7.2. Accessing UDDI v2 services using the jUDDI v3 Client</h2></div></div></div>
+
+<p>Accessing UDDI v2 services via the jUDDI v3 client is quite simple. All that’s required is modification of the uddi.xml client configuration file. Simply set the transport to:</p>
+<pre class="screen">org.apache.juddi.v3.client.transport.JAXWSv2TranslationTransport</pre>
+
+<p>…and adjust the <span class="emphasis"><em>inquiryUrl</em></span> and <span class="emphasis"><em>publishUrl</em></span> URL endpoints.</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>When accessing UDDI v2, Custody Transfer, Subscription, Replication and Value Set APIs will not be available and may generate unexpected behavior. The UDDIv3 Inquiry getOperationalInfo method is only partially mapped.</p>
+</div>
+
+<p>That’s it. No code changes are required other than to avoid Custody Transfer, Subscription, Replication and Value Set APIs. In addition, digital signatures are not mapped.</p>
+</div>
+<div class="section" title="7.3. Accessing UDDI v2 services using UDDI v2 APIs"><div class="titlepage"><div><div><h2 class="title"><a id="_accessing_uddi_v2_services_using_uddi_v2_apis"/>7.3. Accessing UDDI v2 services using UDDI v2 APIs</h2></div></div></div>
+
+<p>The jUDDI v3 client now contains the UDDI 2 web service clients. Although, there isn’t currently a configuration/transport/client/clerk wrapper for it, you can still get access to web service clients with the following code:</p>
+<pre class="screen">org.apache.juddi.v3.client.UDDIServiceV2 svc = new UDDIServiceV2();
+Inquire port = svc.getInquire();
+((BindingProvider) port).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, "http://localhost:8080/juddiv3/services/inquiryv2");
+Publish pub= svc.getPublish();
+((BindingProvider) pub).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, "http://localhost:8080/juddiv3/services/publishv2");</pre>
+
+<p>All you need to reference the following projects/jars from jUDDI:</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+juddi-client
+</li><li class="listitem">
+uddi-ws
+</li></ul></div>
+
+</div>
+<div class="section" title="7.4. Accessing jUDDI v3 services from an existing UDDI v2 based client, plugin or tool"><div class="titlepage"><div><div><h2 class="title"><a id="_accessing_juddi_v3_services_from_an_existing_uddi_v2_based_client_plugin_or_tool"/>7.4. Accessing jUDDI v3 services from an existing UDDI v2 based client, plugin or tool</h2></div></div></div>
+
+<p>When UDDI v2 was release, many application developers jumped on board to support it. As such, there are many UDDI v2 tools that exist, such as IDE plugins like Eclipse’s Web Services Explorer. To support legacy tools, jUDDI now offers UDDI v2 endpoints. Simple point your tool at the following URLs. You’ll have to alter them to match your environment.</p>
+<pre class="screen">http://localhost:8080/juddiv3/services/inquiryv2
+http://localhost:8080/juddiv3/services/publishv2</pre>
+
+</div>
+<div class="section" title="7.5. Additional Information"><div class="titlepage"><div><div><h2 class="title"><a id="_additional_information"/>7.5. Additional Information</h2></div></div></div>
+
+<p>The UDDI v2 adapters provide basic mappings from to and from UDDI v3. The juddi-client has several mapping functions that are used both client and service side to convert from UDDI v2 to UDDI v3. In addition, the client has as several interface adapters to help with a seamless transition.</p>
+</div>
+</div><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch06.html"><strong>Prev</strong>Chapter 6. Using UDDI Annotations</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ch08.html"><strong>Next</strong>Chapter 8. UDDI Migration and Backup Tool</a></li></ul></body></html>

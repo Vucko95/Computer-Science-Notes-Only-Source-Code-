@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Chapter 3. jUDDI Architecture</title><link rel="stylesheet" type="text/css" href="css/jbossorg.css"/><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Apache jUDDI Guide"/><link rel="up" href="index.html" title="Apache jUDDI Guide"/><link rel="prev" href="ch02.html" title="Chapter 2. Getting Started"/><link rel="next" href="ch04.html" title="Chapter 4. Administration"/><link rel="copyright" href="ln-d5e27.html" title="Legal Notice"/><meta xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p xmlns:d="http://docbook.org/ns/docbook" id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch02.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ch04.html"><strong>Next</strong></a></li></ul><div class="chapter" title="Chapter 3. jUDDI Architecture"><div class="titlepage"><div><div><h2 class="title"><a id="chapter-jUDDIArchitecture"/>Chapter 3. jUDDI Architecture</h2></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="section"><a href="ch03.html#_juddi_server">3.1. jUDDI Server</a></span></dt><dd><dl><dt><span class="section"><a href="ch03.html#_uddi_api_layer_literal_uddi_ws_literal_using_jax_ws">3.1.1. UDDI API layer <code class="literal">uddi-ws</code> using JAX-WS</a></span></dt><dt><span class="section"><a href="ch03.html#_core_uddi_literal_juddi_core_literal_using_jpa">3.1.2. Core UDDI <code class="literal">juddi-core</code> using JPA</a></span></dt><dt><span class="section"><a href="ch03.html#_relational_databases">3.1.3. Relational Databases</a></span></dt><dt><span class="section"><a href="ch03.html#_servlet_containers">3.1.4. Servlet Containers</a></span></dt></dl></dd><dt><span class="section"><a href="ch03.html#_juddi_gui_literal_juddi_gui_war_literal">3.2. jUDDI GUI <code class="literal">juddi-gui.war</code></a></span></dt></dl></div>
+
+<div class="section" title="3.1. jUDDI Server"><div class="titlepage"><div><div><h2 class="title"><a id="_juddi_server"/>3.1. jUDDI Server</h2></div></div></div>
+
+<p>The jUDDI Architecture leverages well known frameworks to minimize the codebase we need to maintain. The API layer uses JAX-WS, while the persistence layer uses JPA. The entire server is packages as a war archive that can be deployed to different servlet containers with minimal configuration changes. The JPA layer uses JDBC to communicate to a relational database. <a class="xref" href="ch03.html#figure-jUDDIArchitecture-Architecture" title="Figure 3.1. jUDDI Architecture">Figure 3.1, “jUDDI Architecture”</a> shows the different components, where the implementation providers marked with a blue dot are the implementations we use by default.</p>
+<div class="figure"><a id="figure-jUDDIArchitecture-Architecture"/><p class="title"><strong>Figure 3.1. jUDDI Architecture</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/jUDDIArchitecture_server.png" alt="jUDDI Architecture Diagram"/></div>
+</div></div><br class="figure-break"/>
+
+<div class="section" title="3.1.1. UDDI API layer uddi-ws using JAX-WS"><div class="titlepage"><div><div><h3 class="title"><a id="_uddi_api_layer_literal_uddi_ws_literal_using_jax_ws"/>3.1.1. UDDI API layer <code class="literal">uddi-ws</code> using JAX-WS</h3></div></div></div>
+
+<p>The API layer is generated from the WSDL files provided with the UDDI specification. Since the 3.2 release we support both the UDDIv2 as well as the UDDIv3 API.  The <code class="literal">uddi-ws</code> components leverages <code class="literal">JAX-WS</code> annotations to bring up the UDDIv2 and v3 Endpoints.  In addition to these two sets of SOAP based services, we also support a REST based API. The REST based API is a subset of the SOAP API. The  default JAX-WS implemention used is Apache CXF, but we also offer scripted deployments for JBossWS and Axis2. Each WebService stack relies on the web.xml as well as vendor specific configuration files. For example, CXF uses a beans.xml file in the WEB-INF directory. For more details on this see  <a class="xref" href="">???</a>.</p>
+<p>The <code class="literal">juddi-client.jar</code> can be used on the client side to communicate with the API layer. The juddi-client can be configured to use either SOAP, RMI or and inVM protocol, where the inVM protocol is the most performant. For more details on the juddi-client configuration options see the Client Guide <a class="xref" href="bi01.html#stam-oree">[stam-oree]</a>.</p>
+</div>
+<div class="section" title="3.1.2. Core UDDI juddi-core using JPA"><div class="titlepage"><div><div><h3 class="title"><a id="_core_uddi_literal_juddi_core_literal_using_jpa"/>3.1.2. Core UDDI <code class="literal">juddi-core</code> using JPA</h3></div></div></div>
+
+<p>The jUDDI server logic is packaged in the <code class="literal">juddi-core.jar</code>. It implements all of the server side behavior defined in the UDDI specification. For persistence it uses the Java Peristence Api (JPA). The default JPA implemenation used is OpenJPA, but Hibernate is supported as well. The configuration for JPA implementations lives in the <code class="literal">WEB-INF/classes/META-INF/persistence.xml</code> file. This file also references the datasource that is used to connect to the datasource.</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Important</h2>
+<p>It is important to note that there are two JARs provided through maven. If you will be using Hibernate, please use the juddi-core JAR, if you are using OpenJPA, use juddi-core-openjpa.</p>
+</div>
+
+<p>The difference between these JARs is that the persistence classes within juddi-core-openjpa have been enhanced (<a class="ulink" href="http://people.apache.org/~mprudhom/openjpa/site/openjpa-project/manual/ref_guide_pc_enhance.html">http://people.apache.org/~mprudhom/openjpa/site/openjpa-project/manual/ref_guide_pc_enhance.html</a>). Unfortunately, the Hibernate classloader does not deal well with these enhanced classes, so it it important to note not to use the juddi-core-openjpa JAR with Hibernate.</p>
+</div>
+<div class="section" title="3.1.3. Relational Databases"><div class="titlepage"><div><div><h3 class="title"><a id="_relational_databases"/>3.1.3. Relational Databases</h3></div></div></div>
+
+<p>By default we ship jUDDI preconfigured with a Java based Database called <code class="literal">Derby</code>. This database persists to the local file system, typically from where the application was started.</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Note</h2>
+<p>To switch databases, you need to change the JDBC driver configuration in the datasource as well as the database dialect setting in the persistence.xml.</p>
+</div>
+
+<p>For details on switching database see the <a class="xref" href="ch04.html#ConfiguringDatabaseConnections" title="4.3. Configuration Database Connections">Section 4.3, “Configuration Database Connections”</a>.</p>
+</div>
+<div class="section" title="3.1.4. Servlet Containers"><div class="titlepage"><div><div><h3 class="title"><a id="_servlet_containers"/>3.1.4. Servlet Containers</h3></div></div></div>
+
+<p>The jUDDI server is packaged up a WebArchive (<code class="literal">juddiv3.war</code>). This war archive can be deployed to different servlet containers with minimal configuration changes. By default we ship on Apache Tomcat but we also have scripted deployment support for GlassFish and JBoss.</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>Most open source EE6 containers (JBoss, Geronimo, Glassfish) ship with jUDDI preconfigured to pass the JAXR tests in the TCK.</p>
+</div>
+
+<p>When switching containers you may need to use different configuration to create a datasource. Some containers already package up a WebServices stack which can be used instead of the CXF packages up in juddiv3.war/WEB-INF/lib. In that case the number of dependent jars in the <code class="literal">juddiv3.war</code> can be reduced significantly. For details on switching containers see the <a class="xref" href="ch08.html" title="Chapter 8. How to deploy jUDDI To?">Chapter 8, <em>How to deploy jUDDI To?</em></a>.</p>
+</div>
+</div>
+<div class="section" title="3.2. jUDDI GUI juddi-gui.war"><div class="titlepage"><div><div><h2 class="title"><a id="_juddi_gui_literal_juddi_gui_war_literal"/>3.2. jUDDI GUI <code class="literal">juddi-gui.war</code></h2></div></div></div>
+
+<p>The jUDDI GUI is also a Web Archive that is deployed along side the <code class="literal">juddiv3</code> server in the same servlet container. The GUI uses the <code class="literal">juddi-client</code> to communicate to the UDDI API Endpoints. It can use a SOAP, RMI or an inVM transport protocol, so the GUI can be deployed in a different location then the server as long as it can connect to the UDDI SOAP API.</p>
+<div class="figure"><a id="figure-jUDDIArchitecture-ClientGui"/><p class="title"><strong>Figure 3.2. jUDDI Client and Console Architecture</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/jUDDIArchitecture_clientAndGui.png" alt="jUDDI Client and GUI Diagram"/></div>
+</div></div><br class="figure-break"/>
+
+<p><a class="xref" href="ch03.html#figure-jUDDIArchitecture-ClientGui" title="Figure 3.2. jUDDI Client and Console Architecture">Figure 3.2, “jUDDI Client and Console Architecture”</a> shows the admin console and the juddi-gui. Typically one one run the admin console behind a firewall. The admin console interacts over a jUDDI WS API and, among other things, it can be used to create and delete publishers.</p>
+<p>The <code class="literal">juddi-gui</code> can be configured to connect to any UDDIv2 or UDDIv3 compliant UDDI server.</p>
+<div class="figure"><a id="figure-jUDDIArchitecture-Gui"/><p class="title"><strong>Figure 3.3. jUDDI Console Architecture</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/jUDDIArchitecture_Gui.png" alt="jUDDI GUI Diagram"/></div>
+</div></div><br class="figure-break"/>
+
+<p>You may have a jUDDI v3 Server for each type of environment (Dev, QA and Prod) and you would only need one console to connect to each one of them.</p>
+<p>For details on using the GUI see the Client and GUI Guide <a class="xref" href="bi01.html#stam-oree">[stam-oree]</a>.</p>
+</div>
+</div><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch02.html"><strong>Prev</strong>Chapter 2. Getting Started</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ch04.html"><strong>Next</strong>Chapter 4. Administration</a></li></ul></body></html>

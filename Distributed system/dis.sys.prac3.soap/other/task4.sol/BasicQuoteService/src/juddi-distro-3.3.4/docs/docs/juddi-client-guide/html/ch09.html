@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Chapter 9. Using the jUDDI REST Services</title><link rel="stylesheet" type="text/css" href="css/jbossorg.css"/><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="up" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="prev" href="ch08.html" title="Chapter 8. UDDI Migration and Backup Tool"/><link rel="next" href="ch10.html" title="Chapter 10. jUDDI Client for NET"/><link rel="copyright" href="ln-d5e27.html" title="Legal Notice"/><meta xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p xmlns:d="http://docbook.org/ns/docbook" id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch08.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ch10.html"><strong>Next</strong></a></li></ul><div class="chapter" title="Chapter 9. Using the jUDDI REST Services"><div class="titlepage"><div><div><h2 class="title"><a id="_using_the_juddi_rest_services"/>Chapter 9. Using the jUDDI REST Services</h2></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="section"><a href="ch09.html#_url_patterns_and_methods">9.1. URL Patterns and methods</a></span></dt><dd><dl><dt><span class="section"><a href="ch09.html#_endpoints">9.1.1. Endpoints</a></span></dt><dt><span class="section"><a href="ch09.html#_methods">9.1.2. Methods</a></span></dt></dl></dd><dt><span class="section"><a href="ch09.html#_example_output">9.2. Example Output</a></span></dt><dd><dl><dt><span class="section"><a href="ch09.html#_xml">9.2.1. XML</a></span></dt><dt><span class="section"><a href="ch09.html#_json">9.2.2. JSON</a></span></dt></dl></dd><dt><span class="section"><a href="ch09.html#_more_information">9.3. More information</a></span></dt></dl></div>
+
+<p>jUDDI includes a Inquiry API adapter that exposes some of the basic functionality of UDDI via REST. Data can be retrieved in both XML and JSON encoding for all methods.</p>
+<div class="section" title="9.1. URL Patterns and methods"><div class="titlepage"><div><div><h2 class="title"><a id="_url_patterns_and_methods"/>9.1. URL Patterns and methods</h2></div></div></div>
+
+<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+All jUDDI Inquiry REST service are accessible via HTTP GET.
+</li><li class="listitem">
+Authentication is not yet supported. This also implies that the Inquiry API must be configured for anonymous access (i.e. do not turn on Inquiry Authentication Required).
+</li><li class="listitem">
+The jUDDI Inquiry REST service is not currently portable as an adapter to other UDDI instances (but it could be adapted to it in the future)
+</li></ol></div>
+
+<div class="section" title="9.1.1. Endpoints"><div class="titlepage"><div><div><h3 class="title"><a id="_endpoints"/>9.1.1. Endpoints</h3></div></div></div>
+
+<p>All endpoints must be prefixed with http(s)://server:port/juddicontext/ where <span class="emphasis"><em>juddicontext</em></span> is typically <span class="emphasis"><em>juddiv3</em></span>.</p>
+<p>WADL Document: <a class="ulink" href="http://localhost:8080/juddiv3/services/inquiryRest?_wadl">http://localhost:8080/juddiv3/services/inquiryRest?_wadl</a></p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>All of the examples in this document reference JSON encoded messages. To switch to XML messages, just replace the <span class="emphasis"><em>JSON</em></span> with <span class="emphasis"><em>XML</em></span> in the URL. That’s it!</p>
+</div>
+
+</div>
+<div class="section" title="9.1.2. Methods"><div class="titlepage"><div><div><h3 class="title"><a id="_methods"/>9.1.2. Methods</h3></div></div></div>
+
+<p>Each method is accessible using the following pattern:</p>
+<pre class="screen">http://localhost:8080/juddiv3/services/inquiryRest/{encoding}/{method}/{parameters}
+//or
+http://localhost:8080/juddiv3/services/inquiryRest/{encoding}/{method}?{name=value}</pre>
+
+<p>Notes</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+Encoding - Can be <span class="emphasis"><em>XML</em></span> or <span class="emphasis"><em>JSON</em></span>
+</li><li class="listitem">
+Methods - See below
+</li><li class="listitem">
+Parameters - usually a unique UDDI key
+</li></ul></div>
+
+<div class="section" title="9.1.2.1. xxxList"><div class="titlepage"><div><div><h4 class="title"><a id="_xxxlist"/>9.1.2.1. xxxList</h4></div></div></div>
+
+<p>Returns up to 100 items within a KeyBag object, containing a list of all keys for the given object type.</p>
+<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+serviceList - <a class="ulink" href="http://localhost:8080/juddiv3/services/inquiryRest/JSON/serviceList">http://localhost:8080/juddiv3/services/inquiryRest/JSON/serviceList</a>
+</li><li class="listitem">
+businessList - <a class="ulink" href="http://localhost:8080/juddiv3/services/inquiryRest/JSON/businessList">http://localhost:8080/juddiv3/services/inquiryRest/JSON/businessList</a>
+</li><li class="listitem">
+tModelList - <a class="ulink" href="http://localhost:8080/juddiv3/services/inquiryRest/JSON/tModelList">http://localhost:8080/juddiv3/services/inquiryRest/JSON/tModelList</a>
+</li></ol></div>
+
+</div>
+<div class="section" title="9.1.2.2. endpointsByService/key"><div class="titlepage"><div><div><h4 class="title"><a id="_endpointsbyservice_key"/>9.1.2.2. endpointsByService/key</h4></div></div></div>
+
+<p>Returns all executable endpoints for a given service key, including all binding Templates. This also resolves hosting redirector and a number of other accessPoint useType specifics.</p>
+<p>Example:</p>
+<pre class="screen">http://localhost:8080/juddiv3/services/inquiryRest/JSON/endpointsByService/uddi:juddi.apache.org:services-custodytransfer</pre>
+
+</div>
+<div class="section" title="9.1.2.3. getDetail"><div class="titlepage"><div><div><h4 class="title"><a id="_getdetail"/>9.1.2.3. getDetail</h4></div></div></div>
+
+<p>Return the details of a specific item using query parameters. This implements the UDDI recommendation for HTTP GET services for UDDI. See <a class="ulink" href="http://uddi.org/pubs/uddi-v3.0.2-20041019.htm#_Toc85908158">http://uddi.org/pubs/uddi-v3.0.2-20041019.htm#_Toc85908158</a> for further information.</p>
+<p>Example:</p>
+<pre class="screen">http://localhost:8080/juddiv3/services/inquiryRest/XML/getDetail?businessKey=uddi:juddi.apache.org:businesses-asf</pre>
+
+<p>The following query parameters are supported. Only one can be specified at a time</p>
+<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+businessKey/(key) - <a class="ulink" href="http://localhost:8080/juddiv3/services/inquiryRest/JSON/getDetail?businessKey=uddi:juddi.apache.org:businesses-asf">http://localhost:8080/juddiv3/services/inquiryRest/JSON/getDetail?businessKey=uddi:juddi.apache.org:businesses-asf</a>
+</li><li class="listitem">
+tModelKey/(key) -  <a class="ulink" href="http://localhost:8080/juddiv3/services/inquiryRest/JSON/getDetail?tModelKey=uddi:uddi.org:categorization:types">http://localhost:8080/juddiv3/services/inquiryRest/JSON/getDetail?tModelKey=uddi:uddi.org:categorization:types</a>
+</li><li class="listitem">
+bindingKey/(key) - <a class="ulink" href="http://localhost:8080/juddiv3/services/inquiryRest/JSON/getDetail?bindingKey=uddi:juddi.apache.org:servicebindings-inquiry-ws">http://localhost:8080/juddiv3/services/inquiryRest/JSON/getDetail?bindingKey=uddi:juddi.apache.org:servicebindings-inquiry-ws</a>
+</li><li class="listitem">
+serviceKey/(key) - <a class="ulink" href="http://localhost:8080/juddiv3/services/inquiryRest/JSON/getDetail?serviceKey=uddi:juddi.apache.org:services-inquiry">http://localhost:8080/juddiv3/services/inquiryRest/JSON/getDetail?serviceKey=uddi:juddi.apache.org:services-inquiry</a>
+</li></ol></div>
+
+</div>
+<div class="section" title="9.1.2.4. xxxKey"><div class="titlepage"><div><div><h4 class="title"><a id="_xxxkey"/>9.1.2.4. xxxKey</h4></div></div></div>
+
+<p>Return the details of a specific item. This is similar to getDetail except that it is not based on query parameters. The underlying code of this function is the same as getDetail.</p>
+<p>Example:</p>
+<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+businessKey/(key) - <a class="ulink" href="http://localhost:8080/juddiv3/services/inquiryRest/JSON/businessKey/uddi:juddi.apache.org:businesses-asf">http://localhost:8080/juddiv3/services/inquiryRest/JSON/businessKey/uddi:juddi.apache.org:businesses-asf</a>
+</li><li class="listitem">
+tModelKey/(key) -  <a class="ulink" href="http://localhost:8080/juddiv3/services/inquiryRest/JSON/tModelKey/uddi:uddi.org:categorization:types">http://localhost:8080/juddiv3/services/inquiryRest/JSON/tModelKey/uddi:uddi.org:categorization:types</a>
+</li><li class="listitem">
+bindingKey/(key) - <a class="ulink" href="http://localhost:8080/juddiv3/services/inquiryRest/JSON/bindingKey/uddi:juddi.apache.org:servicebindings-inquiry-ws">http://localhost:8080/juddiv3/services/inquiryRest/JSON/bindingKey/uddi:juddi.apache.org:servicebindings-inquiry-ws</a>
+</li><li class="listitem">
+serviceKey/(key) - <a class="ulink" href="http://localhost:8080/juddiv3/services/inquiryRest/JSON/serviceKey/uddi:juddi.apache.org:services-inquiry">http://localhost:8080/juddiv3/services/inquiryRest/JSON/serviceKey/uddi:juddi.apache.org:services-inquiry</a>
+</li><li class="listitem">
+opInfo/(key) - <a class="ulink" href="http://localhost:8080/juddiv3/services/inquiryRest/JSON/opInfo/uddi:juddi.apache.org:businesses-asf">http://localhost:8080/juddiv3/services/inquiryRest/JSON/opInfo/uddi:juddi.apache.org:businesses-asf</a>
+</li></ol></div>
+
+</div>
+<div class="section" title="9.1.2.5. xxxSearch"><div class="titlepage"><div><div><h4 class="title"><a id="_xxxsearch"/>9.1.2.5. xxxSearch</h4></div></div></div>
+
+<p>Returns the search results for registered entities in XML or JSON using a number of query parameters.</p>
+<p>Supported entities:
+ . searchService
+ . searchBusiness
+ . searchTModel</p>
+<p>Supported query parameters
+ . name - Filters by the name element. If not specified, the wildcard symbol is used <span class="emphasis"><em>%</em></span>.
+ . lang - Filters by language. If not specified, null is used.
+ . findQualifiers - Adds sorting or additional find parameters. comma delimited. If not specified, <span class="emphasis"><em>approximateMatch</em></span> is used
+ . maxrows - Maximum rows returned. If not specified, 100 is used.
+ . offset - Offset for paging operations. If not specified, 0 is used.</p>
+</div>
+</div>
+</div>
+<div class="section" title="9.2. Example Output"><div class="titlepage"><div><div><h2 class="title"><a id="_example_output"/>9.2. Example Output</h2></div></div></div>
+
+<div class="section" title="9.2.1. XML"><div class="titlepage"><div><div><h3 class="title"><a id="_xml"/>9.2.1. XML</h3></div></div></div>
+
+<p>The output of all XML encoded messages is identical to the UDDI schema specifications. There should be no surprises.</p>
+</div>
+<div class="section" title="9.2.2. JSON"><div class="titlepage"><div><div><h3 class="title"><a id="_json"/>9.2.2. JSON</h3></div></div></div>
+
+<p>The output of JSON encoded messages is obviously different than XML. The following is an example of what it looks like.</p>
+<pre class="screen">{
+    "businessEntity": {
+        "@businessKey": "uddi:juddi.apache.org:businesses-asf",
+        "discoveryURLs": {
+            "discoveryURL": {
+                "@useType": "homepage",
+                "$": "http://localhost:8080/juddiv3"
+            }
+        },
+        "name": {
+            "@xml.lang": "en",
+            "$": "An Apache jUDDI Node"
+        },
+        "description": {
+            "@xml.lang": "en",
+            "$": "This is a UDDI v3 registry node as implemented by Apache jUDDI."
+        },
+        "businessServices": {
+            "businessService": [
+                {
+                    "@serviceKey": "uddi:juddi.apache.org:services-custodytransfer",
+                    "@businessKey": "uddi:juddi.apache.org:businesses-asf",
+                    "name": {
+                        "@xml.lang": "en",
+                        "$": "UDDI Custody and Ownership Transfer Service"
+                    },
+                    "description": {
+                        "@xml.lang": "en",
+                        "$": "Web Service supporting UDDI Custody and Ownership Transfer API"
+                    },
+                    "bindingTemplates": {
+                        "bindingTemplate": [
+                            {
+                                "@bindingKey": "uddi:juddi.apache.org:servicebindings-custodytransfer-ws",
+                                "@serviceKey": "uddi:juddi.apache.org:services-custodytransfer",
+                                "description": "UDDI Custody and Ownership Transfer API V3",
+                                "accessPoint": {
+                                    "@useType": "wsdlDeployment",
+                                    "$": "http://localhost:8080/juddiv3/services/custody-transfer?wsdl"
+                                },
+                                "tModelInstanceDetails": {
+                                    "tModelInstanceInfo": {
+                                        "@tModelKey": "uddi:uddi.org:v3_ownership_transfer",
+                                        "instanceDetails": {
+                                            "instanceParms": "\n                \n                &lt;?xml version=\"1.0\" encoding=\"utf-8\" ?&gt;\n                &lt;UDDIinstanceParmsContainer\n                 xmlns=\"urn:uddi-org:policy_v3_instanceParms\"&gt;\n                  &lt;authInfoUse&gt;required&lt;/authInfoUse&gt;\n                &lt;/UDDIinstanceParmsContainer&gt;\n                \n                "
+                                        }
+                                    }
+                                },
+                                "categoryBag": {
+                                    "keyedReference": {
+                                        "@tModelKey": "uddi:uddi.org:categorization:types",
+                                        "@keyName": "uddi-org:types:wsdl",
+                                        "@keyValue": "wsdlDeployment"
+                                    }
+                                }
+                            },
+                            {
+                                "@bindingKey": "uddi:juddi.apache.org:servicebindings-custodytransfer-ws-ssl",
+                                "@serviceKey": "uddi:juddi.apache.org:services-custodytransfer",
+                                "description": "UDDI Custody and Ownership Transfer API V3 SSL",
+                                "accessPoint": {
+                                    "@useType": "wsdlDeployment",
+                                    "$": "https://localhost:8443/juddiv3/services/custody-transfer?wsdl"
+                                },
+                                "tModelInstanceDetails": {
+                                    "tModelInstanceInfo": [
+                                        {
+                                            "@tModelKey": "uddi:uddi.org:v3_ownership_transfer",
+                                            "instanceDetails": {
+                                                "instanceParms": "\n                \n                &lt;?xml version=\"1.0\" encoding=\"utf-8\" ?&gt;\n                &lt;UDDIinstanceParmsContainer\n                 xmlns=\"urn:uddi-org:policy_v3_instanceParms\"&gt;\n                  &lt;authInfoUse&gt;required&lt;/authInfoUse&gt;\n                &lt;/UDDIinstanceParmsContainer&gt;\n                \n                "
+                                            }
+                                        },
+                                        {
+                                            "@tModelKey": "uddi:uddi.org:protocol:serverauthenticatedssl3"
+                                        }
+                                    ]
+                                },
+                                "categoryBag": {
+                                    "keyedReference": {
+                                        "@tModelKey": "uddi:uddi.org:categorization:types",
+                                        "@keyName": "uddi-org:types:wsdl",
+                                        "@keyValue": "wsdlDeployment"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "categoryBag": {
+            "keyedReference": {
+                "@tModelKey": "uddi:uddi.org:categorization:nodes",
+                "@keyName": "",
+                "@keyValue": "node"
+            }
+        }
+    }
+}
+</pre>
+
+</div>
+</div>
+<div class="section" title="9.3. More information"><div class="titlepage"><div><div><h2 class="title"><a id="_more_information"/>9.3. More information</h2></div></div></div>
+
+<p>For more information, please check out the source code: <a class="ulink" href="http://svn.apache.org/repos/asf/juddi/trunk/juddi-rest-cxf/">http://svn.apache.org/repos/asf/juddi/trunk/juddi-rest-cxf/</a></p>
+</div>
+</div><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch08.html"><strong>Prev</strong>Chapter 8. UDDI Migration and Backup Tool</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ch10.html"><strong>Next</strong>Chapter 10. jUDDI Client for NET</a></li></ul></body></html>

@@ -1,0 +1,7 @@
+
+
+To Start the servers and make sure that it works: please do: 
+
+
+1. start the Server from client package
+2. start Main

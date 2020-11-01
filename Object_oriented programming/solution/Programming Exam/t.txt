@@ -1,0 +1,10 @@
+Ferrari 5 7
+Force India 11 31
+Haas 8 20
+McLaren 14 2 22
+Red Bull Racing 3 33
+Renault 55 27 30
+Williams 18 19 40
+Sauber 9 94 36
+Toro Rosso 10 28 26
+Mercedes 44 77

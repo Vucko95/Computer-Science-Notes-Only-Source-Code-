@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="overall"></p>
+
+<p id="displayTable"></p>
+        
+<script>
+    
+    var students = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]];
+    var text = '';
+    var Avgmarks = 0;
+
+    var out = "<table border='1' cellpadding='10'>";
+    
+    for (var i=0; i <students.length; i++) {
+        
+        var grade = '';
+        
+        if (students[i][1] < 60)
+        {
+            grade = "F.";      
+        } 
+        else if (students[i][1] < 70) 
+        {
+            grade = "D."; 
+        }
+        else if (students[i][1] < 80) 
+        {
+            grade = "C."; 
+        } 
+        else if (students[i][1] < 90) 
+        {
+            grade = "B."; 
+        } 
+        else if (students[i][1] < 100) 
+        {
+            grade = "A."; 
+        }
+        
+        out += "<tr><td>" +
+        students[i][0] +
+        "</td><td>" +
+        students[i][1] +
+        "</td><td>" +
+        "Grade = " + grade +
+        "</td></tr>";
+        
+        Avgmarks += students[i][1];  
+    
+    }
+    
+    out += "</table>";
+
+    document.getElementById('displayTable').innerHTML = out;
+    
+    document.getElementById('overall').innerHTML = "The average mark is: " +        (Avgmarks)/students.length + ".";      
+    
+</script>
+
+</body>
+</html>

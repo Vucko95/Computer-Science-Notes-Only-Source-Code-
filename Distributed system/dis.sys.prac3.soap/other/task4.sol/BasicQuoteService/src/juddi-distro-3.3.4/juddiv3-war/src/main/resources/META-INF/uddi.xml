@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<uddi>
+    <reloadDelay>5000</reloadDelay>
+    <client name="example-client">
+        <nodes>
+            <node>
+                <!-- required 'default' node -->
+                <name>remote</name> 
+                <description>Main jUDDI node</description>
+                <!-- JAX-WS Transport -->
+                <proxyTransport>org.apache.juddi.v3.client.transport.JAXWSTransport</proxyTransport>
+                <custodyTransferUrl>http://localhost:8080/juddiv3/services/custody-transfer</custodyTransferUrl>
+                <inquiryUrl>http://localhost:8080/juddiv3/services/inquiry</inquiryUrl>
+				<inquiryRESTUrl>http://localhost:8080/juddiv3/services/inquiryRest</inquiryRESTUrl>
+                <publishUrl>http://localhost:8080/juddiv3/services/publish</publishUrl>
+                <securityUrl>http://localhost:8080/juddiv3/services/security</securityUrl>
+                <subscriptionUrl>http://localhost:8080/juddiv3/services/subscription</subscriptionUrl>
+                <subscriptionListenerUrl>http://localhost:8080/juddiv3/services/subscription-listener</subscriptionListenerUrl>
+                <juddiApiUrl>http://localhost:8080/juddiv3/services/juddi-api</juddiApiUrl>
+            </node>
+            <node>
+                <name>default</name> 
+                <description>This server</description>
+                <!-- InVM Transport -->
+               <proxyTransport>org.apache.juddi.v3.client.transport.InVMTransport</proxyTransport>
+               <custodyTransferUrl>org.apache.juddi.api.impl.UDDICustodyTransferImpl</custodyTransferUrl>
+               <inquiryUrl>org.apache.juddi.api.impl.UDDIInquiryImpl</inquiryUrl>
+               <publishUrl>org.apache.juddi.api.impl.UDDIPublicationImpl</publishUrl>
+               <securityUrl>org.apache.juddi.api.impl.UDDISecurityImpl</securityUrl>
+               <subscriptionUrl>org.apache.juddi.api.impl.UDDISubscriptionImpl</subscriptionUrl>
+               <subscriptionListenerUrl>org.apache.juddi.api.impl.UDDISubscriptionListenerImpl</subscriptionListenerUrl>
+               <juddiApiUrl>org.apache.juddi.api.impl.JUDDIApiImpl</juddiApiUrl>
+            </node>
+        </nodes>
+		<signature>
+			<!-- signing stuff (not used)-->
+			<signingKeyStorePath></signingKeyStorePath>
+			<signingKeyStoreType>JKS</signingKeyStoreType>
+			<signingKeyStoreFilePassword 
+				isPasswordEncrypted="false" 
+				cryptoProvider="org.apache.juddi.v3.client.crypto.AES128Cryptor"></signingKeyStoreFilePassword>
+			<signingKeyPassword
+				isPasswordEncrypted="false" 
+				cryptoProvider="org.apache.juddi.v3.client.crypto.AES128Cryptor"></signingKeyPassword>
+			<signingKeyAlias>(not used)</signingKeyAlias>
+			<canonicalizationMethod>http://www.w3.org/2001/10/xml-exc-c14n#</canonicalizationMethod>
+			<signatureMethod>RSA_SHA1</signatureMethod>
+			<XML_DIGSIG_NS>http://www.w3.org/2000/09/xmldsig#</XML_DIGSIG_NS>
+			<!-- validation stuff -->
+			<trustStorePath></trustStorePath>
+			<trustStoreType></trustStoreType>
+			<trustStorePassword
+				isPasswordEncrypted="false" 
+				cryptoProvider="org.apache.juddi.v3.client.crypto.AES128Cryptor"></trustStorePassword>
+			
+			<checkTimestamps>true</checkTimestamps>
+			<checkTrust>true</checkTrust>
+			<checkRevocationCRL>true</checkRevocationCRL>
+		</signature>
+		<subscriptionCallbacks>
+			<keyDomain></keyDomain>
+			<listenUrl></listenUrl>
+			<autoRegisterBindingTemplate>false</autoRegisterBindingTemplate>
+			<autoRegisterBusinessServiceKey></autoRegisterBusinessServiceKey>
+			<signatureBehavior>DoNothing</signatureBehavior>
+			<!--valid values are AbortIfSigned,Sign,DoNothing,SignOnlyIfParentIsntSigned, default is DoNothing-->
+		</subscriptionCallbacks>
+		<XtoWsdl>
+			<IgnoreSSLErrors>false</IgnoreSSLErrors>
+		</XtoWsdl>
+    </client>
+    
+    
+    <!-- hi there!
+    this section is required by juddi admin page and is an extension of what the normal juddi-client does.
+    it's not in the standard config schema.
+    
+    -->
+    <config>
+        
+        <props>
+            <!--#required. if this uddi client is connected to uddi services that use the auth token, then set to UDDI_AUTH
+            #if not, set authtype to HTTP-->
+            <authtype>UDDI_AUTH</authtype>
+            <automaticLogouts>
+                <!-- #enables automatic logout timer, defaults to false if not defined-->
+                <enabled>true</enabled>
+                <!--#defines the duration of time to wait for the automatic logout, defaults to 15min if not defined-->
+                <duration>900000</duration>
+            </automaticLogouts>
+            <!--#node, this is the node defined in uddi.xml that the jUDDI-GUI will use for connections-->
+            <node>default</node>
+            <!-- controls remote access to the settings/configuration page -->
+            <configLocalHostOnly>true</configLocalHostOnly>
+        </props>
+    </config>
+</uddi>

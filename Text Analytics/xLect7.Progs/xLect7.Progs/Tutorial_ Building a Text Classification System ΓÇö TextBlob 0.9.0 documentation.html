@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0058)http://textblob.readthedocs.org/en/latest/classifiers.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <title>Tutorial: Building a Text Classification System — TextBlob 0.9.0 documentation</title>
+    
+    <link rel="stylesheet" href="./Tutorial_ Building a Text Classification System — TextBlob 0.9.0 documentation_files/flasky.css" type="text/css">
+    <link rel="stylesheet" href="./Tutorial_ Building a Text Classification System — TextBlob 0.9.0 documentation_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./Tutorial_ Building a Text Classification System — TextBlob 0.9.0 documentation_files/badge_only.css" type="text/css">
+    <link rel="stylesheet" href="./Tutorial_ Building a Text Classification System — TextBlob 0.9.0 documentation_files/readthedocs-doc-embed.css" type="text/css">
+    
+    <script type="text/javascript" async="" src="./Tutorial_ Building a Text Classification System — TextBlob 0.9.0 documentation_files/ga.js"></script><script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.9.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="./Tutorial_ Building a Text Classification System — TextBlob 0.9.0 documentation_files/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="./Tutorial_ Building a Text Classification System — TextBlob 0.9.0 documentation_files/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./Tutorial_ Building a Text Classification System — TextBlob 0.9.0 documentation_files/underscore.js"></script>
+    <script type="text/javascript" src="./Tutorial_ Building a Text Classification System — TextBlob 0.9.0 documentation_files/doctools.js"></script>
+    <script type="text/javascript" src="./Tutorial_ Building a Text Classification System — TextBlob 0.9.0 documentation_files/readthedocs-doc-embed.js"></script>
+    <link rel="top" title="TextBlob 0.9.0 documentation" href="http://textblob.readthedocs.org/en/latest/index.html">
+    <link rel="next" title="Advanced Usage: Overriding Models and the Blobber Class" href="http://textblob.readthedocs.org/en/latest/advanced_usage.html">
+    <link rel="prev" title="Tutorial: Quickstart" href="http://textblob.readthedocs.org/en/latest/quickstart.html">
+
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+<!-- RTD Extra Head -->
+
+
+
+<!-- 
+Read the Docs is acting as the canonical URL for your project. 
+If you want to change it, more info is available in our docs:
+  http://docs.readthedocs.org/en/latest/canonical.html
+-->
+<link rel="canonical" href="./Tutorial_ Building a Text Classification System — TextBlob 0.9.0 documentation_files/Tutorial_ Building a Text Classification System — TextBlob 0.9.0 documentation.html">
+
+<script type="text/javascript">
+  // This is included here because other places don't have access to the pagename variable.
+  var READTHEDOCS_DATA = {
+    project: "textblob",
+    version: "latest",
+    language: "en",
+    page: "classifiers",
+    builder: "sphinx",
+    theme: "kr",
+    docroot: "/docs/",
+    source_suffix: ".rst",
+    api_host: "https://readthedocs.org",
+    commit: "b84e0880300e5d3a5d9c4cdf5b45ca9f8eeb135c"
+  }
+  // Old variables
+  var doc_version = "latest";
+  var doc_slug = "textblob";
+  var page_name = "classifiers";
+  var html_theme = "kr";
+</script>
+<!-- RTD Analytics Code -->
+<!-- Included in the header because you don't have a footer block. -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17997319-1']);
+  _gaq.push(['_trackPageview']);
+
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- end RTD Analytics Code -->
+<!-- end RTD <extrahead> -->
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="http://textblob.readthedocs.org/en/latest/genindex.html" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="http://textblob.readthedocs.org/en/latest/py-modindex.html" title="Python Module Index">modules</a> |</li>
+        <li class="right">
+          <a href="http://textblob.readthedocs.org/en/latest/advanced_usage.html" title="Advanced Usage: Overriding Models and the Blobber Class" accesskey="N">next</a> |</li>
+        <li class="right">
+          <a href="http://textblob.readthedocs.org/en/latest/quickstart.html" title="Tutorial: Quickstart" accesskey="P">previous</a> |</li>
+        <li><a href="http://textblob.readthedocs.org/en/latest/index.html">TextBlob 0.9.0 documentation</a> »</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="tutorial-building-a-text-classification-system">
+<span id="classifiers"></span><h1>Tutorial: Building a Text Classification System<a class="headerlink" href="http://textblob.readthedocs.org/en/latest/classifiers.html#tutorial-building-a-text-classification-system" title="Permalink to this headline">¶</a></h1>
+<p>The <tt class="docutils literal"><span class="pre">textblob.classifiers</span></tt> module makes it simple to create custom classifiers.</p>
+<p>As an example, let’s create a custom sentiment analyzer.</p>
+<div class="section" id="loading-data-and-creating-a-classifier">
+<h2>Loading Data and Creating a Classifier<a class="headerlink" href="http://textblob.readthedocs.org/en/latest/classifiers.html#loading-data-and-creating-a-classifier" title="Permalink to this headline">¶</a></h2>
+<p>First we’ll create some training and test data.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">train</span> <span class="o">=</span> <span class="p">[</span>
+<span class="gp">... </span>    <span class="p">(</span><span class="s">'I love this sandwich.'</span><span class="p">,</span> <span class="s">'pos'</span><span class="p">),</span>
+<span class="gp">... </span>    <span class="p">(</span><span class="s">'this is an amazing place!'</span><span class="p">,</span> <span class="s">'pos'</span><span class="p">),</span>
+<span class="gp">... </span>    <span class="p">(</span><span class="s">'I feel very good about these beers.'</span><span class="p">,</span> <span class="s">'pos'</span><span class="p">),</span>
+<span class="gp">... </span>    <span class="p">(</span><span class="s">'this is my best work.'</span><span class="p">,</span> <span class="s">'pos'</span><span class="p">),</span>
+<span class="gp">... </span>    <span class="p">(</span><span class="s">"what an awesome view"</span><span class="p">,</span> <span class="s">'pos'</span><span class="p">),</span>
+<span class="gp">... </span>    <span class="p">(</span><span class="s">'I do not like this restaurant'</span><span class="p">,</span> <span class="s">'neg'</span><span class="p">),</span>
+<span class="gp">... </span>    <span class="p">(</span><span class="s">'I am tired of this stuff.'</span><span class="p">,</span> <span class="s">'neg'</span><span class="p">),</span>
+<span class="gp">... </span>    <span class="p">(</span><span class="s">"I can't deal with this"</span><span class="p">,</span> <span class="s">'neg'</span><span class="p">),</span>
+<span class="gp">... </span>    <span class="p">(</span><span class="s">'he is my sworn enemy!'</span><span class="p">,</span> <span class="s">'neg'</span><span class="p">),</span>
+<span class="gp">... </span>    <span class="p">(</span><span class="s">'my boss is horrible.'</span><span class="p">,</span> <span class="s">'neg'</span><span class="p">)</span>
+<span class="gp">... </span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">test</span> <span class="o">=</span> <span class="p">[</span>
+<span class="gp">... </span>    <span class="p">(</span><span class="s">'the beer was good.'</span><span class="p">,</span> <span class="s">'pos'</span><span class="p">),</span>
+<span class="gp">... </span>    <span class="p">(</span><span class="s">'I do not enjoy my job'</span><span class="p">,</span> <span class="s">'neg'</span><span class="p">),</span>
+<span class="gp">... </span>    <span class="p">(</span><span class="s">"I ain't feeling dandy today."</span><span class="p">,</span> <span class="s">'neg'</span><span class="p">),</span>
+<span class="gp">... </span>    <span class="p">(</span><span class="s">"I feel amazing!"</span><span class="p">,</span> <span class="s">'pos'</span><span class="p">),</span>
+<span class="gp">... </span>    <span class="p">(</span><span class="s">'Gary is a friend of mine.'</span><span class="p">,</span> <span class="s">'pos'</span><span class="p">),</span>
+<span class="gp">... </span>    <span class="p">(</span><span class="s">"I can't believe I'm doing this."</span><span class="p">,</span> <span class="s">'neg'</span><span class="p">)</span>
+<span class="gp">... </span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Now we’ll create a Naive Bayes classifier, passing the training data into the constructor.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">textblob.classifiers</span> <span class="kn">import</span> <span class="n">NaiveBayesClassifier</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cl</span> <span class="o">=</span> <span class="n">NaiveBayesClassifier</span><span class="p">(</span><span class="n">train</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="section" id="loading-data-from-files">
+<span id="data-files"></span><h3>Loading Data from Files<a class="headerlink" href="http://textblob.readthedocs.org/en/latest/classifiers.html#loading-data-from-files" title="Permalink to this headline">¶</a></h3>
+<p>You can also load data from common file formats including CSV, JSON, and TSV.</p>
+<p>CSV files should be formatted like so:</p>
+<div class="highlight-python"><div class="highlight"><pre>I love this sandwich.,pos
+This is an amazing place!,pos
+I do not like this restaurant,neg
+</pre></div>
+</div>
+<p>JSON files should be formatted like so:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">[</span>
+    <span class="p">{</span><span class="s">"text"</span><span class="p">:</span> <span class="s">"I love this sandwich."</span><span class="p">,</span> <span class="s">"label"</span><span class="p">:</span> <span class="s">"pos"</span><span class="p">},</span>
+    <span class="p">{</span><span class="s">"text"</span><span class="p">:</span> <span class="s">"This is an amazing place!"</span><span class="p">,</span> <span class="s">"label"</span><span class="p">:</span> <span class="s">"pos"</span><span class="p">},</span>
+    <span class="p">{</span><span class="s">"text"</span><span class="p">:</span> <span class="s">"I do not like this restaurant"</span><span class="p">,</span> <span class="s">"label"</span><span class="p">:</span> <span class="s">"neg"</span><span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>You can then pass the opened file into the constructor.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'train.json'</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">cl</span> <span class="o">=</span> <span class="n">NaiveBayesClassifier</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="n">format</span><span class="o">=</span><span class="s">"json"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="classifying-text">
+<h2>Classifying Text<a class="headerlink" href="http://textblob.readthedocs.org/en/latest/classifiers.html#classifying-text" title="Permalink to this headline">¶</a></h2>
+<p>Call the <tt class="docutils literal"><span class="pre">classify(text)</span></tt> method to use the classifier.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cl</span><span class="o">.</span><span class="n">classify</span><span class="p">(</span><span class="s">"This is an amazing library!"</span><span class="p">)</span>
+<span class="go">'pos'</span>
+</pre></div>
+</div>
+<p>You can get the label probability distribution with the <tt class="docutils literal"><span class="pre">prob_classify(text)</span></tt> method.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">prob_dist</span> <span class="o">=</span> <span class="n">cl</span><span class="o">.</span><span class="n">prob_classify</span><span class="p">(</span><span class="s">"This one's a doozy."</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">prob_dist</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="go">'pos'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">round</span><span class="p">(</span><span class="n">prob_dist</span><span class="o">.</span><span class="n">prob</span><span class="p">(</span><span class="s">"pos"</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
+<span class="go">0.63</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">round</span><span class="p">(</span><span class="n">prob_dist</span><span class="o">.</span><span class="n">prob</span><span class="p">(</span><span class="s">"neg"</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
+<span class="go">0.37</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="classifying-textblobs">
+<h2>Classifying TextBlobs<a class="headerlink" href="http://textblob.readthedocs.org/en/latest/classifiers.html#classifying-textblobs" title="Permalink to this headline">¶</a></h2>
+<p>Another way to classify text is to pass a classifier into the constructor of <tt class="docutils literal"><span class="pre">TextBlob</span></tt> and call its <tt class="docutils literal"><span class="pre">classify()</span></tt> method.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">textblob</span> <span class="kn">import</span> <span class="n">TextBlob</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blob</span> <span class="o">=</span> <span class="n">TextBlob</span><span class="p">(</span><span class="s">"The beer is good. But the hangover is horrible."</span><span class="p">,</span> <span class="n">classifier</span><span class="o">=</span><span class="n">cl</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blob</span><span class="o">.</span><span class="n">classify</span><span class="p">()</span>
+<span class="go">'pos'</span>
+</pre></div>
+</div>
+<p>The advantage of this approach is that you can classify sentences within a <tt class="docutils literal"><span class="pre">TextBlob</span></tt>.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">blob</span><span class="o">.</span><span class="n">sentences</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">classify</span><span class="p">())</span>
+<span class="gp">...</span>
+<span class="go">The beer is good.</span>
+<span class="go">pos</span>
+<span class="go">But the hangover is horrible.</span>
+<span class="go">neg</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="evaluating-classifiers">
+<h2>Evaluating Classifiers<a class="headerlink" href="http://textblob.readthedocs.org/en/latest/classifiers.html#evaluating-classifiers" title="Permalink to this headline">¶</a></h2>
+<p>To compute the accuracy on our test set, use the <tt class="docutils literal"><span class="pre">accuracy(test_data)</span></tt> method.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cl</span><span class="o">.</span><span class="n">accuracy</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
+<span class="go">0.8333333333333334</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You can also pass in a file object into the <tt class="docutils literal"><span class="pre">accuracy</span></tt> method. The file can be in any of the formats listed in the <a class="reference internal" href="http://textblob.readthedocs.org/en/latest/classifiers.html#data-files"><em>Loading Data</em></a> section.</p>
+</div>
+<p>Use the <tt class="docutils literal"><span class="pre">show_informative_features()</span></tt> method to display a listing of the most informative features.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cl</span><span class="o">.</span><span class="n">show_informative_features</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>  
+<span class="go">Most Informative Features</span>
+<span class="go">            contains(my) = True              neg : pos    =      1.7 : 1.0</span>
+<span class="go">            contains(an) = False             neg : pos    =      1.6 : 1.0</span>
+<span class="go">             contains(I) = True              neg : pos    =      1.4 : 1.0</span>
+<span class="go">             contains(I) = False             pos : neg    =      1.4 : 1.0</span>
+<span class="go">            contains(my) = False             pos : neg    =      1.3 : 1.0</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="updating-classifiers-with-new-data">
+<h2>Updating Classifiers with New Data<a class="headerlink" href="http://textblob.readthedocs.org/en/latest/classifiers.html#updating-classifiers-with-new-data" title="Permalink to this headline">¶</a></h2>
+<p>Use the <tt class="docutils literal"><span class="pre">update(new_data)</span></tt> method to update a classifier with new training data.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">new_data</span> <span class="o">=</span> <span class="p">[(</span><span class="s">'She is my best friend.'</span><span class="p">,</span> <span class="s">'pos'</span><span class="p">),</span>
+<span class="gp">... </span>            <span class="p">(</span><span class="s">"I'm happy to have a new friend."</span><span class="p">,</span> <span class="s">'pos'</span><span class="p">),</span>
+<span class="gp">... </span>            <span class="p">(</span><span class="s">"Stay thirsty, my friend."</span><span class="p">,</span> <span class="s">'pos'</span><span class="p">),</span>
+<span class="gp">... </span>            <span class="p">(</span><span class="s">"He ain't from around here."</span><span class="p">,</span> <span class="s">'neg'</span><span class="p">)]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cl</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">new_data</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cl</span><span class="o">.</span><span class="n">accuracy</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
+<span class="go">1.0</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="feature-extractors">
+<h2>Feature Extractors<a class="headerlink" href="http://textblob.readthedocs.org/en/latest/classifiers.html#feature-extractors" title="Permalink to this headline">¶</a></h2>
+<p>By default, the <tt class="docutils literal"><span class="pre">NaiveBayesClassifier</span></tt> uses a simple feature extractor that indicates which words in the training set are contained in a document.</p>
+<p>For example, the sentence <em>“I feel happy”</em> might have the features <tt class="docutils literal"><span class="pre">contains(happy):</span> <span class="pre">True</span></tt> or <tt class="docutils literal"><span class="pre">contains(angry):</span> <span class="pre">False</span></tt>.</p>
+<p>You can override this feature extractor by writing your own. A feature extractor is simply a function with <tt class="docutils literal"><span class="pre">document</span></tt> (the text to extract features from) as the first argument. The function may include a second argument, <tt class="docutils literal"><span class="pre">train_set</span></tt> (the training dataset), if necessary.</p>
+<p>The function should return a dictionary of features for <tt class="docutils literal"><span class="pre">document</span></tt>.</p>
+<p>For example, let’s create a feature extractor that just uses the first and last words of a document as its features.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">end_word_extractor</span><span class="p">(</span><span class="n">document</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">tokens</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="gp">... </span>    <span class="n">first_word</span><span class="p">,</span> <span class="n">last_word</span> <span class="o">=</span> <span class="n">tokens</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">tokens</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="gp">... </span>    <span class="n">feats</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="gp">... </span>    <span class="n">feats</span><span class="p">[</span><span class="s">"first({0})"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">first_word</span><span class="p">)]</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="gp">... </span>    <span class="n">feats</span><span class="p">[</span><span class="s">"last({0})"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">last_word</span><span class="p">)]</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">feats</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">features</span> <span class="o">=</span> <span class="n">end_word_extractor</span><span class="p">(</span><span class="s">"I feel happy"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">features</span> <span class="o">==</span> <span class="p">{</span><span class="s">'last(happy)'</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span> <span class="s">'first(I)'</span><span class="p">:</span> <span class="bp">True</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>We can then use the feature extractor in a classifier by passing it as the second argument of the constructor.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cl2</span> <span class="o">=</span> <span class="n">NaiveBayesClassifier</span><span class="p">(</span><span class="n">test</span><span class="p">,</span> <span class="n">feature_extractor</span><span class="o">=</span><span class="n">end_word_extractor</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blob</span> <span class="o">=</span> <span class="n">TextBlob</span><span class="p">(</span><span class="s">"I'm excited to try my new classifier."</span><span class="p">,</span> <span class="n">classifier</span><span class="o">=</span><span class="n">cl2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blob</span><span class="o">.</span><span class="n">classify</span><span class="p">()</span>
+<span class="go">'pos'</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="next-steps">
+<h2>Next Steps<a class="headerlink" href="http://textblob.readthedocs.org/en/latest/classifiers.html#next-steps" title="Permalink to this headline">¶</a></h2>
+<p>Be sure to check out the <a class="reference internal" href="http://textblob.readthedocs.org/en/latest/api_reference.html#api-classifiers"><em>API Reference</em></a> for the <a class="reference internal" href="http://textblob.readthedocs.org/en/latest/api_reference.html#api-classifiers"><em>classifiers module</em></a>.</p>
+<p>Want to try different POS taggers or noun phrase chunkers with TextBlobs? Check out the <a class="reference internal" href="http://textblob.readthedocs.org/en/latest/advanced_usage.html#advanced"><em>Advanced Usage</em></a> guide.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><p class="logo">
+  <a href="http://textblob.readthedocs.org/en/latest/index.html"><img class="logo" src="./Tutorial_ Building a Text Classification System — TextBlob 0.9.0 documentation_files/textblob-logo.png" height="200" width="230" alt="Logo"></a>
+</p>
+
+<p>
+  <iframe src="./Tutorial_ Building a Text Classification System — TextBlob 0.9.0 documentation_files/github-btn.html" allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+<p>
+TextBlob is a Python (2 and 3) library for processing textual data. It provides a consistent API for diving into common natural language processing (NLP) tasks such as part-of-speech tagging, noun phrase extraction, sentiment analysis, and more.
+</p>
+
+
+<h3>Useful Links</h3>
+<ul>
+  <li><a href="http://pypi.python.org/pypi/textblob">TextBlob @ PyPI</a></li>
+  <li><a href="http://github.com/sloria/textblob">TextBlob @ GitHub</a></li>
+  <li><a href="http://github.com/sloria/textblob/issues">Issue Tracker</a></li>
+</ul>
+  <h3><a href="http://textblob.readthedocs.org/en/latest/index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="http://textblob.readthedocs.org/en/latest/classifiers.html#">Tutorial: Building a Text Classification System</a><ul>
+<li><a class="reference internal" href="http://textblob.readthedocs.org/en/latest/classifiers.html#loading-data-and-creating-a-classifier">Loading Data and Creating a Classifier</a><ul>
+<li><a class="reference internal" href="http://textblob.readthedocs.org/en/latest/classifiers.html#loading-data-from-files">Loading Data from Files</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="http://textblob.readthedocs.org/en/latest/classifiers.html#classifying-text">Classifying Text</a></li>
+<li><a class="reference internal" href="http://textblob.readthedocs.org/en/latest/classifiers.html#classifying-textblobs">Classifying TextBlobs</a></li>
+<li><a class="reference internal" href="http://textblob.readthedocs.org/en/latest/classifiers.html#evaluating-classifiers">Evaluating Classifiers</a></li>
+<li><a class="reference internal" href="http://textblob.readthedocs.org/en/latest/classifiers.html#updating-classifiers-with-new-data">Updating Classifiers with New Data</a></li>
+<li><a class="reference internal" href="http://textblob.readthedocs.org/en/latest/classifiers.html#feature-extractors">Feature Extractors</a></li>
+<li><a class="reference internal" href="http://textblob.readthedocs.org/en/latest/classifiers.html#next-steps">Next Steps</a></li>
+</ul>
+</li>
+</ul>
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="http://textblob.readthedocs.org/en/latest/index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="http://textblob.readthedocs.org/en/latest/quickstart.html" title="previous chapter">Tutorial: Quickstart</a></li>
+      <li>Next: <a href="http://textblob.readthedocs.org/en/latest/advanced_usage.html" title="next chapter">Advanced Usage: Overriding Models and the Blobber Class</a></li>
+  </ul></li>
+</ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+    <form class="search" action="http://textblob.readthedocs.org/en/latest/search.html" method="get">
+      <input type="text" name="q">
+      <input type="submit" value="Go">
+      <input type="hidden" name="check_keywords" value="yes">
+      <input type="hidden" name="area" value="default">
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      © Copyright 2014, <a href="http://stevenloria.com/">Steven Loria</a>.
+    </div>
+    <a href="https://github.com/sloria/textblob" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="./Tutorial_ Building a Text Classification System — TextBlob 0.9.0 documentation_files/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" class="github">
+    </a>
+  
+<!-- Inserted RTD Footer -->
+<div class="injected">
+
+  
+  <div class="rst-versions rst-badge" data-toggle="rst-versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book">&nbsp;</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      
+
+      
+       
+      <dl>
+        <dt>Versions</dt>
+        
+         <strong> 
+        
+        <dd><a href="./Tutorial_ Building a Text Classification System — TextBlob 0.9.0 documentation_files/Tutorial_ Building a Text Classification System — TextBlob 0.9.0 documentation.html">latest</a></dd>
+        
+         </strong> 
+        
+        
+        
+        <dd><a href="http://textblob.readthedocs.org/en/dev/classifiers.html">dev</a></dd>
+        
+        
+        
+      </dl>
+      
+      
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="http://readthedocs.org/projects/textblob/downloads/pdf/latest/">PDF</a></dd>
+        
+        <dd><a href="http://readthedocs.org/projects/textblob/downloads/htmlzip/latest/">HTML</a></dd>
+        
+        <dd><a href="http://readthedocs.org/projects/textblob/downloads/epub/latest/">Epub</a></dd>
+        
+      </dl>
+      
+
+      <dl>
+        <!-- These are kept as relative links for internal installs that are http -->
+        <dt>On Read the Docs</dt>
+        <dd>
+          <a href="http://readthedocs.org/projects/textblob/">Project Home</a>
+        </dd>
+        <dd>
+          <a href="http://readthedocs.org/builds/textblob/">Builds</a>
+        </dd>
+        <dd>
+          <a href="http://readthedocs.org/projects/textblob/downloads/">Downloads</a>
+        </dd>
+      </dl>
+
+      
+
+      
+
+      
+      <dl>
+        <dt>On GitHub</dt>
+        <dd>
+          <a href="https://github.com/sloria/TextBlob/blob/master/docs/classifiers.rst">View</a>
+        </dd>
+        <dd>
+          <a href="https://github.com/sloria/TextBlob/edit/master/docs/classifiers.rst">Edit</a>
+        </dd>
+      </dl>
+      
+
+      <dl>
+        <dt>Search</dt>
+        <dd>
+          <div style="padding: 6px;">
+            <form id="flyout-search-form" class="wy-form" target="_blank" action="https://readthedocs.org/projects/textblob/search/" method="get">
+              <input type="text" name="q" placeholder="Search docs">
+              </form>
+          </div>
+        </dd>
+      </dl>
+
+
+
+      <hr>
+      Free document hosting provided by <a href="https://readthedocs.org/">Read the Docs</a>. Support us on <a href="https://www.gratipay.com/readthedocs/">Gratipay</a>.
+
+      
+    </div>
+  </div>
+  
+
+</div>
+</body></html>

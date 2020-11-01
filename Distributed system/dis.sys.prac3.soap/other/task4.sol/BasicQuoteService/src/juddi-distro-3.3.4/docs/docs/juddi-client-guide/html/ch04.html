@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Chapter 4. Using the jUDDI GUI</title><link rel="stylesheet" type="text/css" href="css/jbossorg.css"/><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="up" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="prev" href="ch03.html" title="Chapter 3. Key Format Templates"/><link rel="next" href="ch05.html" title="Chapter 5. Mapping WSDL and WSDL to UDDI"/><link rel="copyright" href="ln-d5e27.html" title="Legal Notice"/><meta xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p xmlns:d="http://docbook.org/ns/docbook" id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch03.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ch05.html"><strong>Next</strong></a></li></ul><div class="chapter" title="Chapter 4. Using the jUDDI GUI"><div class="titlepage"><div><div><h2 class="title"><a id="chapter-UsingTheJUDDIGUI"/>Chapter 4. Using the jUDDI GUI</h2></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="section"><a href="ch04.html#_requirements_2">4.1. Requirements</a></span></dt><dt><span class="section"><a href="ch04.html#_tasks">4.2. Tasks</a></span></dt><dd><dl><dt><span class="section"><a href="ch04.html#_your_first_sign_on">4.2.1. Your first sign on</a></span></dt></dl></dd><dt><span class="section"><a href="ch04.html#_the_menu_bar">4.3. The Menu Bar</a></span></dt><dt><span class="section"><a href="ch04.html#_logging_in_to_uddi_services">4.4. Logging in to UDDI Services</a></span></dt><dt><span class="section"><a href="ch04.html#_logging_out">4.5. Logging Out</a></span></dt><dt><span class="section"><a href="ch04.html#_discover_browse_uddi">4.6. Discover (Browse UDDI)</a></span></dt><dd><dl><dt><span class="section"><a href="ch04.html#_business_browser">4.6.1. Business Browser</a></span></dt><dt><span class="section"><a href="ch04.html#_service_browser">4.6.2. Service Browser</a></span></dt><dt><span class="section"><a href="ch04.html#_tmodel_browser">4.6.3. tModel Browser</a></span></dt><dt><span class="section"><a href="ch04.html#_search">4.6.4. Search</a></span></dt></dl></dd><dt><span class="section"><a href="ch04.html#_creating_new_entities">4.7. Creating new Entities</a></span></dt><dd><dl><dt><span class="section"><a href="ch04.html#_create_a_tmodel">4.7.1. Create a tModel</a></span></dt><dt><span class="section"><a href="ch04.html#_create_a_tmodek_key_generator_partition">4.7.2. Create a tModek Key Generator (Partition)</a></span></dt><dt><span class="section"><a href="ch04.html#_create_a_business">4.7.3. Create a Business</a></span></dt><dt><span class="section"><a href="ch04.html#_create_a_service">4.7.4. Create a Service</a></span></dt><dt><span class="section"><a href="ch04.html#_import_from_wsdl_or_wadl">4.7.5. Import from WSDL or WADL</a></span></dt></dl></dd><dt><span class="section"><a href="ch04.html#_custody_transfers">4.8. Custody Transfers</a></span></dt><dt><span class="section"><a href="ch04.html#_publisher_assertions">4.9. Publisher Assertions</a></span></dt><dt><span class="section"><a href="ch04.html#_subscriptions">4.10. Subscriptions</a></span></dt><dd><dl><dt><span class="section"><a href="ch04.html#_create_a_new_subscription">4.10.1. Create a new subscription</a></span></dt><dt><span class="section"><a href="ch04.html#_view_my_subscriptions">4.10.2. View My Subscriptions</a></span></dt><dt><span class="section"><a href="ch04.html#_view_the_news_feed">4.10.3. View the News Feed</a></span></dt></dl></dd><dt><span class="section"><a href="ch04.html#UsingDigitalSignatures">4.11. Using Digital Signatures in juddi-gui</a></span></dt><dd><dl><dt><span class="section"><a href="ch04.html#_sign_a_business_service_or_tmodel">4.11.1. Sign a Business, Service or tModel</a></span></dt><dt><span class="section"><a href="ch04.html#_verify_a_signed_uddi_entity">4.11.2. Verify a signed UDDI entity</a></span></dt></dl></dd><dt><span class="section"><a href="ch04.html#_configuration">4.12. Configuration</a></span></dt><dt><span class="section"><a href="ch04.html#_language_codes">4.13. Language Codes</a></span></dt><dt><span class="section"><a href="ch04.html#_switching_nodes">4.14. Switching Nodes</a></span></dt></dl></div>
+
+<p>Starting with jUDDI v3.2, a nearly full featured UDDI v3 compliant web user interface is included called the jUDDI Graphical User Interface, or jUDDI GUI. It is also referred to as the jUDDI Console, or jUDDI User Console. The jUDDI GUI is a web application that can run in most web servlet containers, such as Tomcat and can be deployed along side of the jUDDI Web Services war (juddiv3.war). From the jUDDI GUI, users can browse, search, create, update, digitally sign and delete most UDDI entities, as well as preform custody transfers, configure subscriptions.</p>
+<p>As of version 3.2, the jUDDI GUI supports the complete functionality of the following UDDI services</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+Inquiry
+</li><li class="listitem">
+Publish
+</li><li class="listitem">
+Security
+</li><li class="listitem">
+Custody Transfer
+</li><li class="listitem">
+Subscription
+</li></ul></div>
+
+<div class="section" title="4.1. Requirements"><div class="titlepage"><div><div><h2 class="title"><a id="_requirements_2"/>4.1. Requirements</h2></div></div></div>
+
+<p>The jUDDI GUI needs two things in order to operate.</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+UDDI v3 compliant services
+</li><li class="listitem">
+A J2EE application server, such as Tomcat, Jboss, Jetty or maybe even in Winstone
+</li><li class="listitem">
+Optionally, a container level authentication mechanism that supports role based authentication (for remote configuration)
+</li></ul></div>
+
+</div>
+<div class="section" title="4.2. Tasks"><div class="titlepage"><div><div><h2 class="title"><a id="_tasks"/>4.2. Tasks</h2></div></div></div>
+
+<p>The following sections detail how to perform basic tasks using the jUDDI GUI. Hopefully, the user interface is intuitive enough that thorough guidance isn’t necessary.</p>
+<div class="section" title="4.2.1. Your first sign on"><div class="titlepage"><div><div><h3 class="title"><a id="_your_first_sign_on"/>4.2.1. Your first sign on</h3></div></div></div>
+
+<p>Typically, the jUDDI GUI is accessed via a URL in a web browser, such as this: <a class="ulink" href="http://localhost:8080/juddi-gui">http://localhost:8080/juddi-gui</a>. This URL will probably be different from this if someone else set up jUDDI GUI for you (such as a system administrator), in which case, you’ll want to ask them for the correct URL. Once loading the page, you should see something similiar to this.</p>
+<div class="figure"><a id="d5e300"/><p class="title"><strong>Figure 4.1. Welcome to jUDDI, Please select a language.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-welcome.png" alt="Welcome to jUDDI"/></div>
+</div></div><br class="figure-break"/>
+
+<p>Select a language, then click the button labeled "Go".</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>Would you like to see the jUDDI-GUI in a different language that the one’s listed and want to offer some translation help? Please contact us!</p>
+</div>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Important</h2>
+<p>The juddi-gui stores your language preference as a cookie. No personally identifiable information is stored there.</p>
+</div>
+
+<p>After clicking on "Go", you should see something similar to the next two screen shots.</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>Why would it be different? The jUDDI GUI is based on the Twitter Bootstrap API and is designed to automatically rearrange the user interface based on screen size and resolution. Small form factor devices, such as tablets and smart phones generally function as normal, except that the upper navigation bar becomes condensed into a single button.</p>
+</div>
+
+<div class="figure"><a id="d5e315"/><p class="title"><strong>Figure 4.2. Full menu bar for computers or large displays.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-fullbootstrap-menu.png" alt="Full menu bar for computers or large displays."/></div>
+</div></div><br class="figure-break"/>
+
+<div class="figure"><a id="d5e322"/><p class="title"><strong>Figure 4.3. Tablet/Mobile menu bar for small displays.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-tabletbootstrap-menu.png" alt="Tablet/Mobile bar for small displays."/></div>
+</div></div><br class="figure-break"/>
+
+<p>For now, let’s just focus on the menu or navigation bar.</p>
+</div>
+</div>
+<div class="section" title="4.3. The Menu Bar"><div class="titlepage"><div><div><h2 class="title"><a id="_the_menu_bar"/>4.3. The Menu Bar</h2></div></div></div>
+
+<div class="figure"><a id="d5e332"/><p class="title"><strong>Figure 4.4. The Menu Bar.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-menu.png" alt="The Menu Bar"/></div>
+</div></div><br class="figure-break"/>
+
+<p>The menu bar is designed to make navigation simple and intuitive.</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+Home - This sub-menu contains links towards information that is tailored towards you, such as all the businesses you own, subscriptions, custody transfer, and publisher assertion (business relationships)
+</li><li class="listitem">
+Browse - This sub-menu makes it simple to find stuff in UDDI by letting you flip the pages of the directory.
+</li><li class="listitem">
+Create - This sub-menu makes it simple to create new UDDI entities, such as businesses, services, tModels, import from WSDL/WADL and some advanced operations.
+</li><li class="listitem">
+Settings - This page is typically access controlled and enables administrators to remotely configure the juddi-gui.
+</li><li class="listitem">
+Help - Contains links to the Internet for more help with jUDDI and source code access
+</li><li class="listitem">
+Login/Logout - many registries require authentication. These buttons support both HTTP and UDDI Auth Token style of authentication.
+</li></ul></div>
+
+</div>
+<div class="section" title="4.4. Logging in to UDDI Services"><div class="titlepage"><div><div><h2 class="title"><a id="_logging_in_to_uddi_services"/>4.4. Logging in to UDDI Services</h2></div></div></div>
+
+<p>Assuming that your UDDI services require authentication, you’ll probably want to login with your username and password. This is done using the Login/Logout section the Menu bar (top right of the screen).</p>
+<div class="figure"><a id="d5e356"/><p class="title"><strong>Figure 4.5. Login Warning.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-login-warning.png" alt="Login Warning"/></div>
+</div></div><br class="figure-break"/>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="caution" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Caution</h2>
+<p>If you happen to notice that a warning symbol next to the Login button, use caution! Your password may be exposed if you proceed.</p>
+</div>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>The Warning symbol on the Login portion of the Menu bar will be present unless the following conditions are met: Communication from your browser to juddi-gui is encrypted using SSL/TLS AND the communication from juddi-gui to the UDDI services is encrypted using SSL/TLS.</p>
+</div>
+
+</div>
+<div class="section" title="4.5. Logging Out"><div class="titlepage"><div><div><h2 class="title"><a id="_logging_out"/>4.5. Logging Out</h2></div></div></div>
+
+<p>Once logged in, just "Welcome &lt;username&gt;" button to log out.</p>
+</div>
+<div class="section" title="4.6. Discover (Browse UDDI)"><div class="titlepage"><div><div><h2 class="title"><a id="_discover_browse_uddi"/>4.6. Discover (Browse UDDI)</h2></div></div></div>
+
+<p>All of the Browse pages support pagination, that is you can flip through the pages of the database, as if it were a phone book.</p>
+<p>In addition, search results can be filtered by language. On each Discover page, you will see the following</p>
+<div class="figure"><a id="d5e374"/><p class="title"><strong>Figure 4.6. Browse Options.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-browse-options.png" alt="Browse Options"/></div>
+</div></div><br class="figure-break"/>
+
+<p>Click on "Click to Edit", enter your desired language code, then either press enter, or click "Ok" and the results will be filtered automatically. See "Language Codes" for more information.</p>
+<div class="section" title="4.6.1. Business Browser"><div class="titlepage"><div><div><h3 class="title"><a id="_business_browser"/>4.6.1. Business Browser</h3></div></div></div>
+
+<p>To browse for a UDDI Business, simply click on the word <span class="emphasis"><em>Discover</em></span> from the top navigation bar and select Businesses.</p>
+<div class="figure"><a id="d5e386"/><p class="title"><strong>Figure 4.7. Browse Business.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-browse-business.png" alt="Browse Business"/></div>
+</div></div><br class="figure-break"/>
+
+<p>When clicking on "Show XX" (XX is the number of services that business has)</p>
+<div class="figure"><a id="d5e394"/><p class="title"><strong>Figure 4.8. Browse Business Zoomed in.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-browse-business2.png" alt="Browse Business Zoomed in"/></div>
+</div></div><br class="figure-break"/>
+
+<p>The (+) Plus button will enable you to add a new service that belongs to the business on the same table row.</p>
+</div>
+<div class="section" title="4.6.2. Service Browser"><div class="titlepage"><div><div><h3 class="title"><a id="_service_browser"/>4.6.2. Service Browser</h3></div></div></div>
+
+<p>To browse for a UDDI Service, simply click on the word <span class="emphasis"><em>Discover</em></span> from the top navigation bar and select Services. Clicking on the Name of the service, will bring you to the Service Editor page. Click on the owning Business key to bring you to the Business Editor page.</p>
+<div class="figure"><a id="d5e406"/><p class="title"><strong>Figure 4.9. Service Browser.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-browse-services.png" alt="Service Browser"/></div>
+</div></div><br class="figure-break"/>
+
+</div>
+<div class="section" title="4.6.3. tModel Browser"><div class="titlepage"><div><div><h3 class="title"><a id="_tmodel_browser"/>4.6.3. tModel Browser</h3></div></div></div>
+
+<p>To browse for a UDDI tModel simply click on the word <span class="emphasis"><em>Discover</em></span> from the top navigation bar and select tModel. Clicking on the Key of the tModel, will bring you to the tModel Editor page.</p>
+<div class="figure"><a id="d5e417"/><p class="title"><strong>Figure 4.10. tModel Browser.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-browse-tmodel.png" alt="tModel Browser"/></div>
+</div></div><br class="figure-break"/>
+
+</div>
+<div class="section" title="4.6.4. Search"><div class="titlepage"><div><div><h3 class="title"><a id="_search"/>4.6.4. Search</h3></div></div></div>
+
+<p>Searching UDDI provides you with the capabilities to make both simple and complex queries. To search, simply click on the word <span class="emphasis"><em>Discover</em></span> from the top navigation bar and select <span class="emphasis"><em>Search</em></span>.</p>
+<div class="figure"><a id="d5e429"/><p class="title"><strong>Figure 4.11. Search.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-search.png" alt="Search"/></div>
+</div></div><br class="figure-break"/>
+
+<p>You first need to select what you’re looking for. You can either search a Business, Service, Binding Template, or tModel.</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>Not all combinations are valid. For instance, you can’t search for a Binding Template by Name because UDDI’s binding templates do not have names.</p>
+</div>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Important</h2>
+<p>UDDI offers a wider, richer search capability. The juddi-gui’s search page is in comparison, limited. If you have the need for more complex searches, you’ll probably have to write some code to do so.</p>
+</div>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>When using the wildcards (%, ?), you have to add the find qualifier, approximateMatch.</p>
+</div>
+
+</div>
+</div>
+<div class="section" title="4.7. Creating new Entities"><div class="titlepage"><div><div><h2 class="title"><a id="_creating_new_entities"/>4.7. Creating new Entities</h2></div></div></div>
+
+<p>The jUDDI GUI has the ability to create and register new UDDI entities.</p>
+<div class="section" title="4.7.1. Create a tModel"><div class="titlepage"><div><div><h3 class="title"><a id="_create_a_tmodel"/>4.7.1. Create a tModel</h3></div></div></div>
+
+<p>From the menu, select Create, then tModel. For tModels, the only required item is the Name element.</p>
+</div>
+<div class="section" title="4.7.2. Create a tModek Key Generator (Partition)"><div class="titlepage"><div><div><h3 class="title"><a id="_create_a_tmodek_key_generator_partition"/>4.7.2. Create a tModek Key Generator (Partition)</h3></div></div></div>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Important</h2>
+<p>If you want to create your own UDDI keys (recommended) rather than use the not so user friendly server generated GUID values, then you’ll have to make a Key Generator first! Read on!</p>
+</div>
+
+<p>A tModel Key Generator is a special kind of tModel that enables you to define your own keys (for anything in UDDI) for your own "domain". A "domain" is similar to the Domain Name System used by the Internet to resolve user friendly names, such as www.apache.org, to an IP address.  This effectively allows you to define any arbitrary UDDI key prefix that you want. For example, if you wanted a UDDI key defined as "uddi:www.mycompany.com:salesbusiness1", you would first have to create a tModel key generator (partition) with the value of "uddi:www.mycompany.com:keygenerator". TModel keys must start with "uddi:" and end with ":keygenerator". This is part of the UDDI specification and acts as a governance mechanism. You can also create a tModel Key Generator by using the Create tModel menu option and by adding the appropriate settings (assuming you know the secret sauce) or you can simply click on the word <span class="emphasis"><em>Create</em></span> from the top navigation bar and select <span class="emphasis"><em>tModel Partition (Key Generator)</em></span>.</p>
+<div class="figure"><a id="d5e456"/><p class="title"><strong>Figure 4.12. Create a tModel Key Generator (Partition).</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-tmodel-keygen.png" alt="Create a tModel Key Generator (Partition)"/></div>
+</div></div><br class="figure-break"/>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>You can also use nested partitions such as "uddi:www.mycompany.com:keygenerator" and "uddi:www.mycompany.com:sales:keygenerator". UDDI uses the colon ":" as a separator for partitions. This will enable you to make UDDI keys such as "uddi:www.mycompany.com:biz1" and "uddi:www.mycompany.com:sales:biz2".</p>
+</div>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>UDDI key names can be at MOST 255 characters long!</p>
+</div>
+
+</div>
+<div class="section" title="4.7.3. Create a Business"><div class="titlepage"><div><div><h3 class="title"><a id="_create_a_business"/>4.7.3. Create a Business</h3></div></div></div>
+
+<p>The UDDI Business entity enables you to define and advertise your business with a variety of ways. To create a new business, simply click on the word <span class="emphasis"><em>Create</em></span> from the top navigation bar and select <span class="emphasis"><em>Business</em></span>.</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>The "Create", "Business" page is also the same page to use when editing an existing business.</p>
+</div>
+
+<div class="figure"><a id="d5e474"/><p class="title"><strong>Figure 4.13. Create Business.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-create-business.png" alt="Create a Business"/></div>
+</div></div><br class="figure-break"/>
+
+<p>Businesses in UDDI only require you to define at least one name. All of fields are optional. Business entities can have 0 or more of just about everything. For now, let’s just make a Name, give it a Value and then save our new business. To add a new Name, click the "+" button next to the "Name". Then click on "Click to edit" next to "Value". If you make a mistake or wish to remove the "Name" or any other element, click on the trash can.</p>
+<div class="figure"><a id="d5e482"/><p class="title"><strong>Figure 4.14. How to Add and Delete items.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-create-business3.png" alt="How to Add and Delete items"/></div>
+</div></div><br class="figure-break"/>
+
+<p>If you read the previous section on tModel Key Generators, then you know all about UDDI keys. This is your one and only chance to get it right. Once your done, click "Save". Congrats! You’ve just made your first UDDI business!</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Important</h2>
+<p>When working with UDDI entities, you cannot change the UDDI key after it has been created.</p>
+</div>
+
+<p>The Business Editor/Creator web page, along with the other editor/creator pages, has a ton of other interesting things that you can do. Since there’s way too much stuff to look at, we broke them up into logical sections.</p>
+<div class="figure"><a id="d5e493"/><p class="title"><strong>Figure 4.15. Business Editor’s Section.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-create-business2.png" alt="Business Editor's Section"/></div>
+</div></div><br class="figure-break"/>
+
+<p>In case you can’t see the picture above:</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+General - Names and Descriptions
+</li><li class="listitem">
+Discovery URLs - Usually a link to a web page
+</li><li class="listitem">
+Contacts - Points of Contact, such as Sales, Tech Support, etc
+</li><li class="listitem">
+Categories - These reference tModels and act as a way to categorize your business.
+</li><li class="listitem">
+Identifiers - Can be used for Tax IDs, DUNS Number, or anything else that you can think of.
+</li><li class="listitem">
+Services - This is the meat and potatoes of UDDI, advertising all the great services that your business provides.
+</li><li class="listitem">
+Signatures - Digital Signatures prevent tampering
+</li><li class="listitem">
+Operational Info - Who created it and when
+</li><li class="listitem">
+Related Businesses - This is where people can find out if you have a business relationship with someone else. It’s also called Publisher Assertions.
+</li></ul></div>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>Clicking on each tab will supply additional information.</p>
+</div>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>If a business, service, or tModel is signed, the juddi-gui will automatically attempt to validate the signature. You’ll see a thumbs up or thumbs down icon to let you know.</p>
+</div>
+
+</div>
+<div class="section" title="4.7.4. Create a Service"><div class="titlepage"><div><div><h3 class="title"><a id="_create_a_service"/>4.7.4. Create a Service</h3></div></div></div>
+
+<p>Creating a new service is simple so long as you remember that a service must be attached to a business. There are a few ways to create a new business.</p>
+<p>The first option is to locate the business that you wish to add a service to via the Business Browser and then click the Plug button.</p>
+<div class="figure"><a id="d5e528"/><p class="title"><strong>Figure 4.16. Add a Service via Business Browser.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-service-add1.png" alt="Add a Service via Business Browser"/></div>
+</div></div><br class="figure-break"/>
+
+<p>The second option is to bring up the Business Editor for the business you want to add a service to, then click on the Services tab, then "Add a Service".</p>
+<div class="figure"><a id="d5e536"/><p class="title"><strong>Figure 4.17. Add a Service via Business Editor.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-service-add2.png" alt="Add a Service via Business Editor"/></div>
+</div></div><br class="figure-break"/>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>Services require at least one name. Everything else is considered optional.</p>
+</div>
+
+</div>
+<div class="section" title="4.7.5. Import from WSDL or WADL"><div class="titlepage"><div><div><h3 class="title"><a id="_import_from_wsdl_or_wadl"/>4.7.5. Import from WSDL or WADL</h3></div></div></div>
+
+<p>The jUDDI client provides programmatic access to convert a WSDL or WADL document into UDDI Service and tModel entries. The juddi-gui takes advantage of this and provides a simple to use interface to quickly and easily import your SOAP and REST services into UDDI.</p>
+<p>From the Create menu, select Register Services from WSDL or WADL.</p>
+<p>The process is pretty straight forward.</p>
+<p>1.Provide the location of the WSDL or WADL file. It must be web accessible from the server hosting juddi-gui.war. If it is password protected (such as Digest, Basic or NTLM) provide a password to access the WSDL or WADL. Your credentials will not be saved anywhere.
+1.The key domain. The imported UDDI service, binding, and tModels will all use this key partition/domain for key generation. The juddi-gui will populate this field with the domain of the URL entered in step 1. If you don’t like, go ahead and change it. One will be automatically created for you.
+1.Pick a business to attach the imported data to.
+1.Review and Approve. The Preview button will do all of the processing except saving the content, so it is a good way to get a preview of what will happen. Save will do the processing and save it.</p>
+<div class="figure"><a id="d5e551"/><p class="title"><strong>Figure 4.18. Importing a Service from WSDL or WADL.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-import-wsdl.png" alt="Importing a Service from WSDL or WADL"/></div>
+</div></div><br class="figure-break"/>
+
+</div>
+</div>
+<div class="section" title="4.8. Custody Transfers"><div class="titlepage"><div><div><h2 class="title"><a id="_custody_transfers"/>4.8. Custody Transfers</h2></div></div></div>
+
+<p>Custody Transfers are used to give away ownership and edit permission for UDDI business and tModels. It’s not used very often, but the workflow is simple.</p>
+<p>1.Two business representatives agree to transfer either a business(s) or tModel(s) from business A to business B.
+1.Business A creates a transfer token
+1.Business A gives the transfer token data to Business B’s representative (perhaps via email?)
+1.Business B accepts the token and transfers the ownership over.</p>
+<p>All of these actions are processed at the Transfer Ownership page from the Home menu.</p>
+<div class="figure"><a id="d5e563"/><p class="title"><strong>Figure 4.19. Custody Transfer.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-transfer.png" alt="Custody Transfer"/></div>
+</div></div><br class="figure-break"/>
+
+</div>
+<div class="section" title="4.9. Publisher Assertions"><div class="titlepage"><div><div><h2 class="title"><a id="_publisher_assertions"/>4.9. Publisher Assertions</h2></div></div></div>
+
+<p>Publisher Assertions are how two different businesses can setup a UDDI Business Relationship. This essentially means that other users can see that this is a relationship between business A and B and that they can perform queries based on the relationship.</p>
+<div class="figure"><a id="d5e573"/><p class="title"><strong>Figure 4.20. Publisher Assertion.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-publisherassertion.png" alt="Publisher Assertion"/></div>
+</div></div><br class="figure-break"/>
+
+</div>
+<div class="section" title="4.10. Subscriptions"><div class="titlepage"><div><div><h2 class="title"><a id="_subscriptions"/>4.10. Subscriptions</h2></div></div></div>
+
+<p>Subscriptions in UDDI are used to easily detect when changes are made to a UDDI node.</p>
+<div class="section" title="4.10.1. Create a new subscription"><div class="titlepage"><div><div><h3 class="title"><a id="_create_a_new_subscription"/>4.10.1. Create a new subscription</h3></div></div></div>
+
+<p>To create a new subscription, you must first be logged in. Click on Home, then Create Subscription.</p>
+<p>Subscriptions can either be for a set of specific items or for search results.</p>
+<div class="figure"><a id="d5e587"/><p class="title"><strong>Figure 4.21. Create a Subscription, Specific Item or Search Results.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-subscription1.png" alt="Create a Subscription"/></div>
+</div></div><br class="figure-break"/>
+
+<p>In our example, we’ve selected a set of specific items.</p>
+<p title="Create a Subscription, Select Items.">
+<strong>Create a Subscription, Select Items. </strong>
+image::images/juddi-gui-subscription2.png[Create a Subscription, Select Items
+</p>
+<p>To add an item to the list, click on Add. The item chooser will appear. Check each item to add them to the list. To remove, select the item, then click remove.</p>
+<div class="figure"><a id="d5e599"/><p class="title"><strong>Figure 4.22. Create a Subscription, Add an item using the chooser.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-subscription3.png" alt="Create a Subscription"/></div>
+</div></div><br class="figure-break"/>
+
+<p>Specific items are added by entity keys.</p>
+<div class="figure"><a id="d5e607"/><p class="title"><strong>Figure 4.23. Create a Subscription, Item Added.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-subscription4.png" alt="Create a Subscription"/></div>
+</div></div><br class="figure-break"/>
+
+<p>Next is the delivery mechanism. The UDDI node can deliver the notifications to you if you have your own implementation of the UDDI Subscription Listener service. (The juddi-client contains this for you if you were looking to develop a solution). In addition, the UDDI node can email the results to you (in XML format).</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>Since jUDDI 3.2.1, you can also configure jUDDI to send you a more human readable version of the subscription notification. To configure, all that is needed is to add a special transport tModel instance to your subscription binding, uddi:uddi.org:transport:userfriendlysmtp.</p>
+</div>
+
+<p>The other option is to periodically poll the UDDI server and get your subscription results (see the News Feed).</p>
+<p>Here, we’ve selected the, I’ll pick them up, option.</p>
+<div class="figure"><a id="d5e619"/><p class="title"><strong>Figure 4.24. Create a Subscription, Delivery Mechanism.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-subscription5.png" alt="Create a Subscription"/></div>
+</div></div><br class="figure-break"/>
+
+<p>The final slider provides subscription options.
+* Expiration - a date where the subscription expires
+* Notification Interval - this is only used when the UDDI node sends the notifications to you via the Subscription Listener Service
+* Brief - If true, the UDDI node will only tell you which items have changed, not what the change was.</p>
+<div class="figure"><a id="d5e627"/><p class="title"><strong>Figure 4.25. Create a Subscription, Options.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-subscription6.png" alt="Create a Subscription"/></div>
+</div></div><br class="figure-break"/>
+
+</div>
+<div class="section" title="4.10.2. View My Subscriptions"><div class="titlepage"><div><div><h3 class="title"><a id="_view_my_subscriptions"/>4.10.2. View My Subscriptions</h3></div></div></div>
+
+<p>To view, edit, and delete existing subscriptions, click on Home, then View Subscriptions.</p>
+<div class="figure"><a id="d5e637"/><p class="title"><strong>Figure 4.26. View Subscriptions.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-subscription-view.png" alt="View Subscriptions"/></div>
+</div></div><br class="figure-break"/>
+
+</div>
+<div class="section" title="4.10.3. View the News Feed"><div class="titlepage"><div><div><h3 class="title"><a id="_view_the_news_feed"/>4.10.3. View the News Feed</h3></div></div></div>
+
+<p>The New Feed is a simple page designed to show you subscription results for the past 24 hrs. To view the news feed, click on Home, then News Feed.</p>
+</div>
+</div>
+<div class="section" title="4.11. Using Digital Signatures in juddi-gui"><div class="titlepage"><div><div><h2 class="title"><a id="UsingDigitalSignatures"/>4.11. Using Digital Signatures in juddi-gui</h2></div></div></div>
+
+<p>The juddi-gui makes working with digital signatures simple and enables you do digitally sign and protect entities right from the web browser. It allows you to sign business, services and tModels.</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>Digital signatures are performed using the jUDDI Digital Signature Applet which requires a Java plugin for your web browser, as well as a digital certificate (X509).</p>
+</div>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>You also need to have an X509 Certificate installed in either your Windows My/Current User Certificate Store or your MacOS Key Chain certificate store.</p>
+</div>
+
+<div class="section" title="4.11.1. Sign a Business, Service or tModel"><div class="titlepage"><div><div><h3 class="title"><a id="_sign_a_business_service_or_tmodel"/>4.11.1. Sign a Business, Service or tModel</h3></div></div></div>
+
+<div class="figure"><a id="d5e656"/><p class="title"><strong>Figure 4.27. Select an entity, then click Digitally Sign.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-sign1.png" alt="Select an entity"/></div>
+</div></div><br class="figure-break"/>
+
+<div class="figure"><a id="d5e663"/><p class="title"><strong>Figure 4.28. Java Plugin Warnings.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-sign2.png" alt="Java Plugin Warnings"/></div>
+</div></div><br class="figure-break"/>
+
+<p>Select a certificate, then if you’re ready to sign, click on "Digitally Sign". This will automatically generate the signature and save it in the UDDI server.</p>
+<div class="figure"><a id="d5e671"/><p class="title"><strong>Figure 4.29. Select a Signing Certificate.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-signerpanel1.png" alt="Select a Signing Certificate"/></div>
+</div></div><br class="figure-break"/>
+
+<p>Click on Certificate Info will display the following panel. This is useful if you have a few certificates that are similarly named.</p>
+<div class="figure"><a id="d5e679"/><p class="title"><strong>Figure 4.30. Certificate Details.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-signerpanel3.png" alt="Certificate Details"/></div>
+</div></div><br class="figure-break"/>
+
+<p>The settings tab gives you a number of options for advanced users. We recommend that you leave the defaults as is.</p>
+<div class="figure"><a id="d5e687"/><p class="title"><strong>Figure 4.31. Signature Settings.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-signerpanel2.png" alt="Signature Settings"/></div>
+</div></div><br class="figure-break"/>
+
+</div>
+<div class="section" title="4.11.2. Verify a signed UDDI entity"><div class="titlepage"><div><div><h3 class="title"><a id="_verify_a_signed_uddi_entity"/>4.11.2. Verify a signed UDDI entity</h3></div></div></div>
+
+<p>Once an entity is signed, the juddi-gui will always attempt to validate the signature and will notify you if its signed and whether or not its valid.</p>
+<p>In the following example, the business was signed.</p>
+<div class="figure"><a id="d5e698"/><p class="title"><strong>Figure 4.32. Valid Signed Entity.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-signed-valid.png" alt="Valid Signed Entity"/></div>
+</div></div><br class="figure-break"/>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Important</h2>
+<p>UDDI entities are hierarchical. A signed business entities includes all of the data for its services and binding templates. Any change to a service or binding template will cause the business’s signature to be invalid. TModels are not affected by this.</p>
+</div>
+
+<p>In the following example, one of the services own by the business was changed. Note that the signature is now invalid due to the alteration.</p>
+<div class="figure"><a id="d5e708"/><p class="title"><strong>Figure 4.33. Invalid Signed Entity.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-signed-invalid.png" alt="Invalid Signed Entity"/></div>
+</div></div><br class="figure-break"/>
+
+</div>
+</div>
+<div class="section" title="4.12. Configuration"><div class="titlepage"><div><div><h2 class="title"><a id="_configuration"/>4.12. Configuration</h2></div></div></div>
+
+<p>The configuration page is usually restricted to system administrators. There are many fields that are displayed. Some of the are editable, others are not. In general, the following settings can be changed (the others are just for troubleshooting and informational purposes).</p>
+<p>Details on configuration is located in chapter, jUDDI Server Configuration.</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="warning" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Warning</h2>
+<p>Saving updates to the console configuration in <span class="emphasis"><em>juddi-gui/WEB-INF/classes/META-INF/uddi.xml</em></span> will only work if the juddi-gui is deployed as a folder.</p>
+</div>
+
+</div>
+<div class="section" title="4.13. Language Codes"><div class="titlepage"><div><div><h2 class="title"><a id="_language_codes"/>4.13. Language Codes</h2></div></div></div>
+
+<p>The Language Code is a field supported by UDDI that is inherited from the errata for XML Schema, which references RFC 3066, which can be read here: <a class="ulink" href="http://www.ietf.org/rfc/rfc3066.txt/">http://www.ietf.org/rfc/rfc3066.txt/</a>. In general, Language Codes are either 2 or 5 characters but can by up to 26 characters. Here’s a few examples</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+en
+</li><li class="listitem">
+en_US
+</li><li class="listitem">
+es_US
+</li></ul></div>
+
+<p>More can be found here: <a class="ulink" href="http://www.i18nguy.com/unicode/language-identifiers.html">http://www.i18nguy.com/unicode/language-identifiers.html</a></p>
+</div>
+<div class="section" title="4.14. Switching Nodes"><div class="titlepage"><div><div><h2 class="title"><a id="_switching_nodes"/>4.14. Switching Nodes</h2></div></div></div>
+
+<p>The jUDDI GUI supports connectivity to multiple UDDI nodes. A UDDI Node is simple a collection of UDDI services that are all connected to the same data source. Another way to put it this, <span class="emphasis"><em>a UDDI server</em></span>. Each browser session to the jUDDI GUI has the ability to select the current Node connection. The current Node select is always saved as a cookie. To avoid any potential confusion, the currently selected Node is available both from the drop down Settings menu, and on the bottom of every page.</p>
+<p>To switch nodes, simply select the desired node from the Settings menu.</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Important</h2>
+<p>When switching nodes, any unsaved work that you have will be lost. You will also be logged out of the old node if you were signed in.</p>
+</div>
+
+<div class="figure"><a id="d5e742"/><p class="title"><strong>Figure 4.34. Node Switcher.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/juddi-gui-nodeswitcher.png" alt="Node Switcher"/></div>
+</div></div><br class="figure-break"/>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>Administrators can define the default node via the Setting, Configuration page.</p>
+</div>
+
+</div>
+</div><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch03.html"><strong>Prev</strong>Chapter 3. Key Format Templates</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ch05.html"><strong>Next</strong>Chapter 5. Mapping WSDL and WSDL to UDDI</a></li></ul></body></html>

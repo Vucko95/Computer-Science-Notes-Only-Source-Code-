@@ -1,0 +1,7 @@
+CPP = bcc32
+CPPFLAGS = -w-inl
+OFLAGS = -c
+EXEFLAG = -e
+OBJEXT = obj
+.cpp.exe :
+	$(CPP) $(CPPFLAGS) $< $(EXEFLAG)$@

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Chapter 3. Key Format Templates</title><link rel="stylesheet" type="text/css" href="css/jbossorg.css"/><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="up" href="index.html" title="Apache jUDDI Client and GUI Guide"/><link rel="prev" href="ch02.html" title="Chapter 2. jUDDI Client Configuration Guide"/><link rel="next" href="ch04.html" title="Chapter 4. Using the jUDDI GUI"/><link rel="copyright" href="ln-d5e27.html" title="Legal Notice"/><meta xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p xmlns:d="http://docbook.org/ns/docbook" id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch02.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ch04.html"><strong>Next</strong></a></li></ul><div class="chapter" title="Chapter 3. Key Format Templates"><div class="titlepage"><div><div><h2 class="title"><a id="chapter-KeyFormatTemplates"/>Chapter 3. Key Format Templates</h2></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="section"><a href="ch03.html#_uddiv3_key_format">3.1. UDDIv3 key format</a></span></dt><dt><span class="section"><a href="ch03.html#_juddi_key_format_templates">3.2. jUDDI key format templates</a></span></dt><dd><dl><dt><span class="section"><a href="ch03.html#_advantages_of_using_a_template">3.2.1. Advantages of using a template</a></span></dt><dt><span class="section"><a href="ch03.html#_default_uddikeyconvention_key_templates">3.2.2. Default UDDIKeyConvention Key Templates</a></span></dt><dt><span class="section"><a href="ch03.html#_how_to_use_the_templates">3.2.3. How to use the templates?</a></span></dt><dt><span class="section"><a href="ch03.html#_where_to_define_to_properties">3.2.4. Where to define to properties?</a></span></dt></dl></dd></dl></div>
+
+<div class="section" title="3.1. UDDIv3 key format"><div class="titlepage"><div><div><h2 class="title"><a id="_uddiv3_key_format"/>3.1. UDDIv3 key format</h2></div></div></div>
+
+<p>The UDDI v3 keys are formatted such that they are human readable. The short story is that UDDI v3 keys are formatted like: <span class="emphasis"><em>uddi:&lt;domain&gt;:name</em></span>. For example, if you wanted a tModel defined as "uddi:www.mycompany.com:serviceauthenticationmethod", you would first have to create a tModel key generator with value "uddi:www.mycompany.com:keygenerator".</p>
+</div>
+<div class="section" title="3.2. jUDDI key format templates"><div class="titlepage"><div><div><h2 class="title"><a id="_juddi_key_format_templates"/>3.2. jUDDI key format templates</h2></div></div></div>
+
+<p>The jUDDI client has taken the key format approach one step further so the name part of the key actually helps you understand what the key is for, or even better in the case of a binding template what server registered the key.</p>
+<div class="section" title="3.2.1. Advantages of using a template"><div class="titlepage"><div><div><h3 class="title"><a id="_advantages_of_using_a_template"/>3.2.1. Advantages of using a template</h3></div></div></div>
+
+<p>Using a binding Key with format <code class="literal">uddi:${keyDomain}:binding_${serverName}_${serviceName}_${portName}_${serverPort}</code> contains valuable information for two reasons
+- you can tell from the bindingKey what server registered it. This is helpful information if you want to debug connectivity issues between a client and the UDDI server.
+- if a server goes to register a bindingTemplate it registered before it won’t create a second bindingTemplate, so it won’t leave behind dead or duplicate bindingTemplates.</p>
+</div>
+<div class="section" title="3.2.2. Default UDDIKeyConvention Key Templates"><div class="titlepage"><div><div><h3 class="title"><a id="_default_uddikeyconvention_key_templates"/>3.2.2. Default UDDIKeyConvention Key Templates</h3></div></div></div>
+
+<p>The default templates setup by the jUDDI client are:</p>
+
+<pre class="literallayout">uddi:${keyDomain}:business_${businessName}
+uddi:${keyDomain}:service_${serviceName}
+uddi:${keyDomain}:service_cache_${serverName}
+uddi:${keyDomain}:binding_${serverName}_${serviceName}_${portName}_${serverPort}</pre>
+
+
+<p>where tokens are expressed using <code class="literal">${}</code>. The templates are defined in the UDDIKeyConvention class.</p>
+</div>
+<div class="section" title="3.2.3. How to use the templates?"><div class="titlepage"><div><div><h3 class="title"><a id="_how_to_use_the_templates"/>3.2.3. How to use the templates?</h3></div></div></div>
+
+<p>At runtime a serviceKey can be obtained using</p>
+
+<pre class="literallayout">String serviceKey = UDDIKeyConvention.getServiceKey(properties, serviceName);</pre>
+
+
+<p>The serviceName can be specified in as a property in the first argument, or it can explicitly passed as the second argument. Using the second argument overrides what’s specified in the properties. By default it will use the service template <code class="literal">uddi:${keyDomain}:service_${serviceName}</code>, but if you wish to use a different template you can simple specify that as a property, for example</p>
+
+<pre class="literallayout">String myCustomServiceFormat = "uddi:${keyDomain}:s_${serviceName}";
+properties.add(Property.SERVICE_KEY_FORMAT, myCustomServiceFormat);
+String myCustomFormattedServiceKey = UDDIKeyConvention.getServiceKey(properties, serviceName);</pre>
+
+
+</div>
+<div class="section" title="3.2.4. Where to define to properties?"><div class="titlepage"><div><div><h3 class="title"><a id="_where_to_define_to_properties"/>3.2.4. Where to define to properties?</h3></div></div></div>
+
+<p>You can define the properties in your code, or you can obtain and pass in the properties defined in your <code class="literal">uddi.xml</code>. For an exmaple of this you can check out the <code class="literal">META-INF/wsdl2uddi-uddi.xml</code> of the <code class="literal">wsdl2uddi</code> example where for the <code class="literal">default</code> node we set</p>
+
+<pre class="literallayout">        ...
+        &lt;nodes&gt;
+            &lt;node&gt;
+                &lt;name&gt;default&lt;/name&gt;
+                &lt;properties&gt;
+                    &lt;property name="serverName" value="localhost"/&gt;
+                    &lt;property name="serverPort" value="8080"/&gt;
+                    &lt;property name="keyDomain" value="uddi.joepublisher.com"/&gt;
+                    &lt;property name="businessName" value="WSDL-Business"/&gt;
+                &lt;/properties&gt;
+				...
+		    &lt;/node&gt;
+            ...
+        &lt;/nodes&gt;
+        ...</pre>
+
+
+<p>and you can obtain the properties like</p>
+
+<pre class="literallayout">UDDIClient uddiClient = new UDDIClient("META-INF/wsdl2uddi-uddi.xml");
+Properties properties = uddiClient.getClientConfig().getUDDINode("default").getProperties();</pre>
+
+
+<p>This is exactly what the WSDL2UDDI implementation does, and it the reason the class requires the properties in the constructor.</p>
+</div>
+</div>
+</div><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch02.html"><strong>Prev</strong>Chapter 2. jUDDI Client Configuration Guide</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ch04.html"><strong>Next</strong>Chapter 4. Using the jUDDI GUI</a></li></ul></body></html>

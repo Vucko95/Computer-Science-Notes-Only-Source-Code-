@@ -1,0 +1,24 @@
+#Internal package file, do not edit.
+#Wed Nov 08 10:35:22 GMT 2017
+2.base=/Users/davidcoyle/Documents/AS/sensorsimple1/app/build/intermediates/res/resources-debug.ap_
+5.file=/Users/davidcoyle/Documents/AS/sensorsimple1/app/build/intermediates/res/resources-debug.ap_/res/menu/activity_main.xml
+5.set=ANDROID_RESOURCE
+3.base=/Users/davidcoyle/Documents/AS/sensorsimple1/app/build/intermediates/res/resources-debug.ap_
+6.file=/Users/davidcoyle/Documents/AS/sensorsimple1/app/build/intermediates/res/resources-debug.ap_/res/menu-v11/activity_main.xml
+2.set=ANDROID_RESOURCE
+4.base=/Users/davidcoyle/Documents/AS/sensorsimple1/app/build/intermediates/res/resources-debug.ap_
+count=7
+0.file=/Users/davidcoyle/Documents/AS/sensorsimple1/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
+5.base=/Users/davidcoyle/Documents/AS/sensorsimple1/app/build/intermediates/res/resources-debug.ap_
+4.set=ANDROID_RESOURCE
+6.base=/Users/davidcoyle/Documents/AS/sensorsimple1/app/build/intermediates/res/resources-debug.ap_
+1.file=/Users/davidcoyle/Documents/AS/sensorsimple1/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+1.set=DEX
+2.file=/Users/davidcoyle/Documents/AS/sensorsimple1/app/build/intermediates/res/resources-debug.ap_/resources.arsc
+6.set=ANDROID_RESOURCE
+0.base=/Users/davidcoyle/Documents/AS/sensorsimple1/app/build/intermediates/res/resources-debug.ap_
+3.file=/Users/davidcoyle/Documents/AS/sensorsimple1/app/build/intermediates/res/resources-debug.ap_/res/layout/activity_main.xml
+3.set=ANDROID_RESOURCE
+1.base=/Users/davidcoyle/Documents/AS/sensorsimple1/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+4.file=/Users/davidcoyle/Documents/AS/sensorsimple1/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/ic_launcher.png
+0.set=ANDROID_RESOURCE

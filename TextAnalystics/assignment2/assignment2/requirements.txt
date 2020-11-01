@@ -1,0 +1,9 @@
+beautifulsoup4
+requests
+bs4
+BeautifulSoup
+nltk
+re
+string
+sklearn
+aid

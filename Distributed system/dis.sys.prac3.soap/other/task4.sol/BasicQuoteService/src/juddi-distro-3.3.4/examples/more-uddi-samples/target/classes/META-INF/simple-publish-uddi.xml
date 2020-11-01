@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+
+<!--
+/*
+ * Copyright 2001-2008 The Apache Software Foundation.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<uddi xmlns="urn:juddi-apache-org:v3_client" xsi:schemaLocation="classpath:/xsd/uddi-client.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema">
+        <reloadDelay>5000</reloadDelay>
+        <client name="example-client">
+                <nodes>
+                        <node isHomeJUDDI="true">
+                                <!-- required 'default' node -->
+                                <name>default</name> 
+                                <properties>
+                                        <property name="serverName" value="localhost"/>
+                                        <property name="serverPort" value="8080"/>
+                                       
+                                        <!-- for UDDI nodes that use HTTP u/p, using the following 
+                                        <property name="basicAuthUsername" value="root" />
+                                        <property name="basicAuthPassword" value="password" />
+                                        <property name="basicAuthPasswordIsEncrypted" value="false" />
+                                        <property name="basicAuthPasswordCryptoProvider" value="org.apache.juddi.v3.client.crypto.AES128Cryptor (an example)" />-->
+                                </properties>
+                                <description>Main jUDDI node</description>
+                                <!-- JAX-WS Transport -->
+                                <proxyTransport>org.apache.juddi.v3.client.transport.JAXWSTransport</proxyTransport>
+                                <custodyTransferUrl>http://${serverName}:${serverPort}/juddiv3/services/custody-transfer</custodyTransferUrl>
+                                <inquiryUrl>http://${serverName}:${serverPort}/juddiv3/services/inquiry</inquiryUrl>
+                                <inquiryRESTUrl>http://${serverName}:${serverPort}/juddiv3/services/inquiryRest</inquiryRESTUrl>
+                                <publishUrl>http://${serverName}:${serverPort}/juddiv3/services/publish</publishUrl>
+                                <securityUrl>http://${serverName}:${serverPort}/juddiv3/services/security</securityUrl>
+                                <subscriptionUrl>http://${serverName}:${serverPort}/juddiv3/services/subscription</subscriptionUrl>
+                                <subscriptionListenerUrl>http://${serverName}:${serverPort}/juddiv3/services/subscription-listener</subscriptionListenerUrl>
+                                <juddiApiUrl>http://${serverName}:${serverPort}/juddiv3/services/juddi-api</juddiApiUrl>
+                                <replicationUrl>https://${serverName}:8443/juddiv3replication/services/replication</replicationUrl>
+                        </node>
+                        <node>
+                                <!-- required 'default' node -->
+                                <name>uddi:another.juddi.apache.org:node2</name> 
+                                <properties>
+                                        <property name="serverName" value="localhost"/>
+                                        <property name="serverPort" value="9080"/>
+                                        
+                                        <!-- for UDDI nodes that use HTTP u/p, using the following 
+                                        <property name="basicAuthUsername" value="root" />
+                                        <property name="basicAuthPassword" value="password" />
+                                        <property name="basicAuthPasswordIsEncrypted" value="false" />
+                                        <property name="basicAuthPasswordCryptoProvider" value="org.apache.juddi.v3.client.crypto.AES128Cryptor (an example)" />-->
+                                </properties>
+                                <description>juddi node on 9080</description>
+                                <!-- JAX-WS Transport -->
+                                <proxyTransport>org.apache.juddi.v3.client.transport.JAXWSTransport</proxyTransport>
+                                <custodyTransferUrl>http://${serverName}:${serverPort}/juddiv3/services/custody-transfer</custodyTransferUrl>
+                                <inquiryUrl>http://${serverName}:${serverPort}/juddiv3/services/inquiry</inquiryUrl>
+                                <inquiryRESTUrl>http://${serverName}:${serverPort}/juddiv3/services/inquiryRest</inquiryRESTUrl>
+                                <publishUrl>http://${serverName}:${serverPort}/juddiv3/services/publish</publishUrl>
+                                <securityUrl>http://${serverName}:${serverPort}/juddiv3/services/security</securityUrl>
+                                <subscriptionUrl>http://${serverName}:${serverPort}/juddiv3/services/subscription</subscriptionUrl>
+                                <subscriptionListenerUrl>http://${serverName}:${serverPort}/juddiv3/services/subscription-listener</subscriptionListenerUrl>
+                                <juddiApiUrl>http://${serverName}:${serverPort}/juddiv3/services/juddi-api</juddiApiUrl>
+                                <replicationUrl>https://${serverName}:9443/juddiv3replication/services/replication</replicationUrl>
+                        </node>
+                        
+                        <node>
+                                <!-- required 'default' node -->
+                                <name>uddi:yet.another.juddi.apache.org:node3</name> 
+                                <properties>
+                                        <property name="serverName" value="localhost"/>
+                                        <property name="serverPort" value="10080"/>
+                                        
+                                        <!-- for UDDI nodes that use HTTP u/p, using the following 
+                                        <property name="basicAuthUsername" value="root" />
+                                        <property name="basicAuthPassword" value="password" />
+                                        <property name="basicAuthPasswordIsEncrypted" value="false" />
+                                        <property name="basicAuthPasswordCryptoProvider" value="org.apache.juddi.v3.client.crypto.AES128Cryptor (an example)" />-->
+                                </properties>
+                                <description>juddi node on 10080</description>
+                                <!-- JAX-WS Transport -->
+                                <proxyTransport>org.apache.juddi.v3.client.transport.JAXWSTransport</proxyTransport>
+                                <custodyTransferUrl>http://${serverName}:${serverPort}/juddiv3/services/custody-transfer</custodyTransferUrl>
+                                <inquiryUrl>http://${serverName}:${serverPort}/juddiv3/services/inquiry</inquiryUrl>
+                                <inquiryRESTUrl>http://${serverName}:${serverPort}/juddiv3/services/inquiryRest</inquiryRESTUrl>
+                                <publishUrl>http://${serverName}:${serverPort}/juddiv3/services/publish</publishUrl>
+                                <securityUrl>http://${serverName}:${serverPort}/juddiv3/services/security</securityUrl>
+                                <subscriptionUrl>http://${serverName}:${serverPort}/juddiv3/services/subscription</subscriptionUrl>
+                                <subscriptionListenerUrl>http://${serverName}:${serverPort}/juddiv3/services/subscription-listener</subscriptionListenerUrl>
+                                <juddiApiUrl>http://${serverName}:${serverPort}/juddiv3/services/juddi-api</juddiApiUrl>
+                                <replicationUrl>https://${serverName}:10443/juddiv3replication/services/replication</replicationUrl>
+                        </node>
+                </nodes>
+                <clerks registerOnStartup="false">
+                        <clerk name="default" node="default" publisher="uddi" password="uddi"  isPasswordEncrypted="false" cryptoProvider=""/>
+                </clerks>
+                <signature>
+                        <!-- signing stuff -->
+                        <signingKeyStorePath>keystore.jks</signingKeyStorePath>
+                        <signingKeyStoreType>JKS</signingKeyStoreType>
+                        <signingKeyStoreFilePassword 
+                                isPasswordEncrypted="false" 
+                                cryptoProvider="org.apache.juddi.v3.client.crypto.AES128Cryptor">password</signingKeyStoreFilePassword>
+                        <signingKeyPassword
+                                isPasswordEncrypted="false" 
+                                cryptoProvider="org.apache.juddi.v3.client.crypto.AES128Cryptor">password</signingKeyPassword>
+                        <signingKeyAlias>my special key</signingKeyAlias>
+                        
+                        <canonicalizationMethod>http://www.w3.org/2001/10/xml-exc-c14n#</canonicalizationMethod>
+                        <signatureMethod>http://www.w3.org/2000/09/xmldsig#rsa-sha1</signatureMethod>
+                        <XML_DIGSIG_NS>http://www.w3.org/2000/09/xmldsig#</XML_DIGSIG_NS>
+
+                        <!-- validation stuff 
+                        Used whenever someone views an entity that is signed and validation is required	-->
+                        <!-- if this doesn't exist or is incorrect, the client will atempt to load the standard jdk trust store-->
+                        <trustStorePath>truststore.jks</trustStorePath>
+                        <trustStoreType>JKS</trustStoreType>
+                        <trustStorePassword
+                                isPasswordEncrypted="false" 
+                                cryptoProvider="org.apache.juddi.v3.client.crypto.AES128Cryptor">password</trustStorePassword>
+			
+                        <checkTimestamps>true</checkTimestamps>
+                        <checkTrust>true</checkTrust>
+                        <checkRevocationCRL>true</checkRevocationCRL>
+                        <keyInfoInclusionSubjectDN>true</keyInfoInclusionSubjectDN>
+                        <keyInfoInclusionSerial>true</keyInfoInclusionSerial>
+                        <keyInfoInclusionBase64PublicKey>true</keyInfoInclusionBase64PublicKey>
+                        <digestMethod>http://www.w3.org/2000/09/xmldsig#sha1</digestMethod>
+                </signature>
+        
+                <subscriptionCallbacks>
+                        <keyDomain>uddi:somebusiness</keyDomain>
+                        <listenUrl></listenUrl> <!-- this is to override the generated values -->
+                        <autoRegisterBindingTemplate>true</autoRegisterBindingTemplate>
+                        <autoRegisterBusinessServiceKey>uddi:somebusiness:someservicekey</autoRegisterBusinessServiceKey>
+                        <signatureBehavior>DoNothing</signatureBehavior>
+                </subscriptionCallbacks>
+        </client>
+</uddi>

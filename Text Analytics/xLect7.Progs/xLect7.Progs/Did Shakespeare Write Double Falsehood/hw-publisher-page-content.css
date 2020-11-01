@@ -1,0 +1,264 @@
+/*****************************************************************
+ * HW-provided CSS stylesheet specific to sagepub journals content pages
+ *****************************************************************/
+
+div.ref-list cite abbr.cit-jnl-abbrev {
+        	font-style: normal;
+}
+div.ref-list .cit-vol {
+        	font-weight: normal;
+}
+
+div#pageid-content .article blockquote {
+border:1px solid #DDDDDD;
+color: inherit;
+display:block;
+font-size:1em;
+margin:0.5em 1em;
+padding:0.5em 1em;
+text-align:center;
+}
+.hide-cols div#col-3-min {
+visibility:hidden;
+background-color:#999999;
+border-bottom:none;
+border-left:none;
+border-right:none;
+}
+
+div.pagetype-content div.table-expansion table th,
+div.pagetype-content div.table-expansion table td,
+div.pagetype-content div.table-wrapper table th,
+div.pagetype-content div.table-wrapper table td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:90%;
+}
+
+div#pageid-content div.table-expansion {
+	width:515px;
+}
+
+span.kwd-group-title {
+display:none;
+}
+
+#pageid-content #col-3 div.content-box {
+padding:0px;;
+}
+#pageid-content #col-3 div.content-box {
+	background:none; 
+}
+#pageid-content #col-3 .cb-section,
+#col-3 .cb-section ol,
+#col-3 .cb-section ol li {
+	margin: 0px 0px 5px 10px;
+	border-bottom: none;
+}
+#pageid-content #col-3 #sidebar-current-issue {
+    border: none;
+	margin:0px;
+	padding:5px 25px;
+}
+#pageid-content #col-3 div.content-box img {
+padding:0px;
+border:#868686 1px solid;
+}
+#col-3 .cb-section, #col-3 .cb-section ol, #col-3 .cb-section ol li {
+	list-style: url(../../publisher/icons/li-arrow-2.gif);
+}
+
+#header .bar-inner, #footer .footer-group {
+        background-color: #f2f2f2;
+}
+#header .bar, #footer .bar {
+        background-color: #f2f2f2;
+		border: #CCCCCC 1px solid;
+}
+
+#pageid-content #col-3 .content-box h3 {
+background-color:#EEEEEE;
+font-size:13px;
+height:1.4em;
+margin-left:-25px;
+margin-top:-5px;
+padding:5px 0 3px 9px;
+}
+
+div.hw-gen-page .view-more {
+border:1px solid gray;
+padding:0px 0px 2px 0px;
+}
+div.hw-gen-page .view-more a:link{
+border:1px solid gray;
+}
+
+#content-block a:link {
+  color:#305484;
+  text-decoration:underline;
+}
+li#copyright-statement-1  {
+list-style:none;
+margin-left:0px;
+visibility:hidden;
+height:0;
+}
+#content-block div.contributors ol.contributor-list li .name a:link{
+	color:#333;
+	text-decoration:none;
+}
+#content-block div.contributors ol.contributor-list li .name a:hover{
+	border-bottom:1px dotted #333;
+  background-color: white;
+}
+div.hw-gen-page  .view-more:hover {
+  background-color: white;
+  color: #69c;
+}
+#pageid-content #content-block .contributors p a:hover {
+	background-color: white;
+  color: #69c;
+}
+#pageid-content #content-block .ref-list .cit-metadata,
+#pageid-content #content-block .ref-list .cit-auth-list{
+	display:inline;
+	margin:0;
+	padding:0;
+}
+.article div.section h4 {
+	display:block;
+	font-size:1em;
+	margin:5px 5px 0 0;
+	padding:0;
+}
+.cit .cit-metadata abbr.cit-jnl-abbrev {
+	border:medium none;
+	font-style:italic;
+}
+.ref-use-labels div.ref-cit.no-rev-xref {
+	display:inline;
+	margin-top:0;
+	padding-top:1px;
+}
+#pageid-content div.article.references-only-view #fn-group-1,
+#pageid-content div.article.abstract-view #fn-group-1 {
+	visibility:hidden;
+	height:0; /* give it a zero height to not display that empty space when hidden */
+}
+#pageid-content div.contributors span.contrib-email {
+	padding-left:5px;
+}
+/* some default for video objects */
+div.article div.media {
+        background-color:#eee;
+        padding:.25em 1em;
+        border: 1px solid #ccc;
+        border-bottom: 1px solid #aaa;
+        border-right: 1px solid #aaa;
+        padding-top: 1em;
+        margin: 1em 20px 1em 20px;
+        clear: left;
+}
+div.article div.media-inline {
+	border: 1px dotted rgb(153, 153, 153);
+	padding: 1em;
+	background-color: white;
+	text-align: center;
+}
+
+div.article div.media object {
+	padding: 0;
+	background-color: white;
+	border: none;
+}
+div.article div.supplementary-material-inline {
+text-align: center;
+}
+
+div.media-caption {
+	margin-top: 1em;
+}
+/* fix for oddness with author lists */
+#pageid-content #content-block div.contributors ol.contributor-list li {
+display:block;
+}
+
+div.contributors ol li a, div.extract-view div.contributors ol li span.xref-corresp, div.extract-view div.contributors ol li span.xref-aff, div.extract-view div.contributors ol li span.xref-fn
+{
+	vertical-align:0;
+}
+h1.expansion-article-title, h1.data-supp-article-title {
+margin:10px 0 0;
+}
+.table-expansion .table-caption {
+background-color:white;
+border-width:0px;
+padding:1em 0 0.25em;
+}
+/* Adding width attribute to fig expansion */
+.fig-caption, .table-caption {
+	width:455px;
+}
+.article div.section {
+	clear:both;
+}
+.fig-inline, .table-inline {
+	width:437px;
+}
+.list-simple {
+	list-style-type:none;
+}
+dl#def-list-1 dd,
+dl#def-list-2 dd,
+dl#def-list-3 dd,
+dl#def-list-4 dd {
+	padding:15px;
+}
+/* Per OA custom sage design, hiding OA indicator in content box */
+#pageid-content div.cb-contents div.cb-section ol span.oa-article {
+	display:none;
+}
+#pageid-content #content-block div.social-bookmarking {
+  display:none; /* QB:24770 */
+}
+
+#cb-art-soc div.social-bookmarking ul {
+    width: 130px;
+}
+
+#cb-art-soc div.social-bookmarking ul.social-bookmark-links li {
+    margin: -2px 10px 0 0;
+}
+ul.social-bookmark-links .social-bookmarking-item-googleplus { display: -webkit-inline-box; } /*QB36025*/
+
+#pageid-content #content-block div.version-links-before-resource {
+	color: red;
+	padding-top:5px;
+	font-size: 115%;
+}
+#pageid-content div.cb-section ol.sagepub-all-version-list li img {
+margin-left:-10px;
+margin-right:2px;
+}
+
+ol.list-alphaupper
+{
+	list-style-type: upper-alpha;
+}
+#pageid-content div#content-block span.fn-label {
+  font-weight:bold;
+}
+
+#pageid-content div.ref-cit .cit-metadata span.cit-pub-id-sep, div.ref-cit .cit-metadata span.cit-pub-id {
+    display: inline;
+}
+
+#pageid-content div.ref-cit .cit-metadata .duplicate{
+	 display: none;
+}
+div#pageid-content div#col-2 div.cb-contents div.cb-section ol li span.creative-commons-article {
+  display:none;
+}
+
+#pageid-content div#open-practices img {
+padding-left: 2px;
+}

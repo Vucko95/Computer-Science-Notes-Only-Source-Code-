@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Chapter 2. Getting Started</title><link rel="stylesheet" type="text/css" href="css/jbossorg.css"/><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Apache jUDDI Guide"/><link rel="up" href="index.html" title="Apache jUDDI Guide"/><link rel="prev" href="ch01.html" title="Chapter 1. Universal Description, Discovery and Integration (UDDI)"/><link rel="next" href="ch03.html" title="Chapter 3. jUDDI Architecture"/><link rel="copyright" href="ln-d5e27.html" title="Legal Notice"/><meta xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p xmlns:d="http://docbook.org/ns/docbook" id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch01.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ch03.html"><strong>Next</strong></a></li></ul><div class="chapter" title="Chapter 2. Getting Started"><div class="titlepage"><div><div><h2 class="title"><a id="chapter-GettingStarted"/>Chapter 2. Getting Started</h2></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="section"><a href="ch02.html#_prerequisites">2.1. Prerequisites</a></span></dt><dt><span class="section"><a href="ch02.html#_what_should_i_download">2.2. What should I Download?</a></span></dt><dt><span class="section"><a href="ch02.html#_running_juddi">2.3. Running jUDDI</a></span></dt><dt><span class="section"><a href="ch02.html#_using_the_juddi_administrative_interface">2.4. Using the jUDDI Administrative Interface</a></span></dt><dt><span class="section"><a href="ch02.html#_using_juddi_web_services">2.5. Using jUDDI Web Services</a></span></dt><dt><span class="section"><a href="ch02.html#_using_juddi_gui_to_create_your_keygenerator_and_business">2.6. Using jUDDI GUI to create your keygenerator and business</a></span></dt><dt><span class="section"><a href="ch02.html#_running_the_demos_in_the_disto">2.7. Running the demos in the disto</a></span></dt><dt><span class="section"><a href="ch02.html#_examples_on_the_juddi_blog">2.8. Examples on the jUDDI blog</a></span></dt><dt><span class="section"><a href="ch02.html#_what_is_new_in_juddi_3_2">2.9. What is new in jUDDI 3.2?</a></span></dt></dl></div>
+
+<p>The jUDDI project is an open source implementation of the UDDI specification. The registry implementation is a WebArchive (war) <span class="emphasis"><em>juddiv3.war</em></span>  which is deployable to any JEE container. The application exposes a WebService API which can be accessed using any generic SOAP client, the <span class="emphasis"><em>juddi-gui</em></span> or, if you are looking to integrate the UDDI api in your application, the Java or .NET version of the <span class="emphasis"><em>juddi-client</em></span>.</p>
+<div class="section" title="2.1. Prerequisites"><div class="titlepage"><div><div><h2 class="title"><a id="_prerequisites"/>2.1. Prerequisites</h2></div></div></div>
+
+<p>jUDDI is written in Java and minimally requires</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+JDK1.6+, although jUDDI should run on JDK1.6, please use the latest JDK if possible
+</li></ul></div>
+
+<p>optionally</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+Maven 3.0.3+ if you want to run the examples
+</li><li class="listitem">
+A Relation Database, to replace Derby
+</li></ul></div>
+
+<p>The versions mentioned above are minimal versions and it is recommended to use the latest version available. By default jUDDI ships and uses a <span class="emphasis"><em>Derby</em></span> database. After evaluation you probably want to move to a more full featured database.</p>
+</div>
+<div class="section" title="2.2. What should I Download?"><div class="titlepage"><div><div><h2 class="title"><a id="_what_should_i_download"/>2.2. What should I Download?</h2></div></div></div>
+
+<p>At the jUDDI download page <a class="ulink" href="http://juddi.apache.org/releases.html">http://juddi.apache.org/releases.html</a>, you have the chioce of two distributions; the <span class="emphasis"><em>juddi-client</em></span> distro or the juddi-distro, where the latter includes both client and server. Each distribution contains signed binaries, source, examples and documentation. It you are not sure which distribution to download, then take the <span class="emphasis"><em>juddi-distro</em></span> since it contains everything which is by far the easiest way to get going.</p>
+</div>
+<div class="section" title="2.3. Running jUDDI"><div class="titlepage"><div><div><h2 class="title"><a id="_running_juddi"/>2.3. Running jUDDI</h2></div></div></div>
+
+<p>After downloading and unpacking of the <span class="emphasis"><em>juddi-distro</em></span>, you can start the preconfigured tomcat server by going into the <span class="emphasis"><em>juddi-distro-&lt;version&gt;</em></span> directory and running startup</p>
+<pre class="screen">$ cd apache-tomcat-&lt;version&gt;/bin
+$ ./startup.sh</pre>
+
+<p>Once the server is up and running can make sure the root data was properly installed by browsing to <a class="ulink" href="http://localhost:8080/juddiv3">http://localhost:8080/juddiv3</a></p>
+<p>You should see the screen show in <a class="xref" href="ch02.html#figure-GettingStarted-Welcome" title="Figure 2.1. jUDDI welcome page">Figure 2.1, “jUDDI welcome page”</a>, the jUDDI Welcome Page.</p>
+<div class="figure"><a id="figure-GettingStarted-Welcome"/><p class="title"><strong>Figure 2.1. jUDDI welcome page</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/GettingStarted-jUDDI_welcome.png" alt="Welcome to jUDDI"/></div>
+</div></div><br class="figure-break"/>
+
+<p>Before continuing please check the jUDDI instalation Status on this page and make sure it says: "jUDDI has been successfully installed!". If the page won’t load or the status is anything else please check the <span class="emphasis"><em>apache-tomcat-x.x.x/logs/juddi.log</em></span> and if you need help you can contact us via the jUDDI user mailing list. Also note that it created a <span class="emphasis"><em>root</em></span> partition, using seed data. You can modify or add to the seed, for that see <a class="xref" href="ch07.html" title="Chapter 7. UDDI Seed Data">Chapter 7, <em>UDDI Seed Data</em></a>.</p>
+</div>
+<div class="section" title="2.4. Using the jUDDI Administrative Interface"><div class="titlepage"><div><div><h2 class="title"><a id="_using_the_juddi_administrative_interface"/>2.4. Using the jUDDI Administrative Interface</h2></div></div></div>
+
+<p>The juddi admin console runs at <a class="ulink" href="http://localhost:8080/juddiv3/admin">http://localhost:8080/juddiv3/admin</a> and requires a login with the role of uddiadmin via the basic authentication popup dialog box. Check the <span class="emphasis"><em>apache-tomcat-x.x.x/conf/tomcat-users.conf</em></span> file for the password of the <span class="emphasis"><em>uddiadmin</em></span> user. Please change the password before going live.</p>
+<div class="figure"><a id="figure--GettingStarted-Admin"/><p class="title"><strong>Figure 2.2. jUDDI admin</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/GettingStarted-jUDDI_admin.png" alt="jUDDI Admin"/></div>
+</div></div><br class="figure-break"/>
+
+<p>By popular demand we brought back the happy jUDDI!' page. Just click on <span class="emphasis"><em>Status and Statistics</em></span> page. By default we run on CXF, so it is normal if says the AxisServlet is not found. There should be no other red on this page.</p>
+<div class="figure"><a id="figure-GettingStarted-HappyjUDDI"/><p class="title"><strong>Figure 2.3. Happy jUDDI.</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/GettingStarted-happy_juddi.png" alt="Happy jUDDI!"/></div>
+</div></div><br class="figure-break"/>
+
+<p>By default jUDDI ships with 2 publishers: <span class="emphasis"><em>root</em></span> and <span class="emphasis"><em>uddi</em></span>. Root is the owner of the repository, while the <span class="emphasis"><em>uddi</em></span> user is the owner of all the default tmodels and categorizations. Please use the <span class="emphasis"><em>root</em></span> user to log into the form login in the admin console.</p>
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Important</h2>
+<p>Please use the <span class="emphasis"><em>root</em></span> user to log into the form login in the admin console.</p>
+</div>
+
+<div class="figure"><a id="figure-GettingStarted-FormLogin"/><p class="title"><strong>Figure 2.4. Form login</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/GettingStarted-form_login.png" alt="Form Login"/></div>
+</div></div><br class="figure-break"/>
+
+<p>You will now be able to do more then simple browsing. Navigate to the Administration and select <span class="emphasis"><em>save_publisher</em></span> from the dropdown. This will allow you to add your own publisher.</p>
+<div class="figure"><a id="figure-GettingStarted-AddPublisher"/><p class="title"><strong>Figure 2.5. Add Publisher</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/GettingStarted-add_publisher.png" alt="Add Publisher"/></div>
+</div></div><br class="figure-break"/>
+
+</div>
+<div class="section" title="2.5. Using jUDDI Web Services"><div class="titlepage"><div><div><h2 class="title"><a id="_using_juddi_web_services"/>2.5. Using jUDDI Web Services</h2></div></div></div>
+
+<p>OK now that we have verified that jUDDI is good to go we can inspect the UDDI WebService API by browsing to <a class="ulink" href="http://localhost:8080/juddiv3/services">http://localhost:8080/juddiv3/services</a></p>
+<p>You should see an overview of all the SOAP Services and their WSDLs.</p>
+<div class="figure"><a id="figure-GettingStarted-jUDDIServices"/><p class="title"><strong>Figure 2.6. jUDDI Services</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/GettingStarted-juddi_services.png" alt="jUDDI Services"/></div>
+</div></div><br class="figure-break"/>
+
+<p>The services page shows you the available endpoints and methods available. Using any SOAP client, you should be able to import the wsdls into a tool like SoapUI as shown in <a class="xref" href="ch02.html#figure-GettingStarted-SoapUI" title="Figure 2.7. Getting an authToken using SoapUI">Figure 2.7, “Getting an authToken using SoapUI”</a> and send some sample requests to jUDDI to test:</p>
+<div class="figure"><a id="figure-GettingStarted-SoapUI"/><p class="title"><strong>Figure 2.7. Getting an authToken using SoapUI</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/GettingStarted-authToken_SoapUI.png" alt="Getting an authToken using SoapUI"/></div>
+</div></div><br class="figure-break"/>
+
+<div xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h2>Tip</h2>
+<p>Try obtaining an authToken for the publisher you created earlier.</p>
+</div>
+
+</div>
+<div class="section" title="2.6. Using jUDDI GUI to create your keygenerator and business"><div class="titlepage"><div><div><h2 class="title"><a id="_using_juddi_gui_to_create_your_keygenerator_and_business"/>2.6. Using jUDDI GUI to create your keygenerator and business</h2></div></div></div>
+
+<p>Navigate to <a class="ulink" href="http://localhost:8080/juddi-gui/">http://localhost:8080/juddi-gui/</a> to get to the jUDDI-GUI. Please use the Form Login and use the credentials of the publisher you created above. You can browse around, but really the first thing that needs to be done is to create a Key Generator or Partition at <a class="ulink" href="http://localhost:8080/juddi-gui/tmodelPartitions.jsp">http://localhost:8080/juddi-gui/tmodelPartitions.jsp</a>. A Key Generator is needed to save human readable, universally unique UDDIv3 keys. Please read more about UDDI v3 formatted keys, but the short story is that UDDI v3 keys are formatted like: <span class="emphasis"><em>uddi:&lt;domain&gt;:name</em></span>. For example, if you wanted a tModel defined as "uddi:www.mycompany.com:serviceauthenticationmethod", you would first have to create a tModel key generator with value "uddi:www.mycompany.com:keygenerator".</p>
+<div class="figure"><a id="figure-GettingStarted-CreateKeygenerator"/><p class="title"><strong>Figure 2.8. Create Key Generator</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/GettingStarted-create_keygenerator.png" alt="Create Key Generator"/></div>
+</div></div><br class="figure-break"/>
+
+<p>Next create your business using the key generator format you just registered. For example in <a class="xref" href="ch02.html#figure-GettingStarted-CreateBusiness" title="Figure 2.9. Create Business">Figure 2.9, “Create Business”</a> we use a businessKey of <span class="emphasis"><em>uddi:www.mycompany.com:mybusiness</em></span>.</p>
+<div class="figure"><a id="figure-GettingStarted-CreateBusiness"/><p class="title"><strong>Figure 2.9. Create Business</strong></p><div class="figure-contents">
+
+  <div class="mediaobject"><img src="./images/GettingStarted-create_business.png" alt="Create Business"/></div>
+</div></div><br class="figure-break"/>
+
+<p>See the Client and GUI Guide <a class="xref" href="bi01.html#stam-oree">[stam-oree]</a> for more details on how to use the GUI.</p>
+</div>
+<div class="section" title="2.7. Running the demos in the disto"><div class="titlepage"><div><div><h2 class="title"><a id="_running_the_demos_in_the_disto"/>2.7. Running the demos in the disto</h2></div></div></div>
+
+<p>The jUDDI distribution ships with a lot of demos to get yourself more familiarized with the features of jUDDI. You are encouraged to go over the demos and follow the instructions in the README files. To ensure the demos work they use the root publisher. In practice you should not be using the root publisher for this, but rather your own publisher you created above. To reference your own publisher simply update the uddi.xml file in each demo. For more details on running the demos see the Client and GUI Guide <a class="xref" href="bi01.html#stam-oree">[stam-oree]</a>.</p>
+</div>
+<div class="section" title="2.8. Examples on the jUDDI blog"><div class="titlepage"><div><div><h2 class="title"><a id="_examples_on_the_juddi_blog"/>2.8. Examples on the jUDDI blog</h2></div></div></div>
+
+<p>The jUDDI blog at <a class="ulink" href="http://apachejuddi.blogspot.com/">http://apachejuddi.blogspot.com/</a> has examples as well as screencasts. This can be a useful resource to learn about some new feature or to simply get started.</p>
+</div>
+<div class="section" title="2.9. What is new in jUDDI 3.2?"><div class="titlepage"><div><div><h2 class="title"><a id="_what_is_new_in_juddi_3_2"/>2.9. What is new in jUDDI 3.2?</h2></div></div></div>
+
+<p>Here’s the change log for version 3.2</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+A new end user interface based on Twitter’s Bootstrap
+</li><li class="listitem">
+A new administrative user interface based on Twitter’s Bootstrap with in browser monitoring
+</li><li class="listitem">
+A client side subscription callback API
+</li><li class="listitem">
+Client distribution package
+</li><li class="listitem">
+Many more examples
+</li><li class="listitem">
+WADL to UDDI mappings
+</li><li class="listitem">
+All credentials are now encryptable with command line tools
+</li><li class="listitem">
+Removal of the porlet services
+</li><li class="listitem">
+Deployment templates for Jboss EAP 6+
+</li><li class="listitem">
+Client side digital signature support
+</li><li class="listitem">
+REST style interface for Inquiry API
+</li><li class="listitem">
+Added many more tModels to the base install
+</li><li class="listitem">
+More documentation
+</li></ul></div>
+
+</div>
+</div><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch01.html"><strong>Prev</strong>Chapter 1. Universal Description, Discovery and I...</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ch03.html"><strong>Next</strong>Chapter 3. jUDDI Architecture</a></li></ul></body></html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+    
+<script>
+    
+    myColor = ["Red", "Green", "White", "Black"];
+    
+    var text = '';
+
+    //Method 1, using a For loop
+    
+    for(i=0; i<myColor.length; i++){
+        
+        text += myColor[i] + ", "
+        
+    }
+    
+    text += "<br><br>"
+    
+    //Method 2, use the JavaScript toString method
+    text += myColor.toString() + "<br><br>";
+    
+    //Method 3, use the JavaScript join method
+    text += myColor.join() + "<br><br>";
+
+    //Even better, use the JavaScript join method, but add a comma between elements.
+    text += myColor.join(', ') + "<br><br>";   
+    
+    document.getElementById('demo').innerHTML = text;
+       
+</script>
+
+</body>
+</html>

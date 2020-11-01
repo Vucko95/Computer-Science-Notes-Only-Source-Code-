@@ -1,0 +1,113 @@
+  <!-- The code below shows one way in which you can examine/read data from a JSON object with unknown properties using loops and recursion. -->
+
+<!DOCTYPE html>
+<html> 
+    
+<body>
+
+<div id="id01">bob and mary</div>
+    
+<script>
+
+var xmlhttp = new XMLHttpRequest();
+var url = "customerData.json";
+
+xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        
+        //Parse the JSON data to a JavaScript variable. 
+        var myArr = JSON.parse(xmlhttp.responseText);    
+        // This function is defined below and deals with the JSON data read from the file. 
+        myFunction(myArr); 
+    }
+};
+
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
+    
+function myFunction(obj){
+    var objectString = objRead(obj);
+    
+    document.getElementById("id01").innerHTML = "<h2>Automatic inspection results:</h2>" + objectString;
+}
+    
+    
+function objRead(obj) {
+    
+    var autoOutput = "";
+    var keys = [];
+    
+    // First create an array with the name if each property in the object. 
+    keys = objectPropertiesToArray(obj);
+        
+    // Then iterate through the array and used the property names to write the property values.
+    for (var i=0; i <keys.length; i++) 
+    {    
+        var propertyName = keys[i].toString();
+        var propertyValue = obj[propertyName];
+        
+        var type = typeof propertyValue; 
+        
+        if(type != "object")
+        {
+            autoOutput += propertyName + ": " + propertyValue + "<br>";
+        }
+        else if (Array.isArray(propertyValue))
+        {
+            autoOutput += "<br><h2>" + propertyName + "</h2>" + readArray(propertyValue);
+        }  
+        else 
+        {
+            autoOutput += "<br><h2>" + propertyName + "</h2>" + objRead(propertyValue);    
+        }
+    }
+    
+    return autoOutput;
+    
+    //document.getElementById("id01").innerHTML = "<h2>Automatic inspection results:</h2>" + //autoOutput;
+    
+}
+    
+function readArray(arr){
+    
+    var returnString = "";
+    
+    for (var i=0; i < arr.length; i++){
+        
+        var type = typeof arr[i];
+        
+        //returnString += type;
+        
+        if(type != "object")
+        {
+            returnString += arr[i]+ "<br>";
+        }
+        else if ( Array.isArray(arr[i]) )
+        {
+            returnString += "<br>" + readArray(arr[i]);
+        }  
+        else 
+        {
+            returnString += "<br>" + objRead(arr[i]);
+        }
+    }
+    
+    return returnString;
+}
+    
+function objectPropertiesToArray(obj){
+    // First create an array with the name if each property in the object. 
+    var propertiesArray = [];
+    for (var item in obj) {      
+        if (obj.hasOwnProperty(item)){ 
+            propertiesArray.push(item);
+        }
+    }
+    return propertiesArray;
+}
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1073 @@
+4402	A Nightmare on Elm Street	Horror, Mystery	Wes Craven	Heather Langenkamp, Johnny Depp, Robert Englund, John Saxon
+8803	Barton Fink	Drama, Mystery, Thriller	Joel Coen	John Turturro, John Goodman, Judy Davis, Michael Lerner
+8806	The Good, the Bad and the Ugly	Adventure, Western	Sergio Leone	Clint Eastwood, Eli Wallach, Lee Van Cleef, Aldo Giuffrè
+8809	Star Trek: Nemesis	Action, Sci-Fi, Thriller	Stuart Baird	Patrick Stewart, Jonathan Frakes, Brent Spiner, LeVar Burton
+4384	Dawn of the Dead	Action, Drama, Horror, Thriller	Zack Snyder	Sarah Polley, Ving Rhames, Mekhi Phifer, Jake Weber
+2186	Bad Boys	Action, Comedy, Crime, Drama, Thriller	Michael Bay	Will Smith, Martin Lawrence, Lisa Boyle, Michael Taliferro
+17621	Tomorrow Never Dies	Action, Adventure, Thriller	Roger Spottiswoode	Pierce Brosnan, Jonathan Pryce, Michelle Yeoh, Teri Hatcher
+17622	Vanilla Sky	Mystery, Romance, Sci-Fi, Thriller	Cameron Crowe	Tom Cruise, Penélope Cruz, Cameron Diaz, Kurt Russell
+4393	The Mask	Action, Comedy, Crime, Fantasy, Romance	Chuck Russell	Jim Carrey, Cameron Diaz, Peter Riegert, Peter Greene
+17624	Free Willy 2: The Adventure Home	Family, Adventure, Drama	Dwight H. Little	Jason James Richter, Michael Madsen, Francis Capra, Mary Kate Schellhardt
+4392	Army of Darkness	Comedy, Fantasy, Horror	Sam Raimi	Bruce Campbell, Embeth Davidtz, Marcus Gilbert, Ian Abercrombie
+2178	Lock, Stock and Two Smoking Barrels	Crime, Thriller	Guy Ritchie	Jason Flemyng, Dexter Fletcher, Nick Moran, Jason Statham
+28	Lilo & Stitch	Animation, Adventure, Family, Sci-Fi	Dean DeBlois, Chris Sanders	Daveigh Chase, Chris Sanders, Tia Carrere, David Ogden Stiers
+30	Something's Gotta Give	Comedy, Romance	Nancy Meyers	Jack Nicholson, Diane Keaton, Keanu Reeves, Amanda Peet
+15339	Three Kings	Action, Adventure, Comedy, Drama, War	David O. Russell	George Clooney, Mark Wahlberg, Ice Cube, Spike Jonze
+8771	The Lion King 1Â½	Animation, Comedy, Family, Adventure	Bradley Raymond	Nathan Lane, Ernie Sabella, Julie Kavner, Jerry Stiller
+15342	What About Bob?	Comedy	Frank Oz	Bill Murray, Richard Dreyfuss, Julie Hagerty, Charlie Korsmo
+6531	Punch-Drunk Love	Comedy, Drama, Romance	Paul Thomas Anderson	Adam Sandler, Emily Watson, Philip Seymour Hoffman, Jason Andrews
+46	Rudolph, the Red-Nosed Reindeer	Animation, Adventure, Family, Fantasy, Musical	Kizo Nagashima, Larry Roemer	Billie Mae Richards, Burl Ives, Paul Soles, Larry D. Mann
+4355	Coffee and Cigarettes	Comedy, Music, Drama	Jim Jarmusch	Bill Murray, Tom Waits, Roberto Benigni, RZA
+6555	Insomnia	Crime, Drama, Mystery, Thriller	Christopher Nolan	Al Pacino, Robin Williams, Hilary Swank, Oliver 'Ole' Zemen
+6552	Charlie's Angels	Action, Adventure, Comedy, Crime, Thriller	McG	Cameron Diaz, Drew Barrymore, Lucy Liu, Bill Murray
+4356	Road to Perdition	Adventure, Crime, Drama, Thriller	Sam Mendes	Tom Hanks, Tyler Hoechlin, Rob Maxey, Paul Newman
+6556	Romeo  Juliet	Crime, Drama, Romance	Baz Luhrmann	Leonardo DiCaprio, Claire Danes, John Leguizamo, Harold Perrineau
+58	DragonHeart	Action, Adventure, Drama, Fantasy	Rob Cohen	Dennis Quaid, Sean Connery, Dina Meyer, Pete Postlethwaite
+6545	Infernal Affairs	Crime, Mystery, Thriller	Wai-keung Lau, Alan Mak	Andy Lau, Tony Leung Chiu Wai, Anthony Wong Chau-Sang, Eric Tsang
+2212	The Secret Garden	Drama, Family, Fantasy	Agnieszka Holland	Kate Maberly, Maggie Smith, Heydon Prowse, Andrew Knott
+17541	First Daughter	Comedy, Drama, Romance	Forest Whitaker	Katie Holmes, Marc Blucas, Michael Keaton, Amerie
+8743	Ice Age	Animation, Adventure, Comedy, Family	Chris Wedge, Carlos Saldanha	Denis Leary, John Leguizamo, Ray Romano, Goran Visnjic
+13073	It's a Wonderful Life	Drama, Family, Fantasy	Frank Capra	James Stewart, Donna Reed, Lionel Barrymore, Thomas Mitchell
+13074	The Transporter	Action, Crime, Thriller	Louis Leterrier, Corey Yuen	Jason Statham, Qi Shu, Matt Schulze, François Berléand
+77	Congo	Action, Adventure, Mystery, Sci-Fi	Frank Marshall	Laura Linney, Tim Curry, Dylan Walsh, Ernie Hudson
+78	Jingle All the Way	Action, Family, Adventure, Comedy	Brian Levant	Arnold Schwarzenegger, Sinbad, Phil Hartman, Rita Wilson
+4472	Love Actually	Comedy, Drama, Romance	Richard Curtis	Hugh Grant, Martine McCutcheon, Liam Neeson, Laura Linney
+10928	Ace Ventura: Pet Detective	Comedy	Tom Shadyac	Jim Carrey, Courteney Cox, Sean Young, Tone Loc
+15233	Zoolander	Comedy	Ben Stiller	Ben Stiller, Owen Wilson, Christine Taylor, Will Ferrell
+2252	Dracula	Horror, Romance	Francis Ford Coppola	Gary Oldman, Winona Ryder, Anthony Hopkins, Keanu Reeves
+10921	Just Married	Comedy, Romance	Shawn Levy	Ashton Kutcher, Brittany Murphy, Christian Kane, David Moscow
+13056	Bicentennial Man	Drama, Family, Fantasy, Romance, Sci-Fi	Chris Columbus	Robin Williams, Embeth Davidtz, Sam Neill, Oliver Platt
+6648	Ichi the Killer	Comedy, Crime, Drama, Horror, Thriller	Takashi Miike	Tadanobu Asano, Nao Ohmori, Shinya Tsukamoto, Paulyn Sun
+8752	Muppet Treasure Island	Adventure, Comedy, Family, Music, Musical	Brian Henson	Tim Curry, Kevin Bishop, Billy Connolly, Jennifer Saunders
+17565	Coneheads	Comedy, Sci-Fi	Steve Barron	Dan Aykroyd, Jane Curtin, Robert Knott, Jonathan Penner
+8764	Happy Gilmore	Comedy, Romance, Sport	Dennis Dugan	Adam Sandler, Christopher McDonald, Julie Bowen, Frances Bay
+17560	Ghostbusters	Adventure, Fantasy, Mystery	Ivan Reitman	Bill Murray, Dan Aykroyd, Sigourney Weaver, Harold Ramis
+4432	The Italian Job	Action, Crime, Thriller	F. Gary Gray	Donald Sutherland, Mark Wahlberg, Edward Norton, Charlize Theron
+111	Duplex	Comedy	Danny DeVito	Ben Stiller, Drew Barrymore, Eileen Essell, Harvey Fierstein
+8717	From Russia with Love	Action, Adventure, Romance, Thriller	Terence Young	Sean Connery, Robert Shaw, Lotte Lenya, Daniela Bianchi
+13115	Raise Your Voice	Family, Music, Romance	Sean McNamara	Hilary Duff, John Corbett, Rebecca De Mornay, Oliver James
+10899	The Wedding Date	Comedy, Romance	Clare Kilner	Dermot Mulroney, Debra Messing, Jack Davenport, Amy Adams
+6615	Legends of the Fall	Drama, Romance, War, Western	Edward Zwick	Brad Pitt, Anthony Hopkins, Aidan Quinn, Julia Ormond
+13102	Coyote Ugly	Comedy, Drama, Romance, Music	David McNally	Piper Perabo, Adam Garcia, John Goodman, Maria Bello
+10886	Waterworld	Action, Adventure, Sci-Fi, Thriller	Kevin Reynolds	Kevin Costner, Jeanne Tripplehorn, Dennis Hopper, Tina Majorino
+2276	Spice World	Comedy, Family, Music	Bob Spiers	Melanie Brown, Emma Bunton, Melanie Chisholm, Geri Halliwell
+13098	The Animal	Comedy	Luke Greenfield	Rob Schneider, Colleen Haskell, John C. McGinley, Edward Asner
+13273	House of Flying Daggers	Action, Adventure, Drama, Fantasy, Romance	Yimou Zhang	Ziyi Zhang, Takeshi Kaneshiro, Andy Lau, Dandan Song
+17482	Clueless	Comedy, Romance	Amy Heckerling	Alicia Silverstone, Stacey Dash, Brittany Murphy, Paul Rudd
+6434	The Crow	Action, Crime, Fantasy, Thriller	Alex Proyas	Brandon Lee, Michael Wincott, Rochelle Davis, Ernie Hudson
+6437	Boogeyman	Drama, Horror, Mystery, Thriller	Stephen Kay	Barry Watson, Emily Deschanel, Lucy Lawless, Skye McCole Bartusiak
+143	The Game	Drama, Mystery, Thriller	David Fincher	Michael Douglas, Deborah Kara Unger, Sean Penn, James Rebhorn
+15177	A Nightmare on Elm Street 4: The Dream Master	Fantasy, Horror, Thriller	Renny Harlin	Robert Englund, Rodney Eastman, Lisa Wilcox, Andras Jones
+8928	Snow Dogs	Adventure, Comedy, Family, Sport	Brian Levant	Cuba Gooding Jr., James Coburn, Sisqó, Nichelle Nichols
+6445	Lawrence of Arabia	Adventure, Biography, Drama, History, War	David Lean	Peter O'Toole, Alec Guinness, Anthony Quinn, Jack Hawkins
+4535	Blank Check	Comedy, Family	Rupert Wainwright	Brian Bonsall, Karen Duffy, James Rebhorn, Jayne Atkinson
+17479	The Ring	Horror, Mystery, Thriller	Gore Verbinski	Naomi Watts, Martin Henderson, Brian Cox, David Dorfman
+152	A Little Princess	Drama, Family, Fantasy	Alfonso Cuarón	Liesel Matthews, Eleanor Bron, Liam Cunningham, Rusty Schwimmer
+17499	Mulan	Animation, Adventure, Drama, Family	Tony Bancroft, Barry Cook	Ming-Na, Eddie Murphy, B.D. Wong, Miguel Ferrer
+6450	City of God	Crime, Drama	Fernando Meirelles, Kátia Lund	Alexandre Rodrigues, Matheus Nachtergaele, Leandro Firmino, Phellipe Haagensen
+13248	Last Action Hero	Action, Adventure, Comedy, Fantasy	John McTiernan	Arnold Schwarzenegger, F. Murray Abraham, Austin O'Brien, Art Carney
+13251	The AristoCats	Animation, Adventure, Comedy, Family, Music	Wolfgang Reitherman	Phil Harris, Eva Gabor, Sterling Holloway, Scatman Crothers
+148	Sweet November	Drama, Romance	Pat O'Connor	Keanu Reeves, Charlize Theron, Jason Isaacs, Greg Germann
+13255	Crash	Drama	Paul Haggis	Don Cheadle, Sandra Bullock, Thandie Newton, Karina Arroyave
+171	Funny Face	Romance, Comedy, Musical	Stanley Donen	Audrey Hepburn, Fred Astaire, Kay Thompson, Michel Auclair
+10835	Stigmata	Horror, Mystery	Rupert Wainwright	Patricia Arquette, Gabriel Byrne, Jonathan Pryce, Nia Long
+4506	Breakfast at Tiffany's	Comedy, Drama, Romance	Blake Edwards	Audrey Hepburn, George Peppard, Patricia Neal, Buddy Ebsen
+15200	The Quick and the Dead	Action, Adventure, Western	Sam Raimi	Sharon Stone, Gene Hackman, Russell Crowe, Leonardo DiCaprio
+6400	Catch Me If You Can	Biography, Crime, Drama	Steven Spielberg	Leonardo DiCaprio, Tom Hanks, Christopher Walken, Martin Sheen
+8904	Good Will Hunting	Drama	Gus Van Sant	Robin Williams, Matt Damon, Ben Affleck, Stellan Skarsgård
+10832	Psycho	Horror, Mystery, Thriller	Alfred Hitchcock	Anthony Perkins, Janet Leigh, Vera Miles, John Gavin
+175	Reservoir Dogs	Crime, Mystery, Thriller	Quentin Tarantino	Harvey Keitel, Tim Roth, Michael Madsen, Chris Penn
+15205	The Day After Tomorrow	Sci-Fi, Thriller	Roland Emmerich	Dennis Quaid, Jake Gyllenhaal, Emmy Rossum, Dash Mihok
+17506	Little Black Book	Comedy, Romance, Drama	Nick Hurran	Brittany Murphy, Ron Livingston, Holly Hunter, Kathy Bates
+15209	Dazed and Confused	Comedy, Drama, Romance	Richard Linklater	Jason London, Wiley Wiggins, Matthew McConaughey, Rory Cochrane
+6408	Good Morning, Vietnam	Comedy, Drama, War	Barry Levinson	Robin Williams, Forest Whitaker, Tung Thanh Tran, Chintara Sukapatana
+13302	Blazing Saddles	Comedy, Western	Mel Brooks	Cleavon Little, Gene Wilder, Slim Pickens, Harvey Korman
+2109	Grease 2	Comedy, Drama, Musical, Romance	Patricia Birch	Michelle Pfeiffer, Maxwell Caulfield, Lorna Luft, Maureen Teefy
+17508	Requiem for a Dream	Drama	Darren Aronofsky	Ellen Burstyn, Jared Leto, Jennifer Connelly, Marlon Wayans
+4490	Ned Kelly	Action, Adventure, Biography, Crime, History, Western	Gregor Jordan	Heath Ledger, Orlando Bloom, Geoffrey Rush, Naomi Watts
+10818	Mystic River	Crime, Drama, Mystery, Thriller	Clint Eastwood	Sean Penn, Tim Robbins, Kevin Bacon, Emmy Rossum
+2080	Holiday in the Sun	Comedy, Family, Romance	Steve Purcell	Mary-Kate Olsen, Ashley Olsen, Austin Nichols, Ben Easter
+10820	Back to the Future	Adventure, Family, Sci-Fi	Robert Zemeckis	Michael J. Fox, Christopher Lloyd, Lea Thompson, Crispin Glover
+2095	Liar Liar	Comedy, Fantasy	Tom Shadyac	Jim Carrey, Maura Tierney, Justin Cooper, Cary Elwes
+17526	Some Like It Hot	Comedy	Billy Wilder	Marilyn Monroe, Tony Curtis, Jack Lemmon, George Raft
+6428	To Kill a Mockingbird	Crime, Drama, Mystery	Robert Mulligan	Gregory Peck, John Megna, Frank Overton, Rosemary Murphy
+10828	The Nightmare Before Christmas	Animation, Family, Fantasy, Musical	Henry Selick	Danny Elfman, Chris Sarandon, Catherine O'Hara, William Hickey
+205	Troy	Action, Romance	Wolfgang Petersen	Brad Pitt, Eric Bana, Orlando Bloom, Julian Glover
+15110	Resident Evil: Apocalypse	Action, Horror, Sci-Fi, Thriller	Alexander Witt	Milla Jovovich, Sienna Guillory, Eric Mabius, Oded Fehr
+15105	My Girl	Drama, Family, Romance	Howard Zieff	Anna Chlumsky, Macaulay Culkin, Dan Aykroyd, Jamie Lee Curtis
+6497	Murder by Numbers	Crime, Drama, Thriller	Barbet Schroeder	Sandra Bullock, Ben Chaplin, Ryan Gosling, Michael Pitt
+2128	Rudy	Biography, Drama, Sport	David Anspaugh	Sean Astin, Jon Favreau, Ned Beatty, Greta Lind
+15107	Ocean's Eleven	Action, Crime	Steven Soderbergh	George Clooney, Brad Pitt, Julia Roberts, Matt Damon
+197	Taking Lives	Mystery, Thriller	D.J. Caruso	Angelina Jolie, Ethan Hawke, Kiefer Sutherland, Gena Rowlands
+199	The Deer Hunter	Drama, War	Michael Cimino	Robert De Niro, Christopher Walken, John Cazale, John Savage
+6510	A Bug's Life	Animation, Adventure, Comedy, Family	John Lasseter, Andrew Stanton	Kevin Spacey, Dave Foley, Julia Louis-Dreyfus, Hayden Panettiere
+2136	Not Another Teen Movie	Comedy	Joel Gallen	Chyler Leigh, Jaime Pressly, Chris Evans, Eric Christian Olsen
+4590	The Forgotten	Drama, Mystery, Sci-Fi, Thriller	Joseph Ruben	Julianne Moore, Dominic West, Christopher Kovaleski, Matthew Pleszewicz
+2112	Identity	Drama, Mystery, Thriller	James Mangold	John Cusack, Ray Liotta, Amanda Peet, John Hawkes
+13195	Austin Powers: International Man of Mystery	Action, Adventure, Comedy, Crime	Jay Roach	Mike Myers, Elizabeth Hurley, Michael York, Mimi Rogers
+4587	Baby Geniuses	Comedy, Crime, Family, Sci-Fi	Bob Clark	Kathleen Turner, Christopher Lloyd, Kim Cattrall, Peter MacNicol
+17431	Run Lola Run	Crime, Thriller	Tom Tykwer	Franka Potente, Moritz Bleibtreu, Herbert Knaup, Nina Petri
+4577	Steel Magnolias	Drama, Romance	Herbert Ross	Shirley MacLaine, Olympia Dukakis, Sally Field, Julia Roberts
+8881	RoboCop	Action, Crime, Drama, Sci-Fi, Thriller	Paul Verhoeven	Peter Weller, Nancy Allen, Dan O'Herlihy, Ronny Cox
+2122	Being John Malkovich	Comedy, Drama, Fantasy, Romance	Spike Jonze	John Cusack, Cameron Diaz, Catherine Keener, John Malkovich
+17426	Peter Pan	Animation, Adventure, Family, Fantasy, Music	Clyde Geronimi, Wilfred Jackson	Bobby Driscoll, Kathryn Beaumont, Hans Conried, Bill Thompson
+2167	Fly Away Home	Adventure, Drama, Family	Carroll Ballard	Jeff Daniels, Anna Paquin, Dana Delany, Terry Kinney
+10774	Taxi Driver	Drama, Thriller	Martin Scorsese	Robert De Niro, Jodie Foster, Cybill Shepherd, Albert Brooks
+10773	The SpongeBob Squarepants Movie	Animation	Shiraz Akmal	Bill Fagerbakke, Tom Kenny, Scarlett Johansson, Mr. Lawrence
+2163	Mystery Men	Action, Comedy, Fantasy	Kinka Usher	Ben Stiller, Janeane Garofalo, William H. Macy, Hank Azaria
+8840	A Time to Kill	Crime, Drama, Thriller	Joel Schumacher	Matthew McConaughey, Sandra Bullock, Samuel L. Jackson, Kevin Spacey
+15151	Walking Tall	Action, Biography, Comedy, Crime, Drama, Thriller	Kevin Bray	Dwayne Johnson, Ashley Scott, Johnny Knoxville, Michael Bowen
+2174	The Ghost and the Darkness	Adventure, Drama, Horror, Thriller	Stephen Hopkins	Michael Douglas, Val Kilmer, Tom Wilkinson, John Kani
+2173	BASEketball	Comedy, Sport	David Zucker	Trey Parker, Matt Stone, Dian Bachar, Yasmine Bleeth
+8837	Cube	Horror, Mystery, Sci-Fi, Thriller	Vincenzo Natali	Nicole de Boer, Maurice Dean Wint, David Hewlett, Andrew Miller
+2171	Brother Bear	Animation, Adventure, Family, Fantasy	Aaron Blaise, Robert Walker	Joaquin Phoenix, Jeremy Suarez, Rick Moranis, Jason Raize
+6475	Spanglish	Comedy, Drama, Romance	James L. Brooks	Adam Sandler, Téa Leoni, Paz Vega, Cloris Leachman
+17441	Tootsie	Comedy, Drama, Romance	Sydney Pollack	Dustin Hoffman, Jessica Lange, Teri Garr, Dabney Coleman
+8832	Citizen Kane	Drama, Mystery	Orson Welles	Orson Welles, Joseph Cotten, Dorothy Comingore, Agnes Moorehead
+252	Stuart Little 2	Comedy, Family, Fantasy, Adventure	Rob Minkoff	Michael J. Fox, Geena Davis, Hugh Laurie, Jonathan Lipnicki
+6482	Gremlins	Comedy, Fantasy, Horror	Joe Dante	Zach Galligan, Phoebe Cates, Hoyt Axton, John Louie
+4551	Snatch.	Crime, Thriller	Guy Ritchie	Jason Statham, Brad Pitt, Benicio Del Toro, Dennis Farina
+15163	The Prince of Egypt	Animation, Adventure, Drama, Family, Musical	Brenda Chapman, Steve Hickner	Val Kilmer, Ralph Fiennes, Michelle Pfeiffer, Sandra Bullock
+8851	Rounders	Crime, Drama	John Dahl	Matt Damon, Edward Norton, Paul Cicero, John Turturro
+2152	What Women Want	Comedy, Fantasy, Romance	Nancy Meyers	Mel Gibson, Helen Hunt, Marisa Tomei, Alan Alda
+4545	Dances with Wolves	Adventure, Drama, Western	Kevin Costner	Kevin Costner, Mary McDonnell, Graham Greene, Rodney A. Grant
+2153	Free Willy	Family, Adventure, Drama	Simon Wincer	Jason James Richter, Lori Petty, Michael Madsen, Keiko
+11242	Brazil	Drama, Fantasy, Sci-Fi	Terry Gilliam	Jonathan Pryce, Kim Greist, Robert De Niro, Katherine Helmond
+273	Taxi	Action, Comedy, Crime, Thriller	Tim Story	Queen Latifah, Jimmy Fallon, Gisele Bündchen, Henry Simmons
+6329	Edward Scissorhands	Drama, Fantasy, Romance	Tim Burton	Johnny Depp, Winona Ryder, Dianne Wiest, Anthony Michael Hall
+12870	Schindler's List	Biography, Drama, History, War	Steven Spielberg	Liam Neeson, Ralph Fiennes, Ben Kingsley, Caroline Goodall
+15058	Notting Hill	Comedy, Romance	Roger Michell	Hugh Grant, Julia Roberts, Richard McCabe, Rhys Ifans
+11234	Simon Birch	Comedy, Drama	Mark Steven Johnson	Ian Michael Smith, Joseph Mazzello, Ashley Judd, Oliver Platt
+4136	Teenage Mutant Ninja Turtles III	Action, Adventure, Comedy, Family, Fantasy, Sci-Fi	Stuart Gillard	Elias Koteas, Paige Turco, Mark Caso, Matt Hill
+15063	White Chicks	Crime, Comedy	Keenen Ivory Wayans	Marlon Wayans, Shawn Wayans, Busy Philipps, Maitland Ward
+15062	Grease	Musical, Romance	Randal Kleiser	John Travolta, Olivia Newton-John, Stockard Channing, Jeff Conaway
+4141	Shanghai Noon	Action, Adventure, Comedy, Western	Tom Dey	Jackie Chan, Owen Wilson, Lucy Liu, Brandon Merrill
+12881	Moulin Rouge!	Drama, Musical, Romance	Baz Luhrmann	Nicole Kidman, Ewan McGregor, John Leguizamo, Jim Broadbent
+2457	A Cinderella Story	Comedy, Family, Romance	Mark Rosman	Hilary Duff, Chad Michael Murray, Jennifer Coolidge, Dan Byrd
+2463	The Incredibles	Animation, Action, Adventure, Family, Fantasy	Brad Bird	Craig T. Nelson, Samuel L. Jackson, Holly Hunter, Jason Lee
+4149	Scooby Doo 2: Monsters Unleashed	Action, Adventure, Comedy, Family, Fantasy, Mystery	Raja Gosnell	Freddie Prinze Jr., Sarah Michelle Gellar, Matthew Lillard, Linda Cardellini
+12890	Carrie	Drama, Horror	Brian De Palma	Sissy Spacek, Piper Laurie, Amy Irving, John Travolta
+11254	Inspector Gadget	Family, Action, Adventure, Comedy	David Kellogg	Matthew Broderick, Rupert Everett, Joely Fisher, Michelle Trachtenberg
+2452	The Lord of the Rings: The Fellowship of the Ring	Action, Adventure, Fantasy	Peter Jackson	Elijah Wood, Ian McKellen, Orlando Bloom, Sean Bean
+305	Jack	Comedy, Drama, Fantasy	Francis Ford Coppola	Robin Williams, Diane Lane, Brian Kerwin, Jennifer Lopez
+15099	Kangaroo Jack	Adventure, Comedy, Crime	David McNally	Anthony Anderson, Jerry O'Connell, Estella Warren, Christopher Walken
+4100	Dinosaur	Animation, Adventure, Family, Thriller	Eric Leighton, Ralph Zondag	D.B. Sweeney, Julianna Margulies, Samuel E. Wright, Alfre Woodard
+311	Ed Wood	Biography, Comedy, Drama	Tim Burton	Johnny Depp, Martin Landau, Sarah Jessica Parker, Patricia Arquette
+2465	This Is Spinal Tap	Comedy, Music	Rob Reiner	Rob Reiner, Michael McKean, Christopher Guest, Kimberly Stringer
+313	Pay It Forward	Drama, Romance	Mimi Leder	Kevin Spacey, Haley Joel Osment, Helen Hunt, Jay Mohr
+9049	Boogie Nights	Drama	Paul Thomas Anderson	Mark Wahlberg, Julianne Moore, Burt Reynolds, Luis Guzmán
+12904	You Only Live Twice	Action, Adventure, Sci-Fi, Thriller	Lewis Gilbert	Sean Connery, Akiko Wakabayashi, Mie Hama, Tetsurô Tanba
+312	High Fidelity	Comedy, Drama, Music, Romance	Stephen Frears	John Cusack, Iben Hjejle, Todd Louiso, Jack Black
+9051	Caddyshack	Comedy, Sport	Harold Ramis	Chevy Chase, Rodney Dangerfield, Bill Murray, Ted Knight
+4109	American Psycho	Drama, Thriller	Mary Harron	Christian Bale, Justin Theroux, Josh Lucas, Bill Sage
+12911	Double Jeopardy	Crime, Drama, Mystery, Thriller	Bruce Beresford	Ashley Judd, Tommy Lee Jones, Bruce Greenwood, Benjamin Weir
+2470	Wayne's World	Comedy, Music	Penelope Spheeris	Mike Myers, Dana Carvey, Rob Lowe, Tia Carrere
+290	Harold & Kumar Go to White Castle	Adventure, Comedy	Danny Leiner	John Cho, Kal Penn, Ethan Embry, Robert Tinkler
+295	Ace Ventura: When Nature Calls	Action, Adventure, Comedy, Mystery	Steve Oedekerk	Jim Carrey, Ian McNeice, Simon Callow, Maynard Eziashi
+6287	Pretty Woman	Comedy, Romance	Garry Marshall	Richard Gere, Julia Roberts, Jason Alexander, Laura San Giacomo
+6274	The Hunt for Red October	Action, Adventure, Thriller	John McTiernan	Sean Connery, Alec Baldwin, Scott Glenn, Sam Neill
+11218	Now and Then	Comedy, Drama, Romance	Lesli Linka Glatter	Christina Ricci, Demi Moore, Rosie O'Donnell, Thora Birch
+4123	Patch Adams	Biography, Comedy, Drama	Tom Shadyac	Robin Williams, Daniel London, Monica Potter, Philip Seymour Hoffman
+299	Bridget Jones's Diary	Comedy, Drama, Romance	Sharon Maguire	Renée Zellweger, Colin Firth, Hugh Grant, Gemma Jones
+15078	Jumanji	Adventure, Family, Fantasy, Thriller	Joe Johnston	Robin Williams, Kirsten Dunst, Bonnie Hunt, Jonathan Hyde
+4127	The Flintstones	Comedy, Crime, Family, Fantasy	Brian Levant	John Goodman, Rick Moranis, Rosie O'Donnell, Halle Berry
+6398	Beethoven	Comedy, Drama, Family	Brian Levant	Charles Grodin, Bonnie Hunt, Dean Jones, Oliver Platt
+11182	Master and Commander: The Far Side of the World	Action, Adventure, Drama, War	Peter Weir	Russell Crowe, Paul Bettany, Billy Boyd, James D'Arcy
+6394	Baby's Day Out	Adventure, Comedy, Crime, Drama, Family	Patrick Read Johnson	Lara Flynn Boyle, Joe Mantegna, Joe Pantoliano, Brian Haley
+11176	Honey, I Shrunk the Kids	Adventure, Comedy, Family, Sci-Fi	Joe Johnston	Rick Moranis, Matt Frewer, Marcia Strassman, Kristine Sutherland
+14999	Monster	Biography, Crime, Drama	Patty Jenkins	Charlize Theron, Christina Ricci, Bruce Dern, Lee Tergesen
+11173	21 Grams	Crime, Drama, Thriller	Alejandro González Iñárritu	Sean Penn, Benicio Del Toro, Naomi Watts, Danny Huston
+11171	Jaws 2	Thriller	Jeannot Szwarc	Roy Scheider, Lorraine Gary, Murray Hamilton, Joseph Mascolo
+6386	Sister Act	Comedy, Crime, Music	Emile Ardolino	Whoopi Goldberg, Maggie Smith, Kathy Najimy, Wendy Makkena
+11199	The 'burbs	Comedy, Horror, Thriller	Joe Dante	Tom Hanks, Bruce Dern, Carrie Fisher, Corey Feldman
+2523	Matilda	Comedy, Family, Fantasy	Danny DeVito	Danny DeVito, Rhea Perlman, Mara Wilson, Embeth Davidtz
+8993	Family Guy Presents Stewie Griffin: The Untold Story	Animation, Adventure, Comedy	Pete Michels, Peter Shin	Seth MacFarlane, Alex Borstein, Seth Green, Mila Kunis
+334	The Pacifier	Action, Comedy, Drama, Family, Thriller	Adam Shankman	Vin Diesel, Brittany Snow, Max Thieriot, Brad Garrett
+331	Chasing Amy	Comedy, Drama, Romance	Kevin Smith	Ben Affleck, Joey Lauren Adams, Ethan Suplee, Scott Mosier
+4216	Jurassic Park III	Action, Adventure, Sci-Fi, Thriller	Joe Johnston	Sam Neill, William H. Macy, Téa Leoni, Alessandro Nivola
+329	Dogma	Adventure, Comedy, Fantasy	Kevin Smith	Ben Affleck, Matt Damon, Linda Fiorentino, Bud Cort
+6365	Kingdom of Heaven	Action, Adventure, History	Ridley Scott	Orlando Bloom, Eva Green, Liam Neeson, Martin Hancock
+8981	Nutty Professor II: The Klumps	Comedy, Sci-Fi	Peter Segal	Eddie Murphy, Janet Jackson, Larry Miller, John Ales
+11149	Maid in Manhattan	Comedy, Drama, Romance	Wayne Wang	Jennifer Lopez, Ralph Fiennes, Natasha Richardson, Stanley Tucci
+12838	The Boondock Saints	Action, Crime, Drama, Thriller	Troy Duffy	Willem Dafoe, Sean Patrick Flanery, Norman Reedus, David Della Rocco
+6366	Saved!	Comedy, Drama	Brian Dannelly	Jena Malone, Mandy Moore, Macaulay Culkin, Patrick Fugit
+8976	Harvey	Comedy, Drama, Fantasy	Henry Koster	James Stewart, Josephine Hull, Peggy Dow, Charles Drake
+15034	Heartbreakers	Comedy, Crime, Romance	David Mirkin	Sigourney Weaver, Jennifer Love Hewitt, Gene Hackman, Ray Liotta
+8989	Save the Last Dance	Drama, Music, Romance	Thomas Carter	Julia Stiles, Sean Patrick Thomas, Kerry Washington, Fredro Starr
+2528	Arachnophobia	Comedy, Sci-Fi, Thriller, Horror	Frank Marshall	Jeff Daniels, Julian Sands, John Goodman, Harley Jane Kozak
+12843	Big Trouble in Little China	Action, Adventure, Comedy, Fantasy, Romance	John Carpenter	Kurt Russell, Kim Cattrall, Dennis Dun, James Hong
+4171	Mars Attacks!	Action, Comedy, Fantasy, Sci-Fi, Thriller	Tim Burton	Jack Nicholson, Pierce Brosnan, Sarah Jessica Parker, Annette Bening
+11139	Passenger 57	Action, Crime, Thriller	Kevin Hooks	Wesley Snipes, Bruce Payne, Tom Sizemore, Alex Datcher
+11165	2001: A Space Odyssey	Adventure, Mystery, Sci-Fi	Stanley Kubrick	Keir Dullea, Gary Lockwood, William Sylvester, Daniel Richter
+6350	Rush Hour	Action, Comedy, Thriller, Crime	Brett Ratner	Jackie Chan, Chris Tucker, Ken Leung, Tom Wilkinson
+2554	The Rocky Horror Picture Show	Comedy, Musical	Jim Sharman	Tim Curry, Susan Sarandon, Barry Bostwick, Richard O'Brien
+6347	Big Momma's House	Action, Comedy, Crime	Raja Gosnell	Martin Lawrence, Nia Long, Paul Giamatti, Jascha Washington
+11152	American History X	Crime, Drama	Tony Kaye	Edward Norton, Edward Furlong, Beverly D'Angelo, Avery Brooks
+361	The Phantom of the Opera	Musical, Romance, Thriller	Joel Schumacher	Gerard Butler, Emmy Rossum, Patrick Wilson, Miranda Richardson
+6337	Joe Dirt	Adventure, Comedy, Mystery, Romance	Dennie Gordon	David Spade, Brittany Daniel, Dennis Miller, Adam Beach
+13002	A Nightmare on Elm Street: The Dream Child	Fantasy, Horror, Thriller	Stephen Hopkins	Robert Englund, Lisa Wilcox, Kelly Jo Minter, Danny Hassel
+4266	The Passion of the Christ	Drama, History	Mel Gibson	James Caviezel, Monica Bellucci, Maia Morgenstern, Christo Jivkov
+14928	Dead Poets Society	Drama	Peter Weir	Robin Williams, Robert Sean Leonard, Ethan Hawke, Josh Charles
+11110	Down to Earth	Comedy, Romance, Fantasy	Chris Weitz, Paul Weitz	Chris Rock, Regina King, Chazz Palminteri, Eugene Levy
+6196	The Terminator	Action, Sci-Fi	James Cameron	Arnold Schwarzenegger, Linda Hamilton, Michael Biehn, Paul Winfield
+406	Hostage	Action, Crime, Drama, Mystery, Thriller	Florent Emilio Siri	Bruce Willis, Kevin Pollak, Serena Scott Thomas, Jimmy Bennett
+4262	Sleepy Hollow	Fantasy, Mystery, Thriller	Tim Burton	Johnny Depp, Christina Ricci, Miranda Richardson, Michael Gambon
+6206	My Big Fat Greek Wedding	Comedy, Romance	Joel Zwick	Nia Vardalos, John Corbett, Michael Constantine, Christina Eleusiniotis
+14940	Without a Paddle	Adventure, Comedy, Mystery	Steven Brill	Matthew Lillard, Seth Green, Dax Shepard, Matthew Price
+4260	Rat Race	Adventure, Comedy	Jerry Zucker	Breckin Meyer, Amy Smart, Whoopi Goldberg, Vince Vieluf
+12997	Seed of Chucky	Comedy, Horror, Thriller	Don Mancini	Jennifer Tilly, Brad Dourif, John Waters, Billy Boyd
+9205	Turner & Hooch	Comedy, Crime, Thriller	Roger Spottiswoode	Tom Hanks, Mare Winningham, Craig T. Nelson, Reginald VelJohnson
+11123	Thunderbirds	Action, Adventure, Comedy, Family, Sci-Fi	Jonathan Frakes	Bill Paxton, Anthony Edwards, Ben Kingsley, Brady Corbet
+385	The Santa Clause 2	Comedy, Family, Fantasy	Michael Lembeck	Tim Allen, Spencer Breslin, Elizabeth Mitchell, Eric Lloyd
+11134	Diary of a Mad Black Woman	Comedy, Drama, Romance	Darren Grant	Kimberly Elise, Steve Harris, Tyler Perry, Cicely Tyson
+11132	The Texas Chainsaw Massacre	Horror, Thriller	Marcus Nispel	Jessica Biel, Jonathan Tucker, Andrew Bryniarski, Erica Leerhsen
+14960	Â¡Three Amigos!	Adventure, Comedy, Western	John Landis	Steve Martin, Chevy Chase, Martin Short, Alfonso Arau
+11077	Meet the Fockers	Comedy, Romance	Jay Roach	Ben Stiller, Robert De Niro, Blythe Danner, Teri Polo
+2342	Super Size Me	Documentary, Comedy, Drama	Morgan Spurlock	Morgan Spurlock, Daryl Isaacs, Lisa Ganjhu, Stephen Siegel
+4227	The Full Monty	Comedy, Music	Peter Cattaneo	Robert Carlyle, Tom Wilkinson, Mark Addy, William Snape
+11084	An American Tail	Animation, Adventure, Comedy, Drama, Family, Musical, Romance	Don Bluth	Dom DeLuise, Christopher Plummer, Erica Yohn, Nehemiah Persoff
+13050	Two Weeks Notice	Comedy, Romance	Marc Lawrence	Sandra Bullock, Hugh Grant, Alicia Witt, Dana Ivey
+13052	What's Eating Gilbert Grape	Drama, Romance	Lasse Hallström	Johnny Depp, Leonardo DiCaprio, Juliette Lewis, Mary Steenburgen
+14953	Pretty in Pink	Comedy, Drama, Romance	Howard Deutch	Molly Ringwald, Jon Cryer, Harry Dean Stanton, Annie Potts
+2360	Singin' in the Rain	Comedy, Musical, Romance	Stanley Donen, Gene Kelly	Gene Kelly, Donald O'Connor, Debbie Reynolds, Jean Hagen
+17762	Gattaca	Drama, Romance, Sci-Fi, Thriller	Andrew Niccol	Ethan Hawke, Uma Thurman, Jude Law, Gore Vidal
+17764	Shakespeare in Love	Comedy, Drama, Romance	John Madden	Gwyneth Paltrow, Joseph Fiennes, Geoffrey Rush, Tom Wilkinson
+11047	Outbreak	Drama, Sci-Fi, Thriller	Wolfgang Petersen	Dustin Hoffman, Rene Russo, Morgan Freeman, Kevin Spacey
+12940	Event Horizon	Action, Horror, Mystery, Sci-Fi, Thriller	Paul W.S. Anderson	Laurence Fishburne, Sam Neill, Kathleen Quinlan, Joely Richardson
+2372	The Bourne Supremacy	Action, Mystery, Thriller	Paul Greengrass	Matt Damon, Franka Potente, Joan Allen, Brian Cox
+14869	Blade Runner	Drama, Sci-Fi, Thriller	Ridley Scott	Harrison Ford, Rutger Hauer, Sean Young, Edward James Olmos
+17692	Scooby-Doo	Adventure, Comedy, Family, Fantasy, Mystery	Raja Gosnell	Matthew Lillard, Freddie Prinze Jr., Sarah Michelle Gellar, Linda Cardellini
+4330	While You Were Sleeping	Comedy, Romance	Jon Turteltaub	Sandra Bullock, Bill Pullman, Peter Gallagher, Peter Boyle
+11040	Radio	Drama, Sport	Michael Tollin	Cuba Gooding Jr., Ed Harris, Debra Winger, S. Epatha Merkerson
+473	Princess Mononoke	Animation, Adventure, Fantasy	Hayao Miyazaki	Yôji Matsuda, Yuriko Ishida, Yûko Tanaka, Kaoru Kobayashi
+468	The Matrix Revolutions	Action, Adventure, Sci-Fi	Andy Wachowski, Lana Wachowski	Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+6268	Lost in Space	Action, Adventure, Sci-Fi, Thriller	Stephen Hopkins	Gary Oldman, William Hurt, Matt LeBlanc, Mimi Rogers
+6267	Purple Rain	Drama, Musical, Romance	Albert Magnoli	Prince, Apollonia Kotero, Morris Day, Olga Karlatos
+2376	Scream 3	Horror, Mystery, Thriller	Wes Craven	David Arquette, Neve Campbell, Courteney Cox, Liev Schreiber
+2391	Along Came Polly	Comedy, Romance	John Hamburg	Ben Stiller, Jennifer Aniston, Debra Messing, Philip Seymour Hoffman
+2385	Center Stage	Drama, Music	Nicholas Hytner	Amanda Schull, Ethan Stiefel, Sascha Radetsky, Zoe Saldana
+4345	Bowling for Columbine	Documentary, History	Michael Moore	Michael Moore, Charlton Heston, Marilyn Manson, Jacobo Arbenz
+456	Emma	Comedy, Romance	Douglas McGrath	Gwyneth Paltrow, James Cosmo, Greta Scacchi, Alan Cumming
+6255	Bewitched	Comedy, Fantasy, Romance	Nora Ephron	Nicole Kidman, Will Ferrell, Shirley MacLaine, Michael Caine
+4341	The Scorpion King	Action, Adventure, Fantasy, Romance, Thriller	Chuck Russell	Dwayne Johnson, Steven Brand, Michael Clarke Duncan, Kelly Hu
+2396	Starship Troopers	Action, Adventure, Sci-Fi, Thriller	Paul Verhoeven	Casper Van Dien, Denise Richards, Dina Meyer, Jake Busey
+2395	Scream	Crime, Horror, Mystery, Thriller	Wes Craven	Neve Campbell, Courteney Cox, David Arquette, Skeet Ulrich
+14858	Babe	Adventure, Drama, Family, Fantasy	Chris Noonan	James Cromwell, Magda Szubanski, Christine Cavanaugh, Miriam Margolyes
+9120	The Sword in the Stone	Animation, Adventure, Family, Fantasy	Wolfgang Reitherman	Rickie Sorensen, Sebastian Cabot, Karl Swenson, Junius Matthews
+11013	The Mexican	Action, Adventure, Comedy, Crime, Romance	Gore Verbinski	Brad Pitt, Julia Roberts, James Gandolfini, J.K. Simmons
+12974	Benny & Joon	Comedy, Drama, Romance	Jeremiah S. Chechik	Johnny Depp, Mary Stuart Masterson, Aidan Quinn, Julianne Moore
+2400	Home Alone 2: Lost in New York	Adventure, Comedy, Crime, Family	Chris Columbus	Macaulay Culkin, Joe Pesci, Daniel Stern, Catherine O'Hara
+2412	Harry Potter and the Prisoner of Azkaban	Adventure, Family, Fantasy, Mystery	Alfonso Cuarón	Daniel Radcliffe, Emma Watson, Rupert Grint, Richard Griffiths
+14909	City of Angels	Drama, Fantasy, Romance, Thriller	Brad Silberling	Nicolas Cage, Meg Ryan, Andre Braugher, Dennis Franz
+6237	A Nightmare on Elm Street Part 2: Freddy's Revenge	Horror, Mystery	Jack Sholder	Robert Englund, Mark Patton, Kim Myers, Robert Rusler
+12966	The Aviator	Biography, Drama	Martin Scorsese	Leonardo DiCaprio, Cate Blanchett, Kate Beckinsale, John C. Reilly
+11022	Fahrenheit 9/11	Documentary, History, War	Michael Moore	Michael Moore, George W. Bush, Ben Affleck, Stevie Wonder
+17714	The Little Mermaid	Animation, Family, Fantasy, Musical, Romance	Ron Clements, John Musker	Jodi Benson, Samuel E. Wright, Rene Auberjonois, Christopher Daniel Barnes
+6235	A Walk to Remember	Drama, Romance	Adam Shankman	Mandy Moore, Shane West, Peter Coyote, Daryl Hannah
+2422	Primer	Drama, Thriller, Sci-Fi	Shane Carruth	Shane Carruth, David Sullivan, Casey Gooden, Anand Upadhyaya
+494	The Meaning of Life	Comedy, Musical	Terry Jones	John Cleese, Terry Gilliam, Eric Idle, Terry Jones
+9102	Kiki's Delivery Service	Animation, Adventure, Family, Fantasy	Hayao Miyazaki	Kirsten Dunst, Minami Takayama, Rei Sakuma, Kappei Yamaguchi
+14882	Session 9	Horror, Mystery	Brad Anderson	David Caruso, Stephen Gevedon, Paul Guilfoyle, Josh Lucas
+9092	Miracle on 34th Street	Drama, Family, Fantasy	Les Mayfield	Richard Attenborough, Elizabeth Perkins, Dylan McDermott, J.T. Walsh
+6223	Point Break	Action, Crime, Thriller	Kathryn Bigelow	Patrick Swayze, Keanu Reeves, Gary Busey, Lori Petty
+2430	Alien	Adventure, Horror, Sci-Fi, Thriller	Ridley Scott	Sigourney Weaver, Tom Skerritt, John Hurt, Veronica Cartwright
+17703	Hulk	Action, Sci-Fi	Ang Lee	Eric Bana, Jennifer Connelly, Sam Elliott, Josh Lucas
+4310	Bride of Chucky	Comedy, Horror, Romance, Thriller	Ronny Yu	Jennifer Tilly, Brad Dourif, Katherine Heigl, Nick Stabile
+17697	New York Minute	Comedy	Dennie Gordon	Mary-Kate Olsen, Ashley Olsen, Eugene Levy, Andy Richter
+483	Rush Hour 2	Action, Comedy, Crime, Thriller	Brett Ratner	Jackie Chan, Chris Tucker, John Lone, Ziyi Zhang
+482	Frida	Biography, Drama, Romance	Julie Taymor	Salma Hayek, Alfred Molina, Geoffrey Rush, Antonio Banderas
+4306	The Sixth Sense	Drama, Mystery, Thriller	M. Night Shyamalan	Bruce Willis, Haley Joel Osment, Toni Collette, Olivia Williams
+12662	Queen of the Damned	Fantasy, Horror, Music	Michael Rymer	Aaliyah, Stuart Townsend, Marguerite Moreau, Vincent Perez
+550	First Knight	Adventure, Drama, Romance	Jerry Zucker	Sean Connery, Richard Gere, Julia Ormond, Ben Cross
+551	The Santa Clause	Comedy, Drama, Family, Fantasy	John Pasquin	Tim Allen, Judge Reinhold, Wendy Crewson, Eric Lloyd
+4883	The Bodyguard	Romance, Drama, Thriller, Music	Mick Jackson	Kevin Costner, Whitney Houston, Gary Kemp, Bill Cobbs
+7048	Agent Cody Banks	Action, Adventure, Comedy, Crime, Family, Romance, Thriller	Harald Zwart	Frankie Muniz, Hilary Duff, Andrew Francis, Angie Harmon
+14822	Anastasia	Animation, Adventure, Drama, Family, Musical	Don Bluth, Gary Goldman	Meg Ryan, John Cusack, Christopher Lloyd, Kelsey Grammer
+2743	The Pianist	Biography, Drama, War	Roman Polanski	Adrien Brody, Thomas Kretschmann, Frank Finlay, Emilia Fox
+10451	A Clockwork Orange	Crime, Drama, Sci-Fi	Stanley Kubrick	Malcolm McDowell, Patrick Magee, Michael Bates, Warren Clarke
+7040	Doctor Dolittle	Comedy, Family	Betty Thomas	Eddie Murphy, Peter Boyle, Ossie Davis, Oliver Platt
+564	Predator 2	Action, Sci-Fi, Thriller	Stephen Hopkins	Danny Glover, Gary Busey, Kevin Peter Hall, Rubén Blades
+4867	The Karate Kid, Part II	Action, Family, Romance, Sport	John G. Avildsen	Pat Morita, Ralph Macchio, Pat E. Johnson, Bruce Malmuth
+7067	Charlie's Angels: Full Throttle	Action, Adventure, Comedy, Crime	McG	Drew Barrymore, Lucy Liu, Cameron Diaz, Bernie Mac
+14840	Get a Clue	Comedy, Crime, Family, Mystery	Maggie Greenwald	Lindsay Lohan, Bug Hall, Ian Gomez, Brenda Song
+10436	Road Trip	Adventure, Comedy	Todd Phillips	Breckin Meyer, Seann William Scott, Amy Smart, Paulo Costanzo
+571	American Beauty	Drama	Sam Mendes	Kevin Spacey, Annette Bening, Thora Birch, Wes Bentley
+7057	The Lord of the Rings: The Two Towers	Action, Adventure, Fantasy	Peter Jackson	Elijah Wood, Ian McKellen, Viggo Mortensen, Orlando Bloom
+8292	Star Wars: Clone Wars	Animation, Action, Adventure, Fantasy, Sci-Fi	N/A	Mat Lucas, James Arnold Taylor, André Sogliuzzo, Grey DeLisle
+8295	Holes	Adventure, Comedy, Drama, Family, Mystery, Romance	Andrew Davis	Shia LaBeouf, Sigourney Weaver, Jon Voight, Tim Blake Nelson
+4914	White Noise	Drama, Horror, Mystery, Sci-Fi, Thriller	Geoffrey Sax	Michael Keaton, Deborah Kara Unger, Ian McNeice, Chandra West
+8301	The Haunted Mansion	Comedy, Family, Fantasy, Mystery, Thriller	Rob Minkoff	Eddie Murphy, Marsha Thomason, Jennifer Tilly, Terence Stamp
+533	Drop Dead Fred	Comedy, Drama, Fantasy	Ate de Jong	Phoebe Cates, Rik Mayall, Marsha Mason, Tim Matheson
+528	The Hitchhiker's Guide to the Galaxy	Adventure, Comedy, Sci-Fi	Garth Jennings	Martin Freeman, Mos Def, Sam Rockwell, Zooey Deschanel
+8317	Grosse Pointe Blank	Action, Comedy, Crime, Romance, Thriller	George Armitage	John Cusack, Minnie Driver, Dan Aykroyd, Joan Cusack
+2689	Minority Report	Action, Crime, Mystery, Sci-Fi, Thriller	Steven Spielberg	Tom Cruise, Colin Farrell, Samantha Morton, Max von Sydow
+2690	The Emperor's New Groove	Animation, Adventure, Comedy, Family, Fantasy	Mark Dindal	David Spade, John Goodman, Eartha Kitt, Patrick Warburton
+4906	Stuart Little	Adventure, Comedy, Family, Fantasy	Rob Minkoff	Michael J. Fox, Geena Davis, Hugh Laurie, Jonathan Lipnicki
+10466	Lady and the Tramp	Animation, Family, Music, Romance	Clyde Geronimi, Wilfred Jackson	Barbara Luddy, Larry Roberts, Peggy Lee, Bill Thompson
+10392	The Thin Red Line	Action, Drama, War	Terrence Malick	James Caviezel, Sean Penn, Nick Nolte, Elias Koteas
+4949	House on Haunted Hill	Horror, Mystery, Thriller	William Malone	Geoffrey Rush, Famke Janssen, Taye Diggs, Peter Gallagher
+14754	Pocket Monsters: Mewtwo Strikes Back!	Animation, Action, Adventure, Family, Sci-Fi	Michael Haigney, Kunihiko Yuyama	Veronica Taylor, Rachael Lillis, Eric Stuart, Philip Bartlett
+14755	The Blair Witch Project	Horror, Mystery	Daniel Myrick, Eduardo Sánchez	Heather Donahue, Michael C. Williams, Joshua Leonard, Bob Griffith
+2803	Pride and Prejudice	Romance, Drama	N/A	Colin Firth, Jennifer Ehle, Susannah Harker, Julia Sawalha
+12600	American Graffiti	Comedy, Drama, Romance	George Lucas	Richard Dreyfuss, Ron Howard, Paul Le Mat, Charles Martin Smith
+2800	Serendipity	Comedy, Romance, Fantasy	Peter Chelsom	John Cusack, Kate Beckinsale, Lilli Lavine, Michael Guarino Jr.
+4956	Back to the Future Part II	Adventure, Comedy, Family, Sci-Fi	Robert Zemeckis	Michael J. Fox, Christopher Lloyd, Lea Thompson, Thomas F. Wilson
+12605	Animal House	Comedy, Romance	John Landis	John Belushi, Karen Allen, Tom Hulce, Stephen Furst
+4931	Catwoman	Action, Crime, Fantasy	Pitof	Halle Berry, Sharon Stone, Benjamin Bratt, Lambert Wilson
+14776	The Ten Commandments	Adventure, Drama, History	Cecil B. DeMille	Charlton Heston, Yul Brynner, Anne Baxter, Edward G. Robinson
+631	Unleashed	Action, Crime, Drama, Romance, Thriller	Louis Leterrier	Jet Li, Bob Hoskins, Morgan Freeman, Kerry Condon
+14780	Beetle Juice	Comedy, Fantasy	Tim Burton	Alec Baldwin, Geena Davis, Michael Keaton, Annie McEnroe
+7125	Bloodsport	Action, Biography, Sport	Newt Arnold	Jean-Claude Van Damme, Donald Gibb, Leah Ayres, Norman Burton
+12560	The Dark Crystal	Adventure, Family, Fantasy	Jim Henson, Frank Oz	Jim Henson, Kathryn Mullen, Frank Oz, Dave Goelz
+2776	Unbreakable	Drama, Fantasy, Mystery, Thriller	M. Night Shyamalan	Bruce Willis, Samuel L. Jackson, Robin Wright, Spencer Treat Clark
+7145	Star Trek III: The Search for Spock	Action, Adventure, Sci-Fi, Thriller	Leonard Nimoy	William Shatner, Leonard Nimoy, DeForest Kelley, James Doohan
+2779	The Cat in the Hat	Adventure, Comedy, Family, Fantasy	Bo Welch	Mike Myers, Spencer Breslin, Dakota Fanning, Alec Baldwin
+2780	Dark City	Mystery, Sci-Fi, Thriller	Alex Proyas	Rufus Sewell, Kiefer Sutherland, Jennifer Connelly, William Hurt
+10429	Final Destination 2	Horror, Thriller	David R. Ellis	A.J. Cook, Ali Larter, Tony Todd, Michael Landes
+2782	Braveheart	Action, Biography, Drama, History, War	Mel Gibson	Mel Gibson, Sophie Marceau, Patrick McGoohan, Angus Macfadyen
+2783	Hocus Pocus	Comedy, Family, Fantasy, Horror	Kenny Ortega	Bette Midler, Sarah Jessica Parker, Kathy Najimy, Omri Katz
+14725	Austin Powers: The Spy Who Shagged Me	Action, Adventure, Comedy, Crime	Jay Roach	Mike Myers, Heather Graham, Michael York, Robert Wagner
+10421	Scary Movie 3	Comedy	David Zucker	Anna Faris, Charlie Sheen, Regina Hall, Pamela Anderson
+12546	Home Alone	Adventure, Comedy, Family	Chris Columbus	Macaulay Culkin, Joe Pesci, Daniel Stern, John Heard
+596	Alice in Wonderland	Family, Adventure, Fantasy	Nick Willing	Tina Majorino, Whoopi Goldberg, Robbie Coltrane, Ben Kingsley
+14737	The Sweetest Thing	Comedy, Romance	Roger Kumble	Cameron Diaz, Thomas Jane, Christina Applegate, Selma Blair
+2755	The Longest Yard	Comedy, Crime, Drama, Sport	Robert Aldrich	Burt Reynolds, Eddie Albert, Ed Lauter, Michael Conrad
+4972	Paycheck	Sci-Fi, Thriller, Action, Mystery	John Woo	Ben Affleck, Aaron Eckhart, Uma Thurman, Michael C. Hall
+607	Speed	Action, Adventure, Crime, Drama, Thriller	Jan de Bont	Keanu Reeves, Dennis Hopper, Sandra Bullock, Joe Morton
+686	Bedazzled	Comedy, Fantasy, Romance	Harold Ramis	Brendan Fraser, Elizabeth Hurley, Frances O'Connor, Miriam Shor
+5020	Johnny English	Action, Adventure, Comedy	Peter Howitt	Rowan Atkinson, John Malkovich, Natalie Imbruglia, Tasha de Vasconcelos
+14691	The Matrix	Action, Adventure, Sci-Fi	Andy Wachowski, Lana Wachowski	Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+8393	Ladder 49	Action, Drama, Thriller	Jay Russell	Joaquin Phoenix, John Travolta, Jacinda Barrett, Robert Patrick
+6927	The Italian Job	Action, Comedy, Crime, Thriller	Peter Collinson	Michael Caine, Noel Coward, Benny Hill, Raf Vallone
+12785	X-Men	Action, Sci-Fi	Bryan Singer	Patrick Stewart, Hugh Jackman, Ian McKellen, Famke Janssen
+2617	Ghost Ship	Horror, Mystery, Thriller	Steve Beck	Julianna Margulies, Gabriel Byrne, Ron Eldard, Desmond Harrington
+673	Fight Club	Drama, Mystery, Thriller	David Fincher	Brad Pitt, Edward Norton, Helena Bonham Carter, Meat Loaf
+12778	Thelma & Louise	Crime, Drama	Ridley Scott	Susan Sarandon, Geena Davis, Harvey Keitel, Michael Madsen
+2594	Look Who's Talking	Romance, Comedy	Amy Heckerling	John Travolta, Kirstie Alley, Olympia Dukakis, George Segal
+2593	Snow White and the Seven Dwarfs	Animation, Family, Fantasy, Musical, Romance	William Cottrell, David Hand	Adriana Caselotti, Harry Stockwell, Lucille La Verne, Roy Atwell
+14718	xXx	Action, Adventure, Crime	Rob Cohen	Vin Diesel, Asia Argento, Samuel L. Jackson, William Hope
+4996	Gone in Sixty Seconds	Action, Crime, Thriller	Dominic Sena	Nicolas Cage, Angelina Jolie, Giovanni Ribisi, T.J. Cross
+10314	The Adventures of Sharkboy and Lavagirl 3-D	Action, Adventure, Family, Fantasy	Robert Rodriguez	Cayden Boyd, George Lopez, Kristin Davis, David Arquette
+4995	Crossroads	Adventure, Comedy, Drama, Music, Romance	Tamra Davis	Britney Spears, Anson Mount, Zoe Saldana, Taryn Manning
+14712	Lara Croft: Tomb Raider	Action, Adventure, Fantasy, Thriller	Simon West	Angelina Jolie, Jon Voight, Iain Glen, Noah Taylor
+8429	Bill & Ted's Bogus Journey	Adventure, Comedy, Fantasy, Sci-Fi	Peter Hewitt	Keanu Reeves, Alex Winter, William Sadler, Joss Ackland
+14660	The Waterboy	Comedy, Sport	Frank Coraci	Adam Sandler, Kathy Bates, Henry Winkler, Fairuza Balk
+2580	Freaky Friday	Comedy, Family, Fantasy	Mark Waters	Jamie Lee Curtis, Lindsay Lohan, Mark Harmon, Harold Gould
+10359	Runaway Bride	Comedy, Romance	Garry Marshall	Julia Roberts, Richard Gere, Joan Cusack, Hector Elizondo
+5054	Mission: Impossible	Action, Adventure, Thriller	Brian De Palma	Tom Cruise, Jon Voight, Emmanuelle Béart, Henry Czerny
+10358	Ocean's Twelve	Crime, Thriller	Steven Soderbergh	George Clooney, Brad Pitt, Julia Roberts, Catherine Zeta-Jones
+2577	A Walk in the Clouds	Drama, Romance	Alfonso Arau	Keanu Reeves, Aitana Sánchez-Gijón, Anthony Quinn, Giancarlo Giannini
+5050	Roman Holiday	Comedy, Drama, Romance	William Wyler	Gregory Peck, Audrey Hepburn, Eddie Albert, Hartley Power
+14671	Downfall	Biography, Drama, History, War	Oliver Hirschbiegel	Bruno Ganz, Alexandra Maria Lara, Ulrich Matthes, Juliane Köhler
+14670	Batman	Crime, Drama, Thriller	Tim Burton	Michael Keaton, Jack Nicholson, Kim Basinger, Robert Wuhl
+2590	Newsies	Drama, Family, Musical	Kenny Ortega	Christian Bale, Bill Pullman, Robert Duvall, Ann-Margret
+14664	Labyrinth	Adventure, Family, Fantasy, Musical	Jim Henson	David Bowie, Jennifer Connelly, Toby Froud, Shelley Thompson
+14667	Field of Dreams	Drama, Family, Fantasy, Sport	Phil Alden Robinson	Kevin Costner, James Earl Jones, Ray Liotta, Amy Madigan
+6961	George of the Jungle	Action, Adventure, Comedy, Family, Romance	Sam Weisman	Brendan Fraser, Leslie Mann, Thomas Haden Church, John Cleese
+2572	The Sandlot 2	Comedy, Family, Sport	David M. Evans	Max Lloyd-Jones, James Willson, Samantha Burton, Brett Kelly
+6972	Armageddon	Action, Adventure, Sci-Fi, Thriller	Michael Bay	Bruce Willis, Billy Bob Thornton, Ben Affleck, Liv Tyler
+6974	The Usual Suspects	Crime, Mystery, Thriller	Bryan Singer	Kevin Spacey, Gabriel Byrne, Chazz Palminteri, Stephen Baldwin
+10344	'Crocodile' Dundee	Adventure, Comedy	Peter Faiman	Paul Hogan, Linda Kozlowski, John Meillon, David Gulpilil
+658	Robin Hood: Prince of Thieves	Action, Adventure, Drama, Romance	Kevin Reynolds	Kevin Costner, Morgan Freeman, Mary Elizabeth Mastrantonio, Christian Slater
+6971	Ferris Bueller's Day Off	Comedy, Drama	John Hughes	Matthew Broderick, Alan Ruck, Mia Sara, Jeffrey Jones
+6978	The Cable Guy	Comedy, Drama, Thriller	Ben Stiller	Jim Carrey, Matthew Broderick, Leslie Mann, Jack Black
+8328	Dog Soldiers	Action, Horror	Neil Marshall	Sean Pertwee, Kevin McKidd, Emma Cleasby, Liam Cunningham
+751	Halloween H20: 20 Years Later	Drama, Horror, Thriller	Steve Miner	Jamie Lee Curtis, Josh Hartnett, Adam Arkin, Michelle Williams
+5085	Seabiscuit	Drama, History, Sport	Gary Ross	Tobey Maguire, Jeff Bridges, Elizabeth Banks, Chris Cooper
+8333	The Grudge	Horror	Takashi Shimizu	Sarah Michelle Gellar, Jason Behr, Clea DuVall, William Mapother
+12732	Hidalgo	Action, Adventure, Drama	Joe Johnston	Viggo Mortensen, Omar Sharif, Zuleikha Robinson, Louise Lombard
+2680	Spy Kids 2: Island of Lost Dreams	Action, Adventure, Comedy, Family, Sci-Fi	Robert Rodriguez	Alexa Vega, Daryl Sabara, Antonio Banderas, Carla Gugino
+8327	One Flew Over the Cuckoo's Nest	Drama	Milos Forman	Jack Nicholson, Louise Fletcher, Danny DeVito, Christopher Lloyd
+6989	Natural Born Killers	Action, Crime, Drama, Romance, Thriller	Oliver Stone	Woody Harrelson, Juliette Lewis, Tom Sizemore, Rodney Dangerfield
+6994	The Whole Nine Yards	Adventure, Comedy, Crime, Drama, Romance	Jonathan Lynn	Bruce Willis, Matthew Perry, Rosanna Arquette, Michael Clarke Duncan
+14646	Pet Sematary	Drama, Fantasy, Horror, Mystery, Thriller	Mary Lambert	Dale Midkiff, Denise Crosby, Fred Gwynne, Brad Greenquist
+5071	Fever Pitch	Comedy, Drama, Romance, Sport	Bobby Farrelly, Peter Farrelly	Drew Barrymore, Jimmy Fallon, Jason Spevack, Jack Kehler
+14644	The Stepford Wives	Comedy, Sci-Fi, Thriller	Frank Oz	Nicole Kidman, Bette Midler, Matthew Broderick, Glenn Close
+2660	When Harry Met Sally...	Comedy, Drama, Romance	Rob Reiner	Billy Crystal, Meg Ryan, Carrie Fisher, Bruno Kirby
+5069	Sleeping with the Enemy	Drama, Thriller	Joseph Ruben	Julia Roberts, Patrick Bergin, Kevin Anderson, Elizabeth Lawrence
+8339	Where the Heart Is	Comedy, Drama, Romance	Matt Williams	Natalie Portman, James Frain, Ashley Judd, Stockard Channing
+5056	Angels in the Outfield	Comedy, Family, Fantasy, Sport	William Dear	Danny Glover, Brenda Fricker, Tony Danza, Christopher Lloyd
+753	Mary Poppins	Comedy, Family, Fantasy, Musical	Robert Stevenson	Julie Andrews, Dick Van Dyke, David Tomlinson, Glynis Johns
+758	Mean Girls	Comedy, Drama	Mark Waters	Lindsay Lohan, Jonathan Bennett, Rachel McAdams, Lacey Chabert
+5063	Mousehunt	Action, Comedy, Family	Gore Verbinski	Nathan Lane, Lee Evans, Vicki Lewis, Maury Chaykin
+7004	Free Willy 3: The Rescue	Family, Adventure, Drama	Sam Pillsbury	Jason James Richter, August Schellenberg, Annie Corley, Vincent Berry
+5112	What Lies Beneath	Drama, Horror, Mystery, Thriller	Robert Zemeckis	Harrison Ford, Michelle Pfeiffer, Katharine Towne, Miranda Otto
+7016	Raging Bull	Biography, Drama, Sport	Martin Scorsese	Robert De Niro, Cathy Moriarty, Joe Pesci, Frank Vincent
+12690	Hero	Action, Adventure	Yimou Zhang	Jet Li, Tony Leung Chiu Wai, Maggie Cheung, Ziyi Zhang
+708	The Perfect Storm	Action, Adventure, Drama, Thriller	Wolfgang Petersen	George Clooney, Mark Wahlberg, Diane Lane, John C. Reilly
+12694	The Interpreter	Drama, Mystery, Thriller	Sydney Pollack	Nicole Kidman, Sean Penn, Catherine Keener, Jesper Christensen
+12682	Candyman	Horror, Thriller	Bernard Rose	Virginia Madsen, Xander Berkeley, Tony Todd, Kasi Lemmons
+8379	Enemy at the Gates	Drama, History, Thriller, War	Jean-Jacques Annaud	Jude Law, Ed Harris, Joseph Fiennes, Rachel Weisz
+10275	The Girl Next Door	Comedy, Drama, Romance	Luke Greenfield	Emile Hirsch, Nicholas Downs, Elisha Cuthbert, Timothy Olyphant
+10276	Rashomon	Crime, Drama, Mystery	Akira Kurosawa	Toshirô Mifune, Machiko Kyô, Masayuki Mori, Takashi Shimura
+10277	Bicycle Thieves	Crime, Drama	Vittorio De Sica	Lamberto Maggiorani, Enzo Staiola, Lianella Carell, Gino Saltamerenda
+12672	Hot Tub Time Machine	Adventure, Comedy, Sci-Fi	Steve Pink	John Cusack, Rob Corddry, Craig Robinson, Clark Duke
+5088	Dirty Dancing	Drama, Romance	Emile Ardolino	Patrick Swayze, Jennifer Grey, Jerry Orbach, Cynthia Rhodes
+7032	Austin Powers in Goldmember	Action, Adventure, Comedy, Crime	Jay Roach	Mike Myers, Beyoncé Knowles, Seth Green, Michael York
+14618	The Truman Show	Drama	Peter Weir	Jim Carrey, Ed Harris, Laura Linney, Noah Emmerich
+10282	Godzilla	Action, Horror, Sci-Fi, Thriller	Roland Emmerich	Matthew Broderick, Jean Reno, Maria Pitillo, Hank Azaria
+14621	Shrek	Animation, Adventure, Comedy, Family, Fantasy	Andrew Adamson, Vicky Jenson	Mike Myers, Eddie Murphy, Cameron Diaz, John Lithgow
+14590	Die Hard: With a Vengeance	Action, Crime, Thriller	John McTiernan	Bruce Willis, Jeremy Irons, Samuel L. Jackson, Graham Greene
+2985	There's Something About Mary	Comedy, Romance	Bobby Farrelly, Peter Farrelly	Ben Stiller, Cameron Diaz, Matt Dillon, Lee Evans
+14584	South Park	Action, Sci-Fi, Comedy, Fantasy	N/A	Isaac Hayes, Trey Parker, Matt Stone, Mary Kay Bergman
+819	The Faculty	Horror, Mystery, Sci-Fi, Thriller	Robert Rodriguez	Jordana Brewster, Clea DuVall, Laura Harris, Josh Hartnett
+12399	Practical Magic	Comedy, Fantasy, Romance	Griffin Dunne	Sandra Bullock, Nicole Kidman, Stockard Channing, Dianne Wiest
+6797	The Breakfast Club	Comedy, Drama	John Hughes	Emilio Estevez, Judd Nelson, Molly Ringwald, Ally Sheedy
+14574	You've Got Mail	Comedy, Romance	Nora Ephron	Tom Hanks, Meg Ryan, Greg Kinnear, Parker Posey
+8518	Air Bud	Comedy, Family, Sport	Charles Martin Smith	Michael Jeter, Kevin Zegers, Wendy Makkena, Bill Cobbs
+8512	The World Is Not Enough	Action, Adventure, Thriller	Michael Apted	Pierce Brosnan, Sophie Marceau, Robert Carlyle, Denise Richards
+14571	Toy Story 2	Animation, Adventure, Comedy, Family, Fantasy	John Lasseter, Ash Brannon	Tom Hanks, Tim Allen, Joan Cusack, Kelsey Grammer
+8515	The Transformers: The Movie	Animation, Action, Adventure, Family, Sci-Fi	Nelson Shin	Orson Welles, Robert Stack, Leonard Nimoy, Norman Alden
+2992	The Rundown	Action, Adventure, Comedy, Thriller	Peter Berg	Dwayne Johnson, Seann William Scott, Christopher Walken, Rosario Dawson
+788	Clerks.	Comedy	Kevin Smith	Brian O'Halloran, Jeff Anderson, Marilyn Ghigliotti, Lisa Spoonhauer
+6844	The Fast and the Furious	Action, Crime, Thriller	Rob Cohen	Vin Diesel, Paul Walker, Michelle Rodriguez, Jordana Brewster
+12355	A.I. Artificial Intelligence	Adventure, Drama, Sci-Fi	Steven Spielberg	Haley Joel Osment, Jude Law, Frances O'Connor, Sam Robards
+8563	Teenage Mutant Ninja Turtles	Action, Adventure, Comedy, Crime, Drama, Family, Sci-Fi	Steve Barron	Judith Hoag, Elias Koteas, Josh Pais, Michelan Sisti
+10730	Gangs of New York	Crime, Drama, History	Martin Scorsese	Leonardo DiCaprio, Cameron Diaz, Daniel Day-Lewis, Jim Broadbent
+4640	Rain Man	Drama	Barry Levinson	Dustin Hoffman, Tom Cruise, Valeria Golino, Gerald R. Molen
+14550	The Shawshank Redemption	Crime, Drama	Frank Darabont	Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler
+798	Jaws	Thriller	Steven Spielberg	Roy Scheider, Robert Shaw, Richard Dreyfuss, Lorraine Gary
+14545	King Arthur	Action, Adventure, History, War	Antoine Fuqua	Clive Owen, Stephen Dillane, Keira Knightley, Ioan Gruffudd
+6833	Billy Madison	Comedy, Romance	Tamra Davis	Adam Sandler, Darren McGavin, Bridgette Wilson, Bradley Whitford
+4661	Deuce Bigalow: Male Gigolo	Comedy	Mike Mitchell	Rob Schneider, William Forsythe, Eddie Griffin, Arija Bareikis
+14538	How to Lose a Guy in 10 Days	Comedy, Romance	Donald Petrie	Kate Hudson, Matthew McConaughey, Adam Goldberg, Kathryn Hahn
+4656	Erin Brockovich	Biography, Drama, Romance	Steven Soderbergh	Julia Roberts, Albert Finney, David Brisbin, Dawn Didawick
+4670	Wild Wild West	Action, Western, Comedy, Sci-Fi	Barry Sonnenfeld	Will Smith, Kevin Kline, Kenneth Branagh, Salma Hayek
+14531	Equilibrium	Action, Drama, Sci-Fi, Thriller	Kurt Wimmer	Christian Bale, Sean Bean, Emily Watson, Taye Diggs
+10739	The Man in the Iron Mask	Action, Adventure, Drama, History	Randall Wallace	Leonardo DiCaprio, Jeremy Irons, John Malkovich, Gérard Depardieu
+14528	Eight Legged Freaks	Action, Comedy, Horror, Sci-Fi, Thriller	Ellory Elkayem	David Arquette, Kari Wuhrer, Scott Terra, Scarlett Johansson
+6816	Cry-Baby	Comedy, Musical, Romance	John Waters	Johnny Depp, Ricki Lake, Amy Locane, Susan Tyrrell
+8553	Pocket Monsters: Mewtwo Strikes Back!	Animation, Action, Adventure, Family, Sci-Fi	Michael Haigney, Kunihiko Yuyama	Veronica Taylor, Rachael Lillis, Eric Stuart, Philip Bartlett
+8467	Eraser	Action, Crime, Drama, Mystery, Thriller	Chuck Russell	Arnold Schwarzenegger, Vanessa Williams, James Caan, James Coburn
+887	Monster-in-Law	Comedy, Romance	Robert Luketic	Jennifer Lopez, Michael Vartan, Jane Fonda, Wanda Sykes
+886	Ray	Biography, Drama, Music	Taylor Hackford	Jamie Foxx, Regina King, Kerry Washington, Clifton Powell
+10627	Dawn of the Dead	Action, Horror	George A. Romero	David Emge, Ken Foree, Scott H. Reiniger, Gaylen Ross
+4685	Lake Placid	Action, Comedy, Horror, Thriller	Steve Miner	Bridget Fonda, Bill Pullman, Oliver Platt, Brendan Gleeson
+6868	Sleepover	Comedy	Joe Nussbaum	Alexa Vega, Mika Boorem, Scout Taylor-Compton, Jane Lynch
+12335	Merlin	Adventure, Drama, Fantasy, Action, Romance	Steve Barron	Sam Neill, Helena Bonham Carter, John Gielgud, Rutger Hauer
+14507	Any Given Sunday	Drama, Sport	Oliver Stone	Al Pacino, Dennis Quaid, Cameron Diaz, James Woods
+6859	Cheaper by the Dozen	Comedy, Family	Shawn Levy	Steve Martin, Bonnie Hunt, Hilary Duff, Piper Perabo
+6860	Calendar Girls	Comedy, Drama	Nigel Cole	Helen Mirren, Julie Walters, Penelope Wilton, John Alderton
+12343	Coming to America	Comedy, Drama, Romance	John Landis	Eddie Murphy, Arsenio Hall, James Earl Jones, John Amos
+872	Seven Samurai	Adventure, Drama	Akira Kurosawa	Toshirô Mifune, Takashi Shimura, Keiko Tsushima, Yukiko Shimazaki
+4697	Heat	Crime, Drama, Thriller	Michael Mann	Al Pacino, Robert De Niro, Val Kilmer, Jon Voight
+4698	The Lost World: Jurassic Park	Action, Adventure, Sci-Fi, Thriller	Steven Spielberg	Jeff Goldblum, Julianne Moore, Pete Postlethwaite, Vince Vaughn
+6850	Lords of Dogtown	Biography, Drama, Sport	Catherine Hardwicke	Heath Ledger, Emile Hirsch, Victor Rasuk, Johnny Knoxville
+12349	Super Mario Bros.	Action, Adventure, Comedy, Family, Fantasy, Sci-Fi, Thriller	Annabel Jankel, Rocky Morton	Bob Hoskins, John Leguizamo, Dennis Hopper, Samantha Mathis
+851	Back to the Future Part III	Adventure, Comedy, Family, Sci-Fi, Western	Robert Zemeckis	Michael J. Fox, Christopher Lloyd, Mary Steenburgen, Thomas F. Wilson
+6911	Little Shop of Horrors	Comedy, Sci-Fi, Horror, Musical	Frank Oz	Rick Moranis, Ellen Greene, Vincent Gardenia, Steve Martin
+12293	The Godfather	Crime, Drama	Francis Ford Coppola	Marlon Brando, Al Pacino, James Caan, Diane Keaton
+6908	Star Trek V: The Final Frontier	Action, Adventure, Sci-Fi, Thriller	William Shatner	William Shatner, Leonard Nimoy, DeForest Kelley, James Doohan
+12299	Along Came a Spider	Crime, Mystery, Thriller	Lee Tamahori	Morgan Freeman, Michael Wincott, Monica Potter, Dylan Baker
+14482	Twelve Monkeys	Mystery, Sci-Fi, Thriller	Terry Gilliam	Bruce Willis, Madeleine Stowe, Brad Pitt, Joseph Melito
+10662	Akira	Animation, Action, Fantasy, Mystery, Sci-Fi	Katsuhiro Ôtomo	Nozomu Sasaki, Mami Koyama, Mitsuo Iwata, Tesshô Genda
+14484	The Naked Gun: From the Files of Police Squad!	Action, Comedy, Crime, Romance	David Zucker	Leslie Nielsen, Priscilla Presley, O.J. Simpson, Ricardo Montalban
+12307	A Goofy Movie	Animation, Adventure, Comedy, Family, Musical, Romance	Kevin Lima	Bill Farmer, Jason Marsden, Jim Cummings, Kellie Martin
+12309	The Postman	Action, Adventure, Drama, Sci-Fi	Kevin Costner	Kevin Costner, Will Patton, Larenz Tate, Olivia Williams
+10673	Hot Shots!	Action, Comedy, War	Jim Abrahams	Charlie Sheen, Cary Elwes, Valeria Golino, Lloyd Bridges
+6886	The Dreamers	Drama, History, Romance	Bernardo Bertolucci	Michael Pitt, Louis Garrel, Eva Green, Anna Chancellor
+12317	The Rock	Action, Thriller	Michael Bay	Sean Connery, Nicolas Cage, Ed Harris, John Spencer
+10561	Ice Princess	Comedy, Drama, Family, Sport	Tim Fywell	Michelle Trachtenberg, Kim Cattrall, Trevor Blumas, Joan Cusack
+4745	Bringing Down the House	Comedy	Adam Shankman	Steve Martin, Queen Latifah, Eugene Levy, Joan Plowright
+12517	Gigli	Comedy, Crime, Romance	Martin Brest	Ben Affleck, Jennifer Lopez, Justin Bartha, Terry Camilleri
+2862	The Silence of the Lambs	Crime, Thriller	Jonathan Demme	Jodie Foster, Anthony Hopkins, Scott Glenn, Ted Levine
+6687	Deep Blue Sea	Action, Sci-Fi, Thriller	Renny Harlin	Thomas Jane, Saffron Burrows, Samuel L. Jackson, Jacqueline McKenzie
+14459	Uncle Buck	Comedy, Drama	John Hughes	John Candy, Macaulay Culkin, Jean Louisa Kelly, Gaby Hoffmann
+6683	Ginger Snaps	Comedy, Drama, Horror	John Fawcett	Emily Perkins, Katharine Isabelle, Kris Lemche, Mimi Rogers
+940	Hercules	Animation, Adventure, Family, Fantasy, Musical, Romance	Ron Clements, John Musker	Tate Donovan, Susan Egan, James Woods, Josh Keaton
+10583	The School of Rock	Comedy, Music	Richard Linklater	Jack Black, Mike White, Joan Cusack, Adam Pascal
+4753	Cabin Fever	Horror	Eli Roth	Jordan Ladd, Rider Strong, James DeBello, Cerina Vincent
+2874	Elf	Comedy, Family, Fantasy	Jon Favreau	Will Ferrell, Edward Asner, Bob Newhart, James Caan
+12494	Behind Enemy Lines	Action, War, Drama, Thriller	John Moore	Gene Hackman, Owen Wilson, Gabriel Macht, Charles Malik Whitfield
+6708	The Craft	Drama, Fantasy, Horror, Thriller	Andrew Fleming	Robin Tunney, Fairuza Balk, Neve Campbell, Rachel True
+10607	We Were Soldiers	Action, History, War	Randall Wallace	Mel Gibson, Madeleine Stowe, Greg Kinnear, Sam Elliott
+12508	Chitty Chitty Bang Bang	Family, Comedy, Musical, Fantasy	Ken Hughes	Dick Van Dyke, Sally Ann Howes, Lionel Jeffries, Benny Hill
+6692	Entrapment	Action, Crime, Romance, Thriller	Jon Amiel	Sean Connery, Catherine Zeta-Jones, Ving Rhames, Will Patton
+14403	The Long Kiss Goodnight	Action, Crime, Drama, Mystery, Thriller	Renny Harlin	Geena Davis, Samuel L. Jackson, Yvonne Zima, Craig Bierko
+6690	The Royal Tenenbaums	Comedy, Drama	Wes Anderson	Gene Hackman, Gwyneth Paltrow, Anjelica Huston, Ben Stiller
+4791	Pinocchio	Animation, Drama, Family, Fantasy, Music	Norman Ferguson, T. Hee	Dickie Jones, Christian Rub, Mel Blanc, Don Brodie
+12501	The NeverEnding Story	Adventure, Drama, Family, Fantasy	Wolfgang Petersen	Noah Hathaway, Barret Oliver, Tami Stronach, Gerald McRaney
+12497	Bring It On	Comedy, Sport	Peyton Reed	Kirsten Dunst, Eliza Dushku, Jesse Bradford, Gabrielle Union
+897	Bride & Prejudice	Comedy, Drama, Musical, Romance	Gurinder Chadha	Martin Henderson, Aishwarya Rai, Nadira Babbar, Anupam Kher
+896	Dangerous Minds	Crime, Drama, Thriller	John N. Smith	Michelle Pfeiffer, George Dzundza, Courtney B. Vance, Robin Bartlett
+6736	Robots	Animation, Adventure, Comedy, Family, Romance, Sci-Fi	Chris Wedge, Carlos Saldanha	Ewan McGregor, Halle Berry, Mel Brooks, Robin Williams
+2913	Finding Neverland	Biography, Drama, Family	Marc Forster	Johnny Depp, Kate Winslet, Julie Christie, Radha Mitchell
+6739	Rear Window	Crime, Mystery, Romance, Thriller	Alfred Hitchcock	James Stewart, Grace Kelly, Wendell Corey, Thelma Ritter
+2922	Heathers	Comedy, Crime	Michael Lehmann	Winona Ryder, Christian Slater, Shannen Doherty, Lisanne Falk
+1012	13 Ghosts	Horror	William Castle	Charles Herbert, Jo Morrow, Martin Milner, Rosemary DeCamp
+4805	True Romance	Crime, Romance, Thriller	Tony Scott	Christian Slater, Patricia Arquette, Dennis Hopper, Val Kilmer
+8585	Mad Max	Action, Adventure, Sci-Fi, Thriller	George Miller	Mel Gibson, Joanne Samuel, Hugh Keays-Byrne, Steve Bisley
+6720	Black Hawk Down	Action, Drama, History, War	Ridley Scott	Josh Hartnett, Ewan McGregor, Tom Sizemore, Eric Bana
+4829	Shaun of the Dead	Comedy, Horror	Edgar Wright	Simon Pegg, Nick Frost, Kate Ashfield, Lucy Davis
+4831	Tremors	Comedy, Horror	Ron Underwood	Kevin Bacon, Fred Ward, Finn Carter, Michael Gross
+994	Children of the Corn	Horror, Thriller	Fritz Kiersch	Peter Horton, Linda Hamilton, R.G. Armstrong, John Franklin
+12471	8 Mile	Drama, Music	Curtis Hanson	Eminem, Brittany Murphy, Kim Basinger, Mekhi Phifer
+12470	Twister	Action, Adventure, Drama, Thriller	Jan de Bont	Helen Hunt, Bill Paxton, Cary Elwes, Jami Gertz
+985	The Mummy	Action, Adventure, Fantasy	Stephen Sommers	Brendan Fraser, Rachel Weisz, John Hannah, Arnold Vosloo
+8636	Lara Croft Tomb Raider: The Cradle of Life	Action, Adventure, Fantasy, Thriller	Jan de Bont	Angelina Jolie, Gerard Butler, Chris Barrie, Ciarán Hinds
+2890	Sleeping Beauty	Animation, Family, Fantasy, Musical, Romance	Clyde Geronimi	Mary Costa, Bill Shirley, Eleanor Audley, Verna Felton
+14367	Lethal Weapon 4	Action, Crime, Thriller	Richard Donner	Mel Gibson, Danny Glover, Joe Pesci, Rene Russo
+14364	What a Girl Wants	Comedy, Drama, Romance	Dennie Gordon	Amanda Bynes, Colin Firth, Kelly Preston, Eileen Atkins
+980	The Swan Princess	Animation, Family, Fantasy, Romance	Richard Rich	Jack Palance, Howard McGillin, Michelle Nicastro, Liz Callaway
+8619	Pee-wee's Big Adventure	Adventure, Family, Comedy	Tim Burton	Paul Reubens, Elizabeth Daily, Mark Holton, Diane Salinger
+2897	Gremlins 2: The New Batch	Comedy, Fantasy, Horror, Sci-Fi	Joe Dante	Zach Galligan, Phoebe Cates, John Glover, Robert Prosky
+12435	Lethal Weapon 2	Action, Comedy, Crime, Thriller	Richard Donner	Mel Gibson, Danny Glover, Joe Pesci, Patsy Kensit
+963	A Streetcar Named Desire	Drama, Romance	Elia Kazan	Vivien Leigh, Marlon Brando, Kim Hunter, Karl Malden
+2908	Ri¢hie Ri¢h	Comedy, Family	Donald Petrie	Macaulay Culkin, Edward Herrmann, John Larroquette, Christine Ebersole
+14109	Total Recall	Action, Adventure, Sci-Fi, Thriller	Paul Verhoeven	Arnold Schwarzenegger, Sharon Stone, Michael Ironside, Rachel Ticotin
+3285	Flight of the Navigator	Family, Adventure, Sci-Fi	Randal Kleiser	Joey Cramer, Paul Reubens, Veronica Cartwright, Cliff De Young
+1102	Training Day	Crime, Drama, Thriller	Antoine Fuqua	Denzel Washington, Ethan Hawke, Scott Glenn, Tom Berenger
+3287	Terminator 3: Rise of the Machines	Action, Sci-Fi, Thriller	Jonathan Mostow	Arnold Schwarzenegger, Nick Stahl, Kristanna Loken, Claire Danes
+5496	I, Robot	Action, Mystery, Sci-Fi, Thriller	Alex Proyas	Will Smith, Bridget Moynahan, Bruce Greenwood, Alan Tudyk
+3282	Sideways	Comedy, Drama, Romance	Alexander Payne	Paul Giamatti, Thomas Haden Church, Virginia Madsen, Sandra Oh
+16522	Shall We Dance	Comedy, Drama, Romance	Peter Chelsom	Richard Gere, Jennifer Lopez, Susan Sarandon, Stanley Tucci
+16516	Jeepers Creepers	Horror, Mystery	Victor Salva	Gina Philips, Justin Long, Jonathan Breck, Patricia Belcher
+14103	The Notebook	Drama, History, Romance, War	Nick Cassavetes	Gena Rowlands, James Garner, Rachel McAdams, Ryan Gosling
+3290	The Godfather: Part II	Crime, Drama	Francis Ford Coppola	Al Pacino, Robert De Niro, Robert Duvall, Diane Keaton
+9788	Antz	Animation, Adventure, Comedy, Family	Eric Darnell, Tim Johnson	Woody Allen, Sharon Stone, Gene Hackman, Sylvester Stallone
+9785	Beavis and Butt-Head Do America	Animation, Adventure, Comedy, Crime	Mike Judge, Yvette Kaplan	Mike Judge, Bruce Willis, Demi Moore, Cloris Leachman
+16272	Crouching Tiger, Hidden Dragon	Action, Adventure, Drama, Fantasy, Romance	Ang Lee	Yun-Fat Chow, Michelle Yeoh, Ziyi Zhang, Chen Chang
+7664	Gladiator	Action, Adventure, Drama	Ridley Scott	Russell Crowe, Joaquin Phoenix, Connie Nielsen, Oliver Reed
+16538	Quills	Biography, Drama, History, Romance	Philip Kaufman	Geoffrey Rush, Kate Winslet, Joaquin Phoenix, Michael Caine
+1109	My Fair Lady	Drama, Family, Musical, Romance	George Cukor	Audrey Hepburn, Rex Harrison, Stanley Holloway, Wilfrid Hyde-White
+5477	Twins	Comedy	Ivan Reitman	Arnold Schwarzenegger, Danny DeVito, Kelly Preston, Chloe Webb
+9780	Josie and the Pussycats	Comedy, Music	Harry Elfont, Deborah Kaplan	Rachael Leigh Cook, Tara Reid, Rosario Dawson, Gabriel Mann
+16286	Red Dragon	Crime, Drama, Mystery, Thriller	Brett Ratner	Anthony Hopkins, Edward Norton, Ralph Fiennes, Harvey Keitel
+1105	RoboCop 3	Action, Crime, Drama, Sci-Fi, Thriller	Fred Dekker	Nancy Allen, Robert John Burke, Mario Machado, Remy Ryan
+5472	Spaceballs	Adventure, Comedy, Sci-Fi	Mel Brooks	Mel Brooks, John Candy, Rick Moranis, Bill Pullman
+3274	Half Baked	Comedy, Crime	Tamra Davis	Dave Chappelle, Guillermo Díaz, Jim Breuer, Harland Williams
+16552	GoldenEye	Action, Adventure, Thriller	Martin Campbell	Pierce Brosnan, Sean Bean, Izabella Scorupco, Famke Janssen
+3326	Chain Reaction	Action, Thriller, Drama	Andrew Davis	Keanu Reeves, Morgan Freeman, Rachel Weisz, Fred Ward
+14135	High Tension	Drama, Horror, Thriller	Alexandre Aja	Cécile De France, Maïwenn Le Besco, Philippe Nahon, Franck Khalfoun
+14131	Dickie Roberts: Former Child Star	Comedy	Sam Weisman	David Spade, Mary McCormack, Alyssa Milano, Craig Bierko
+7627	Once Upon a Time in Mexico	Action, Comedy, Crime, Drama, Western	Robert Rodriguez	Antonio Banderas, Salma Hayek, Johnny Depp, Willem Dafoe
+3320	About a Boy	Comedy, Drama, Romance	Chris Weitz, Paul Weitz	Hugh Grant, Nicholas Hoult, Toni Collette, Sharon Small
+7624	Top Gun	Action, Drama, Romance	Tony Scott	Tom Cruise, Kelly McGillis, Val Kilmer, Anthony Edwards
+9728	As Good as It Gets	Comedy, Drama, Romance	James L. Brooks	Jack Nicholson, Helen Hunt, Greg Kinnear, Cuba Gooding Jr.
+11929	Anaconda	Action, Adventure, Thriller	Luis Llosa	Jon Voight, Jennifer Lopez, Eric Stoltz, Ice Cube
+11910	Torque	Action, Crime	Joseph Kahn	Martin Henderson, Ice Cube, Monet Mazur, Adam Scott
+9757	Homeward Bound: The Incredible Journey	Adventure, Drama, Family, Comedy	Duwayne Dunham	Michael J. Fox, Sally Field, Don Alder, Ed Bernard
+7636	An American Tail: Fievel Goes West	Animation, Adventure, Family, Western	Phil Nibbelink, Simon Wells	James Stewart, John Cleese, Amy Irving, Phillip Glasser
+9756	Mr. Deeds	Comedy, Romance	Steven Brill	Adam Sandler, Winona Ryder, John Turturro, Allen Covert
+7635	Anchorman: The Legend of Ron Burgundy	Comedy, Romance	Adam McKay	Will Ferrell, Christina Applegate, Steve Carell, Paul Rudd
+16571	The Cheetah Girls	Comedy, Drama, Family, Music, Musical	Oz Scott	Raven-Symoné, Adrienne Bailon, Kiely Williams, Sabrina Bryan
+1145	The Wedding Planner	Comedy, Romance	Adam Shankman	Jennifer Lopez, Matthew McConaughey, Bridgette Wilson, Justin Chambers
+1144	Fried Green Tomatoes	Drama, Comedy	Jon Avnet	Kathy Bates, Jessica Tandy, Mary Stuart Masterson, Mary-Louise Parker
+5448	Jackass: The Movie	Documentary, Action, Comedy	Jeff Tremaine	Johnny Knoxville, Bam Margera, Chris Pontius, Steve-O
+16567	The Muppet Movie	Adventure, Comedy, Family, Musical	James Frawley	Jim Henson, Frank Oz, Jerry Nelson, Richard Hunt
+16565	K-PAX	Drama, Mystery, Sci-Fi	Iain Softley	Kevin Spacey, Jeff Bridges, Mary McCormack, Alfre Woodard
+7643	Empire of the Sun	Biography, Drama, War	Steven Spielberg	Christian Bale, John Malkovich, Miranda Richardson, Nigel Havers
+1138	Freddy vs. Jason	Horror, Thriller	Ronny Yu	Robert Englund, Ken Kirzinger, Kelly Rowland, Monica Keena
+3225	A Nightmare on Elm Street 3: Dream Warriors	Fantasy, Horror, Thriller	Chuck Russell	Heather Langenkamp, Robert Englund, Craig Wasson, Patricia Arquette
+5430	Sleepers	Crime, Drama, Thriller	Barry Levinson	Robert De Niro, Kevin Bacon, Brad Pitt, Jason Patric
+16339	Kindergarten Cop	Action, Comedy, Crime, Thriller	Ivan Reitman	Arnold Schwarzenegger, Penelope Ann Miller, Pamela Reed, Linda Hunt
+16604	Unforgiven	Drama, Western	Clint Eastwood	Clint Eastwood, Gene Hackman, Morgan Freeman, Richard Harris
+16340	Casper Meets Wendy	Adventure, Comedy, Family, Fantasy, Horror	Sean McNamara	Cathy Moriarty, Shelley Duvall, Teri Garr, George Hamilton
+16605	The Last of the Mohicans	Adventure, Romance, War	Michael Mann	Daniel Day-Lewis, Madeleine Stowe, Russell Means, Eric Schweig
+16606	Fear	Drama, Thriller	James Foley	Mark Wahlberg, Reese Witherspoon, William Petersen, Amy Brenneman
+7607	Dirty Dancing: Havana Nights	Romance, Drama	Guy Ferland	Diego Luna, Romola Garai, Sela Ward, John Slattery
+16607	Jungle 2 Jungle	Adventure, Comedy, Family, Romance	John Pasquin	Tim Allen, Martin Short, JoBeth Williams, Lolita Davidovich
+5408	Star Trek VI: The Undiscovered Country	Action, Mystery, Sci-Fi, Thriller	Nicholas Meyer	William Shatner, Leonard Nimoy, DeForest Kelley, James Doohan
+3210	Jack Frost	Comedy, Drama, Family, Fantasy	Troy Miller	Michael Keaton, Kelly Preston, Joseph Cross, Mark Addy
+14149	Enemy of the State	Action, Drama, Thriller	Tony Scott	Will Smith, Gene Hackman, Jon Voight, Lisa Bonet
+16596	The Parent Trap	Family, Comedy, Romance	David Swift	Hayley Mills, Maureen O'Hara, Brian Keith, Charles Ruggles
+12015	White Men Can't Jump	Comedy, Drama, Sport	Ron Shelton	Wesley Snipes, Woody Harrelson, Rosie Perez, Tyra Ferrell
+12014	I Know What You Did Last Summer	Horror, Mystery, Thriller	Jim Gillespie	Jennifer Love Hewitt, Sarah Michelle Gellar, Anne Heche, Ryan Phillippe
+1046	Uptown Girls	Comedy, Drama, Romance	Boaz Yakin	Brittany Murphy, Dakota Fanning, Heather Locklear, Jesse Spencer
+14203	Batman Forever	Action, Crime, Fantasy, Thriller	Joel Schumacher	Val Kilmer, Tommy Lee Jones, Jim Carrey, Nicole Kidman
+9800	Shallow Hal	Comedy, Drama, Fantasy, Romance	Bobby Farrelly, Peter Farrelly	Jack Black, Gwyneth Paltrow, Jason Alexander, Joe Viterelli
+5401	Dodgeball: A True Underdog Story	Comedy, Sport	Rawson Marshall Thurber	Ben Stiller, Christine Taylor, Vince Vaughn, Rip Torn
+3254	Daredevil	Action, Crime, Fantasy, Thriller	Mark Steven Johnson	Ben Affleck, Jennifer Garner, Colin Farrell, Michael Clarke Duncan
+16357	Hide and Seek	Horror, Mystery, Thriller	John Polson	Robert De Niro, Dakota Fanning, Famke Janssen, Elisabeth Shue
+14198	Trainspotting	Crime, Drama	Danny Boyle	Ewan McGregor, Ewen Bremner, Jonny Lee Miller, Kevin McKidd
+11999	The Hot Chick	Comedy, Fantasy	Tom Brady	Rob Schneider, Rachel McAdams, Anna Faris, Matthew Lawrence
+9818	L.A. Confidential	Crime, Drama, Mystery, Thriller	Curtis Hanson	Kevin Spacey, Russell Crowe, Guy Pearce, Kim Basinger
+3239	The Princess Diaries	Comedy, Drama, Family, Romance, Thriller	Garry Marshall	Julie Andrews, Anne Hathaway, Hector Elizondo, Heather Matarazzo
+16377	The Green Mile	Crime, Drama, Fantasy, Mystery	Frank Darabont	Tom Hanks, Michael Clarke Duncan, David Morse, Bonnie Hunt
+1073	Coach Carter	Drama, Sport	Thomas Carter	Samuel L. Jackson, Rick Gonzalez, Robert Ri'chard, Rob Brown
+11837	3 Men and a Baby	Comedy, Drama	Leonard Nimoy	Tom Selleck, Steve Guttenberg, Ted Danson, Nancy Travis
+1220	Man on Fire	Action, Crime, Drama, Thriller	Tony Scott	Denzel Washington, Christopher Walken, Dakota Fanning, Marc Anthony
+16390	Panic Room	Thriller	David Fincher	Jodie Foster, Kristen Stewart, Forest Whitaker, Dwight Yoakam
+7534	Adventures in Babysitting	Action, Adventure, Comedy, Thriller	Chris Columbus	Elisabeth Shue, Maia Brewton, Keith Coogan, Anthony Rapp
+3161	Scary Movie 2	Comedy	Keenen Ivory Wayans	Anna Faris, Marlon Wayans, Anthony Acker, Mark Barrett
+16384	The Fugitive	Action, Adventure, Crime, Drama, Thriller	Andrew Davis	Harrison Ford, Tommy Lee Jones, Sela Ward, Julianne Moore
+16139	Father of the Bride	Family, Comedy	Charles Shyer	Steve Martin, Diane Keaton, Martin Short, Kimberly Williams-Paisley
+16387	The Return of Jafar	Animation, Adventure, Family, Fantasy, Musical, Romance	Toby Shelton, Tad Stones	Jonathan Freeman, Scott Weinger, Dan Castellaneta, Jason Alexander
+11829	James and the Giant Peach	Animation, Adventure, Family, Fantasy, Musical	Henry Selick	Paul Terry, Joanna Lumley, Pete Postlethwaite, Simon Callow
+5628	The Nutty Professor	Comedy, Romance, Sci-Fi	Tom Shadyac	Eddie Murphy, Jada Pinkett Smith, James Coburn, Larry Miller
+7521	Scary Movie	Comedy	Keenen Ivory Wayans	Anna Faris, Jon Abrahams, Marlon Wayans, Carmen Electra
+3148	The English Patient	Romance, Drama, War	Anthony Minghella	Ralph Fiennes, Juliette Binoche, Willem Dafoe, Kristin Scott Thomas
+14215	Sky Captain and the World of Tomorrow	Action, Adventure, Mystery, Sci-Fi, Thriller	Kerry Conran	Gwyneth Paltrow, Jude Law, Angelina Jolie, Giovanni Ribisi
+3151	Napoleon Dynamite	Comedy, Drama, Romance	Jared Hess	Jon Heder, Efren Ramirez, Jon Gries, Aaron Ruell
+16406	The Prince and Me	Comedy, Romance	Martha Coolidge	Julia Stiles, Luke Mably, Miranda Richardson, Ben Miller
+5607	The Hunchback of Notre Dame	Animation, Drama, Family, Musical, Romance	Gary Trousdale, Kirk Wise	Demi Moore, Jason Alexander, Mary Kay Bergman, Corey Burton
+14209	Pitch Black	Action, Sci-Fi, Thriller	David Twohy	Radha Mitchell, Cole Hauser, Vin Diesel, Keith David
+14210	Grave of the Fireflies	Animation, Drama, War	Isao Takahata	Tsutomu Tatsumi, Ayano Shiraishi, Akemi Yamaguchi, Yoshiko Shinohara
+11812	Million Dollar Baby	Drama, Sport	Clint Eastwood	Hilary Swank, Clint Eastwood, Morgan Freeman, Jay Baruchel
+16415	The Birdcage	Comedy	Mike Nichols	Robin Williams, Nathan Lane, Gene Hackman, Dianne Wiest
+9913	The Animatrix	Action, Drama, Animation, Sci-Fi	Peter Chung, Andy Jones	Akio Ôtsuka, Clayton Watson, Pamela Adlon, Hedy Burress
+14218	Misery	Thriller	Rob Reiner	James Caan, Kathy Bates, Richard Farnsworth, Frances Sternhagen
+3138	Blade: Trinity	Action, Adventure, Fantasy, Thriller	David S. Goyer	Wesley Snipes, Kris Kristofferson, Parker Posey, Ryan Reynolds
+1255	Better Off Dead...	Comedy, Romance	Savage Steve Holland	John Cusack, David Ogden Stiers, Kim Darby, Demian Slade
+5591	Sid and Nancy	Biography, Drama, Music	Alex Cox	Gary Oldman, Chloe Webb, David Hayman, Debby Bishop
+9863	The 6th Day	Action, Sci-Fi, Thriller	Roger Spottiswoode	Arnold Schwarzenegger, Michael Rapaport, Tony Goldwyn, Michael Rooker
+3198	The Addams Family	Comedy, Family, Fantasy	Barry Sonnenfeld	Anjelica Huston, Raul Julia, Christopher Lloyd, Elizabeth Wilson
+3197	Around the World in 80 Days	Action, Adventure, Comedy, Family, Romance, Western	Frank Coraci	Jackie Chan, Steve Coogan, Jim Broadbent, Kathy Bates
+3195	Saving Private Ryan	Action, Drama, History, War	Steven Spielberg	Tom Hanks, Matt Damon, Tom Sizemore, Edward Burns
+7499	Independence Day	Action, Adventure, Sci-Fi, Thriller	Roland Emmerich	Will Smith, Bill Pullman, Jeff Goldblum, Mary McDonnell
+16169	The Haunting	Horror, Thriller, Mystery	Jan de Bont	Liam Neeson, Catherine Zeta-Jones, Owen Wilson, Lili Taylor
+5596	AlienÂ³	Action, Sci-Fi, Thriller	David Fincher	Sigourney Weaver, Charles S. Dutton, Charles Dance, Paul McGann
+16438	The Wedding Singer	Comedy, Romance, Music	Frank Coraci	Adam Sandler, Drew Barrymore, Christine Taylor, Allen Covert
+1267	Dr. Dolittle 2	Comedy, Family, Romance	Steve Carr	Eddie Murphy, Cedric the Entertainer, Kristen Wilson, Raven-Symoné
+5571	Rocky	Drama, Romance, Sport	John G. Avildsen	Sylvester Stallone, Talia Shire, Burt Young, Carl Weathers
+5582	Star Wars: Episode V - The Empire Strikes Back	Action, Adventure, Sci-Fi	Irvin Kershner	Mark Hamill, Harrison Ford, Carrie Fisher, Billy Dee Williams
+9886	Star Wars: Episode I - The Phantom Menace	Action, Adventure, Fantasy, Sci-Fi	George Lucas	Ewan McGregor, Liam Neeson, Natalie Portman, Jake Lloyd
+7511	Blade	Action, Fantasy, Horror	Stephen Norrington	Wesley Snipes, Stephen Dorff, Kris Kristofferson, N'Bushe Wright
+16181	Demolition Man	Action, Crime, Sci-Fi	Marco Brambilla	Sylvester Stallone, Wesley Snipes, Sandra Bullock, Nigel Hawthorne
+11781	Indiana Jones and the Temple of Doom	Action, Adventure	Steven Spielberg	Harrison Ford, Kate Capshaw, Jonathan Ke Quan, Amrish Puri
+7509	Die Another Day	Action, Adventure, Thriller	Lee Tamahori	Pierce Brosnan, Halle Berry, Rosamund Pike, Toby Stephens
+16178	Batman	Action, Adventure, Comedy, Crime, Family	Leslie H. Martinson	Adam West, Burt Ward, Lee Meriwether, Cesar Romero
+9882	The Fifth Element	Action, Sci-Fi, Thriller	Luc Besson	Bruce Willis, Milla Jovovich, Gary Oldman, Ian Holm
+14248	D2: The Mighty Ducks	Action, Comedy, Drama, Family, Sport	Sam Weisman	Emilio Estevez, Kathryn Erbe, Michael Tucker, Jan Rubes
+16441	Honey I Blew Up the Kid	Adventure, Comedy, Family, Sci-Fi	Randal Kleiser	Rick Moranis, Marcia Strassman, Robert Oliveri, Daniel Shalikar
+16203	Wayne's World 2	Comedy, Music	Stephen Surjik	Mike Myers, Dana Carvey, Christopher Walken, Tia Carrere
+16452	Chocolat	Drama, Mystery, Romance	Lasse Hallström	Juliette Binoche, Judi Dench, Alfred Molina, Carrie-Anne Moss
+9960	Die Hard	Action, Crime, Thriller	John McTiernan	Bruce Willis, Alan Rickman, Bonnie Bedelia, Alexander Godunov
+11880	Boys Don't Cry	Crime, Drama, Romance	Kimberly Peirce	Hilary Swank, Chloë Sevigny, Peter Sarsgaard, Brendan Sexton III
+16465	Meet Joe Black	Drama, Fantasy, Mystery, Romance	Martin Brest	Brad Pitt, Anthony Hopkins, Claire Forlani, Jake Weber
+14274	I Heart Huckabees	Comedy, Drama	David O. Russell	Jason Schwartzman, Jude Law, Naomi Watts, Mark Wahlberg
+5538	Life of Brian	Comedy	Terry Jones	Graham Chapman, John Cleese, Michael Palin, Terry Gilliam
+16469	AVP: Alien vs. Predator	Action, Sci-Fi, Thriller	Paul W.S. Anderson	Sanaa Lathan, Lance Henriksen, Raoul Bova, Ewen Bremner
+3085	Little Nicky	Fantasy, Comedy, Romance	Steven Brill	Adam Sandler, Patricia Arquette, Harvey Keitel, Rhys Ifans
+11886	Short Circuit	Comedy, Family, Sci-Fi	John Badham	Ally Sheedy, Steve Guttenberg, Fisher Stevens, Austin Pendleton
+1174	The Sandlot	Comedy, Drama, Family, Sport	David M. Evans	Tom Guiry, Mike Vitar, Patrick Renna, Chauncey Leopardi
+16223	Vertigo	Crime, Mystery, Romance, Thriller	Alfred Hitchcock	James Stewart, Kim Novak, Barbara Bel Geddes, Tom Helmore
+14280	Butch Cassidy and the Sundance Kid	Adventure, Crime, Drama, Western	George Roy Hill	Paul Newman, Robert Redford, Katharine Ross, Strother Martin
+1176	The Devil's Backbone	Fantasy, Horror, Mystery, Thriller	Guillermo del Toro	Marisa Paredes, Eduardo Noriega, Federico Luppi, Fernando Tielve
+1180	A Beautiful Mind	Biography, Drama	Ron Howard	Russell Crowe, Ed Harris, Jennifer Connelly, Christopher Plummer
+3079	The Lion King	Animation, Adventure, Drama, Family, Musical	Roger Allers, Rob Minkoff	Matthew Broderick, Jeremy Irons, James Earl Jones, Whoopi Goldberg
+5522	The Machinist	Drama, Mystery, Thriller	Brad Anderson	Christian Bale, Jennifer Jason Leigh, Aitana Sánchez-Gijón, John Sharian
+16236	The Gift	Crime, Drama, Mystery, Thriller	Sam Raimi	Cate Blanchett, Katie Holmes, Keanu Reeves, Giovanni Ribisi
+3124	Titanic	Action, Drama, Romance	Jean Negulesco	Clifton Webb, Barbara Stanwyck, Robert Wagner, Audrey Dalton
+11850	Dumb and Dumberer: When Harry Met Lloyd	Comedy	Troy Miller	Derek Richardson, Eric Christian Olsen, Eugene Levy, Timothy Stack
+16499	West Side Story	Crime, Drama, Musical, Romance	Jerome Robbins, Robert Wise	Natalie Wood, George Chakiris, Richard Beymer, Russ Tamblyn
+1200	Teaching Mrs. Tingle	Comedy, Thriller	Kevin Williamson	Helen Mirren, Marisa Coughlan, Katie Holmes, Jeffrey Tambor
+9940	Night of the Living Dead	Horror, Mystery	George A. Romero	Duane Jones, Judith O'Dea, Karl Hardman, Marilyn Eastman
+16242	Con Air	Action, Crime, Thriller	Simon West	Nicolas Cage, John Cusack, John Malkovich, Ving Rhames
+3106	Ghost	Drama, Fantasy, Mystery, Romance, Thriller	Jerry Zucker	Patrick Swayze, Demi Moore, Whoopi Goldberg, Tony Goldwyn
+5515	Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb	Comedy, Drama	Stanley Kubrick	Peter Sellers, George C. Scott, Sterling Hayden, Keenan Wynn
+14312	Jurassic Park	Action, Adventure, Family, Sci-Fi	Steven Spielberg	Sam Neill, Laura Dern, Jeff Goldblum, Richard Attenborough
+14313	The Patriot	Action, Drama, War	Roland Emmerich	Mel Gibson, Heath Ledger, Joely Richardson, Jason Isaacs
+14317	View from the Top	Comedy, Romance	Bruno Barreto	Gwyneth Paltrow, Christina Applegate, Kelly Preston, Mark Ruffalo
+3526	Halloween II	Horror, Thriller	Rick Rosenthal	Jamie Lee Curtis, Donald Pleasence, Charles Cyphers, Jeffrey Kramer
+3524	Pulp Fiction	Crime, Drama, Thriller	Quentin Tarantino	John Travolta, Uma Thurman, Samuel L. Jackson, Bruce Willis
+5226	Rushmore	Comedy, Drama	Wes Anderson	Jason Schwartzman, Bill Murray, Olivia Williams, Seymour Cassel
+10042	Raiders of the Lost Ark	Action, Adventure	Steven Spielberg	Harrison Ford, Karen Allen, Paul Freeman, John Rhys-Davies
+16792	Blow	Biography, Crime, Drama	Ted Demme	Johnny Depp, Penélope Cruz, Franka Potente, Rachel Griffiths
+16793	The Exorcist	Horror	William Friedkin	Ellen Burstyn, Max von Sydow, Linda Blair, Lee J. Cobb
+16790	How the Grinch Stole Christmas	Comedy, Family, Fantasy	Ron Howard	Jim Carrey, Taylor Momsen, Jeffrey Tambor, Christine Baranski
+5223	Girl, Interrupted	Biography, Drama	James Mangold	Winona Ryder, Angelina Jolie, Whoopi Goldberg, Brittany Murphy
+3533	In This World	Drama	Michael Winterbottom	Jamal Udin Torabi, Enayatullah, Imran Paracha, Hiddayatullah
+16784	The Sisterhood of the Traveling Pants	Adventure, Comedy, Drama, Romance	Ken Kwapis	Amber Tamblyn, Alexis Bledel, America Ferrera, Blake Lively
+10033	Teenage Mutant Ninja Turtles II: The Secret of the Ooze	Action, Adventure, Comedy, Family, Sci-Fi	Michael Pressman	Paige Turco, David Warner, Michelan Sisti, Leif Tilden
+7416	Gone with the Wind	Drama, Romance, War	Victor Fleming	Clark Gable, Vivien Leigh, Thomas Mitchell, Barbara O'Neil
+10030	Hannibal	Crime, Drama, Thriller	Ridley Scott	Anthony Hopkins, Julianne Moore, Gary Oldman, Ray Liotta
+7397	Mrs. Doubtfire	Comedy, Drama, Family	Chris Columbus	Robin Williams, Sally Field, Pierce Brosnan, Harvey Fierstein
+5243	Romeo Must Die	Action, Crime, Drama, Romance, Thriller	Andrzej Bartkowiak	Jet Li, Aaliyah, Isaiah Washington, Russell Wong
+10027	Star Trek II: The Wrath of Khan	Action, Adventure, Sci-Fi, Thriller	Nicholas Meyer	William Shatner, Leonard Nimoy, DeForest Kelley, James Doohan
+5239	The Longest Yard	Comedy, Drama, Sport	Peter Segal	Adam Sandler, Burt Reynolds, Chris Rock, Nelly
+12221	The Outsiders	Crime, Drama, Romance	Francis Ford Coppola	C. Thomas Howell, Matt Dillon, Ralph Macchio, Patrick Swayze
+16008	The Karate Kid	Drama, Family, Sport	John G. Avildsen	Ralph Macchio, Pat Morita, Elisabeth Shue, Martin Kove
+16768	Jawbreaker	Comedy, Crime	Darren Stein	Rose McGowan, Rebecca Gayheart, Julie Benz, Judy Greer
+7381	Flubber	Comedy, Family, Sci-Fi	Les Mayfield	Robin Williams, Marcia Gay Harden, Christopher McDonald, Raymond J. Barry
+1406	Hook	Adventure, Family, Fantasy	Steven Spielberg	Dustin Hoffman, Robin Williams, Julia Roberts, Bob Hoskins
+12161	Big Fish	Adventure, Drama, Fantasy	Tim Burton	Ewan McGregor, Albert Finney, Billy Crudup, Jessica Lange
+16825	Maverick	Adventure, Comedy, Western	Richard Donner	Mel Gibson, Jodie Foster, James Garner, Graham Greene
+13860	Volcano	Action, Thriller, Drama	Mick Jackson	Tommy Lee Jones, Anne Heche, Gaby Hoffmann, Don Cheadle
+12172	Pleasantville	Comedy, Drama, Fantasy	Gary Ross	Tobey Maguire, Jeff Daniels, Joan Allen, Reese Witherspoon
+10004	Ninja Scroll	Animation, Action, Adventure, Fantasy, Thriller	Yoshiaki Kawajiri, Kevin Seymour	Kôichi Yamadera, Emi Shinohara, Takeshi Aono, Daisuke Gôri
+16063	Say Anything...	Comedy, Drama, Romance	Cameron Crowe	John Cusack, Ione Skye, John Mahoney, Lili Taylor
+5191	Vertical Limit	Action, Adventure, Thriller	Martin Campbell	Scott Glenn, Chris O'Donnell, Bill Paxton, Robin Tunney
+13886	Jason X	Horror, Sci-Fi	James Isaac	Kane Hodder, Lexa Doig, Lisa Ryder, Chuck Campbell
+3579	2 Fast 2 Furious	Action, Crime, Thriller	John Singleton	Paul Walker, Tyrese Gibson, Cole Hauser, Eva Mendes
+1307	S.W.A.T.	Action, Crime, Thriller	Clark Johnson	Samuel L. Jackson, Colin Farrell, Michelle Rodriguez, LL Cool J
+16082	13 Going on 30	Comedy, Fantasy, Romance	Gary Winick	Jennifer Garner, Mark Ruffalo, Judy Greer, Andy Serkis
+16859	Agent Cody Banks 2: Destination London	Action, Adventure, Comedy, Crime, Family, Mystery, Romance	Kevin Allen	Frankie Muniz, Anthony Anderson, Hannah Spearritt, Cynthia Stevenson
+1305	Thirteen	Drama	Catherine Hardwicke	Evan Rachel Wood, Holly Hunter, Nikki Reed, Jeremy Sisto
+3463	10 Things I Hate About You	Comedy, Romance	Gil Junger	Heath Ledger, Julia Stiles, Joseph Gordon-Levitt, Larisa Oleynik
+12262	A Charlie Brown Christmas	Animation, Short, Comedy, Family	Bill Melendez	Ann Altieri, Chris Doran, Sally Dryer, Bill Melendez
+16850	The Color Purple	Drama	Steven Spielberg	Danny Glover, Whoopi Goldberg, Oprah Winfrey, Margaret Avery
+3466	Spy Kids	Action, Adventure, Comedy, Family, Sci-Fi	Robert Rodriguez	Alexa Vega, Daryl Sabara, Antonio Banderas, Carla Gugino
+5154	Constantine	Action, Drama, Fantasy, Horror, Mystery	Francis Lawrence	Keanu Reeves, Rachel Weisz, Djimon Hounsou, Shia LaBeouf
+13894	Cast Away	Adventure, Drama	Robert Zemeckis	Tom Hanks, Helen Hunt, Paul Sanchez, Lari White
+7356	Deep Impact	Action, Drama, Sci-Fi, Thriller	Mimi Leder	Robert Duvall, Téa Leoni, Elijah Wood, Morgan Freeman
+7331	Secret Window	Mystery, Thriller	David Koepp	Johnny Depp, Maria Bello, John Turturro, Timothy Hutton
+1289	Look Who's Talking Too	Comedy, Family, Romance	Amy Heckerling	John Travolta, Kirstie Alley, Olympia Dukakis, Elias Koteas
+5181	Under the Tuscan Sun	Comedy, Drama, Romance	Audrey Wells	Diane Lane, Raoul Bova, Sandra Oh, Lindsay Duncan
+10082	Soul Plane	Comedy, Music	Jessy Terrero	Dwayne Adway, Snoop Dogg, Tom Arnold, Kevin Hart
+12280	The Jerk	Comedy, Music	Carl Reiner	Steve Martin, Bernadette Peters, Catlin Adams, Mabel King
+5169	My Cousin Vinny	Comedy, Crime	Jonathan Lynn	Joe Pesci, Marisa Tomei, Ralph Macchio, Mitchell Whitfield
+16113	Miss Congeniality 2: Armed & Fabulous	Action, Comedy, Crime	John Pasquin	Sandra Bullock, Regina King, William Shatner, Enrique Murciano
+12224	Scream 2	Horror, Mystery, Thriller	Wes Craven	Neve Campbell, Courteney Cox, David Arquette, Jada Pinkett Smith
+13930	A Lot Like Love	Comedy, Drama, Romance	Nigel Cole	Ashton Kutcher, Amanda Peet, Taryn Manning, Aimee Garcia
+16118	The Ninth Gate	Drama, Fantasy, Horror, Mystery, Thriller	Roman Polanski	Johnny Depp, Frank Langella, Lena Olin, Emmanuelle Seigner
+12232	Lost in Translation	Drama, Romance	Sofia Coppola	Bill Murray, Scarlett Johansson, Giovanni Ribisi, Anna Faris
+16882	Anger Management	Comedy	Peter Segal	Jack Nicholson, Adam Sandler, Marisa Tomei, Luis Guzmán
+12238	40 Days and 40 Nights	Comedy, Romance, Drama	Michael Lehmann	Josh Hartnett, Shannyn Sossamon, Paulo Costanzo, Adam Trese
+3505	Freddy Got Fingered	Comedy	Tom Green	Tom Green, Rip Torn, Marisa Coughlan, Eddie Kaye Thomas
+12244	The Good Girl	Comedy, Drama, Romance	Miguel Arteta	Jennifer Aniston, Jake Gyllenhaal, Deborah Rush, Mike White
+1324	The Professional	Crime, Drama, Thriller	Luc Besson	Jean Reno, Gary Oldman, Natalie Portman, Danny Aiello
+16879	Titanic	Adventure, History, Romance	James Cameron	Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates
+5151	Bedknobs and Broomsticks	Adventure, Family, Fantasy, Musical	Robert Stevenson	Angela Lansbury, David Tomlinson, Roddy McDowall, Sam Jaffe
+10053	Oliver!	Crime, Drama, Family, Musical	Carol Reed	Mark Lester, Ron Moody, Shani Wallis, Oliver Reed
+15902	Blue Collar Comedy Tour: The Movie	Comedy, Documentary	C.B. Harding	Jeff Foxworthy, Bill Engvall, Ron White, Larry the Cable Guy
+7294	Fools Rush In	Comedy, Drama, Romance	Andy Tennant	Matthew Perry, Salma Hayek, Jon Tenney, Carlos Gómez
+12074	The Sound of Music	Biography, Drama, Family, Musical	Robert Wise	Julie Andrews, Christopher Plummer, Eleanor Parker, Richard Haydn
+13955	The Jacket	Drama, Fantasy, Mystery, Sci-Fi, Thriller	John Maybury	Adrien Brody, Keira Knightley, Daniel Craig, Kris Kristofferson
+5345	Shark Tale	Animation, Comedy, Family	Bibo Bergeron, Vicky Jenson	Will Smith, Robert De Niro, Renée Zellweger, Angelina Jolie
+1502	Superstar	Comedy	Bruce McCulloch	Molly Shannon, Will Ferrell, Elaine Hendrix, Harland Williams
+12071	Mallrats	Comedy, Romance	Kevin Smith	Shannen Doherty, Jeremy London, Jason Lee, Claire Forlani
+16668	A Few Good Men	Crime, Drama, Mystery, Thriller	Rob Reiner	Tom Cruise, Jack Nicholson, Demi Moore, Kevin Bacon
+15890	The Brave Little Toaster	Animation, Adventure, Comedy, Family, Fantasy, Musical	Jerry Rees	Jon Lovitz, Timothy Stack, Timothy E. Day, Thurl Ravenscroft
+10170	American Pie 2	Comedy, Romance	J.B. Rogers	Jason Biggs, Seann William Scott, Shannon Elizabeth, Alyson Hannigan
+10168	The League of Extraordinary Gentlemen	Action, Fantasy, Sci-Fi	Stephen Norrington	Sean Connery, Stuart Townsend, Peta Wilson, Jason Flemyng
+15887	Van Helsing	Action, Adventure, Drama, Fantasy, Mystery, Thriller	Stephen Sommers	Hugh Jackman, Kate Beckinsale, Richard Roxburgh, Shuler Hensley
+12092	Batman & Robin	Action, Crime, Fantasy, Sci-Fi	Joel Schumacher	Arnold Schwarzenegger, George Clooney, Chris O'Donnell, Uma Thurman
+5363	Jay and Silent Bob Strike Back	Comedy	Kevin Smith	Jason Mewes, Kevin Smith, Ben Affleck, Jeff Anderson
+12090	Kate & Leopold	Comedy, Fantasy, Romance	James Mangold	Meg Ryan, Hugh Jackman, Liev Schreiber, Breckin Meyer
+3418	Sister Act 2: Back in the Habit	Comedy, Music	Bill Duke	Whoopi Goldberg, Kathy Najimy, Maggie Smith, Barnard Hughes
+16640	Closer	Drama, Romance	Mike Nichols	Natalie Portman, Jude Law, Clive Owen, Julia Roberts
+3414	Pocahontas	Animation, Drama, Family, History, Musical, Romance	Mike Gabriel, Eric Goldberg	Mel Gibson, Linda Hunt, Christian Bale, Irene Bedard
+13981	The Virgin Suicides	Drama, Mystery, Romance	Sofia Coppola	Kirsten Dunst, Josh Hartnett, James Woods, Kathleen Turner
+12084	Adaptation.	Comedy, Crime, Drama	Spike Jonze	Nicolas Cage, Meryl Streep, Chris Cooper, Tilda Swinton
+7267	Tombstone	Action, Drama, History, Romance, Western	George P. Cosmatos	Kurt Russell, Val Kilmer, Sam Elliott, Bill Paxton
+5317	Miss Congeniality	Action, Comedy, Crime	Donald Petrie	Sandra Bullock, Michael Caine, Benjamin Bratt, Candice Bergen
+5318	Tommy Boy	Adventure, Comedy	Peter Segal	Chris Farley, David Spade, Brian Dennehy, Bo Derek
+5315	The Lost Boys	Comedy, Fantasy, Horror	Joel Schumacher	Jason Patric, Corey Haim, Dianne Wiest, Barnard Hughes
+5327	Guess Who	Comedy, Romance	Kevin Rodney Sullivan	Ashton Kutcher, Bernie Mac, Zoe Saldana, Judith Scott
+3425	Goodfellas	Crime, Drama, Thriller	Martin Scorsese	Robert De Niro, Ray Liotta, Joe Pesci, Lorraine Bracco
+7249	Alfie	Comedy, Drama	Charles Shyer	Jude Law, Sienna Miller, Susan Sarandon, Renée Taylor
+15922	The Graduate	Comedy, Drama, Romance	Mike Nichols	Dustin Hoffman, Anne Bancroft, Katharine Ross, William Daniels
+12034	The Shining	Horror, Mystery	Stanley Kubrick	Jack Nicholson, Shelley Duvall, Danny Lloyd, Scatman Crothers
+3427	Men in Black II	Action, Comedy, Sci-Fi	Barry Sonnenfeld	Tommy Lee Jones, Will Smith, Rip Torn, Lara Flynn Boyle
+5333	Big Fat Liar	Adventure, Comedy, Family	Shawn Levy	Frankie Muniz, Amanda Bynes, Paul Giamatti, Amanda Detmer
+7240	Beverly Hills Cop II	Action, Comedy, Crime, Thriller	Tony Scott	Eddie Murphy, Judge Reinhold, John Ashton, Jürgen Prochnow
+12052	Primal Fear	Crime, Drama, Mystery, Thriller	Gregory Hoblit	Richard Gere, Laura Linney, Edward Norton, John Mahoney
+12054	Child's Play	Horror, Mystery, Thriller	Tom Holland	Catherine Hicks, Chris Sarandon, Alex Vincent, Brad Dourif
+3446	Spirited Away	Animation, Adventure, Family, Fantasy	Hayao Miyazaki	Daveigh Chase, Suzanne Pleshette, Miyu Irino, Rumi Hîragi
+1518	Casper	Comedy, Family, Fantasy	Brad Silberling	Bill Pullman, Christina Ricci, Cathy Moriarty, Eric Idle
+3441	Kicking & Screaming	Comedy, Family, Sport	Jesse Dylan	Will Ferrell, Robert Duvall, Josh Hutcherson, Mike Ditka
+7233	Stand by Me	Adventure, Drama	Rob Reiner	Wil Wheaton, River Phoenix, Corey Feldman, Jerry O'Connell
+10123	Broken Arrow	Action, Thriller	John Woo	John Travolta, Christian Slater, Samantha Mathis, Delroy Lindo
+7234	Men of Honor	Biography, Drama	George Tillman Jr.	Cuba Gooding Jr., Robert De Niro, Charlize Theron, Aunjanue Ellis
+7227	Hellboy	Action, Adventure, Fantasy	Guillermo del Toro	Ron Perlman, Doug Jones, Selma Blair, John Hurt
+10225	Groundhog Day	Comedy, Drama, Fantasy, Romance	Harold Ramis	Bill Murray, Andie MacDowell, Chris Elliott, Stephen Tobolowsky
+10231	Kung Fu Hustle	Action, Comedy, Crime, Fantasy	Stephen Chow	Stephen Chow, Wah Yuen, Qiu Yuen, Shengyi Huang
+10229	Vanity Fair	Drama, Romance	Mira Nair	Reese Witherspoon, Romola Garai, James Purefoy, Jonathan Rhys Meyers
+12130	Eraserhead	Fantasy, Horror, Sci-Fi	David Lynch	Jack Nance, Charlotte Stewart, Allen Joseph, Jeanne Bates
+7219	The Untouchables	Crime, Drama, History, Thriller	Brian De Palma	Kevin Costner, Sean Connery, Robert De Niro, Charles Martin Smith
+15952	The Replacements	Comedy, Sport	Howard Deutch	Keanu Reeves, Gene Hackman, Brooke Langton, Orlando Jones
+15953	Bill & Ted's Excellent Adventure	Adventure, Comedy, Family, Sci-Fi	Stephen Herek	Keanu Reeves, Alex Winter, George Carlin, Terry Camilleri
+1433	Casablanca	Drama, Romance, War	Michael Curtiz	Humphrey Bogart, Ingrid Bergman, Paul Henreid, Claude Rains
+15956	The Last Boy Scout	Action, Comedy, Crime, Mystery, Thriller	Tony Scott	Bruce Willis, Damon Wayans, Chelsea Field, Noble Willingham
+3333	The Village	Mystery, Thriller	M. Night Shyamalan	Sigourney Weaver, William Hurt, Joaquin Phoenix, Bryce Dallas Howard
+16707	Old School	Comedy	Todd Phillips	Luke Wilson, Vince Vaughn, Will Ferrell, Jeremy Piven
+15945	Space Jam	Animation, Adventure, Comedy, Family, Sci-Fi, Sport	Joe Pytka	Michael Jordan, Wayne Knight, Theresa Randle, Manner Washington
+14039	The Birds	Horror, Romance, Thriller	Alfred Hitchcock	Rod Taylor, Tippi Hedren, Suzanne Pleshette, Jessica Tandy
+10212	Weird Science	Comedy, Fantasy, Romance	John Hughes	Anthony Michael Hall, Ilan Mitchell-Smith, Kelly LeBrock, Bill Paxton
+3347	Honey	Drama, Music, Romance	Bille Woodruff	Jessica Alba, Mekhi Phifer, Lil' Romeo, Missy 'Misdemeanor' Elliott
+14042	Mulholland Dr.	Drama, Mystery, Thriller	David Lynch	Naomi Watts, Laura Harring, Justin Theroux, Ann Miller
+14047	Tears of the Sun	Action, Drama, Thriller, War	Antoine Fuqua	Bruce Willis, Cole Hauser, Monica Bellucci, Eamonn Walker
+12149	Speed 2: Cruise Control	Action, Romance, Thriller	Jan de Bont	Sandra Bullock, Jason Patric, Willem Dafoe, Temuera Morrison
+5309	Friends 'Til the End	Drama	Jack Bender	Shannen Doherty, Jennifer Blanc, Jason London, Harriet Sansom Harris
+3368	The Family Man	Comedy, Fantasy, Drama, Romance	Brett Ratner	Nicolas Cage, Téa Leoni, Don Cheadle, Jeremy Piven
+7193	The Princess Bride	Adventure, Comedy, Family, Fantasy, Romance	Rob Reiner	Cary Elwes, Mandy Patinkin, Robin Wright, Chris Sarandon
+14050	Willy Wonka & the Chocolate Factory	Family, Fantasy, Musical	Mel Stuart	Gene Wilder, Jack Albertson, Peter Ostrum, Roy Kinnear
+10198	102 Dalmatians	Comedy, Family	Kevin Lima	Glenn Close, Gérard Depardieu, Ioan Gruffudd, Alice Evans
+14056	Ben-Hur	Action, Adventure, Drama, History, Romance	William Wyler	Charlton Heston, Jack Hawkins, Stephen Boyd, Haya Harareet
+3364	The Parent Trap	Comedy, Family	Nancy Meyers	Lindsay Lohan, Dennis Quaid, Natasha Richardson, Elaine Hendrix
+16765	Face/Off	Action, Crime, Sci-Fi, Thriller	John Woo	John Travolta, Nicolas Cage, Joan Allen, Alessandro Nivola
+12102	Hedwig and the Angry Inch	Comedy, Drama, Music	John Cameron Mitchell	John Cameron Mitchell, Miriam Shor, Stephen Trask, Theodore Liscinski
+1470	Bend It Like Beckham	Comedy, Drama, Romance, Sport	Gurinder Chadha	Parminder Nagra, Keira Knightley, Jonathan Rhys Meyers, Anupam Kher
+3385	28 Days Later...	Horror, Sci-Fi, Thriller	Danny Boyle	Cillian Murphy, Naomie Harris, Christopher Eccleston, Alex Palmer
+7179	Robin Hood	Animation, Adventure, Family, Romance	Wolfgang Reitherman	Brian Bedford, Phil Harris, Andy Devine, Monica Evans
+16740	Magnolia	Drama	Paul Thomas Anderson	Tom Cruise, Jason Robards, Julianne Moore, Philip Seymour Hoffman
+12115	Toys	Fantasy, Comedy	Barry Levinson	Robin Williams, Michael Gambon, Joan Cusack, Robin Wright
+3824	Fear and Loathing in Las Vegas	Drama, Fantasy	Terry Gilliam	Johnny Depp, Benicio Del Toro, Tobey Maguire, Ellen Barkin
+13629	Alice in Wonderland	Animation, Adventure, Family, Fantasy, Musical	Clyde Geronimi, Wilfred Jackson	Kathryn Beaumont, Ed Wynn, Richard Haydn, Sterling Holloway
+11421	The Audition	Short	Chad Lowe	Hilary Swank, Chad Lowe, Brittany Murphy, Lisa Arning
+1659	Grumpy Old Men	Comedy, Drama	Donald Petrie	Jack Lemmon, Walter Matthau, Ann-Margret, Burgess Meredith
+13610	Spider-Man	Adventure, Animation, Drama, Sci-Fi, Action, Crime, Thriller	Alan Caldwell, Johnny Darrell	Neil Patrick Harris, Lisa Loeb, Ian Ziering, Angelle Brooks
+5967	The Lizzie McGuire Movie	Adventure, Comedy, Family, Music, Romance	Jim Fall	Hilary Duff, Adam Lamberg, Clayton Snyder, Hallie Todd
+13614	Office Space	Comedy, Crime	Mike Judge	Ron Livingston, Jennifer Aniston, David Herman, Ajay Naidu
+11398	Airplane!	Comedy, Romance	Jim Abrahams, David Zucker	Robert Hays, Julie Hagerty, Leslie Nielsen, Kareem Abdul-Jabbar
+3813	Blade II	Action, Fantasy, Horror, Thriller	Guillermo del Toro	Wesley Snipes, Kris Kristofferson, Ron Perlman, Leonor Varela
+9235	G.I. Jane	Action, Drama	Ridley Scott	Demi Moore, Viggo Mortensen, Anne Bancroft, Jason Beghe
+9234	Mighty Joe Young	Action, Adventure, Family, Fantasy, Thriller	Ron Underwood	Bill Paxton, Charlize Theron, Rade Serbedzija, Peter Firth
+3817	Stargate	Fantasy, Action, Adventure, Sci-Fi	Roland Emmerich	Kurt Russell, James Spader, Alexis Cruz, Viveca Lindfors
+8160	Halloween: Resurrection	Horror, Thriller	Rick Rosenthal	Jamie Lee Curtis, Busta Rhymes, Brad Loree, Bianca Kajlich
+13593	Life is Beautiful	Drama, Romance, War	Roberto Benigni	Roberto Benigni, Nicoletta Braschi, Giorgio Cantarini, Giustino Durano
+11443	Harry Potter and the Chamber of Secrets	Adventure, Family, Fantasy, Mystery	Chris Columbus	Daniel Radcliffe, Rupert Grint, Emma Watson, Richard Harris
+11446	Little Women	Drama, Family, Romance	Gillian Armstrong	Susan Sarandon, Winona Ryder, Kirsten Dunst, Claire Danes
+6014	House of Wax	Horror, Thriller	Jaume Collet-Serra	Chad Michael Murray, Paris Hilton, Elisha Cuthbert, Brian Van Holt
+6001	Tom and Jerry: The Movie	Animation, Family	Phil Roman	Richard Kind, Dana Hill, Anndi McAfee, Tony Jay
+15755	Big	Comedy, Drama, Family, Fantasy, Romance	Penny Marshall	Tom Hanks, Elizabeth Perkins, Robert Loggia, John Heard
+11451	The Iron Giant	Animation, Action, Adventure, Comedy, Crime, Family, Sci-Fi	Brad Bird	Eli Marienthal, Harry Connick Jr., Jennifer Aniston, Vin Diesel
+8174	Bully	Crime, Drama, Thriller	Larry Clark	Brad Renfro, Nick Stahl, Bijou Phillips, Rachel Miner
+9254	The Goonies	Adventure, Comedy, Family	Richard Donner	Sean Astin, Josh Brolin, Jeff Cohen, Corey Feldman
+1625	Aliens	Action, Sci-Fi, Thriller	James Cameron	Sigourney Weaver, Michael Biehn, William Hope, Paul Reiser
+17050	Return to Oz	Adventure, Family, Fantasy, Mystery	Walter Murch	Fairuza Balk, Nicol Williamson, Jean Marsh, Piper Laurie
+15764	Legally Blonde 2: Red, White & Blonde	Comedy	Charles Herman-Wurmfeld	Reese Witherspoon, Sally Field, Bob Newhart, Regina King
+13580	A Fish Called Wanda	Comedy, Crime	Charles Crichton	John Cleese, Jamie Lee Curtis, Kevin Kline, Michael Palin
+9279	Sexy Beast	Crime, Drama	Jonathan Glazer	Ray Winstone, Ben Kingsley, Ian McShane, Amanda Redman
+13582	Never Been Kissed	Comedy, Drama, Romance	Raja Gosnell	Drew Barrymore, David Arquette, Michael Vartan, Molly Shannon
+9265	Batman Returns	Action, Crime, Fantasy, Thriller	Tim Burton	Michael Keaton, Danny DeVito, Michelle Pfeiffer, Christopher Walken
+5991	Sin City	Crime, Drama, Thriller	Frank Miller, Robert Rodriguez	Mickey Rourke, Clive Owen, Bruce Willis, Jessica Alba
+1582	It	Drama, Horror, Mystery, Thriller	Tommy Lee Wallace	Richard Thomas, Tim Reid, Annette O'Toole, Harry Anderson
+13695	Shrek Forever After	Animation, Action, Adventure, Comedy, Family, Fantasy	Mike Mitchell	Mike Myers, Cameron Diaz, Eddie Murphy, Antonio Banderas
+17134	The Mighty Ducks	Action, Comedy, Drama, Family, Sport	Stephen Herek	Emilio Estevez, Joss Ackland, Lane Smith, Heidi Kling
+15844	Remember the Titans	Drama, Sport	Boaz Yakin	Denzel Washington, Will Patton, Wood Harris, Ryan Hurst
+17133	All Dogs Go to Heaven	Animation, Action, Adventure, Comedy, Drama, Family, Fantasy, Musical	Don Bluth, Gary Goldman	Dom DeLuise, Burt Reynolds, Judith Barsi, Melba Moore
+15843	Blue Crush	Drama, Romance, Sport	John Stockwell	Kate Bosworth, Michelle Rodriguez, Matthew Davis, Sanoe Lake
+17129	The Devil's Advocate	Drama, Mystery, Thriller	Taylor Hackford	Keanu Reeves, Al Pacino, Charlize Theron, Jeffrey Jones
+15855	Cadet Kelly	Comedy, Family	Larry Shaw	Hilary Duff, Christy Carlson Romano, Gary Cole, Shawn Ashmore
+8079	Interview with the Vampire: The Vampire Chronicles	Drama, Fantasy	Neil Jordan	Brad Pitt, Tom Cruise, Antonio Banderas, Kirsten Dunst
+15853	Resident Evil	Action, Adventure, Horror, Sci-Fi, Thriller	Paul W.S. Anderson	Milla Jovovich, Michelle Rodriguez, Colin Salmon, Eric Mabius
+1571	Poltergeist	Fantasy, Horror	Tobe Hooper	JoBeth Williams, Heather O'Rourke, Craig T. Nelson, Beatrice Straight
+8072	Se7en	Crime, Drama, Mystery, Thriller	David Fincher	Morgan Freeman, Brad Pitt, Kevin Spacey, Gwyneth Paltrow
+3750	The Terminal	Comedy, Drama, Romance	Steven Spielberg	Tom Hanks, Catherine Zeta-Jones, Chi McBride, Stanley Tucci
+8086	The Cat's Meow	Drama, Mystery	Peter Bogdanovich	Kirsten Dunst, Cary Elwes, Edward Herrmann, Eddie Izzard
+17149	Gothika	Horror, Thriller, Mystery	Mathieu Kassovitz	Halle Berry, Penélope Cruz, Robert Downey Jr., Charles S. Dutton
+1595	The Third Man	Film-Noir, Mystery, Thriller	Carol Reed	Orson Welles, Joseph Cotten, Alida Valli, Trevor Howard
+13673	Toy Story	Animation, Adventure, Comedy, Family, Fantasy	John Lasseter	Tom Hanks, Tim Allen, Don Rickles, Jim Varney
+5897	Jeepers Creepers II	Horror, Thriller	Victor Salva	Jonathan Breck, Ray Wise, Nicki Aycox, Garikayi Mutambirwa
+15871	Herbie Fully Loaded	Adventure, Comedy, Family, Fantasy, Romance, Sport	Angela Robinson	Lindsay Lohan, Michael Keaton, Cheryl Hines, Breckin Meyer
+11468	Layer Cake	Crime, Drama, Thriller	Matthew Vaughn	Daniel Craig, Sienna Miller, Michael Gambon, Tom Hardy
+3756	About Schmidt	Comedy, Drama	Alexander Payne	Jack Nicholson, Hope Davis, Dermot Mulroney, Kathy Bates
+9298	From Dusk Till Dawn	Action, Crime, Horror, Thriller	Robert Rodriguez	Harvey Keitel, George Clooney, Juliette Lewis, Quentin Tarantino
+1585	Joy Ride	Crime, Horror, Thriller	John Dahl	Matthew Kimbrough, Leelee Sobieski, Steve Zahn, Paul Walker
+17100	The Beach	Adventure, Drama, Romance, Thriller	Danny Boyle	Leonardo DiCaprio, Daniel York, Patcharawan Patarakijjanon, Virginie Ledoyen
+3730	Elizabeth	Biography, Drama, History, Romance	Shekhar Kapur	Cate Blanchett, Geoffrey Rush, Christopher Eccleston, Joseph Fiennes
+5946	Saturday Night Fever	Drama, Music, Romance	John Badham	John Travolta, Karen Lynn Gorney, Barry Miller, Joseph Cali
+8099	Reign of Fire	Action, Fantasy, Sci-Fi, Thriller	Rob Bowman	Matthew McConaughey, Christian Bale, Izabella Scorupco, Gerard Butler
+8108	Monsters, Inc.	Animation, Adventure, Comedy, Family, Fantasy	Pete Docter, David Silverman	Billy Crystal, John Goodman, Mary Gibbs, Steve Buscemi
+1542	Sleepless in Seattle	Comedy, Romance, Drama	Nora Ephron	Tom Hanks, Meg Ryan, Ross Malinger, Rita Wilson
+15816	Ronin	Action, Crime, Thriller	John Frankenheimer	Robert De Niro, Jean Reno, Natascha McElhone, Stellan Skarsgård
+17088	Meet the Parents	Comedy, Romance	Jay Roach	Ben Stiller, Robert De Niro, Teri Polo, Blythe Danner
+15818	The Mask of Zorro	Action, Adventure, Romance, Western	Martin Campbell	Antonio Banderas, Anthony Hopkins, Catherine Zeta-Jones, Stuart Wilson
+13651	Air Force One	Action, Drama, Thriller	Wolfgang Petersen	Harrison Ford, Gary Oldman, Glenn Close, Wendy Crewson
+5939	The Mummy Returns	Action, Adventure, Fantasy	Stephen Sommers	Brendan Fraser, Rachel Weisz, John Hannah, Arnold Vosloo
+15829	Bubble Boy	Adventure, Comedy, Romance	Blair Hayes	Jake Gyllenhaal, Swoosie Kurtz, Marley Shelton, Danny Trejo
+8117	Pink Floyd The Wall	Drama, Music	Alan Parker	Bob Geldof, Christine Hargreaves, James Laurenson, Eleanor David
+9340	Pearl Harbor	Action, Drama, Romance, War	Michael Bay	Ben Affleck, Kate Beckinsale, Josh Hartnett, Cuba Gooding Jr.
+3713	Saw	Crime, Horror, Mystery, Thriller	James Wan	Cary Elwes, Leigh Whannell, Danny Glover, Ken Leung
+1561	American Wedding	Comedy, Romance	Jesse Dylan	Jason Biggs, Alyson Hannigan, Seann William Scott, Eugene Levy
+3715	Commando	Action, Adventure	Mark L. Lester	Arnold Schwarzenegger, Rae Dawn Chong, Dan Hedaya, Vernon Wells
+11490	A League of Their Own	Comedy, Drama, Sport	Penny Marshall	Tom Hanks, Geena Davis, Lori Petty, Madonna
+13636	Fast Times at Ridgemont High	Comedy, Drama, Romance	Amy Heckerling	Sean Penn, Jennifer Jason Leigh, Judge Reinhold, Robert Romanus
+13638	George of the Jungle 2	Comedy, Family, Adventure	David Grossman	Christopher Showerman, Julie Benz, Angus T. Jones, Thomas Haden Church
+1558	Rocky V	Drama, Sport	John G. Avildsen	Sylvester Stallone, Talia Shire, Burt Young, Sage Stallone
+9329	Dennis the Menace	Comedy, Family	Nick Castle	Walter Matthau, Mason Gamble, Joan Plowright, Christopher Lloyd
+16930	The Tuxedo	Action, Comedy, Sci-Fi, Thriller	Kevin Donovan	Jackie Chan, Jennifer Love Hewitt, Jason Isaacs, Debi Mazar
+6099	Apocalypse Now	Drama, War	Francis Ford Coppola	Martin Sheen, Marlon Brando, Robert Duvall, Frederic Forrest
+11283	Forrest Gump	Drama, Romance	Robert Zemeckis	Tom Hanks, Robin Wright, Gary Sinise, Sally Field
+3689	The Amityville Horror	Drama, Horror, Mystery, Thriller	Andrew Douglas	Ryan Reynolds, Melissa George, Jimmy Bennett, Jesse James
+16948	Bridget Jones: The Edge of Reason	Comedy, Romance	Beeban Kidron	Renée Zellweger, Colin Firth, Hugh Grant, Gemma Jones
+6085	M	Crime, Thriller	Fritz Lang	Peter Lorre, Ellen Widmann, Inge Landgut, Otto Wernicke
+16954	Indiana Jones and the Last Crusade	Action, Adventure	Steven Spielberg	Harrison Ford, Sean Connery, Alison Doody, Denholm Elliott
+8016	Eyes Wide Shut	Drama, Mystery, Thriller	Stanley Kubrick	Tom Cruise, Nicole Kidman, Todd Field, Sydney Pollack
+9368	The Texas Chain Saw Massacre	Horror, Mystery, Thriller	Tobe Hooper	Marilyn Burns, Edwin Neal, Allen Danziger, Paul A. Partain
+3684	Goldfinger	Action, Adventure, Thriller	Guy Hamilton	Sean Connery, Gert Fröbe, Honor Blackman, Shirley Eaton
+11323	Shanghai Knights	Action, Adventure, Comedy, Western	David Dobkin	Jackie Chan, Owen Wilson, Fann Wong, Aaron Johnson
+6133	Red Dawn	Action, Adventure, Drama, Thriller	John Milius	Patrick Swayze, C. Thomas Howell, Lea Thompson, Charlie Sheen
+9381	The Elephant Man	Biography, Drama, History	David Lynch	Anthony Hopkins, John Hurt, Anne Bancroft, John Gielgud
+6134	Collateral	Crime, Drama, Thriller	Michael Mann	Tom Cruise, Jamie Foxx, Jada Pinkett Smith, Mark Ruffalo
+1743	The Warriors	Action, Adventure, Crime, Thriller	Walter Hill	Michael Beck, James Remar, Dorsey Wright, Brian Tyler
+3670	Encino Man	Comedy, Fantasy	Les Mayfield	Sean Astin, Brendan Fraser, Pauly Shore, Megan Ward
+8038	Cinderella	Animation, Family, Fantasy, Musical, Romance	Clyde Geronimi, Wilfred Jackson	Ilene Woods, James MacDonald, Eleanor Audley, Verna Felton
+1744	Beverly Hills Cop	Action, Comedy, Crime, Drama, Thriller	Martin Brest	Eddie Murphy, Judge Reinhold, John Ashton, Lisa Eilbacher
+16912	Chicken Run	Animation, Family, Comedy	Peter Lord, Nick Park	Mel Gibson, Julia Sawalha, Phil Daniels, Lynn Ferguson
+6119	Stuck on You	Comedy	Bobby Farrelly, Peter Farrelly	Matt Damon, Greg Kinnear, Eva Mendes, Cher
+3648	Who Framed Roger Rabbit	Animation, Comedy, Crime, Family, Fantasy, Mystery	Robert Zemeckis	Bob Hoskins, Christopher Lloyd, Joanna Cassidy, Charles Fleischer
+13705	Basic Instinct	Mystery, Thriller	Paul Verhoeven	Michael Douglas, Sharon Stone, George Dzundza, Jeanne Tripplehorn
+1754	Sixteen Candles	Comedy, Romance	John Hughes	Molly Ringwald, Anthony Michael Hall, Justin Henry, Michael Schoeffling
+13707	Scarface	Crime, Drama, Thriller	Brian De Palma	Al Pacino, Michelle Pfeiffer, Steven Bauer, Mary Elizabeth Mastrantonio
+11301	The Wicker Man	Drama, Mystery, Thriller	Robin Hardy	Edward Woodward, Christopher Lee, Diane Cilento, Britt Ekland
+1757	The Lord of the Rings	Animation, Adventure, Drama, Fantasy	Ralph Bakshi	Christopher Guard, William Squire, Michael Scholes, John Hurt
+1703	EverAfter	Romance, Comedy, Drama, Fantasy	Andy Tennant	Drew Barrymore, Anjelica Huston, Dougray Scott, Patrick Godfrey
+9415	Are We There Yet?	Adventure, Comedy, Drama, Family, Romance	Brian Levant	Ice Cube, Nia Long, Aleisha Allen, Philip Bolden
+6037	The Bourne Identity	Action, Mystery, Thriller	Doug Liman	Franka Potente, Matt Damon, Chris Cooper, Clive Owen
+16997	Kingpin	Comedy, Sport	Bobby Farrelly, Peter Farrelly	Woody Harrelson, Randy Quaid, Bill Murray, Vanessa Angel
+16994	Enter the Dragon	Action, Crime, Drama, Thriller	Robert Clouse	Bruce Lee, John Saxon, Kien Shih, Ahna Capri
+3638	Bad Boys II	Action, Comedy, Crime, Thriller	Michael Bay	Will Smith, Martin Lawrence, Gabrielle Union, Jordi Mollà
+17004	Halloween	Horror, Thriller	John Carpenter	Donald Pleasence, Jamie Lee Curtis, Tony Moran, Nancy Kyes
+6042	Starsky & Hutch	Action, Comedy, Crime, Thriller	Todd Phillips	Ben Stiller, Owen Wilson, Snoop Dogg, Vince Vaughn
+7937	Finding Forrester	Drama	Gus Van Sant	Sean Connery, Rob Brown, F. Murray Abraham, Anna Paquin
+15712	Cradle 2 the Grave	Action, Crime, Drama, Thriller	Andrzej Bartkowiak	Jet Li, DMX, Mark Dacascos, Kelly Hu
+1719	The Life Aquatic with Steve Zissou	Adventure, Comedy, Drama	Wes Anderson	Bill Murray, Owen Wilson, Anjelica Huston, Cate Blanchett
+3626	25th Hour	Crime, Drama	Spike Lee	Edward Norton, Barry Pepper, Philip Seymour Hoffman, Rosario Dawson
+9426	Platoon	Action, Drama, War	Oliver Stone	Charlie Sheen, Tom Berenger, Willem Dafoe, Keith David
+13795	The Jackal	Action, Adventure, Crime, Thriller	Michael Caton-Jones	Bruce Willis, Richard Gere, Sidney Poitier, Diane Venora
+3624	The Last Samurai	Action, Adventure, Drama, History, War	Edward Zwick	Tom Cruise, Ken Watanabe, Billy Connolly, William Atherton
+11337	American Pie	Comedy, Romance	Paul Weitz	Jason Biggs, Chris Klein, Thomas Ian Nicholas, Alyson Hannigan
+17008	Wimbledon	Comedy, Drama, Romance, Sport	Richard Loncraine	Kirsten Dunst, Paul Bettany, Jon Favreau, Sam Neill
+6030	I Am Sam	Drama	Jessie Nelson	Sean Penn, Michelle Pfeiffer, Dakota Fanning, Dianne Wiest
+9438	Love & Basketball	Drama, Romance, Sport	Gina Prince-Bythewood	Sanaa Lathan, Omar Epps, Glenndon Chatman, Jess Willard
+6029	Amélie	Comedy, Fantasy, Romance	Jean-Pierre Jeunet	Audrey Tautou, Mathieu Kassovitz, Rufus, Lorella Cravotta
+3617	Death Becomes Her	Comedy, Fantasy	Robert Zemeckis	Meryl Streep, Bruce Willis, Goldie Hawn, Isabella Rossellini
+6068	Addams Family Values	Comedy, Family, Fantasy, Thriller	Barry Sonnenfeld	Anjelica Huston, Raul Julia, Christopher Lloyd, Joan Cusack
+3609	Predator	Action, Adventure, Sci-Fi, Thriller	John McTiernan	Arnold Schwarzenegger, Carl Weathers, Kevin Peter Hall, Jesse Ventura
+3611	Man on the Moon	Biography, Comedy, Drama	Milos Forman	Jim Carrey, Danny DeVito, Gerry Becker, Greyson Erik Pendry
+9442	The Chronicles of Riddick	Action, Adventure, Sci-Fi, Thriller	David Twohy	Vin Diesel, Judi Dench, Colm Feore, Thandie Newton
+3605	The Wizard of Oz	Adventure, Comedy, Fantasy, Musical	Victor Fleming	Judy Garland, Frank Morgan, Ray Bolger, Bert Lahr
+16969	Donnie Darko	Drama, Mystery, Sci-Fi	Richard Kelly	Jake Gyllenhaal, Jena Malone, Mary McDonnell, Holmes Osborne
+9463	Castle in the Sky	Animation, Action, Adventure, Family, Fantasy, Romance	Hayao Miyazaki	Mayumi Tanaka, James Van Der Beek, Anna Paquin, Keiko Yokozawa
+3593	My Neighbor Totoro	Animation, Adventure, Family, Fantasy	Hayao Miyazaki	Hitoshi Takagi, Noriko Hidaka, Chika Sakamoto, Shigesato Itoi
+15700	The Land Before Time	Adventure, Family, Drama, Animation	Don Bluth	Pat Hingle, Gabriel Damon, Judith Barsi, Helen Shaver
+7989	Beauty and the Beast	Animation, Family, Fantasy, Musical, Romance	Gary Trousdale, Kirk Wise	Paige O'Hara, Robby Benson, Richard White, Jerry Orbach
+16984	Garfield	Comedy, Family	Peter Hewitt	Breckin Meyer, Jennifer Love Hewitt, Stephen Tobolowsky, Bill Murray
+7987	Wrong Turn	Horror, Thriller	Rob Schmidt	Eliza Dushku, Jeremy Sisto, Emmanuelle Chriqui, Desmond Harrington
+5705	Lost in Oz	Fantasy, Sci-Fi	Mick Garris	Melissa George, Colin Egglesfield, Mia Sara, Sandra Allen
+11648	Good Burger	Family, Comedy	Brian Robbins	Kel Mitchell, Kenan Thompson, Sinbad, Abe Vigoda
+11651	FernGully: The Last Rainforest	Animation, Adventure, Family, Fantasy, Thriller	Bill Kroyer	Samantha Mathis, Christian Slater, Robin Williams, Tim Curry
+17339	Full Metal Jacket	Drama, War	Stanley Kubrick	Matthew Modine, R. Lee Ermey, Vincent D'Onofrio, Adam Baldwin
+13359	Chicago	Comedy, Crime, Drama, Musical	Rob Marshall	Renée Zellweger, Catherine Zeta-Jones, Richard Gere, Taye Diggs
+17343	Major Payne	Comedy	Nick Castle	Damon Wayans, Ross Bickell, Scott 'Bam Bam' Bigelow, Joseph Blaire
+15545	Selena	Biography, Drama, Music	Gregory Nava	Jennifer Lopez, Edward James Olmos, Jon Seda, Jackie Guerra
+1905	Pirates of the Caribbean: The Curse of the Black Pearl	Action, Adventure, Fantasy	Gore Verbinski	Johnny Depp, Geoffrey Rush, Orlando Bloom, Keira Knightley
+5696	Tithonus	Drama, Mystery, Sci-Fi, Thriller	Michael W. Watkins	David Duchovny, Gillian Anderson, Ange Billman, Nicky Fane
+17330	The Punisher	Action, Crime, Drama, Thriller	Jonathan Hensleigh	Thomas Jane, John Travolta, Samantha Mathis, Laura Harring
+7899	Junior	Comedy, Romance, Sci-Fi	Ivan Reitman	Arnold Schwarzenegger, Danny DeVito, Emma Thompson, Frank Langella
+11658	Wicker Park	Drama, Mystery, Romance, Thriller	Paul McGuigan	Josh Hartnett, Diane Kruger, Matthew Lillard, Rose Byrne
+11663	Final Destination	Horror, Thriller	James Wong	Devon Sawa, Ali Larter, Kerr Smith, Kristen Cloke
+17335	Metropolis	Sci-Fi	Fritz Lang	Brigitte Helm, Alfred Abel, Gustav Fröhlich, Rudolf Klein-Rogge
+17321	Dumbo	Animation, Family, Musical	Samuel Armstrong, Norman Ferguson	Sterling Holloway, Edward Brophy, James Baskett, Herman Bing
+7875	A Night at the Roxbury	Comedy	John Fortenberry	Chris Kattan, Will Ferrell, Raquel Gardner, Viveca Paulin
+11669	BubbaHo-Tep	Comedy, Fantasy, Horror, Mystery	Don Coscarelli	Bruce Campbell, Ossie Davis, Ella Joyce, Heidi Marnhout
+17324	Hitch	Comedy, Romance	Andy Tennant	Will Smith, Eva Mendes, Kevin James, Amber Valletta
+7879	Super Troopers	Comedy, Crime, Mystery	Jay Chandrasekhar	Jay Chandrasekhar, Kevin Heffernan, André Vippolis, Joey Kern
+11673	Drumline	Comedy, Drama, Romance, Music	Charles Stone III	Nick Cannon, Zoe Saldana, Orlando Jones, Leonard Roberts
+15532	She's All That	Comedy, Romance	Robert Iscove	Freddie Prinze Jr., Rachael Leigh Cook, Matthew Lillard, Paul Walker
+11677	Swordfish	Action, Thriller, Crime	Dominic Sena	John Travolta, Hugh Jackman, Halle Berry, Don Cheadle
+9528	12 Angry Men	Drama, Mystery	Sidney Lumet	Henry Fonda, Lee J. Cobb, Martin Balsam, John Fiedler
+11687	Street Fighter	Action, Adventure, Comedy, Thriller	Steven E. de Souza	Jean-Claude Van Damme, Raul Julia, Ming-Na, Damian Chapa
+17308	Legally Blonde	Comedy	Robert Luketic	Reese Witherspoon, Luke Wilson, Selma Blair, Matthew Davis
+13315	Harry Potter and the Sorcerer's Stone	Adventure, Family, Fantasy, Mystery	Chris Columbus	Daniel Radcliffe, Rupert Grint, Richard Harris, Maggie Smith
+4043	Signs	Drama, Mystery, Sci-Fi, Thriller	M. Night Shyamalan	Mel Gibson, Joaquin Phoenix, Rory Culkin, Abigail Breslin
+1867	Annie	Family, Comedy, Musical	Rob Marshall	Kathy Bates, Victor Garber, Alan Cumming, Audra McDonald
+11696	Galaxy Quest	Action, Adventure, Comedy, Sci-Fi	Dean Parisot	Tim Allen, Sigourney Weaver, Alan Rickman, Tony Shalhoub
+1865	Eternal Sunshine of the Spotless Mind	Drama, Romance, Sci-Fi	Michel Gondry	Jim Carrey, Kate Winslet, Tom Wilkinson, Gerry Robert Byrne
+13342	Bulletproof Monk	Action, Adventure, Comedy	Paul Hunter	Yun-Fat Chow, Seann William Scott, Jaime King, Karel Roden
+11702	Hairspray	Comedy, Music, Romance	John Waters	Sonny Bono, Ruth Brown, Divine, Deborah Harry
+17295	Me, Myself & Irene	Comedy	Bobby Farrelly, Peter Farrelly	Jim Carrey, Renée Zellweger, Anthony Anderson, Mongo Brownlee
+9518	Showgirls	Drama	Paul Verhoeven	Elizabeth Berkley, Kyle MacLachlan, Gina Gershon, Glenn Plummer
+17293	The Ring Two	Drama, Horror, Mystery, Thriller	Hideo Nakata	Naomi Watts, David Dorfman, Sissy Spacek, Simon Baker
+11701	Contact	Drama, Mystery, Sci-Fi, Thriller	Robert Zemeckis	Jodie Foster, Matthew McConaughey, Tom Skerritt, John Hurt
+15496	Easy Rider	Crime, Drama	Dennis Hopper	Peter Fonda, Dennis Hopper, Jack Nicholson, Antonio Mendoza
+4056	Planet of the Apes	Action, Adventure, Sci-Fi, Thriller	Tim Burton	Mark Wahlberg, Helena Bonham Carter, Tim Roth, Michael Clarke Duncan
+11710	Men in Black	Action, Adventure, Comedy, Sci-Fi	Barry Sonnenfeld	Tommy Lee Jones, Will Smith, Linda Fiorentino, Vincent D'Onofrio
+5751	Eight Crazy Nights	Animation, Comedy, Drama, Musical	Seth Kearsley	Adam Sandler, Rob Schneider, Jackie Sandler, Austin Stout
+1861	Evolution	Comedy, Sci-Fi	Ivan Reitman	David Duchovny, Orlando Jones, Julianne Moore, Seann William Scott
+9509	*batteries not included	Family, Fantasy, Sci-Fi, Comedy	Matthew Robbins	Hume Cronyn, Jessica Tandy, Frank McRae, Elizabeth Peña
+11717	Romy and Michele's High School Reunion	Comedy	David Mirkin	Mira Sorvino, Lisa Kudrow, Janeane Garofalo, Alan Cumming
+9565	Rocky III	Action, Drama, Sport	Sylvester Stallone	Sylvester Stallone, Talia Shire, Burt Young, Carl Weathers
+17405	Sahara	Action, Adventure, Comedy, Thriller	Breck Eisner	Matthew McConaughey, Penélope Cruz, Steve Zahn, William H. Macy
+7828	Cruel Intentions	Drama, Romance, Thriller	Roger Kumble	Sarah Michelle Gellar, Ryan Phillippe, Reese Witherspoon, Selma Blair
+13417	Home Alone 3	Action, Comedy, Crime, Family	Raja Gosnell	Alex D. Linz, Olek Krupa, Rya Kihlstedt, Lenny von Dohlen
+7827	Christmas Vacation	Comedy	Jeremiah S. Chechik	Chevy Chase, Beverly D'Angelo, Juliette Lewis, Johnny Galecki
+13418	Ghostbusters II	Action, Adventure, Comedy, Fantasy, Sci-Fi	Ivan Reitman	Bill Murray, Dan Aykroyd, Sigourney Weaver, Harold Ramis
+13412	Billy Elliot	Comedy, Drama, Music	Stephen Daldry	Jamie Bell, Julie Walters, Jean Heywood, Jamie Draven
+17398	Cursed	Comedy, Fantasy, Horror, Thriller	Wes Craven	Christina Ricci, Jesse Eisenberg, Portia de Rossi, Mya
+1843	Beverly Hills Cop III	Action, Comedy, Crime, Thriller	John Landis	Eddie Murphy, Jon Tenney, Joey Travolta, Eugene Collier
+13439	Swingers	Comedy, Drama	Doug Liman	Vince Vaughn, Heather Graham, Jon Favreau, Ron Livingston
+13433	Blue Streak	Action, Comedy, Crime, Thriller	Les Mayfield	Martin Lawrence, Luke Wilson, Peter Greene, Dave Chappelle
+17387	Secretary	Comedy, Drama, Romance	Steven Shainberg	James Spader, Maggie Gyllenhaal, Jeremy Davies, Lesley Ann Warren
+9543	Close Encounters of the Third Kind	Drama, Sci-Fi	Steven Spielberg	Richard Dreyfuss, François Truffaut, Teri Garr, Melinda Dillon
+13391	True Lies	Action, Thriller	James Cameron	Arnold Schwarzenegger, Jamie Lee Curtis, Tom Arnold, Bill Paxton
+11745	Elektra	Action, Adventure, Fantasy	Rob Bowman	Jennifer Garner, Goran Visnjic, Will Yun Lee, Kirsten Prout
+9593	Friday	Comedy, Drama	F. Gary Gray	Ice Cube, Chris Tucker, Nia Long, Tommy 'Tiny' Lister
+9591	A Knight's Tale	Action, Romance	Brian Helgeland	Heath Ledger, Mark Addy, Rufus Sewell, Shannyn Sossamon
+15582	Sweet Home Alabama	Comedy, Romance	Andy Tennant	Reese Witherspoon, Patrick Dempsey, Josh Lucas, Candice Bergen
+5667	Son of the Mask	Adventure, Comedy, Family, Fantasy	Lawrence Guterman	Jamie Kennedy, Traylor Howard, Alan Cumming, Liam Falconer
+5695	Bad Santa	Comedy, Crime	Terry Zwigoff	Billy Bob Thornton, Bernie Mac, Lauren Graham, John Ritter
+5692	Dude, Where's My Car?	Comedy, Mystery, Sci-Fi	Danny Leiner	Ashton Kutcher, Seann William Scott, Jennifer Garner, Marla Sokoloff
+13402	The Count of Monte Cristo	Action, Adventure, Crime, Drama, History, Romance, Thriller	Kevin Reynolds	James Caviezel, Guy Pearce, Richard Harris, James Frain
+1803	Alien: Resurrection	Action, Sci-Fi, Thriller	Jean-Pierre Jeunet	Sigourney Weaver, Winona Ryder, Dominique Pinon, Ron Perlman
+1798	Lethal Weapon	Action, Crime, Thriller	Richard Donner	Mel Gibson, Danny Glover, Gary Busey, Mitch Ryan
+15563	Mona Lisa Smile	Drama, Romance	Mike Newell	Julia Roberts, Kirsten Dunst, Julia Stiles, Maggie Gyllenhaal
+11771	Dreamcatcher	Drama, Horror, Sci-Fi, Thriller	Lawrence Kasdan	Morgan Freeman, Thomas Jane, Jason Lee, Damian Lewis
+1792	Psycho	Drama, Horror, Mystery, Thriller	Gus Van Sant	Vince Vaughn, Anne Heche, Julianne Moore, Viggo Mortensen
+9617	Stepmom	Comedy, Drama	Chris Columbus	Julia Roberts, Susan Sarandon, Ed Harris, Jena Malone
+15421	Sense and Sensibility	Drama, Romance	Ang Lee	Emma Thompson, Kate Winslet, James Fleet, Tom Wilkinson
+3936	End of Days	Action, Fantasy, Horror, Mystery, Thriller	Peter Hyams	Arnold Schwarzenegger, Gabriel Byrne, Robin Tunney, Kevin Pollak
+15409	EuroTrip	Comedy, Adventure	Jeff Schaffer	Scott Mechlowicz, Jacob Pitts, Michelle Trachtenberg, Travis Wester
+3938	Shrek 2	Animation, Adventure, Comedy, Family, Fantasy	Andrew Adamson, Kelly Asbury	Mike Myers, Eddie Murphy, Cameron Diaz, Julie Andrews
+9628	Star Wars: Episode VI - Return of the Jedi	Action, Adventure, Fantasy, Sci-Fi	Richard Marquand	Mark Hamill, Harrison Ford, Carrie Fisher, Billy Dee Williams
+11525	Aladdin and the King of Thieves	Animation, Family, Fantasy, Musical, Romance	Tad Stones	Scott Weinger, Robin Williams, John Rhys-Davies, Linda Larkin
+7767	O Brother, Where Art Thou?	Comedy, Adventure, Crime, Music	Joel Coen	George Clooney, John Turturro, Tim Blake Nelson, John Goodman
+13488	Ella Enchanted	Comedy, Family, Fantasy, Romance	Tommy O'Haver	Anne Hathaway, Hugh Dancy, Cary Elwes, Joanna Lumley
+3962	Finding Nemo	Animation, Adventure, Comedy, Family	Andrew Stanton, Lee Unkrich	Albert Brooks, Ellen DeGeneres, Alexander Gould, Willem Dafoe
+17187	A Christmas Story	Comedy, Family	Bob Clark	Peter Billingsley, Melinda Dillon, Darren McGavin, Ian Petrella
+3966	Friday Night Lights	Action, Drama, Sport	Peter Berg, Josh Pate	Billy Bob Thornton, Jay Hernandez, Derek Luke, Lucas Black
+15393	Big Daddy	Comedy, Drama	Dennis Dugan	Adam Sandler, Joey Lauren Adams, Jon Stewart, Cole Sprouse
+7745	Apollo 13	Adventure, Drama, History	Ron Howard	Tom Hanks, Bill Paxton, Kevin Bacon, Gary Sinise
+17195	Peter Pan	Adventure, Family, Fantasy, Romance	P.J. Hogan	Jeremy Sumpter, Jason Isaacs, Olivia Williams, Lynn Redgrave
+13501	Rocky IV	Action, Drama, Sport	Sylvester Stallone	Sylvester Stallone, Talia Shire, Burt Young, Carl Weathers
+9613	8MM	Crime, Mystery, Thriller	Joel Schumacher	Nicolas Cage, Joaquin Phoenix, James Gandolfini, Peter Stormare
+9614	Rocky II	Drama, Sport	Sylvester Stallone	Sylvester Stallone, Talia Shire, Burt Young, Carl Weathers
+2000	Four Weddings and a Funeral	Comedy, Romance, Drama	Mike Newell	Hugh Grant, Andie MacDowell, James Fleet, Simon Callow
+17169	National Treasure	Action, Adventure, Mystery, Thriller	Jon Turteltaub	Nicolas Cage, Diane Kruger, Justin Bartha, Sean Bean
+5862	Memento	Crime, Drama, Mystery, Thriller	Christopher Nolan	Guy Pearce, Carrie-Anne Moss, Joe Pantoliano, Mark Boone Junior
+3917	Garden State	Comedy, Drama, Romance	Zach Braff	Zach Braff, Natalie Portman, Peter Sarsgaard, Kenneth Graymez
+3905	The Others	Drama, Mystery, Thriller	Alejandro Amenábar	Nicole Kidman, Christopher Eccleston, Fionnula Flanagan, Alakina Mann
+2009	The Talented Mr. Ripley	Crime, Drama, Thriller	Anthony Minghella	Matt Damon, Gwyneth Paltrow, Jude Law, Cate Blanchett
+17181	Land of the Dead	Horror, Sci-Fi	George A. Romero	John Leguizamo, Asia Argento, Simon Baker, Dennis Hopper
+17154	Philadelphia	Drama	Jonathan Demme	Tom Hanks, Denzel Washington, Roberta Maxwell, Buzz Kilman
+9635	Cool Runnings	Adventure, Comedy, Family, Sport	Jon Turteltaub	John Candy, Leon, Doug E. Doug, Rawle D. Lewis
+3935	Yellow Submarine	Animation, Adventure, Comedy, Family, Fantasy, Music	George Dunning	The Beatles, Paul Angelis, John Clive, Dick Emery
+9637	Jerry Maguire	Comedy, Drama, Romance, Sport	Cameron Crowe	Tom Cruise, Cuba Gooding Jr., Renée Zellweger, Kelly Preston
+3923	Beverly Hills Ninja	Action, Comedy	Dennis Dugan	Chris Farley, Nicollette Sheridan, Robin Shou, Nathaniel Parker
+7779	Willow	Action, Adventure, Drama, Fantasy, Romance	Ron Howard	Val Kilmer, Joanne Whalley, Warwick Davis, Jean Marsh
+3920	I Still Know What You Did Last Summer	Horror, Mystery, Thriller	Danny Cannon	Jennifer Love Hewitt, Freddie Prinze Jr., Brandy Norwood, Mekhi Phifer
+13471	Jersey Girl	Comedy, Drama, Romance	Kevin Smith	Ben Affleck, Liv Tyler, Raquel Castro, Betty Aberlin
+15366	The Thing	Horror, Mystery, Sci-Fi, Thriller	John Carpenter	Kurt Russell, Wilford Brimley, Keith David, Richard Masur
+11573	The Great Escape	Adventure, Drama, History, War	John Sturges	Steve McQueen, James Garner, Richard Attenborough, Charles Bronson
+3925	The Matrix Reloaded	Action, Adventure, Sci-Fi	Andy Wachowski, Lana Wachowski	Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+9645	Daddy Day Care	Comedy, Family	Steve Carr	Eddie Murphy, Jeff Garlin, Anjelica Huston, Steve Zahn
+11596	Atlantis: The Lost Empire	Animation, Adventure, Family, Sci-Fi	Gary Trousdale, Kirk Wise	Michael J. Fox, Jim Varney, Corey Burton, Claudia Christian
+9685	28 Days	Comedy, Drama	Betty Thomas	Sandra Bullock, Viggo Mortensen, Dominic West, Elizabeth Perkins
+1975	Hollow Man	Action, Sci-Fi, Thriller	Paul Verhoeven	Kevin Bacon, Elisabeth Shue, Josh Brolin, Kim Dickens
+5762	Almost Famous	Drama, Music	Cameron Crowe	Billy Crudup, Frances McDormand, Kate Hudson, Jason Lee
+7701	Mad Max 2: The Road Warrior	Action, Adventure, Sci-Fi, Thriller	George Miller	Mel Gibson, Bruce Spence, Michael Preston, Max Phipps
+3879	Ghost in the Shell	Animation, Action, Sci-Fi, Fantasy, Thriller	Mamoru Oshii	Atsuko Tanaka, Iemasa Kayumi, Richard Epcar, Akio Ôtsuka
+1983	Final Fantasy: The Spirits Within	Animation, Action, Adventure, Fantasy, Sci-Fi, Thriller	Hironobu Sakaguchi, Motonori Sakakibara	Alec Baldwin, Steve Buscemi, Ming-Na, Ving Rhames
+15473	Hot Shots! Part Deux	Action, Comedy, War	Jim Abrahams	Charlie Sheen, Lloyd Bridges, Valeria Golino, Richard Crenna
+15474	Rock Star	Comedy, Drama, Music	Stephen Herek	Mark Wahlberg, Jennifer Aniston, Dominic West, Jason Bonham
+3875	The Motorcycle Diaries	Adventure, Biography, Drama	Walter Salles	Gael García Bernal, Rodrigo De la Serna, Mercedes Morán, Jean Pierre Noher
+11613	The Man with the Golden Gun	Action, Adventure, Thriller	Guy Hamilton	Roger Moore, Christopher Lee, Britt Ekland, Maud Adams
+11612	What Dreams May Come	Drama, Fantasy, Romance	Vincent Ward	Robin Williams, Cuba Gooding Jr., Annabella Sciorra, Max von Sydow
+3900	Amores Perros	Drama, Thriller	Alejandro González Iñárritu	Emilio Echevarría, Gael García Bernal, Goya Toledo, ??lvaro Guerrero
+15471	Phone Booth	Mystery, Thriller	Joel Schumacher	Colin Farrell, Kiefer Sutherland, Forest Whitaker, Radha Mitchell
+15465	Friday the 13th	Horror, Mystery, Thriller	Sean S. Cunningham	Betsy Palmer, Adrienne King, Jeannine Taylor, Robbi Morgan
+7691	Romeo and Juliet	Drama, Romance	Franco Zeffirelli	Leonard Whiting, Olivia Hussey, John McEnery, Milo O'Shea
+5778	The Godfather: Part III	Crime, Drama, Mystery, Thriller	Francis Ford Coppola	Al Pacino, Diane Keaton, Andy Garcia, Talia Shire
+13565	You Got Served	Comedy, Drama, Family, Sport	Chris Stokes	Omarion Grandberry, J-Boog, Raz B, Lil' Fizz
+5788	Sling Blade	Drama	Billy Bob Thornton	Billy Bob Thornton, Dwight Yoakam, J.T. Walsh, John Ritter
+13567	Battle Royale	Action, Drama, Thriller	Kinji Fukasaku	Tatsuya Fujiwara, Aki Maeda, Tarô Yamamoto, Chiaki Kuriyama
+11607	Hotel Rwanda	Biography, Drama, History, Thriller, War	Terry George	Don Cheadle, Sophie Okonedo, Joaquin Phoenix, Xolani Mali
+3890	Confessions of a Teenage Drama Queen	Comedy, Family, Music, Romance	Sara Sugarman	Lindsay Lohan, Megan Fox, Adam Garcia, Glenne Headly
+1962	50 First Dates	Comedy, Romance	Peter Segal	Adam Sandler, Drew Barrymore, Rob Schneider, Sean Astin
+13511	Much Ado About Nothing	Comedy, Romance, War	Kenneth Branagh	Kenneth Branagh, Emma Thompson, Keanu Reeves, Kate Beckinsale
+5793	Underworld	Action, Fantasy, Thriller	Len Wiseman	Kate Beckinsale, Scott Speedman, Shane Brolly, Michael Sheen
+5807	Raising Helen	Comedy, Drama, Romance	Garry Marshall	Kate Hudson, John Corbett, Joan Cusack, Hayden Panettiere
+15443	Superman III	Action, Adventure, Comedy, Fantasy, Sci-Fi	Richard Lester	Christopher Reeve, Richard Pryor, Margot Kidder, Jackie Cooper
+13512	The Pink Panther	Comedy, Crime, Family	Blake Edwards	David Niven, Peter Sellers, Robert Wagner, Capucine
+1945	From Hell	Crime, Horror, Mystery, Thriller	Albert Hughes, Allen Hughes	Johnny Depp, Heather Graham, Ian Holm, Robbie Coltrane
+5814	One Hour Photo	Drama, Thriller	Mark Romanek	Robin Williams, Connie Nielsen, Michael Vartan, Dylan Smith
+9702	Tarzan	Animation, Adventure, Drama, Family	Chris Buck, Kevin Lima	Tony Goldwyn, Minnie Driver, Brian Blessed, Glenn Close
+13524	Enough	Drama, Thriller	Michael Apted	Jennifer Lopez, Bill Campbell, Tessa Allen, Juliette Lewis
+3864	Batman Begins	Action, Crime, Drama, Thriller	Christopher Nolan	Christian Bale, Michael Caine, Ken Watanabe, Liam Neeson
+11638	Sliding Doors	Comedy, Drama, Romance	Peter Howitt	Gwyneth Paltrow, John Hannah, John Lynch, Jeanne Tripplehorn
+15429	The Fox and the Hound	Animation, Adventure, Family	Ted Berman, Richard Rich	Mickey Rooney, Kurt Russell, Pearl Bailey, Jack Albertson
+3860	Bruce Almighty	Comedy, Drama, Fantasy	Tom Shadyac	Jim Carrey, Jennifer Aniston, Morgan Freeman, Philip Baker Hall
+15425	The Big Lebowski	Comedy, Crime, Mystery	Joel Coen	Jeff Bridges, John Goodman, Julianne Moore, Steve Buscemi

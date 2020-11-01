@@ -1,0 +1,8 @@
+
+
+// to be practical make sure you START THIS FIRST AND THEN RUN CLIENT BROKER RMI  !!! 
+
+then : ---> from there the individual servers are accessible as well as the: 
+- client broker rmi, 
+- client quotation rmi and 
+- client rmy

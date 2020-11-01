@@ -1,0 +1,207 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+   <meta name="Keywords" content="Compression, Algorithm, Data Compession, Data Coding, Huffman Algorithm, Template Algorithm, non-numerical costs, non-numerical weights, non-numerical frequencies, Fibonacci, C++, STL, UNIX, Solaris, Vinokur">
+   <meta name="Description" content="This program enables you to use vectors and matrixes with arbitrary bounds.">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (Win98; I) [Netscape]">
+   <meta name="Author" content="Alex Vinokur">
+   <meta name="KeyWords" content="Arbitrary Bounds, Vector, Matrix, C++, STL, Template">
+   <title>Flexible Vector and Matrix</title>
+</head>
+<body>
+
+
+<pre>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ Last Modification : 2001/10/30]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ---------------------------------
+
+&nbsp; Here is <b><font color="#FF0000">Flexible Vector and Matrix
+&nbsp;         <i>(Vectors and Matrix with Arbitrary Bounds)</i></font></b>.
+&nbsp; The algorithm has been written by Alex Vinokur.
+&nbsp; Programming Language : C++.
+&nbsp; Any and all comments would be appreciated.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://up.to/alexvn">Alex </a><a href="http://go.to/alexv_math">Vinokur
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -----------------------------------
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:alexvn@bigfoot.com">alexvn@bigfoot.com</a>, <a href="mailto:alexvn@dr.com">alexvn@dr.com
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:alexv@hitechclub.com">alexv@hitechclub.com
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://up.to/alexvn">http://up.to/alexvn
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://go.to/alexv_math">http://go.to/alexv_math
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http:flexible_vector.html">http://alexvn.freeservers.com/s1/flexible_vector.html
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http:flexible_vector.zip">http://alexvn.freeservers.com/s1/flexible_vector.zip
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -----------------------------------
+
+</pre>
+
+<table CELLPADDING=20 >
+<caption><TBODY>
+<br></TBODY></caption>
+
+<tr>
+<td BGCOLOR="#FFBBBB">
+<pre>
+<font size=+1>&nbsp; <b>Content</b>.
+&nbsp;&nbsp;&nbsp; 1. <a href="#label_Algorithm"><b>Algorithm</b></a>
+&nbsp;&nbsp;&nbsp; 2. <a href="#label_Classes"><b>Classes</b></a>
+&nbsp;&nbsp;&nbsp; 3. <a href="#label_Program"><b>Program Files</b></a>
+&nbsp;&nbsp;&nbsp; 4. <a href="#label_Tests"><b>Tests</b></a>
+&nbsp;&nbsp;&nbsp; 5. <a href="#label_Compiling"><b>Compiling</b></a>
+&nbsp;&nbsp;&nbsp; 6. <a href="#label_Running"><b>Running</b></a> (<a href="http:flexible_dir/flexible_log.txt"><b><i>Log File</i></b></a>)
+&nbsp;&nbsp;&nbsp; 7. <a href="http:flexible_vector.zip"><b>Download</b></a>
+</font>
+
+</pre>
+</td>
+</tr>
+</table>
+<a NAME="label_Algorithm"></a>
+<table CELLPADDING=20 >
+<caption><TBODY>
+<br></TBODY></caption>
+
+<tr>
+<td BGCOLOR="#DDDDEE">
+<pre>====================================================
+=================== 1. <b><font color="#FF0055">Algorithm</font></b> ===================
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Flexible Vector and Matrix Classes enable&nbsp;
+&nbsp;&nbsp; to use vectors and matrixes with arbitrary bounds.
+
+&nbsp;&nbsp; Also : see the discussions titled
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "<b><font color="#FF5555">It was in Algol60, but missing in STL</font></b>"&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; started 1999/03/15 in&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * <a href="http://groups.google.com/groups?th=a75855057a0a8347">comp.lang.c++
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * <a href="http://groups.google.com/groups?th=42ba9de7a52da4c8&rnum=2">comp.lang.c++.modearated
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * <a href="http://groups.google.com/groups?th=1e1825b8e27ae145">comp.std.c++
+
+</a>====================================================</pre>
+</td>
+</tr>
+</table>
+<a NAME="label_Classes"></a>
+<table CELLPADDING=20 >
+<caption><TBODY>
+<br></TBODY></caption>
+
+<tr>
+<td BGCOLOR="#FFEEBB">
+<pre>====================================================
+================ 2. <b><font color="#FF0055">List Of Classes</font></b> ================
+
+Main template classes used in the algorithm are as following :
+&nbsp;&nbsp;&nbsp;&nbsp; 1. <font color="#008800"><b>ClassFlexibleVector&lt;T> </b></font>
+&nbsp;&nbsp;&nbsp;&nbsp; 2. <font color="#008800"><b>ClassVeryFlexibleVector&lt;T> </b></font>
+&nbsp;&nbsp;&nbsp;&nbsp; 3. <font color="#008800"><b>ClassFlexibleMatrix&lt;T> </b></font>
+====================================================</pre>
+</td>
+</tr>
+</table>
+<a NAME="label_Program"></a>
+<table CELLPADDING=20 >
+<caption><TBODY>
+<br></TBODY></caption>
+
+<tr>
+<td BGCOLOR="#DDEEDD">
+<pre>==========================================================================
+============================= 3. <b><font color="#FF0055">Program Files</font></b> ===========================
+
+The algorithm contains the following files :
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u><b>Header files</b></u>
+&nbsp;&nbsp;&nbsp;&nbsp;  1. <a href="http:flexible_dir/defs_h.txt">defs.h</a>      Macro & definitions
+&nbsp;&nbsp;&nbsp;&nbsp;  2. <a href="http:flexible_dir/funcs_h.txt">funcs.h</a>     Auxiliary functions (Declaration)
+&nbsp;&nbsp;&nbsp;&nbsp;  3. <a href="http:flexible_dir/obj_loc_h.txt">obj_loc.h</a>   Auxiliary location classes	(Definition)
+&nbsp;&nbsp;&nbsp;&nbsp;  4. <a href="http:flexible_dir/fx_vect_h.txt">fx_vect.h</a>   Flexible Vector Classes (Definition)
+&nbsp;&nbsp;&nbsp;&nbsp;  5. <a href="http:flexible_dir/fx_vect2_h.txt">fx_vect2.h</a>  Flexible Vector Classes (Template Implementation)
+&nbsp;&nbsp;&nbsp;&nbsp;  6. <a href="http:flexible_dir/fx_matr_h.txt">fx_matr.h</a>   Flexible Matrix Classes (Definition)
+&nbsp;&nbsp;&nbsp;&nbsp;  7. <a href="http:flexible_dir/fx_matr2_h.txt">fx_matr2.h</a>  Flexible Matrix Classes (Template Implementation)
+&nbsp;&nbsp;&nbsp;&nbsp;  8. <a href="http:flexible_dir/testfile_h.txt">testfile.h</a>  Test Classes and Functions (Declarations, Definition)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u><b>Source files</b></u>
+&nbsp;&nbsp;&nbsp;&nbsp;  9. <a href="http:flexible_dir/defs_c.txt">defs.c</a>      Initializations
+&nbsp;&nbsp;&nbsp;&nbsp; 10. <a href="http:flexible_dir/funcs_c.txt">funcs.c</a>     Auxiliary functions (Implementation)
+&nbsp;&nbsp;&nbsp;&nbsp; 11. <a href="http:flexible_dir/obj_loc_c.txt">obj_loc.c</a>   Auxiliary location classes	(Implementation)
+&nbsp;&nbsp;&nbsp;&nbsp; 12. <a href="http:flexible_dir/fx_vect_c.txt">fx_vect.c</a>   Flexible Vector Classes (Non-Template Implementation)
+&nbsp;&nbsp;&nbsp;&nbsp; 13. <a href="http:flexible_dir/fx_matr_c.txt">fx_matr.c</a>   Flexible Matrix Classes (Non-Template Implementation)
+&nbsp;&nbsp;&nbsp;&nbsp; 14. <a href="http:flexible_dir/testfile_c.txt">testfile.c</a>  Test Classes and Functions (Implementation)
+&nbsp;&nbsp;&nbsp;&nbsp; 15. <a href="http:flexible_dir/main_c.txt">main.c</a>      Test Classes and Functions (Implementation)
+
+==========================================================================</pre>
+</td>
+</tr>
+</table>
+<a NAME="label_Tests"></a>
+<table CELLPADDING=20 >
+<caption><TBODY>
+<br></TBODY></caption>
+
+<tr>
+<td BGCOLOR="#DDEEFF">
+<pre>====================================================
+===================== 4. <b><font color="#FF0055">Tests</font></b> =====================
+
+The main program contains the following tests :
+&nbsp;&nbsp; <font color="#AA00AA"><b>Vector-Test#1</b>.</font>  Show Methods
+&nbsp;&nbsp; <font color="#AA00AA"><b>Vector-Test#2</b>.</font>  Valid Assignations
+&nbsp;&nbsp; <font color="#AA00AA"><b>Vector-Test#3</b>.</font>  Invalid Assignations
+
+&nbsp;&nbsp; <font color="#AA00AA"><b>Matrix-Test#1</b>.</font>  Show Methods
+&nbsp;&nbsp; <font color="#AA00AA"><b>Matrix-Test#2</b>.</font>  Valid Assignations
+&nbsp;&nbsp; <font color="#AA00AA"><b>Matrix-Test#3</b>.</font>  Invalid Assignations
+
+====================================================</td>
+</tr>
+</table>
+<a NAME="label_Compiling"></a>
+<table CELLPADDING=20 >
+<caption><TBODY>
+<br></TBODY></caption>
+
+
+<tr>
+<td BGCOLOR="#DEDEDE">
+<pre>====================================================
+==================== 5. <b><font color="#FF0055">Compiling</font></b> ==================
+
+//#########################################################
+//------------------- System &amp; Compiler&nbsp; ------------------
+
+Windows98
+
+gpp :&nbsp; GNU C++ version 2.95.3 20010315/djgpp (release) (djgpp)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; compiled by GNU C version 2.95.3 20010315/djgpp (release).
+
+//-------------------- Compiling : BEGIN ------------------
+
+%gpp *.c
+
+//-------------------- Compiling : END --------------------</pre>
+</td>
+</tr>
+</table>
+<a NAME="label_Running"></a>
+<table CELLPADDING=20 >
+<caption><TBODY>
+<br></TBODY></caption>
+
+<tr>
+<td BGCOLOR="#FFEEBB">
+<pre>====================================================
+===================== 6. <b><font color="#FF0055">Running</font></b> ===================
+
+//#########################################################
+//-------------------- Running : BEGIN --------------------
+
+%a.exe
+
+//-------------------- Running : END ----------------------
+
+                 See the results in <a href="http:flexible_dir/flexible_log.txt">Log file</a>
+</td>
+</tr>
+</table>
+
+</body>
+</html>

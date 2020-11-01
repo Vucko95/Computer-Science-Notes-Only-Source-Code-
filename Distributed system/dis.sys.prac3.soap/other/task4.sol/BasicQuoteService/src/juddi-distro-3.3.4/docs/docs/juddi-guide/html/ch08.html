@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Chapter 8. How to deploy jUDDI To?</title><link rel="stylesheet" type="text/css" href="css/jbossorg.css"/><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Apache jUDDI Guide"/><link rel="up" href="index.html" title="Apache jUDDI Guide"/><link rel="prev" href="ch07.html" title="Chapter 7. UDDI Seed Data"/><link rel="next" href="ch09.html" title="Chapter 9. Extending UDDI"/><link rel="copyright" href="ln-d5e27.html" title="Legal Notice"/><meta xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p xmlns:d="http://docbook.org/ns/docbook" id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch07.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ch09.html"><strong>Next</strong></a></li></ul><div class="chapter" title="Chapter 8. How to deploy jUDDI To?"><div class="titlepage"><div><div><h2 class="title"><a id="chapter-HowToDeployjUDDITo"/>Chapter 8. How to deploy jUDDI To?</h2></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="section"><a href="ch08.html#_tomcat">8.1. Tomcat</a></span></dt><dd><dl><dt><span class="section"><a href="ch08.html#_openjpa_and_cxf">8.1.1. OpenJPA and CXF</a></span></dt><dt><span class="section"><a href="ch08.html#_hibernate_and_cxf">8.1.2. Hibernate and CXF</a></span></dt><dt><span class="section"><a href="ch08.html#_openjpa_and_axis2">8.1.3. OpenJPA and Axis2</a></span></dt></dl></dd><dt><span class="section"><a href="ch08.html#_jboss">8.2. JBoss</a></span></dt><dd><dl><dt><span class="section"><a href="ch08.html#_jbossas_6_0_0_ga">8.2.1. JBossAS 6.0.0.GA</a></span></dt><dt><span class="section"><a href="ch08.html#_jbossas_7_x_jbosseap_6_x">8.2.2. JBossAS 7.x/JBossEAP-6.x</a></span></dt></dl></dd><dt><span class="section"><a href="ch08.html#_deploying_to_glassfish">8.3. Deploying to Glassfish</a></span></dt><dd><dl><dt><span class="section"><a href="ch08.html#_glassfish_jars">8.3.1. Glassfish jars</a></span></dt><dt><span class="section"><a href="ch08.html#_configure_the_juddi_datasource">8.3.2. Configure the JUDDI datasource</a></span></dt><dt><span class="section"><a href="ch08.html#_add_juddiv3_cxf_war">8.3.3. Add juddiv3-cxf.war</a></span></dt><dt><span class="section"><a href="ch08.html#_run_juddi">8.3.4. Run jUDDI</a></span></dt></dl></dd></dl></div>
+
+<p>The jUDDI distribution ships preconfigured on Tomcat - it runs out of the box. All you have to do in go into the <code class="literal">juddi-distro-&lt;version&gt;/juddi-tomcat-&lt;version&gt;/bin</code> directory and start up Tomcat. All of this just as described in  <a class="xref" href="ch02.html" title="Chapter 2. Getting Started">Chapter 2, <em>Getting Started</em></a>.</p>
+<p>By default the <code class="literal">juddiv3.war</code> is configured to use OpenJPA and CXF. If you want to change your JPA or WS provider, or you’d like to run on a different container then this chapter may come in handy, as there a number of scripted <span class="emphasis"><em>profiles</em></span> to change the configuration and dependencies in the <code class="literal">juddiv3.war</code>. To run these maven based scripts you need to go into <code class="literal">juddi-distro-&lt;version&gt;/juddiv3-war</code> directory.</p>
+<div class="section" title="8.1. Tomcat"><div class="titlepage"><div><div><h2 class="title"><a id="_tomcat"/>8.1. Tomcat</h2></div></div></div>
+
+<div class="section" title="8.1.1. OpenJPA and CXF"><div class="titlepage"><div><div><h3 class="title"><a id="_openjpa_and_cxf"/>8.1.1. OpenJPA and CXF</h3></div></div></div>
+
+<p>Target platform Tomcat and Derby using OpenJPA and CXF. Both OpenJPA and CXF are packaged up in the juddiv3.war.</p>
+<pre class="screen">mvn clean package -P openjpa</pre>
+
+<p>Then copy the <code class="literal">target/juddiv3.war</code> to the <code class="literal">&lt;tomcat&gt;/webapps</code> directory.</p>
+</div>
+<div class="section" title="8.1.2. Hibernate and CXF"><div class="titlepage"><div><div><h3 class="title"><a id="_hibernate_and_cxf"/>8.1.2. Hibernate and CXF</h3></div></div></div>
+
+<p>Target platform Tomcat and Derby using Hibernate and CXF. Both Hibernate and CXF are packaged up in the juddiv3.war.</p>
+<pre class="screen">mvn clean package -P hibernate</pre>
+
+<p>Then copy the <code class="literal">target/juddiv3.war</code> to the <code class="literal">&lt;tomcat&gt;/webapps</code> directory.</p>
+</div>
+<div class="section" title="8.1.3. OpenJPA and Axis2"><div class="titlepage"><div><div><h3 class="title"><a id="_openjpa_and_axis2"/>8.1.3. OpenJPA and Axis2</h3></div></div></div>
+
+<p>Target platform Tomcat and Derby using OpenJPA and Apache Axis2. Both Hibernate and Axis2 are packaged up in the juddiv3.war.</p>
+<pre class="screen">mvn clean package -P axis2</pre>
+
+<p>Then copy the <code class="literal">target/juddiv3.war</code> to the <code class="literal">&lt;tomcat&gt;/webapps</code> directory.</p>
+</div>
+</div>
+<div class="section" title="8.2. JBoss"><div class="titlepage"><div><div><h2 class="title"><a id="_jboss"/>8.2. JBoss</h2></div></div></div>
+
+<div class="section" title="8.2.1. JBossAS 6.0.0.GA"><div class="titlepage"><div><div><h3 class="title"><a id="_jbossas_6_0_0_ga"/>8.2.1. JBossAS 6.0.0.GA</h3></div></div></div>
+
+<p>This section describes how to deploy juddi to JBoss 6.0.0.GA.</p>
+<p>First, download jboss-6.0.0.GA - the zip or tar.gz bundle may be found at <a class="ulink" href="http://www.jboss.org/jbossas/downloads/">http://www.jboss.org/jbossas/downloads/</a>. Download the bundle and uncompress it.</p>
+<div class="section" title="8.2.1.1. Hibernate and JBossWS-Native"><div class="titlepage"><div><div><h4 class="title"><a id="_hibernate_and_jbossws_native"/>8.2.1.1. Hibernate and JBossWS-Native</h4></div></div></div>
+
+<p>Target platform JBoss-6.x and HSQL using Hibernate and JBossWS-native. The juddiv3.war relies on Hibernate and JBossWS-native in the appserver.</p>
+<pre class="screen">mvn clean package -P hibernate-jbossws-native</pre>
+
+<p>Then copy the <code class="literal">target/juddiv3.war</code> to the <code class="literal">&lt;jboss&gt;/server/default/deploy</code> directory.</p>
+</div>
+<div class="section" title="8.2.1.2. Hibernate and JBossWS-CXF"><div class="titlepage"><div><div><h4 class="title"><a id="_hibernate_and_jbossws_cxf"/>8.2.1.2. Hibernate and JBossWS-CXF</h4></div></div></div>
+
+<p>Target platform JBoss-6.x and HSQL using Hibernate and JBossWS-cxf. The juddiv3.war relies on Hibernate and JBossWS-cxf in the appserver.</p>
+<pre class="screen">mvn clean package -P hibernate-jbossws-cxf</pre>
+
+<div class="variablelist" title="KNOWN ISSUES"><p class="title"><strong>KNOWN ISSUES</strong></p><dl><dt><span class="term">Issue 1</span></dt><dd>
+<pre class="screen">15:14:37,275 SEVERE [RegistryServlet] jUDDI registry could not be started. org.apache.commons.configuration.ConfigurationException: java.util.zip.ZipException: error in opening zip file: org.apache.commons.configuration.ConfigurationException: org.apache.commons.configuration.ConfigurationException: java.util.zip.ZipException: error in opening zip file</pre>
+
+<p class="simpara">Workaround: deploy juddiv3.war as a directory (not a zip file).</p>
+</dd><dt><span class="term">Issue 2</span></dt><dd>
+<p class="simpara">JBoss-5.x Note that configuration 3 and 4 will also run on JBoss-5.x, but you may run into the following</p>
+<pre class="screen">ERROR [org.jboss.ws.metadata.wsdl.xmlschema.JBossXSErrorHandler] (main) [domain:http://www.w3.org/TR/xml-schema-1]::[key=src-resolve]::Message=src-resolve: Cannot resolve the name ns1:Signature to a element declaration component.</pre>
+
+<p class="simpara">Workaround: Unzip the deployers/jbossws.deployer/jbossws-native-core.jar and add the xmldsig-core-schema.xsd in the schema directory,</p>
+<pre class="screen">10293 Fri May 27 14:40:40 EDT 2011 schema/xmldsig-core-schema.xsd</pre>
+
+<p class="simpara">Edit the file META-INF/jbossws-entities.properties by adding a line at the bottom saying:</p>
+<pre class="screen">http\://www.w3.org/2000/09/xmldsig#=schema/xmldsig-core-schema.xsd</pre>
+
+</dd></dl></div>
+
+<p>Copy juddiv3.war to server/default/deploy and unpack it.</p>
+<p>Insert jboss-web.xml into the juddiv3.war/WEB-INF directory , should look like the following :</p>
+<pre class="screen">&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+
+&lt;!DOCTYPE jboss-web PUBLIC
+	"-//JBoss//DTD Web Application 2.3V2//EN"
+    "http://www.jboss.org/j2ee/dtd/jboss-web_3_2.dtd"&gt;
+
+&lt;jboss-web&gt;
+
+    &lt;resource-ref&gt;
+        &lt;res-ref-name&gt;jdbc/JuddiDS&lt;/res-ref-name&gt;
+        &lt;jndi-name&gt;java:JuddiDS&lt;/jndi-name&gt;
+    &lt;/resource-ref&gt;
+    &lt;depends&gt;jboss.jdbc:datasource=JuddiDS,service=metadata&lt;/depends&gt;
+
+&lt;/jboss-web&gt;</pre>
+
+</div>
+<div class="section" title="8.2.1.3. Change web.xml"><div class="titlepage"><div><div><h4 class="title"><a id="_change_web_xml"/>8.2.1.3. Change web.xml</h4></div></div></div>
+
+<p>Replace the WEB-INF/web.xml with the jbossws-native-web.xml within docs/examples/appserver.</p>
+</div>
+<div class="section" title="8.2.1.4. Configure Datasource"><div class="titlepage"><div><div><h4 class="title"><a id="_configure_datasource"/>8.2.1.4. Configure Datasource</h4></div></div></div>
+
+<p>The first step for configuring a datasource is to copy your JDBC driver into the classpath. Copy your JDBC driver into ${jboss.home.dir}/server/${configuration}/lib, where configuration is the profile you wish to start with (default, all, etc.). Example :</p>
+<pre class="screen">cp mysql-connector-java-5.0.8-bin.jar /opt/jboss-5.1.0.GA/server/default/lib</pre>
+
+<p>Next, configure a JBoss datasource file for your db. Listed below is an example datasource for MySQL :</p>
+<pre class="screen">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;datasources&gt;
+ &lt;local-tx-datasource&gt;
+   &lt;jndi-name&gt;JuddiDS&lt;/jndi-name&gt;
+   &lt;connection-url&gt;jdbc:mysql://localhost:3306/juddiv3&lt;/connection-url&gt;
+   &lt;driver-class&gt;com.mysql.jdbc.Driver&lt;/driver-class&gt;
+   &lt;user-name&gt;root&lt;/user-name&gt;
+   &lt;password&gt;&lt;/password&gt;
+   &lt;exception-sorter-class-name&gt;org.jboss.resource.adapter.jdbc.vendor.MySQLExceptionSorter&lt;/exception-sorter-class-name&gt;
+
+   &lt;!-- corresponding type-mapping in the standardjbosscmp-jdbc.xml (optional) --&gt;
+   &lt;metadata&gt;
+      &lt;type-mapping&gt;mySQL&lt;/type-mapping&gt;
+   &lt;/metadata&gt;
+ &lt;/local-tx-datasource&gt;
+&lt;/datasources&gt;</pre>
+
+<p>Next, make a few changes to the juddiv3.war/classes/META-INF/persistence.xml. Change the "hibernate.dialect" property to match the database you have chosen for persistence. For MySQL, change the value of hibernate.dialect to "org.hibernate.dialect.MySQLDialect". A full list of dialects available can be found in the hibernate documentation (<a class="ulink" href="https://www.hibernate.org/hib_docs/v3/api/org/hibernate/dialect/package-summary.html">https://www.hibernate.org/hib_docs/v3/api/org/hibernate/dialect/package-summary.html</a>). Next, change the &lt;jta-data-source&gt; tags so that it reads &lt;non-jta-data-source&gt;, and change the value from java:comp/env/jdbc/JuddiDS to java:/JuddiDS.</p>
+</div>
+</div>
+<div class="section" title="8.2.2. JBossAS 7.x/JBossEAP-6.x"><div class="titlepage"><div><div><h3 class="title"><a id="_jbossas_7_x_jbosseap_6_x"/>8.2.2. JBossAS 7.x/JBossEAP-6.x</h3></div></div></div>
+
+<p>This section describes how to deploy juddi to JBossAS 7, WildFly and JBossEAP 6</p>
+<div class="section" title="8.2.2.1. Hibernate and JBossWS-CXF"><div class="titlepage"><div><div><h4 class="title"><a id="_hibernate_and_jbossws_cxf_2"/>8.2.2.1. Hibernate and JBossWS-CXF</h4></div></div></div>
+
+<p>Target platform Wildfly/EAP and H2 using Hibernate and JBossWS-cxf. The juddiv3.war relies on Hibernate and JBossWS-cxf modules in the appserver. To build the correct juddiv3.war run</p>
+<pre class="screen">mvn clean package -P jboss7up</pre>
+
+<p>Use the JBoss add-user.sh script to create an application user with the uddiadmin role.</p>
+</div>
+</div>
+</div>
+<div class="section" title="8.3. Deploying to Glassfish"><div class="titlepage"><div><div><h2 class="title"><a id="_deploying_to_glassfish"/>8.3. Deploying to Glassfish</h2></div></div></div>
+
+<p>This section describes how to deploy juddi to Glassfish 2.1.1. These instructions will use CXF as a webservice framework.</p>
+<p>First, download the glassfish-v2.1.1 installer JAR. Once downloaded,install using the JAR and then run the ant setup script :</p>
+<pre class="screen">java -jar glassfish-installer-v2.1.1-b31g-linux.jar
+cd glassfish
+ant -f setup.xml</pre>
+
+<div class="section" title="8.3.1. Glassfish jars"><div class="titlepage"><div><div><h3 class="title"><a id="_glassfish_jars"/>8.3.1. Glassfish jars</h3></div></div></div>
+
+<p>Copy the following JARs into domains/domain1/lib/ext. Note that for the purposes of this example, we have copied the MySQL driver to domains/domain1/lib/ext :</p>
+<pre class="screen">antlr-2.7.6.jar
+cglib-nodep-2.1_3.jar
+commons-collections-3.2.1.jar
+commons-logging-1.1.jar
+dom4j-1.6.1.jar
+hibernate-3.2.5.ga.jar
+hibernate-annotations-3.3.0.ga.jar
+hibernate-commons-annotations-3.0.0.ga.jar
+hibernate-entitymanager-3.3.1.ga.jar
+hibernate-validator-3.0.0.ga.jar
+javassist-3.3.ga.jar
+jboss-common-core-2.0.4.GA.jar
+jta-1.0.1B.jar
+mysql-connector-java-5.0.8-bin.jar
+persistence-api-1.0.jar</pre>
+
+</div>
+<div class="section" title="8.3.2. Configure the JUDDI datasource"><div class="titlepage"><div><div><h3 class="title"><a id="_configure_the_juddi_datasource"/>8.3.2. Configure the JUDDI datasource</h3></div></div></div>
+
+<p>First, using the asadmin administration tool, import the following file :</p>
+<pre class="screen">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE resources PUBLIC "-//Sun Microsystems Inc.//DTD Application Server 9.0 Domain//EN" "*&lt;install directory&gt;/lib/dtds/sun-resources_1_3.dtd*"&gt;
+&lt;resources&gt;
+&lt;jdbc-connection-pool name="mysql-pool" datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlDataSource" res-type="javax.sql.DataSource"&gt;
+&lt;property name="user" value="juddi"/&gt;
+&lt;property name="password" value="juddi"/&gt;
+&lt;property name="url" value="jdbc:mysql://localhost:3306/juddiv3"/&gt;
+&lt;/jdbc-connection-pool&gt;
+&lt;jdbc-resource enabled="true" jndi-name="jdbc/mysql-resource" object-type="user" pool-name="mysql-pool"/&gt;
+&lt;/resources&gt;</pre>
+
+<pre class="screen">asadmin add-resources resource.xml</pre>
+
+<p>Then use the Glassfish administration console to create a "jdbc/juddiDB" JDBC datasource resource based on the mysql-pool Connection Pool.</p>
+</div>
+<div class="section" title="8.3.3. Add juddiv3-cxf.war"><div class="titlepage"><div><div><h3 class="title"><a id="_add_juddiv3_cxf_war"/>8.3.3. Add juddiv3-cxf.war</h3></div></div></div>
+
+<p>Unzip the juddiv3-cxf WAR into domains/domain1/autodeploy/juddiv3.war .</p>
+<p>Add a sun-web.xml file into juddiv3.war/WEB-INF. Make sure that the JNDI references matches the JNDI location you configured in the Glassfish administration console.</p>
+<pre class="screen">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE sun-web-app PUBLIC '-//Sun Microsystems, Inc.//DTD
+Application Server 9.0 Servlet 2.5//EN'
+'http://www.sun.com/software/appserver/dtds/sun-web-app_2_5-0.dtd'&gt;
+&lt;sun-web-app&gt;
+&lt;resource-ref&gt;
+&lt;res-ref-name&gt;jdbc/juddiDB&lt;/res-ref-name&gt;
+&lt;jndi-name&gt;jdbc/juddiDB&lt;/jndi-name&gt;
+&lt;/resource-ref&gt;
+&lt;/sun-web-app&gt;</pre>
+
+<p>Next, make a few changes to juddiv3.war/WEB-INF/classes/META-INF/persistence.xml . Change the "hibernate.dialect" property to match the database that you have chosen for persistence. For MySQL, change the value of hibernate.dialect to "org.hibernate.dialect.MySQLDialect". A full list of dialects available can be found in the hibernate documentation (<a class="ulink" href="https://www.hibernate.org/hib_docs/v3/api/org/hibernate/dialect/package-summary.html">https://www.hibernate.org/hib_docs/v3/api/org/hibernate/dialect/package-summary.html</a>). Next, change the &lt;jta-data-source&gt; change the value from java:comp/env/jdbc/JuddiDS to java:comp/env/jdbc/JuddiDB.</p>
+</div>
+<div class="section" title="8.3.4. Run jUDDI"><div class="titlepage"><div><div><h3 class="title"><a id="_run_juddi"/>8.3.4. Run jUDDI</h3></div></div></div>
+
+<p>Start up the server :</p>
+<pre class="screen">cd bin
+asadmin start-domain domain1</pre>
+
+<p>Once the server is deployed, browse to <a class="ulink" href="http://localhost:8080/juddiv3">http://localhost:8080/juddiv3</a></p>
+</div>
+</div>
+</div><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch07.html"><strong>Prev</strong>Chapter 7. UDDI Seed Data</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ch09.html"><strong>Next</strong>Chapter 9. Extending UDDI</a></li></ul></body></html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    
+<body>
+
+<div id="id01">bob and mary</div>
+   
+<script>
+
+var xmlhttp = new XMLHttpRequest();
+var url = "youtube.json";
+
+xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        
+        //Parse the JSON data to a JavaScript variable. 
+        var parsedJSON = JSON.parse(xmlhttp.responseText);    
+        // This function is defined below and deals with the JSON data read from the file. 
+        myFunction(parsedJSON); 
+    }
+};
+
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
+    
+function myFunction(obj) {
+     
+    // Extract the data object from the root object.
+    var dataObj = obj.data;   
+    
+    // Next extract the items list array from dataObj.
+    var listItem = dataObj.items;
+    
+    // the listItem array just has one element. So there is not need to use a loop. We can just extract the element at index 0. This is the object containing must of the data we really need.
+    var interestingObj = listItem[0];
+    
+    //Now we can extract some of the interesting information from interestingObj and display it on a html page. Just pick out the bits you want. 
+    
+    var videoTitle = interestingObj.title;
+    var videoDescription = interestingObj.description;
+    var videoLink = interestingObj.player.default;
+    
+    var videoRating = interestingObj.rating;
+    var ratingCount = interestingObj.ratingCount;
+    var videoViews = interestingObj.viewCount;
+
+    // Write the html code to display the extracted data.
+    var htmlText = "<h1>" + videoTitle + "</h1>";
+    htmlText += "<p>" + videoDescription + "</p>";
+   
+    // This code create an iframe an embeds the youTube video. I retrieved the link used from Youtube manually, thought this link could be generated automatically. 
+    htmlText += "<p>"
+    htmlText += "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/hYB0mn5zh2c\" frameborder=\"0\" allowfullscreen></iframe>";
+    htmlText += "</p>"
+    
+    htmlText += "<p>View on YouTube: <a href=\"" + videoLink + "\"> link</a></p>";
+    
+    htmlText += "<h3>Stats</h3>";
+    htmlText += "Rating: " + videoRating + "<br>";
+    htmlText += "Reviews: " + ratingCount + "<br>";
+    htmlText += "Views: " + videoViews + "<br>";
+ 
+    document.getElementById("id01").innerHTML = htmlText;
+    
+}
+</script>
+
+</body>
+</html>

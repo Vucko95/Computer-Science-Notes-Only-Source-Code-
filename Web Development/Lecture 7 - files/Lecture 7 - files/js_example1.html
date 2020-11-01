@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript can change HTML content.</h1>
+
+<p id="demo">Click the button to change this text content.</p>
+
+<button type="button" onclick="changeText()">
+Click Me!</button>
+    
+<script>
+
+    function changeText(){
+        document.getElementById('demo').innerHTML = 'New text';
+    }    
+    
+</script>
+
+</body>
+</html>

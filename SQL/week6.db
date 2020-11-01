@@ -1,0 +1,51 @@
+CREATE DATABASE IF NOT EXISTS week6;
+
+USE week6;
+
+DROP TABLE IF EXISTS grades;
+DROP TABLE IF EXISTS modules;
+DROP TABLE IF EXISTS students;
+DROP TABLE IF EXISTS majors;
+
+
+CREATE TABLE majors (major_id INT PRIMARY KEY, major_name VARCHAR(40));
+
+CREATE TABLE students (student_id CHAR(8) PRIMARY KEY, student_name VARCHAR(30), major_id INT, FOREIGN KEY(major_id) REFERENCES majors(major_id) ON DELETE SET NULL ON UPDATE SET NULL);
+
+CREATE TABLE modules(module_code CHAR(9) PRIMARY KEY, module_name VARCHAR(40), major_id INT, FOREIGN KEY(major_id) REFERENCES majors(major_id) ON DELETE CASCADE ON UPDATE CASCADE);
+
+CREATE TABLE grades(student_id CHAR(8), module_code CHAR(9), grade VARCHAR(2), PRIMARY KEY(student_id,module_code), FOREIGN KEY(student_id) REFERENCES students(student_id) ON DELETE RESTRICT ON UPDATE CASCADE, FOREIGN KEY(module_code) REFERENCES modules(module_code) ON UPDATE CASCADE ON DELETE RESTRICT);
+
+INSERT INTO majors VALUES(1,'Software'),(2,'IoT'),(3,'Finance');
+
+INSERT INTO students VALUES('17534832','Abey Campbell',3),
+	('18277639','Anca Jurcut',1),
+	('16825348','Ruihai Dong',1),
+	('15888888','Sean Russell',1),
+	('16671882','Lina Xu',2),
+	('19533419','Vivek Nallur',2),
+	('18763900','Catherine Mooney',2);
+
+INSERT INTO modules VALUES('COMP2013J', 'Databases', 1),('COMP2014J','Data Structures',1),('COMP2005J', 'Networks', 2),('ACCT2005J','Accountancy',3);
+
+INSERT INTO grades VALUES('17534832', 'COMP2014J', 'A+'),('18763900', 'COMP2013J', 'A+');
+
+-- By the way, putting '--' in SQL turns the rest of the line into a comment.
+-- Here are the extra queries to run on this database to see what happens.
+
+-- Student 16825348 has no grades, so can be deleted.
+-- DELETE FROM students WHERE student_id='16825348';
+
+-- Student 18763900 has grades, so RESTRICT prevents deletion
+-- DELETE FROM students WHERE student_id='18763900';
+
+-- Deleting a major sets its students major_id to NULL (SET NULL)
+-- ... and deletes all modules it has
+-- DELETE FROM majors WHERE major_id=3;
+
+-- Changing a module code changes the grades also (Change COMP2014J to COMP2003J)
+-- UPDATE modules SET module_code='COMP2003J' WHERE module_code='COMP2014J';
+
+-- Changing the code of a major causes students' majors to become NULL.
+-- ... This is probably bad database design!
+-- UPDATE majors SET major_id=4 WHERE major_id=1;

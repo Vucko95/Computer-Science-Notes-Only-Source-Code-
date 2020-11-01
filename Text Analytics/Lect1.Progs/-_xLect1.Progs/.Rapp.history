@@ -1,0 +1,139 @@
+licence()
+demo()
+x
+source(“test.R”)
+source("/Users/user/test.R")
+source("/Users/user/Desktop/test.R")
+x
+plot(ysorted, zsorted, type=”b”)
+plot(ysorted, zsorted, type="b")
+jpeg("fig1.jpeg",height=6cm, width=8cm)
+pdf("figure1.pdf", height=6cm, widht=8cm)
+pdf("figure1.pdf")
+hist(x, breaks=seq(0,10,2))
+dev.off(dev.cur())
+"figure1.pdf"
+file
+myhist <- hist(x, breaks=seq(0,10,2))
+names(myhist)
+myhist$counts
+myhist$breaks
+xname(myhist)
+x[10]
+x
+g[10]
+x[4:10]
+mydat <- read.table("smallcor.dat",header=T)
+mydat <- read.table("/Users/user/Desktop/smallcor.dat", header=T)
+mydat <- read.table("/Users/user/Desktop/smallcor.dat",header=T)
+source("/Users/user/Desktop/test.R")
+mydat <- read.table("/Users/user/Desktop/smallcor.dat")
+load("/Users/user/Desktop/smallcor.dat.RData")
+mydat <- read.table("/Users/user/Desktop/smallcor.dat",header=T)
+load("/Users/user/Desktop/cor.RData")
+mydat <- read.table("/Users/user/Desktop/cor.RData",header=T)
+mdat$X
+mydat$X
+mydat[ , 2]
+mydat$Y
+mean(mydat$X)
+mean(mydat$Y)
+dim(mydat)
+p <- par()
+p$names
+help(par)
+plot(mydat$X, mydat$Y)
+plot(mydat$X, mydat$Y,type="l")
+x <- sort(mydat$X)
+y <- sort(mydat$Y)
+plot(x,y,type="l")
+help(ttest)
+help(t-test)
+load("/Users/user/Desktop/ActiveStuff/Proj.RProgramming/cor.RData")
+library(wordcloud)
+library(tm)
+wordcloud("May our children and our children's children to a thousand generations, continue to enjoy the benefits conferred upon us by a united country, and have cause yet to rejoice under those glorious institutions bequeathed us by Washington and his compeers.",colors=brewer.pal(6,"Dark2"),random.order=FALSE)
+wordlcloud()“a long list of repeated words that mention the word word a few times so there are a few words that are repeated a few times to show the effect of producing the word cloud”,colors=brewer.pal(6,"Dark2"),random.order=FALSE)
+wordlcloud(“a long list of repeated words that mention the word word a few times so there are a few words that are repeated a few times to show the effect of producing the word cloud”,colors=brewer.pal(6,"Dark2"),random.order=FALSE)
+wordcloud(“a long list of repeated words that mention the word word a few times so there are a few words that are repeated a few times to show the effect of producing the word cloud”,colors=brewer.pal(6,"Dark2"),random.order=FALSE)
+wordcloud(“a long list of repeated words", colors=brewer.pal(6,"Dark2"),random.order=FALSE)
+wordcloud("a long list of repeated words that mention the word word a few times so there are a few words that are repeated a few times to show the effect of producing the word cloud”,colors=brewer.pal(6,"Dark2"),random.order=FALSE)
+wordcloud("a long list of repeated words that mention the word word a few times so there are a few words that are repeated a few times to show the effect of producing the word cloud",colors=brewer.pal(6,"Dark2"),random.order=FALSE)
+wordcloud("a long list of repeat words that mention the word word a few times so there are a few words that are repeat a few times to show the effect of producing the word cloud",colors=brewer.pal(6,"Dark2"),random.order=FALSE)
+wordcloud("May our children and our children's children to a thousand generations, continue to enjoy the benefits conferred upon us by a united country, and have cause yet to rejoice under those glorious institutions bequeathed us by Washington and his compeers.",colors=brewer.pal(6,"Dark2"),random.order=FALSE)
+wordcloud("a long list of repeated words that mention the word word a few times so there are a few words that are repeated a few times to show the effect of producing the word cloud",colors=brewer.pal(6,"Dark2"),random.order=FALSE)
+wordcloud("list word word a list time time repeat repeat repeat the the the cloud cloud cloud",colors=brewer.pal(6,"Dark2"),random.order=FALSE)
+wordcloud("list word word word a list time time repeat repeat repeat the the the cloud cloud cloud",colors=brewer.pal(6,"Dark2"),random.order=FALSE)
+wordcloud("list word word word a washington list time time repeat repeat repeat the the the cloud cloud cloud",colors=brewer.pal(6,"Dark2"),random.order=FALSE)
+wordcloud("list word word word a washington list time time repeat repeat repeat the the the cloud cloud cloud",colors=brewer.pal(6,"Dark2"),random.order=TRUE)
+wordcloud("list word word word a washington list time time repeat repeat repeat the the the cloud cloud cloud",min-freq=1,colors=brewer.pal(6,"Dark2"),random.order=TRUE)
+wordcloud("list word word word a washington list time time repeat repeat repeat the the the cloud cloud cloud",min.freq=1,colors=brewer.pal(6,"Dark2"),random.order=TRUE)
+x <- c(1,2,3,5)
+x
++ 3 4
++34
++(3,4)
+3 + 4
+x <- 4
+y <- 5
+z <- 5
+x
+z
+ls()
+x <- c(1,2,3,5)
+mean(x)
+data()
+data(cars)
+show-data
+cars[1:5,]
+cars[all]
+cars[]
+mean(dist)
+attach(cars)
+mean(dist)
+dist
+mean(dist)
+print(dist)
+source(prac1.Intro.R)
+pwd
+pwd()
+source("/Users/user/desktop/Teaching.TextAnalytics/Lect1.Intro/prac1.Intro.R")
+("/Users/user/desktop/Teaching.TextAnalytics/Lect1.Intro/prac1.Intro.R")
+x <- "/Users/user/desktop/Teaching.TextAnalytics/Lect1.Intro/prac1.Intro.R"
+source(x)
+x <- "/Users/user/desktop/Teaching.TextAnalytics/Lect1.Intro/prac1.Intro.R"
+source(x)
+library(wordcloud)
+library(tm)
+wordcloud("May our children and our children's children to a thousand generations, continue to enjoy the benefits conferred upon us by a united country, and have cause yet to rejoice under those glorious institutions bequeathed us by Washington and his compeers.",colors=brewer.pal(6,"Dark2"),random.order=FALSE)
+source("/Users/user/Desktop/X_Teaching/CSPractice:2010-12/Lects & Pracs 2014/L2.MK3.Lect and Prac/CSP.prac2.wordcloud.R")
+source("/Users/user/Desktop/analysis/Anova_1_output.spv")
+2 + 2
+x <- 4
+y <- 6
+x + y
+ls()
+z <- c(4 5 6 7)
+z <- c(4,5,6,6)
+z
+mean(z)
+data()
+data(cars)
+cars[]
+attach(crs)
+attach(cars)
+dist
+mean(dist)
+getwd()
+c <- getwd()
+c
+source(c)
+a <- "aaa"
+b <- "fff"
+a + b
+add(a, b)
+paste(a, b)
+paste(c,"prac1.Intro.R", "/")
+paste(c,"prac1.Intro.R", sep = "/")
+new = paste(c,"prac1.Intro.R", sep = "/")
+source(new)

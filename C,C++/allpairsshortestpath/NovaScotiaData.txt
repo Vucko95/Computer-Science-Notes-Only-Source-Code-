@@ -1,0 +1,84 @@
+30
+Amherst,Oxford,40
+Amherst,Pictou,183
+Amherst,Springhill,34
+Antigonish,Canso,113
+Antigonish,New Glasgow,60
+Antigonish,Port Hawkesbury,59
+Baddeck,Port Hawkesbury,92
+Baddeck,Sydney,78
+Bridgetown,Digby,60
+Bridgetown,Liverpool,140
+Bridgetown,Middleton,24
+Bridgewater,Liverpool,48
+Bridgewater,Lunenburg,15
+Bridgewater,Mahone Bay,15
+Bridgewater,Middleton,88
+Canso,Antigonish,113
+Canso,Dartmouth,321
+Canso,Port Hawkesbury,109
+Chester,Mahone Bay,15
+Chester,Kentville,64
+Chester,Halifax,67
+Dartmouth,Canso,321
+Dartmouth,Halifax,3
+Digby,Bridgetown,60
+Digby,Liverpool,143
+Digby,Yarmouth,103
+Halifax,Chester,67
+Halifax,Dartmouth,3
+Halifax,Shubenacadie,62
+Halifax,Windsor,66
+Kentville,Chester,64
+Kentville,Middleton,53
+Kentville,Wolfville,17
+Liverpool,Bridgetown,140
+Liverpool,Bridgewater,48
+Liverpool,Digby,143
+Liverpool,Shelburne,68
+Louisbourg,Sydney,36
+Lunenburg,Bridgewater,15
+Lunenburg,Mahone Bay,14
+Mahone Bay,Lunenburg,14
+Mahone Bay,Bridgewater,15
+Mahone Bay,Chester,15
+Middleton,Bridgetown,24
+Middleton,Bridgewater,88
+Middleton,Kentville,53
+New Glasgow,Pictou,22
+New Glasgow,Antigonish,60
+New Glasgow,Truro,70
+Oxford,Amherst,40
+Oxford,Springhill,20
+Oxford,Truro,83
+Parrsboro,Springhill,46
+Parrsboro,Truro,92
+Pictou,Amherst,183
+Pictou,New Glasgow,22
+Port Hawkesbury,Antigonish,59
+Port Hawkesbury,Canso,109
+Port Hawkesbury,Baddeck,92
+Rawdon,Shubenacadie,25
+Rawdon,Windsor,17
+Shelburne,Liverpool,68
+Shelburne,Yarmouth,97
+Shubenacadie,Halifax,62
+Shubenacadie,Truro,37
+Shubenacadie,Rawdon,25
+Springhill,Amherst,34
+Springhill,Oxford,20
+Springhill,Parrsboro,46
+Sydney,Baddeck,78
+Sydney,Louisbourg,36
+Truro,New Glasgow,70
+Truro,Oxford,83
+Truro,Parrsboro,92
+Truro,Shubenacadie,37
+Truro,Windsor,134
+Windsor,Halifax,66
+Windsor,Rawdon,17
+Windsor,Wolfville,26
+Wolfville,Kentville,17
+Wolfville,Windsor,26
+Yarmouth,Digby,103
+Yarmouth,Shelburne,97

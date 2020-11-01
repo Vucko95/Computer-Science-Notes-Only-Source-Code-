@@ -1,0 +1,107 @@
+COMP30220 Distributed Systems Practical 
+
+Lab 2: RMI-based Distribution Work individually. Submit your code on 
+csmoodle.ucd.ie by the deadline given on moodle. Please submit a single ZIP file 
+(name is <student-num>.zip) containing your source code and any text files 
+required for the solution. Please read the QuoCo scenario before attempting this 
+practical. The broad objective of this practical is to adapt the code provided 
+to use RMI for interaction between each of the 4 services and between the broker 
+and the client. I have chosen to do this is a piece-meal way. First working on 
+the client / broker interface, and then on the broker / quotation service 
+interface. Finally, I consider how to all the services to be started 
+independently. 
+
+Task 1: Splitting the Client & Broker Grade: D
+
+The first task is to use RMI for interaction between the client and the broker components. 
+We will continue to use the existing Registry for broker-quotation service interaction.
+
+a) The first thing we need to do is to change the Broker service code to be used with RMI. 
+In particular, you should look over the RMI Calculator code from the lecture notes. 
+
+Here you should see that the calculator interface extends the java.rmi.Remote 
+interface and all methods defined in the interface should throw 
+java.rmi.RemoteException. You should modify the Broker interface to reflect 
+this. 
+
+NOTE: Doing this will cause your client code to break (the exception is not 
+handled when the getQuotations(...) method is invoked). You can fix this by 
+placing the loop in a try...catch statement. 
+
+b) The next thing we need to do is to launch the RMI registry as we cannot use 
+RMI if the registry has not been launched. This involves inserting the following 
+line of code at the start of the main method in the client code: Registry 
+registry = LocateRegistry.createRegistry(1099); NOTE: This line will need to be 
+modified because the createRegistry(...) method throws an exception. 
+
+c) The third step involves registering the broker service with the RMI Registry. 
+Because this requires the existence of the RMI registry, it can no longer be 
+done in the static initialization block. Instead, you should create and register 
+the Broker Service in the line immediately after the line(s) that create the 
+registry (you did this in step b). This involves 2 lines of code and you should 
+examine the RMI Calculator (Server) example to understand how to do this. You 
+can reuse the constant BROKER_SERVICE for the object identifier in the RMI 
+implementation. 
+
+d) The last step for the first problem is to locate the broker service and use 
+it. In this original version of the client, this step was carried out by the 
+ServiceRegistry.lookup(...) step. You need to modify this line to use the 
+equivalent for RMI (see the RMI Calculator Client code for an example). Make 
+sure that you do not use the version of the object that you created when 
+registering the service (step c). Also, remove the line of code that registers 
+the Broker service with the ServiceRegistry (it was in the static initialisation 
+block of the Main class). 
+
+Task 2: Distributing the Service Grade: C This next task is simply to reorganise 
+the code and distribute it. To do this, you will replace your Main class with 2 
+classes entitled: Server and Client. Start by renaming the Main class to Client 
+and then make a copy of this class called Server. Next, we need to put all the 
+code relating to the server side (the broker & quotation service related code) 
+into the Server class and the code relating to the Client (the lookup for the 
+client and the client info dummy data). Look at the RMI Calculator for an 
+example, and reorganise the code as you think best. You should need to run both 
+the Server and the Client programs for your system to work. 
+
+It only has to work in the order: launch Server then Client. You may also find that the Server code 
+quits before the client can connect. This is because the server code only 
+registers the object. It does not do anything else. Perhaps put the following 
+code at the end to stop it quitting: 
+
+while (true) {
+try {
+Thread.sleep(10000);
+} catch (InterruptedException e) {
+e.printStackTrace(); }
+}
+
+You should delete the Main class to avoid confusion.
+
+Task 3: Splitting the Broker & Quotation Services Grade: B The third problem 
+invokes doing the same thing as Task 1, but for the 3 quotation services. Each 
+service should be recast as an RMI-based service. You should delete the 
+ServiceRegistry class and the static initialisation block in the server class. 
+You also need to modify the code in the Broker Service because it uses the 
+ServiceRegistry. 
+
+Task 4: Full Distribution Grade: A The final task / challenge 
+is to attempt full distribution. For this: 
+
+1. Each service should be deployable in isolation (i.e. you should be able to 
+start any of the 4 services in any order). This means you need a main method for 
+each service (you can put them in the service implementation classes). 
+
+2. The Client should only require the Broker Service to be started to work.
+
+3. You should introduce an Infrastructure class whose main method creates the registry (this should be the first
+service to be started).
+
+4. It should be possible to deploy the service over multiple machines WITHOUT recompilation of code (consider
+the arguments that can be passed to the main method).
+
+5. Write a SHORT text file that explains how to deploy your solution (call it DEPLOY.txt and put it in the root
+folder of the project).
+
+
+Additional Marks
++ grades (e.g. A+) can be attained through consideration of boundary cases, good exception handling, nice features that enhance the quality of your solution.
+- grades (e.g. A-) can be attained though lack of commenting and indentation, bad naming conventions or sloppy code.

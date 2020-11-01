@@ -1,0 +1,20 @@
+[
+  {
+    "id" : "978-1933988177",
+    "category" : ["book","paperback"],
+    "name" : "Lucene in Action",
+    "author" : "Michael McCandless",
+    "genre" : "technology",
+    "price" : 30.50,
+    "pages" : 475
+  },
+  {
+    "id" : "978-1857995879",
+    "category" : ["book","paperback"],
+    "name" : "Sophie's World",
+    "author" : "Jostein Gaarder",
+    "genre" : "fiction",
+    "price" : 3.07,
+    "pages" : 518
+  }
+]

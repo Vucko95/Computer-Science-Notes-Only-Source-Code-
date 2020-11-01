@@ -1,0 +1,203 @@
+<Blog>
+
+<date>27,May,2004</date>
+<post>
+
+     
+       Edit:  urlLink According to Engadget , the story that was originally quoted for my little rant is, itself, rather misinterpreted. MS is still taking some "we're gonna beat the iPod" trash, but it's nowhere as balls-to-wall as it originally seemed. 
+ 
+ Microsoft, it's long been known, has the digital music market (refined and defined by Apple) in its sights. Looks like they're getting close enough to the initiation of their plans that they're willing to start talking trash: 
+
+ 
+The Microsoft-branded devices will "look and feel" as good as the iPod for as little as $50, said Yusuf Mehdi, corporate vice president of MSN at Microsoft Corp., at the Goldman Sachs fifth annual Internet Conference in Las Vegas.
+ 
+
+ Hrm. Let's disregard, for the moment, the applied-for patent that Apple is working on for the iPod (and the concommitent issues regarding that patent application) 
+
+  Just as good  as the innovator (be that innovator Apple or any other of a number of companies) has been the MS rallying cry for nigh unto 20 years. That claim, and the ability to prop up a crappy new product with Windows and Office profits until said product has been refined, are two of the pillars of MS busines strategy. That strategy hasn't been working for MS lately, though - and  just as good  hasn't been working for the other iPod competitors to date. A huge part of the iPod's appeal, after all, is its continuing Cool Factor. MS might excel at  just as good , but they've never managed to grok Cool. 
+     
+    
+</post>
+
+<date>26,May,2004</date>
+<post>
+
+     
+       Owen over at  urlLink Asymptomatic  has created a mondo-table-from-hell that does its damned best to make an  urlLink apples-to-apples comparison of the many user-installed blogging packages . 
+
+ 
+	 I got tired of  flipping back and forth between each of the sites, especially when not all  of the answers to my questions were apparent from simply reading the main web  page. 
+ 
+
+ Obviously, it doesn&#8217;t include &#8220;service&#8221; blogging like Radio, Blogger, or LiveJournal - but it&#8217;s damn useful. 
+
+     
+    
+</post>
+
+<date>25,May,2004</date>
+<post>
+
+     
+        urlLink MacOS X 10.3.4  just hit the bricks, weighing in at 40MB.  urlLink Detailed information is here , but updates include some Mail fixes, new OpenGL features, support for USB 2.0 iPod connections, and Safari 1.2.2. Enjoy! 
+
+     
+    
+</post>
+
+<date>25,May,2004</date>
+<post>
+
+     
+       During the dot.com boom, anyone who could apply a bold tag and use the paintbrush tool in MS Paint could get work as a web geek - be the title &#8220;webmaster&#8221;, &#8220;web developer&#8221;, &#8220;HTML builder&#8221; or any other of a jillion variants. All the startups striving for IPO stardom needed a website to pimp their plan (not to mention to host cash-generating advertising), and there had to be people to build those websites. 
+
+ Someone who could claim any level of web skills - and who lived in certain &#8220;hot&#8221; areas - would be courted by multiple employers who were  moist  with venture capital funds, hoping to put people in their newly-purchased Aeron chairs. 
+
+ Today, three years after the &#8220;official&#8221; beginning of the post-boom recession, it&#8217;s a much different story. While there are still luminary web developers, such heights require an advanced synthesis of skills including not only HTML (now XTML and CSS) coding but excellent design, usability, and information architecture chops. Their numbers are relatively few - the mighty herd having been viciously culled - and most work as part of small (or even one-person) design shops that move from contracted project to contracted project. 
+
+ One of the more telling signs of the desmise of non-contract web development has been the last year or so of job postings here at UW. While I haven&#8217;t made a scientific study of it, postings for jobs that are web-only have been for 50% appointments (which is, by the way, below the threshold for several staff benefit goodies). Those that have been full time have had posted salary ranges topping in the mid-thirties, which isn&#8217;t much of a living wage if you want to actually live  in  Seattle (as opposed to commuting from Lynnwood). The few that have been fulltime and of a living wage have had web development as only one of a handful of responsibilities - with the others being some combination of database programming, Windows (MCSE) administration, UNIX administration, and C/C++ programming. 
+
+ The simple reality is that &#8220;new&#8221; websites are fairly rare these days - and creation of such, if done properly, is best done by one of the dedicated luminaries on contract. Clients that desire dynamic sites will either contract to have their site put into a CMS, hire a DBA/Programmer to roll their own database-driven solution, or try to &#8220;graft&#8221; web updates on to the responsibilities of some other position in the organization. 
+
+ It&#8217;s still a &#8220;sexy&#8221; field - but the ratio of hopefuls to successes is coming to resemble the ranks of writers, artists, industrial designers, and similar fields. 
+     
+    
+</post>
+
+<date>24,May,2004</date>
+<post>
+
+     
+       So, Apple issued their  urlLink security update  to address the problem, but it only handles the vulnerability caused by Help Viewer's ability to run arbitrary scripts. It doesn't address the problems caused by URIs that mount real or virtual filesystems, nor does it address the telnet: URI problem. 
+
+ John Gruber at Daring Fireball has summed up what you should do to cover your assets with  urlLink An Ounce of Prevention . In short: 
+ 
+ Install the Apple Patch
+ Disable anything that auto-opens downloaded files
+ Disable URI helpers that auto-mount filesystems
+ Disable the telnet URI
+ 
+ Read John's post for the details. Why hasn't Apple issued a patch for all of this? It appears that the vulnerability is one that takes advantage of How Things Are Supposed To Work. That is, fixing it in a graceful fashion might require some pretty basic re-thinking of how certain things operate. We'll see. Here's hoping that post V on this issue is a final resolution. Yeesh 
+     
+    
+</post>
+
+<date>21,May,2004</date>
+<post>
+
+     
+       John Gruber over at  urlLink Daring Fireball  has posted two good articles on the recent URI Handling vulnerabilities in MacOS X: 
+
+  urlLink Unsafe URI Handlers   urlLink Telnet Protocol 
+ 
+
+ The second (he said, inverting order) notes that the telnet:// URI handler can be used to overwrite user-owned files, as the contents of the URI are passed as command-line options to telnet - including the option to write a log file of the telnet session that would overwrite existing files of the same name. So add telnet:// to the Bad Boy list. 
+
+ But before you fire up IE to disable it, read the first article. It covers much of what Josh Larios mentioned the other day, save that John discusses disabling the offending URI protocols via the Launch Services API  (using  urlLink RCDefaultApp ) rather than the Internet Config API (which is layed atop Launch Services). RCDefaultApp also allows you to outright disable the URI handlers, rather than assigning a null app (although it's handy to have that null app pop up so you know what happened). 
+
+ It's also important to note that these vulnerabilities are in all web browsers on OSX (since it's an issue of how URIs are handed off to certain helper programs), as well as in programs which have "live HTML" capabilities - like  urlLink NetNewsWire  and even  urlLink Mail.app  
+
+ Thorny beast. Apple has said that they're  urlLink aware of the reports and are examining the issue  but, in some ways, these vulnerabilities run pretty deep. 
+     
+    
+</post>
+
+<date>20,May,2004</date>
+<post>
+
+     
+       John Gruber of Daring Fireball discusses how to protect your Mac from the Mac OS X 10.3 security exploit announced earlier this week, at an even lower level than Josh Larios' suggestions from an earlier post.  [ urlLink Daring Fireball ] 
+     
+    
+</post>
+
+<date>19,May,2004</date>
+<post>
+
+     
+       PC users rejoice, there's actually a serious MacOS X security issue that isn't just a  urlLink hyped-up effort to sell software . 
+
+ Here's the rundown from Secunia:  urlLink Mac OS X URI Handler Arbitrary Code Execution . And more information from insecure.ws  urlLink Safari/help runscript: Proof Of Concept  
+
+ The short version is that links which use the disk: or help: URI handlers (earlier reports only tag the help: handler) can be rigged to run arbirary code (in the form of scripts) on the user's machine with the user's privs. Anything you can do on your machine, the script could do. 
+
+ Apple may have actually known about this for several months (according to some who claim to have submitted the problem to Apple). Exploits have started to appear online, so the issues has become much more serious. 
+
+ Josh Larios (and others) have pointed out this method to "patch" yourself: 
+
+ 
+ Launch Internet Explorer. 
+ Go to Explorer -> Preferences. 
+ Go to Network -> Protocol Helpers 
+ Find the "help" protocol and click on it, then click "Change". 
+ Un-check "Use current application if possible". 
+ Click "Choose Helper". 
+ Click on the "Chess" application in your Applications folder, then click "Open". 
+ Click "OK" in the Protocol Helper Editor. 
+ If you have a "disk" protocol, click on it and repeat steps 5 through 8. If not, click "Add" and create a "disk" protocol, then follow steps 5 through 8 for it. 
+ 
+
+ Of course this would come shortly after I got smug on a mailing list at Windows users suffering from SASSER. Heh. 
+
+  Edit:  isophonicSoftware's DGTGF patcher only patches one aspect of the issue (again, thanks to Josh Larios), so don't rely on that for full protection. 
+     
+    
+</post>
+
+<date>18,May,2004</date>
+<post>
+
+     
+       Almost two months ago, after the boy had his first birthday, I resolved to reduce the number of times I drove to work - not by quitting, but by changing how I got there. I live just under 7 miles from UW, in the happy Seattle neighborhood of Ballard - and found that I could get to work in a reasonable time by either taking the bus (two busses, one transfer) or riding my bike. The general goal is to drive my car less than half the time. 
+
+ I've been pretty good about it. These days there's only one day a week when I can be relied upon to drive, and that's Thursday - "Takeout Thursday" in our house, wherein I bring home takeout food for dinner. Other than that, driving is usually reserved for days that I'm too damned tired to wake up for the bus. Yesterday, I received approval to go back to my old pattern of working from home one day a week - which I'd put on hold for the 6 months we were between Computing Directors. 
+
+ So, now that I've established the habits, it's time to reap the rewards. I can get a U-PASS - an unlimited bus pass - for $48.96 each academic quarter (3 months). I can buy one-day commuter parking passes for $2.36 each to cover those days I do drive - let's say I use 16 each quarter (one a week, plus couple weeks of driving twice). That comes to $37.76. Total cost? $86.72 a quarter - or about $28.90 per month. 
+
+ "Everyday" parking costs me $196 each quarter. Plus, with a 14-mile round trip, I can count on using about 2 gallons of gas every three commutes (good car, but lots of stop-and-go.) Driving every in-office day, versus driving once (and occasionally twice) a week gives me 36 extra commutes. Do the math and that comes out to about $52 in gas each quarter. Throw that in and you have $248/quarter, or about $82.66 a month. 
+
+ So. By biking and bussing, and driving once-maybe-twice a week, I can save $53.76 each month just in parking fees and gasoline costs. That's $12.65 a week or, in Seattle terms, a double-tall Starbucks latte every work day (including the work-at-home days). Those calculations don't count other things such: 
+
+ 
+ exercise from biking (when the weather allows 
+ time to relax on the bus before and after work 
+ reduced "driving with all these idiots on the road" stress 
+ using "gotta catch the bus" to leave work on time 
+ less wear and tear on the car 
+ 
+
+ Well, I know which way I'm going when I renew my parking... 
+
+     
+    
+</post>
+
+<date>17,May,2004</date>
+<post>
+
+     
+      Hey, there's always a first post, isn't there?
+     
+    
+</post>
+
+<date>14,May,2004</date>
+<post>
+
+     
+       I have a handful of users that I'm upgrading from MacOS X 10.2, and one from MacOS 9, to MacOS X 10.3. Being a good admin, I know that the best "point release" upgrade is a full backup-format-reinstall, especially the change-packed releases of MacOS X. Not to mention it's a good excuse to "spring clean" what can quickly become a data-crufty hard drive.  I did the first one this morning - an eMac user with a reasonably capable machine and a fairly vanilla install. All told, from walking into the user's office to walking out, it took about 3 1/2 hours - which included explaining things to a student employee who I'm bringing up to speed on things Macintosh.  The biggest boon was  urlLink Target Disk Mode . No, that isn't when you're in the department-store shopping zone. Long story short, TDM allows a Mac to act like an external hard drive. Take one Mac, hold down the "T" key, and (re)boot. After a bit, a blue screen with a yellow firewire logo will show. You now have a Mac-shaped external firewire hard drive. Use a firewire cable to plug it into another Mac, and it'll mount on the desktop.  Made it easy as pie to made a quick-and-dirty disk image backup of the eMac's drive, as I'd brought along my PowerBook with 25GB of free space. Later, when re-installing the user's apps, I reversed the process (making my PowerBook the TDM Mac) and downloaded disk images of installers for apps like AppleWorks and Office v.X.  TDM is one of those things that drops jaws when you show it in use to another tech geek who regularly has to move gigabytes of data from one computer to another. Certainly easier than the common PC method of removing the HD and installing it as a Slave IDE drive on the second PC. 
+     
+    
+</post>
+
+<date>03,June,2004</date>
+<post>
+
+     
+       According to a recent posting in  urlLink BoingBoing ,  urlLink Cory Doctorow  will be on UW campus the week after next to talk a bit about copyright and some of his new fiction.   I'm doing an internal talk at Microsoft Research in Redmond on June 17, and they've been good enough to set up a public event on June 16 in Seattle. I'm going to talk a little about copyright and read some new fiction -- there'll be books on sale, and I'll be happy to sign your stuff for ya. Here are the details:    When : June 16, 7PM  Where : Walker-Ames Room, Kane Hall  More info : Contact  urlLink Kim Ricketts , 206-523-3458   Should be interesting. 
+     
+    
+</post>
+
+
+</Blog>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+    
+<script>
+    
+    var sum = 0;  
+    
+    for (var x = 0; x < 1000; x++)  
+    {  
+        //Use the modulus operator to check if the number is divisible by 3 or 5. 
+        if (x % 3 === 0 || x % 5 === 0)  
+        {  
+            sum += x;  
+        }  
+    }    
+    
+    document.getElementById('demo').innerHTML = sum;
+       
+</script>
+
+</body>
+</html>

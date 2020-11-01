@@ -1,0 +1,13 @@
+<html><body>
+<pre style="margin: 0em;background: #ededed"><span style="color: #0073ff; font-weight: bold;">  1  </span><span style="font-family: monospace"></span><span style="color: #cc0066;">import</span> java.io.File;</pre>
+<pre style="margin: 0em;background: #ededed"><span style="color: #0073ff; font-weight: bold;">  2  </span><span style="font-family: monospace"></span></pre>
+<pre style="margin: 0em;background: #ededed"><span style="color: #0073ff; font-weight: bold;">  3  </span><span style="font-family: monospace"></span><span style="color: #cc0066;">public</span> <span style="color: #cc0066;">class</span> FileFinderDemo</pre>
+<pre style="margin: 0em;background: #ededed"><span style="color: #0073ff; font-weight: bold;">  4  </span><span style="font-family: monospace">{</span></pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;">  5  </span></span><span style="font-family: monospace">   </span><span style="color: #cc0066;">public</span> <span style="color: #cc0066;">static</span> <span style="color: #cc0066;">void</span> main(String[] args)</pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;">  6  </span></span><span style="font-family: monospace">   {</span></pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;">  7  </span></span><span style="font-family: monospace">      </span>File startingDirectory = <span style="color: #cc0066;">new</span> File(<span style="color: #32e598;">&quot;/home/myname&quot;</span>);</pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;">  8  </span></span><span style="font-family: monospace">      </span>FileFinder finder = <span style="color: #cc0066;">new</span> FileFinder(startingDirectory);</pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;">  9  </span></span><span style="font-family: monospace">      </span>finder.find(<span style="color: #32e598;">&quot;.java&quot;</span>);</pre>
+<pre style="margin: 0em;"><span style="background: #ededed"><span style="color: #0073ff; font-weight: bold;"> 10  </span></span><span style="font-family: monospace">   }</span></pre>
+<pre style="margin: 0em;background: #ededed"><span style="color: #0073ff; font-weight: bold;"> 11  </span><span style="font-family: monospace">}</span></pre>
+</body></html>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!--
+/*
+ * Copyright 2001-2008 The Apache Software Foundation.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<!--
+################################################################
+#                 jUDDI-v3.0 configuration.                    #
+################################################################
+# Note that the property settings in this                      #
+# file can be overriden by system parameters                   #
+#                                                              #
+################################################################
+-->
+<config>
+	<juddi>
+		<!-- The ${juddi.server.baseurl} token can be referenced in accessPoints and will be resolved at runtime. -->
+		<server>
+			<baseurl>http://localhost:8080/juddiv3</baseurl>
+			<baseurlsecure>https://localhost:8443/juddiv3</baseurlsecure>
+		</server>
+		<!-- The node Id must be unique when setup in a cluster of UDDI servers implementing the replication API
+			don't worry, jUDDI doesn't implement it right now, but it may come in the future -->
+		<nodeId>uddi:juddi.apache.org:node1</nodeId>
+		<!-- The key of the root business that all of the UDDI services are registered in, as defined in the install_data -->
+		<root>
+			<!-- this is the 'root' username, or owner of the node -->
+			<publisher>root</publisher>
+			<!-- The key of the root business that all of the UDDI services are registered in, as defined in the install_data -->
+			<businessId>uddi:juddi.apache.org:businesses-asf</businessId>
+			<partition>uddi:juddi.apache.org</partition>
+		</root>
+		<seed>
+			<always>false</always>
+		</seed>
+
+		<!-- Name of the persistence unit to use (the default, "juddiDatabase" refers to the unit compiled into the juddi library)-->
+		<persistenceunit>
+			<name>juddiDatabase</name>
+		</persistenceunit>
+
+		<!-- Check-the-time-stamp-on-this-file Interval in milli seconds  -->
+		<configuration>
+			<reload>
+				<delay>2000</delay>
+			</reload>
+		</configuration>
+		<!--Default locale-->
+		<locale>en_US</locale>
+
+		<!--The UDDI Operator Contact Email Address-->
+		<operatorEmailAddress>admin@local.localhost</operatorEmailAddress>
+
+		<!-- The maximum name size and maximum number of name elements allows in several of the FindXxxx and SaveXxxx UDDI functions.-->
+		<maxNameLength>255</maxNameLength>
+		<maxNameElementsAllowed>5</maxNameElementsAllowed>
+
+
+		<!-- The maximum number of rows returned in a find_* operation.  Each call can set this independently, but this property defines a global maximum.-->
+		<maxRows>1000</maxRows>
+		<!-- The maximum number of "IN" clause parameters.  Some RDMBS limit the number of parameters allowed in a SQL "IN" clause.-->
+		<maxInClause>1000</maxInClause>
+
+		<!-- The maximum number of UDDI artifacts allowed per publisher. A value of '-1' indicates any  number of artifacts is valid (These values can be overridden at the individual publisher level).-->
+		<maxBusinessesPerPublisher>100</maxBusinessesPerPublisher>
+		<maxServicesPerBusiness>100</maxServicesPerBusiness>
+		<maxBindingsPerService>100</maxBindingsPerService>
+		<maxTModelsPerPublisher>100</maxTModelsPerPublisher>
+
+		<!-- Days before a transfer request expires-->
+		<transfer>
+			<expiration>
+				<days>3</days>
+			</expiration>
+		</transfer>
+
+		<!-- Days before a subscription expires-->
+		<subscription>
+			<expiration>
+				<days>30</days>
+			</expiration>
+
+			<!-- Minutes before a "chunked" subscription call expires-->
+			<chunkexpiration>
+				<minutes>5</minutes>
+			</chunkexpiration>
+
+			<!--Since 3.1.5 the maxium ammount of returned subscription entities allowed-->
+			<maxentities>1000</maxentities>
+		</subscription>
+
+		<!-- jUDDI UUIDGen implementation to use-->
+		<uuidgen>org.apache.juddi.uuidgen.DefaultUUIDGen</uuidgen>
+
+		<!-- jUDDI Cryptor implementation to use-->
+		<cryptor>org.apache.juddi.v3.client.cryptor.DefaultCryptor</cryptor>
+
+		<!-- jUDDI Key Generator to use-->
+		<keygenerator>org.apache.juddi.keygen.DefaultKeyGenerator</keygenerator>
+
+		<notification>
+			<!-- Specifies the interval at which the notification timer triggers-->
+			<interval>5000</interval>
+			<!-- Specifies the amount of time to wait before the notification timer initially fires-->
+			<start>
+				<buffer>0</buffer>
+			</start>
+			<acceptableLagtime>1000</acceptableLagtime>
+			<maxTries>3</maxTries>
+			<!-- 10 minutes -->
+			<maxTriesResetInterval>600000</maxTriesResetInterval>
+			<sendAuthTokenWithResultList>false</sendAuthTokenWithResultList>
+		</notification>
+		<!-- All Authentication related settings -->
+		<auth>
+			<!-- Specifies whether the inquiry API requires authentication, all other APIs require authN-->
+			<Inquiry>false</Inquiry>
+
+			<!-- When using file based authentication, this is the filename to use 
+			<usersfile>juddi-users.xml</usersfile>-->
+			<!-- jUDDI Authentication module to use-->
+			<authenticator>
+				<!-- build in Authenticators:
+				org.apache.juddi.v3.auth.JUDDIAuthenticator - no authentication
+				LDAP Based
+				org.apache.juddi.v3.auth.LdapSimpleAuthenticator - use LDAP
+				org.apache.juddi.v3.auth.LdapExpandedAuthenticator - use LDAP
+				
+				File based, see usersfile
+				org.apache.juddi.v3.auth.XMLDocAuthenticator - XML doc, clear text
+				org.apache.juddi.v3.auth.CryptedXMLDocAuthenticator - XML doc, encrypted
+				org.apache.juddi.v3.auth.MD5XMLDocAuthenticator - XML doc, Hashed
+				-->
+				<class>org.apache.juddi.v3.auth.JUDDIAuthenticator</class>
+				<!-- other settings
+				url
+				initialcontext
+				style
+				ldapexp
+				-->
+			</authenticator>
+
+			<token>
+				<!-- Time in minutes to expire tokes after inactivity-->
+				<Timeout>15</Timeout>
+				<!-- As of 3.1.5 Duration of time for tokens to expire, regardless of inactivity -->
+				<Expiration>15</Expiration>
+			</token>
+		</auth>
+
+
+
+
+		<validation>
+			<!-- As of 3.1.5 This setting will force referential integrity for all tModels (except keyGenerators), category bags, bindingTemplate/AccessPoint/hostingRedirector (referencing another host), tModelinstanceparms and anything else that references a KeyName default value is true.  set to false for backwards compatibility or for a more lax registry-->
+			<enforceReferentialIntegrity>true</enforceReferentialIntegrity>
+		</validation>
+
+		<!--As of 3.1.5 Email delivery options for subscription API functions-->
+		<mail>
+			<smtp>
+				<!--The Operator’s Email address
+				<from>admin@local.localhost</from>-->
+
+				<!--the hostname of the SMTP server
+				<host>localhost</host>-->
+
+				<!--The portname of the SMTP server
+				<port>25</port>-->
+
+				<!--If set, specifies the name of a class that implements the javax.net.SocketFactory interface. This class will be used to create SMTP sockets.-->
+				<socketFactory>
+					<!--<class></class>-->
+
+					<!--If set to true, failure to create a socket using the specified socket factory class will cause the socket to be created using the java.net.Socket class. Defaults to true.
+					<fallback>true</fallback>-->
+					<!--Specifies the port to connect to when using the specified socket factory. If not set, the default port will be used.
+					<port>25</port>-->
+				</socketFactory>
+				<!--if true, enables the use of the STARTTLS command (if supported by the server) to switch the connection to a TLS-protected connection before issuing any login commands. Note that an appropriate trust store must configured so that the client will trust the server’s certificate. Defaults to false.
+				<starttls>
+					<enabled>false</enabled>
+				</starttls>-->
+
+				<!--If true, attempt to authenticate the user using the AUTH command. Defaults to false.
+				<auth>false</auth>-->
+
+				<!--Username used to authenticate to the SMTP server used only if mail.smtp.auth is true
+				<user>user</user>-->
+
+				<!--Password used to authenticate to the SMTP server, used only if mail.smtp.auth is true
+				<password encrypted="false">pass</password>-->
+			</smtp>
+		</mail>
+	</juddi>
+</config>

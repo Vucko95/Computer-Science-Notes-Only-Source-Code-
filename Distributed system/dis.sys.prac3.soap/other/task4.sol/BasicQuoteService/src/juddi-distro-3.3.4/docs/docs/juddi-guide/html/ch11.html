@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Chapter 11. Troubleshooting jUDDI</title><link rel="stylesheet" type="text/css" href="css/jbossorg.css"/><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Apache jUDDI Guide"/><link rel="up" href="index.html" title="Apache jUDDI Guide"/><link rel="prev" href="ch10.html" title="Chapter 10. Digital Signatures"/><link rel="next" href="ch12.html" title="Chapter 12. Contributing to jUDDI"/><link rel="copyright" href="ln-d5e27.html" title="Legal Notice"/><meta xmlns:d="http://docbook.org/ns/docbook" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p xmlns:d="http://docbook.org/ns/docbook" id="title"><a href="http://www.jboss.org" class="site_href"><strong>JBoss.org</strong></a><a href="http://docs.jboss.org/" class="doc_href"><strong>Community Documentation</strong></a></p><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch10.html"><strong>Prev</strong></a></li><li class="next"><a accesskey="n" href="ch12.html"><strong>Next</strong></a></li></ul><div class="chapter" title="Chapter 11. Troubleshooting jUDDI"><div class="titlepage"><div><div><h2 class="title"><a id="_troubleshooting_juddi"/>Chapter 11. Troubleshooting jUDDI</h2></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="section"><a href="ch11.html#_juddi_web_services_juddiv3_war">11.1. jUDDI Web Services, juddiv3.war</a></span></dt><dd><dl><dt><span class="section"><a href="ch11.html#_enable_debugging_logging">11.1.1. Enable debugging logging</a></span></dt></dl></dd><dt><span class="section"><a href="ch11.html#_juddi_gui_juddi_gui_war">11.2. jUDDI GUI, juddi-gui.war</a></span></dt><dt><span class="section"><a href="ch11.html#_juddi_client_java">11.3. jUDDI Client Java</a></span></dt><dd><dl><dt><span class="section"><a href="ch11.html#_enable_debugging_logging_2">11.3.1. Enable debugging logging</a></span></dt></dl></dd><dt><span class="section"><a href="ch11.html#_juddi_client_net">11.4. jUDDI Client .NET</a></span></dt><dt><span class="section"><a href="ch11.html#_getting_help">11.5. Getting help</a></span></dt></dl></div>
+
+<p>Here are some tips to help you troubleshoot problems with jUDDI, jUDDI-GUI, jUDDI Client and more.</p>
+<div class="section" title="11.1. jUDDI Web Services, juddiv3.war"><div class="titlepage"><div><div><h2 class="title"><a id="_juddi_web_services_juddiv3_war"/>11.1. jUDDI Web Services, juddiv3.war</h2></div></div></div>
+
+<div class="section" title="11.1.1. Enable debugging logging"><div class="titlepage"><div><div><h3 class="title"><a id="_enable_debugging_logging"/>11.1.1. Enable debugging logging</h3></div></div></div>
+
+<p>You can adjust the logging level to provide additional output for troubleshooting purposes. To do so, see the Administration Guide, Logging.</p>
+</div>
+</div>
+<div class="section" title="11.2. jUDDI GUI, juddi-gui.war"><div class="titlepage"><div><div><h2 class="title"><a id="_juddi_gui_juddi_gui_war"/>11.2. jUDDI GUI, juddi-gui.war</h2></div></div></div>
+
+<p>Problem: Can’t authentication from juddi-gui’s top right hand side login box to juddiv3.war services
+Solutions:</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+Check the server’s log files for both juddi, juddi-gui and the server itself for error messages. This can sometimes be caused by the lack of Java Crypto Extensions (Oracle/Sun JRE/JDK only).
+</li><li class="listitem">
+Check juddi-gui’s configuration page at <a class="ulink" href="http://localhost:8080/juddi-gui/settings.jsp">http://localhost:8080/juddi-gui/settings.jsp</a>, confirm that the URL’s that are referenced for the UDDI services are correct and accessible from the server hosting juddi-gui.
+</li><li class="listitem">
+Make sure you’re using a valid username/password ;)
+</li><li class="listitem">
+Increase the logging level of jUDDI by changing the commons-logging.properties file
+</li><li class="listitem">
+If you’re having problems with Email delivery of subscription updates, enable debug logging by setting config/uddi/mail/debug=true in juddiv3.xml
+</li></ul></div>
+
+</div>
+<div class="section" title="11.3. jUDDI Client Java"><div class="titlepage"><div><div><h2 class="title"><a id="_juddi_client_java"/>11.3. jUDDI Client Java</h2></div></div></div>
+
+<div class="section" title="11.3.1. Enable debugging logging"><div class="titlepage"><div><div><h3 class="title"><a id="_enable_debugging_logging_2"/>11.3.1. Enable debugging logging</h3></div></div></div>
+
+<p>You can adjust the logging level to provide additional output for troubleshooting purposes. To do so, see the Administration Guide, Logging.</p>
+</div>
+</div>
+<div class="section" title="11.4. jUDDI Client .NET"><div class="titlepage"><div><div><h2 class="title"><a id="_juddi_client_net"/>11.4. jUDDI Client .NET</h2></div></div></div>
+
+<p>Components based on jUDDI’s Client for the .NET Framework can configure logging from their application’s config file. This is usually app.config or web.config. To configure logging, the following three settings must appear in the configuration/appSetttings section.</p>
+<pre class="screen">	&lt;!-- DEBUG, INFO, WARN, ERROR --&gt;
+	&lt;add key="org.apache.juddi.v3.client.log.level" value="INFO" /&gt;
+    &lt;!-- options are CONSOLE, EVENTLOG, FILE multiple values can be specified, comma delimited.
+		Notes for EVENTLOG, you must run the juddi-installer as admin before running--&gt;
+    &lt;add key="org.apache.juddi.v3.client.log.target" value="CONSOLE" /&gt;
+	&lt;!-- only used when target=FILE --&gt;
+    &lt;add key="org.apache.juddi.v3.client.log.logger.file" value="pathToOutputFile" /&gt;</pre>
+
+<p>If nothing is defined, the default log level is "WARN" and the target is "CONSOLE" which is standard out.</p>
+</div>
+<div class="section" title="11.5. Getting help"><div class="titlepage"><div><div><h2 class="title"><a id="_getting_help"/>11.5. Getting help</h2></div></div></div>
+
+<p>There are many different ways to get help with your jUDDI instance. Please refer to the following URLs for more information.</p>
+<div class="itemizedlist"><ul class="itemizedlist"><li class="listitem">
+jUDDI Home Page <a class="ulink" href="http://juddi.apache.org/">http://juddi.apache.org/</a>
+</li><li class="listitem">
+User Guide <a class="ulink" href="http://juddi.apache.org/docs/3.x/userguide/html/index.htmlnavbar.help.userguide">http://juddi.apache.org/docs/3.x/userguide/html/index.htmlnavbar.help.userguide</a>
+</li><li class="listitem">
+Developer Guide <a class="ulink" href="http://juddi.apache.org/docs/3.x/devguide/html/index.htmlnavbar.help.devguide">http://juddi.apache.org/docs/3.x/devguide/html/index.htmlnavbar.help.devguide</a>
+</li><li class="listitem">
+Developer API Documentation <a class="ulink" href="http://juddi.apache.org/docs.html">http://juddi.apache.org/docs.html</a>
+</li><li class="listitem">
+jUDDI Wiki <a class="ulink" href="http://wiki.apache.org/juddi">http://wiki.apache.org/juddi</a>
+</li><li class="listitem">
+jUDDI Issue/Bug Tracker <a class="ulink" href="http://juddi.apache.org/issue-tracking.html">http://juddi.apache.org/issue-tracking.html</a>
+</li><li class="listitem">
+jUDDI User and Developer Mailing List <a class="ulink" href="http://juddi.apache.org/mailing-list.html">http://juddi.apache.org/mailing-list.html</a>
+</li><li class="listitem">
+jUDDI Source Code <a class="ulink" href="http://svn.apache.org/viewvc/juddi/">http://svn.apache.org/viewvc/juddi/</a>
+</li></ul></div>
+
+</div>
+</div><ul xmlns:d="http://docbook.org/ns/docbook" class="docnav"><li class="previous"><a accesskey="p" href="ch10.html"><strong>Prev</strong>Chapter 10. Digital Signatures</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ch12.html"><strong>Next</strong>Chapter 12. Contributing to jUDDI</a></li></ul></body></html>

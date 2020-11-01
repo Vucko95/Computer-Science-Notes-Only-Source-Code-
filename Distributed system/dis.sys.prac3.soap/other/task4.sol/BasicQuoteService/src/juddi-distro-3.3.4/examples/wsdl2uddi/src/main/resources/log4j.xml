@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+    
+    <!-- ================================= -->
+    <!-- Preserve messages in a local file -->
+    <!-- ================================= -->
+    
+    <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+      <param name="Target" value="System.out"/>
+      <param name="Threshold" value="DEBUG"/>
+
+      <layout class="org.apache.log4j.PatternLayout">
+         <!-- The default pattern: Date Priority [Category] Message\n -->
+         <param name="ConversionPattern" value="%d{ABSOLUTE} %-5p [%c{1}] %m%n"/>
+      </layout>
+   </appender>
+   
+    <logger name="org">
+        <level value="DEBUG"/>
+    </logger>
+    
+    <logger name="org.hibernate">
+        <level value="WARN"/>
+    </logger>
+
+    <logger name="com">
+        <level value="DEBUG"/>
+    </logger>
+    
+    <root>        
+          <appender-ref ref="CONSOLE"/>   
+    </root>
+    
+   
+</log4j:configuration>

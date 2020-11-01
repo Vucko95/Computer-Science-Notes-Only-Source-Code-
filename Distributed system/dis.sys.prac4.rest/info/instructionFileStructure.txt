@@ -1,0 +1,7 @@
+
+
+The first task is a copy of Basic Quote Service folder and the rest are just a cascade of the previous task
+
+ie 
+
+task 1, task 2, task 3 folders

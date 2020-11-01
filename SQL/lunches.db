@@ -1,0 +1,212 @@
+DROP DATABASE IF EXISTS lunches;
+
+CREATE DATABASE IF NOT EXISTS lunches;
+
+USE lunches;
+
+CREATE TABLE departments
+  (
+     dept_code CHAR(3) PRIMARY KEY,
+     dept_name VARCHAR(20) NOT NULL
+  );
+
+CREATE TABLE employees
+  (
+     id           CHAR(3) PRIMARY KEY,
+     first_name   VARCHAR(20) NOT NULL,
+     last_name    VARCHAR(20) NOT NULL,
+     dept_code    CHAR(3) NOT NULL,
+     hire_date    DATE,
+     credit_limit DOUBLE(6, 2),
+     phone_ext    CHAR(4) DEFAULT '0000',
+     manager_id   CHAR(3),
+     FOREIGN KEY (dept_code) REFERENCES departments(dept_code) ON UPDATE CASCADE
+     ON DELETE RESTRICT,
+     FOREIGN KEY (manager_id) REFERENCES employees(id) ON DELETE SET NULL ON
+     UPDATE CASCADE
+  );
+
+CREATE TABLE suppliers
+  (
+     supplier_id      VARCHAR(3) PRIMARY KEY,
+     supplier_name    VARCHAR(20) NOT NULL,
+     supplier_address VARCHAR(30)
+  );
+
+CREATE TABLE foods
+  (
+     food_id     VARCHAR(3) PRIMARY KEY,
+     description VARCHAR(20),
+     price       DOUBLE(4, 2) NOT NULL,
+     supplier_id VARCHAR(3),
+     FOREIGN KEY (supplier_id) REFERENCES suppliers(supplier_id) ON UPDATE
+     CASCADE ON DELETE RESTRICT
+  );
+
+CREATE TABLE lunches
+  (
+     lunch_date DATE,
+     id         VARCHAR(3),
+     food_id    VARCHAR(3),
+     FOREIGN KEY (id) REFERENCES employees(id) ON UPDATE CASCADE ON DELETE
+     CASCADE,
+     FOREIGN KEY (food_id) REFERENCES foods(food_id)
+  );
+
+INSERT INTO departments
+VALUES     ('MKT',
+            'Marketing'),
+            ('ACT',
+             'Accounting'),
+            ('EXE',
+             'Executive'),
+            ('PER',
+             'Personnel'),
+            ('SAL',
+             'Sales'),
+            ('SHP',
+             'Shipping');
+
+INSERT INTO suppliers
+VALUES     ('101',
+            'Campbell Catering',
+            'Dublin'),
+            ('102',
+             'Tesco Supermarket',
+             'Kildare'),
+            ('103',
+             'Nolan Foods',
+             'Waterford'),
+            ('104',
+             'O Sullivan Supplies',
+             'Wexford'),
+            ('105',
+             'Cajun Treats',
+             'Dublin');
+
+INSERT INTO foods
+VALUES     ('301',
+            'Steak Dinner',
+            35.00,
+            '101'),
+            ('302',
+             'Fish Supper',
+             25.00,
+             '104'),
+            ('303',
+             'Vegetarian Dinner',
+             20.00,
+             '103'),
+            ('304',
+             'Cajun Treats',
+             33.00,
+             '105'),
+            ('305',
+             'Wine and Cheese',
+             55.00,
+             '103');
+
+INSERT INTO employees
+VALUES      ('201',
+             'Susan',
+             'Brown',
+             'EXE',
+             '2012-06-01',
+             30,
+             '3484',
+             NULL),
+            ('202',
+             'Jim',
+             'Kern',
+             'SAL',
+             '2013-08-16',
+             25,
+             '8722',
+             '201'),
+            ('203',
+             'Martha',
+             'Woods',
+             'SHP',
+             '2018-02-02',
+             25,
+             '7591',
+             '201'),
+            ('204',
+             'Ellen',
+             'Owens',
+             'SAL',
+             '2017-07-01',
+             15,
+             '8683',
+             '202'),
+            ('205',
+             'Henry',
+             'Perkins',
+             'SAL',
+             '2014-03-01',
+             25,
+             '7528',
+             '202'),
+            ('206',
+             'Carol',
+             'Rose',
+             'ACT',
+             NULL,
+             0,
+             '0000',
+             NULL),
+            ('207',
+             'Dan',
+             'Smith',
+             'SHP',
+             '2018-12-01',
+             25,
+             '2259',
+             '203'),
+            ('208',
+             'Fred',
+             'Campbell',
+             'SHP',
+             '2017-04-01',
+             25,
+             '1752',
+             '203'),
+            ('209',
+             'Paula',
+             'Jacobs',
+             'MKT',
+             '2013-03-17',
+             15,
+             '3357',
+             '201'),
+            ('210',
+             'Nancy',
+             'Hoffman',
+             'SAL',
+             '2018-02-16',
+             25,
+             '2974',
+             '203');
+
+INSERT INTO lunches
+VALUES     ('2018-03-04',
+            '202',
+            '301'),
+            ('2017-02-28',
+             '201',
+             '302'),
+            ('2017-10-07',
+             '207',
+             '301'),
+            ('2018-08-22',
+             '204',
+             '303'),
+            (NULL,
+             '208',
+             '302'),
+            ('2019-01-15',
+             '209',
+             '301'),
+            (NULL,
+             '204',
+             '304'); 
